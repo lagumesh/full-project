@@ -1,0 +1,505 @@
+﻿@page
+@model AKPWB240601.Pages.AddUserRolesModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0"><img class="header-below-logo" src="./images/LOGO.png"> KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+        <p class="mb-0" id="home-p">Police Constable (Civil) (Men & Women) & (Transgender Men & Women) & Inservice & Backlog</p>
+    </div>
+    <!-- Start Breadcumb -->
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <a href="/UserRoles" class="text-decoration-none text-dark mt-2">
+                                    <span class="material-symbols-outlined me-2">arrow_back</span>
+                                </a>
+                                <h5 class="page-title mb-0">Add details</h5>
+                            </div>
+
+
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Post
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Masters
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>User Roles
+                                </li>
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Add Details
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- End Breadcumb -->
+    <div class="Preview-container p-3">
+        <div class="previews">
+            <h5 class="p-2 mb-0">User roles details</h5>
+        </div>
+        <div class="preview-content">
+            <div class="preview">
+                <table>
+
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Name of the staff <span>:</span></td>
+                        <td class="addpost-td border-box">
+                            <select class="add-post-input1 form-select">
+                                <option value="" disabled selected>Select the staff</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Staff roles <span>:</span></td>
+                        <td class="addpost-td border-box">
+                            <select class="add-post-input1 form-select">
+                                <option value="" disabled selected>Select the Staff roles</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <h5 class="mt-3">Permission for staffs & Admins</h5>
+                <div class="container-fluid">
+                    <div class="row align-items-baseline justify-content-around permissions-checks">
+                        <!-- Dropdown 1 -->
+                        <div class="row col-2">
+                            <div class="col-12 d-flex align-items-center">
+                                <label for="dropdown1" class="me-2">All</label>
+                                <div class="dropdown-checkbox">
+                                    <button class="border-0 bg-white dropdown-toggle me-2" type="button" id="dropdown1" data-bs-toggle="collapse" data-bs-target="#dropdownMenu1" aria-expanded="false" aria-controls="dropdownMenu1">
+                                    </button>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="tgl" id="toggle" type="checkbox" />
+                                    <label class="tgl-btn" for="toggle"></label>
+                                </div>
+                            </div>
+                            <div id="dropdownMenu1" class="collapse text-center col-12">
+                                <ul class="list-unstyled mt-2 mx-5">
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxView1">
+                                            <label class="form-check-label ms-2" for="checkboxView1">View</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxEdit1">
+                                            <label class="form-check-label ms-2" for="checkboxEdit1">Edit</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxDelete1">
+                                            <label class="form-check-label ms-2" for="checkboxDelete1">Delete</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 2 -->
+                        <div class="row col-2">
+                            <div class="col-12 d-flex align-items-center">
+                                <label for="dropdown2" class="me-2">Post</label>
+                                <div class="dropdown-checkbox">
+                                    <button class="border-0 bg-white dropdown-toggle me-2" type="button" id="dropdown2" data-bs-toggle="collapse" data-bs-target="#dropdownMenu2" aria-expanded="false" aria-controls="dropdownMenu2">
+                                    </button>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="tgl" id="toggle2" type="checkbox" />
+                                    <label class="tgl-btn" for="toggle2"></label>
+                                </div>
+                            </div>
+                            <div id="dropdownMenu2" class="collapse text-center col-12">
+                                <ul class="list-unstyled mt-2 mx-5">
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxView2">
+                                            <label class="form-check-label ms-2" for="checkboxView2">View</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxEdit2">
+                                            <label class="form-check-label ms-2" for="checkboxEdit2">Edit</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxDelete2">
+                                            <label class="form-check-label ms-2" for="checkboxDelete2">Delete</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 3 -->
+                        <div class="row col-2">
+                            <div class="d-flex align-items-center col-12">
+                                <label for="dropdown3" class="me-2">Dashboard</label>
+                                <div class="dropdown-checkbox">
+                                    <button class="border-0 bg-white dropdown-toggle me-2" type="button" id="dropdown3" data-bs-toggle="collapse" data-bs-target="#dropdownMenu3" aria-expanded="false" aria-controls="dropdownMenu3">
+                                    </button>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="tgl" id="toggle3" type="checkbox" />
+                                    <label class="tgl-btn" for="toggle3"></label>
+                                </div>
+                            </div>
+                            <div id="dropdownMenu3" class="collapse text-center col-12">
+                                <ul class="list-unstyled mt-2 mx-5">
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxView3">
+                                            <label class="form-check-label ms-2" for="checkboxView3">View</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxEdit3">
+                                            <label class="form-check-label ms-2" for="checkboxEdit3">Edit</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxDelete3">
+                                            <label class="form-check-label ms-2" for="checkboxDelete3">Delete</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 4 -->
+                        <div class="row col-2">
+                            <div class="d-flex align-items-center col-12">
+                                <label for="dropdown4" class="me-2">Homepage</label>
+                                <div class="dropdown-checkbox">
+                                    <button class="border-0 bg-white dropdown-toggle me-2" type="button" id="dropdown4" data-bs-toggle="collapse" data-bs-target="#dropdownMenu4" aria-expanded="false" aria-controls="dropdownMenu4">
+                                    </button>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="tgl" id="toggle4" type="checkbox" />
+                                    <label class="tgl-btn" for="toggle4"></label>
+                                </div>
+                            </div>
+                            <div id="dropdownMenu4" class="collapse text-center col-12">
+                                <ul class="list-unstyled mt-2 mx-5">
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxView4">
+                                            <label class="form-check-label ms-2" for="checkboxView4">View</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxEdit4">
+                                            <label class="form-check-label ms-2" for="checkboxEdit4">Edit</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxDelete4">
+                                            <label class="form-check-label ms-2" for="checkboxDelete4">Delete</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 5 -->
+                        <div class="row col-2">
+                            <div class="d-flex align-items-center col-12">
+                                <label for="dropdown5" class="me-2">Applicant</label>
+                                <div class="dropdown-checkbox">
+                                    <button class="border-0 bg-white dropdown-toggle me-2" type="button" id="dropdown5" data-bs-toggle="collapse" data-bs-target="#dropdownMenu5" aria-expanded="false" aria-controls="dropdownMenu5">
+                                    </button>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="tgl" id="toggle5" type="checkbox" />
+                                    <label class="tgl-btn" for="toggle5"></label>
+                                </div>
+                            </div>
+                            <div id="dropdownMenu5" class="collapse text-center col-12">
+                                <ul class="list-unstyled mt-2 mx-5">
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxView5">
+                                            <label class="form-check-label ms-2" for="checkboxView5">View</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxEdit5">
+                                            <label class="form-check-label ms-2" for="checkboxEdit5">Edit</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxDelete5">
+                                            <label class="form-check-label ms-2" for="checkboxDelete5">Delete</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row align-items-baseline justify-content-around mt-2 permissions-checks">
+                        <!-- Dropdown 1 -->
+                        <div class="row col-2">
+                            <div class="col-12 d-flex align-items-center">
+                                <label for="dropdown6" class="me-2">Written exam</label>
+                                <div class="dropdown-checkbox">
+                                    <button class="border-0 bg-white dropdown-toggle me-2" type="button" id="dropdown6" data-bs-toggle="collapse" data-bs-target="#dropdownMenu6" aria-expanded="false" aria-controls="dropdownMenu6">
+                                    </button>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="tgl" id="toggle6" type="checkbox" />
+                                    <label class="tgl-btn" for="toggle6"></label>
+                                </div>
+                            </div>
+                            <div id="dropdownMenu6" class="collapse text-center col-12">
+                                <ul class="list-unstyled mt-2 mx-5">
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+
+                                            <input class="form-check-input" type="checkbox" id="checkboxView1">
+                                            <label class="form-check-label ms-2" for="checkboxView1">View</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxEdit1">
+                                            <label class="form-check-label ms-2" for="checkboxEdit1">Edit</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxDelete1">
+                                            <label class="form-check-label ms-2" for="checkboxDelete1">Delete</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 2 -->
+                        <div class="row col-2">
+                            <div class="col-12 d-flex align-items-center">
+                                <label for="dropdown7" class="me-2">ETPST exam</label>
+                                <div class="dropdown-checkbox">
+                                    <button class="border-0 bg-white dropdown-toggle me-2" type="button" id="dropdown7" data-bs-toggle="collapse" data-bs-target="#dropdownMenu7" aria-expanded="false" aria-controls="dropdownMenu7">
+                                    </button>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="tgl" id="toggle7" type="checkbox" />
+                                    <label class="tgl-btn" for="toggle7"></label>
+                                </div>
+                            </div>
+                            <div id="dropdownMenu7" class="collapse text-center col-12">
+                                <ul class="list-unstyled mt-2 mx-5">
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxView2">
+                                            <label class="form-check-label ms-2" for="checkboxView2">View</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxEdit2">
+                                            <label class="form-check-label ms-2" for="checkboxEdit2">Edit</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxDelete2">
+                                            <label class="form-check-label ms-2" for="checkboxDelete2">Delete</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 3 -->
+                        <div class="row col-2">
+                            <div class="d-flex align-items-center col-12">
+                                <label for="dropdown8" class="me-1">Medical exam</label>
+                                <div class="dropdown-checkbox">
+                                    <button class="border-0 bg-white dropdown-toggle me-2" type="button" id="dropdown8" data-bs-toggle="collapse" data-bs-target="#dropdownMenu8" aria-expanded="false" aria-controls="dropdownMenu8">
+                                    </button>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="tgl" id="toggle8" type="checkbox" />
+                                    <label class="tgl-btn" for="toggle8"></label>
+                                </div>
+                            </div>
+                            <div id="dropdownMenu8" class="collapse text-center col-12">
+                                <ul class="list-unstyled mt-2 mx-5">
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxView3">
+                                            <label class="form-check-label ms-2" for="checkboxView3">View</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxEdit3">
+                                            <label class="form-check-label ms-2" for="checkboxEdit3">Edit</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxDelete3">
+                                            <label class="form-check-label ms-2" for="checkboxDelete3">Delete</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 4 -->
+                        <div class="row col-2">
+                            <div class="d-flex align-items-center col-12">
+                                <label for="dropdown9" class="me-2">Scanning</label>
+                                <div class="dropdown-checkbox">
+                                    <button class="border-0 bg-white dropdown-toggle me-2" type="button" id="dropdown9" data-bs-toggle="collapse" data-bs-target="#dropdownMenu9" aria-expanded="false" aria-controls="dropdownMenu9">
+                                    </button>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="tgl" id="toggle9" type="checkbox" />
+                                    <label class="tgl-btn" for="toggle9"></label>
+                                </div>
+                            </div>
+                            <div id="dropdownMenu9" class="collapse text-center col-12">
+                                <ul class="list-unstyled mt-2 mx-5">
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxView4">
+                                            <label class="form-check-label ms-2" for="checkboxView4">View</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxEdit4">
+                                            <label class="form-check-label ms-2" for="checkboxEdit4">Edit</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxDelete4">
+                                            <label class="form-check-label ms-2" for="checkboxDelete4">Delete</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dropdown 5 -->
+                        <div class="row col-2">
+                            <div class="d-flex align-items-center col-12">
+                                <label for="dropdown10" class="me-2">Reports</label>
+                                <div class="dropdown-checkbox">
+                                    <button class="border-0 bg-white dropdown-toggle me-2" type="button" id="dropdown10" data-bs-toggle="collapse" data-bs-target="#dropdownMenu10" aria-expanded="false" aria-controls="dropdownMenu10">
+                                    </button>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="tgl" id="toggle10" type="checkbox" />
+                                    <label class="tgl-btn" for="toggle10"></label>
+                                </div>
+                            </div>
+                            <div id="dropdownMenu10" class="collapse text-center col-12">
+                                <ul class="list-unstyled mt-2 mx-5">
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxView5">
+                                            <label class="form-check-label ms-2" for="checkboxView5">View</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxEdit5">
+                                            <label class="form-check-label ms-2" for="checkboxEdit5">Edit</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check dropdown-item user-role-list d-flex">
+                                            <input class="form-check-input" type="checkbox" id="checkboxDelete5">
+                                            <label class="form-check-label ms-2" for="checkboxDelete5">Delete</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Repeat the above pattern for other elements -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="mt-3 mb-5 d-flex">
+            <a href="/UserRoles" class="text-decoration-none">
+                <button class="btn btn-secondary rounded-5 text-center d-flex align-items-center text-decoration-none"
+                        style="width:fit-content">
+                    Cancel
+                </button>
+            </a>
+            <a href="#">
+                <button class="btn btn-success rounded-5 text-center ms-2"
+                        style="width:fit-content;">
+                    Save
+                </button>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.dropdown').forEach((dropdown) => {
+        dropdown.addEventListener('show.bs.dropdown', function () {
+            const row = this.closest('.row');
+            row.classList.add('dropdown-open');
+        });
+
+        dropdown.addEventListener('hide.bs.dropdown', function () {
+            const row = this.closest('.row');
+            row.classList.remove('dropdown-open');
+        });
+    });
+
+
+
+</script>

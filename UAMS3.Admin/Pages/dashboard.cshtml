@@ -1,0 +1,268 @@
+﻿@page
+@model UAMS3.Admin.Pages.dashboardModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+    <section id="breadcrumb">
+        <div class="container-fluid my-2">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div>
+                            <p class="page-title mb-0">Dashboard</p>
+                        </div>
+                        <ol class="breadcrumb mb-0">
+                            <i class="bi bi-house-door-fill"></i>
+                            <li class="breadcrumb-item">Dashboard</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Breadcumb -->
+    <!-- Start Country Section -->
+    <section class="dashboard mb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row flex-wrap justify-content-between">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card app-info-card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="app-info-card-title">Students</h6>
+                                            <h5 class="count">555</h5>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="./Assets/Images/Students.png" alt="Student" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card app-info-card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="app-info-card-title">Departments</h6>
+                                            <h5 class="count">555</h5>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="./Assets/Images/Departments.png" alt="Student" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card app-info-card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="app-info-card-title">Courses</h6>
+                                            <h5 class="count">555</h5>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="./Assets/Images/Courses.png" alt="Student" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card app-info-card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h6 class="app-info-card-title">Staffs</h6>
+                                            <h5 class="count">555</h5>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="./Assets/Images/Staff.png" alt="Student" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Start Admission & Term Fees Chart Section -->
+                    <div class="row mb-3">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap flex-sm-wrap justify-content-between">
+                                        <h6>NUMBER OF STUDENTS</h6>
+                                        <div class="d-flex labels">
+                                            <p class="mx-1">
+                                                <span class="mx-1 text-danger">
+                                                    <i class="fa-solid fa-stop"></i>
+                                                </span>
+                                                BOYS
+                                            </p>
+                                            <p class="mx-1">
+                                                <span class="mx-1 text-success">
+                                                    <i class="fa-solid fa-stop"></i>
+                                                </span>
+                                                GIRLS
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="./Assets/Images/Chart.jpg" alt="Chart-Img" class="chart" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex flex-wrap flex-lg-nowrap flex-sm-wrap justify-content-between">
+                                        <h6>NUMBER OF STUDENTS</h6>
+                                        <div class="d-flex labels">
+                                            <p class="mx-1">
+                                                <span class="mx-1 text-danger">
+                                                    <i class="fa-solid fa-stop"></i>
+                                                </span>
+                                                BOYS
+                                            </p>
+                                            <p class="mx-1">
+                                                <span class="mx-1 text-warning">
+                                                    <i class="fa-solid fa-stop"></i>
+                                                </span>
+                                                GIRLS
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <img src="./Assets/Images/Chart.jpg" alt="Chart-Img" class="chart" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Admission & Term Fees Chart Section -->
+                    <!-- Start Reports & Notice Section -->
+                    <div class="row mb-3">
+                        <div class="col-md-6 col-sm-12 dashboard-reports">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-baseline">
+                                        <h6>EXAM SCHEDULE</h6>
+                                        <a href="/Reports">
+                                            <span class="badge text-bg-primary rounded-0 fw-normal">View All</span>
+                                        </a>
+                                    </div>
+                                    <hr class="my-1" />
+                                    <div class="table-responsive" style="overflow-y: auto; max-height: 250px">
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="fw-bold">#</th>
+                                                    <th scope="col" class="fw-bold">Degree</th>
+                                                    <th scope="col" class="fw-bold">Start</th>
+                                                    <th scope="col" class="fw-bold">End</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="col-1">1</td>
+                                                    <td class="col-4">MBA</td>
+                                                    <td class="col-3 text-primary">24-04-2024</td>
+                                                    <td class="col-3">20-06-2024</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-1">1</td>
+                                                    <td class="col-4">MBA</td>
+                                                    <td class="col-3 text-primary">24-04-2024</td>
+                                                    <td class="col-3">20-06-2024</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-1">1</td>
+                                                    <td class="col-4">MBA</td>
+                                                    <td class="col-3 text-primary">24-04-2024</td>
+                                                    <td class="col-3">20-06-2024</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-1">1</td>
+                                                    <td class="col-4">MBA</td>
+                                                    <td class="col-3 text-primary">24-04-2024</td>
+                                                    <td class="col-3">20-06-2024</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-1">1</td>
+                                                    <td class="col-4">MBA</td>
+                                                    <td class="col-3 text-primary">24-04-2024</td>
+                                                    <td class="col-3">20-06-2024</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 dashboard-notice">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-baseline">
+                                        <h6>NOTICE</h6>
+                                        <a href="/Notifications.html">
+                                            <span class="badge text-bg-primary rounded-0 fw-normal"> View All </span>
+                                        </a>
+                                    </div>
+                                    <hr class="my-1 text-dark" />
+                                    <div style="overflow-y: auto; max-height: 250px">
+                                        <div>
+                                            <p class="fw-bold mb-1">
+                                                Title of the Notice <span class="badge rounded-pill text-bg-primary fw-normal"> 1st June 2023 </span>
+                                            </p>
+                                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            <p class="text-secondary mb-0">Jennyfer Lopez</p>
+                                        </div>
+                                        <hr class="my-2" />
+                                        <div>
+                                            <p class="fw-bold mb-1">
+                                                Title of the Notice <span class="badge rounded-pill text-bg-danger fw-normal"> 1st June 2023 </span>
+                                            </p>
+                                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            <p class="text-secondary mb-0">Jennyfer Lopez</p>
+                                        </div>
+                                        <hr class="my-2" />
+                                        <div>
+                                            <p class="fw-bold mb-1">
+                                                Title of the Notice <span class="badge rounded-pill text-bg-success fw-normal"> 1st June 2023 </span>
+                                            </p>
+                                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            <p class="text-secondary mb-0">Jennyfer Lopez</p>
+                                        </div>
+                                        <hr class="my-2" />
+                                        <div>
+                                            <p class="fw-bold mb-1">
+                                                Title of the Notice <span class="badge rounded-pill text-bg-success fw-normal"> 1st June 2023 </span>
+                                            </p>
+                                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            <p class="text-secondary mb-0">Jennyfer Lopez</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Reports & Notice Section -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</section>
+<!-- End Country Section -->

@@ -1,0 +1,20 @@
+﻿namespace SWB240605.Models
+{
+    public class PostUnit
+    {
+        public string Code { get; set; } = string.Empty;
+        public string Title { get; set; } = string.Empty;
+        public int StartingApplicationNo { get; set; }
+        public int CurrentApplicationNo { get; set; }
+        public int EndApplicationNo { get; set; }
+        public string PostCode { get; set; } = string.Empty;
+        public int OrderIndex { get; set; }
+        public int Vacancy { get; set; }
+
+        // Parent entity
+        public Post? Post { get; set; } = null;
+        //child entity
+        public ICollection<PostUnitQualification>? PostUnitQualifications { get; set; }
+
+    }
+}

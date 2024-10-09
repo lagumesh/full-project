@@ -1,0 +1,1389 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SWB240605.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SWB240605.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\css\\dataTables.bootstrap4.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\dataTables.bootstrap4.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Age_Creteria_Icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Age_Creteria_Icon.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Banner_Img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Banner_Img.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Calender_Icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Calender_Icon.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Clock_Icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Clock_Icon.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Footer_Clock_Icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Footer_Clock_Icon.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Footer_Ksp_Logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Footer_Ksp_Logo.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Footer_Phone_Icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Footer_Phone_Icon.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Home.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\Home.svg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Instruction_Icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Instruction_Icon.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\KeyDates_Calender_Icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\KeyDates_Calender_Icon.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Mask group (1).png",
+      "PackagePath": "staticwebassets\\assets\\img\\Mask group (1).png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Masked_Aadhaar.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\Masked_Aadhaar.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\News_Icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\News_Icon.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Notes_Icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Notes_Icon.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\PHOTO & SIGNATURE.png",
+      "PackagePath": "staticwebassets\\assets\\img\\PHOTO & SIGNATURE.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Phone_Icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Phone_Icon.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Photo_Sign.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Photo_Sign.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Thumb.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Thumb.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Tick_Mark.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Tick_Mark.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\Top_Section_Logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\Top_Section_Logo.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\application.html",
+      "PackagePath": "staticwebassets\\assets\\img\\application.html"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\fingerprint.png",
+      "PackagePath": "staticwebassets\\assets\\img\\fingerprint.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\logo_v2.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo_v2.jpeg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\pngwing.com.png",
+      "PackagePath": "staticwebassets\\assets\\img\\pngwing.com.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\img\\sign.png",
+      "PackagePath": "staticwebassets\\assets\\img\\sign.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\ClientScripts\\AgeCalculator.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ClientScripts\\AgeCalculator.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\ClientScripts\\NewAppRestrictions.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ClientScripts\\NewAppRestrictions.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\ClientScripts\\NewAppValidation.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ClientScripts\\NewAppValidation.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\ClientScripts\\NewApplicationScripts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ClientScripts\\NewApplicationScripts.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\ClientScripts\\clientscripts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ClientScripts\\clientscripts.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\ClientScripts\\instruction.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ClientScripts\\instruction.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\ClientScripts\\modalpreview.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ClientScripts\\modalpreview.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\jquery.sticky.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.sticky.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\js\\site.js",
+      "PackagePath": "staticwebassets\\assets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\scss\\Readme.txt",
+      "PackagePath": "staticwebassets\\assets\\scss\\Readme.txt"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\aos\\aos.cjs.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.cjs.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\aos\\aos.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\aos\\aos.esm.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.esm.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\aos\\aos.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\aos\\aos.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\aos\\aos.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.json"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.scss",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\bootstrap-icons.scss"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\all.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\all.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\brands.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\brands.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\brands.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\regular.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\regular.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\regular.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\solid.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\solid.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\solid.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\v4-shims.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fontawesome-free\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome-free\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fonts\\Nudi_01_e_Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\Nudi_01_e_Bold.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fonts\\Nudi_web_01_e_Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\Nudi_web_01_e_Bold.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\assets\\vendor\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\glightbox.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\glightbox\\css\\glightbox.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\glightbox.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\glightbox\\css\\plyr.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\plyr.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\glightbox\\css\\plyr.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\css\\plyr.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\js\\glightbox.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\glightbox\\js\\glightbox.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\glightbox\\js\\glightbox.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\php-email-form\\validate.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\php-email-form\\validate.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\purecounter\\purecounter_vanilla.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\purecounter\\purecounter_vanilla.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\purecounter\\purecounter_vanilla.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\purecounter\\purecounter_vanilla.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\assets\\vendor\\swiper\\swiper-bundle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\swiper-bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\DatePicker\\css\\bootstrap-datepicker.min.css",
+      "PackagePath": "staticwebassets\\lib\\DatePicker\\css\\bootstrap-datepicker.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\DatePicker\\datepicker.min.css",
+      "PackagePath": "staticwebassets\\lib\\DatePicker\\datepicker.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\DatePicker\\datepicker.min.js",
+      "PackagePath": "staticwebassets\\lib\\DatePicker\\datepicker.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\DatePicker\\js\\bootstrap-datepicker.min.js",
+      "PackagePath": "staticwebassets\\lib\\DatePicker\\js\\bootstrap-datepicker.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FlatPicker\\flatpicker.min.css",
+      "PackagePath": "staticwebassets\\lib\\FlatPicker\\flatpicker.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FlatPicker\\flatpicker.min.js",
+      "PackagePath": "staticwebassets\\lib\\FlatPicker\\flatpicker.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FontAwesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\lib\\FontAwesome\\css\\all.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FontAwesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\FontAwesome\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FontAwesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\FontAwesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FontAwesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\FontAwesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FontAwesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\FontAwesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FontAwesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\FontAwesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FontAwesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\lib\\FontAwesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FontAwesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\lib\\FontAwesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FontAwesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\lib\\FontAwesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\FontAwesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\lib\\FontAwesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\Read Me.txt",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\Read Me.txt"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\demo-files\\demo.css",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\demo-files\\demo.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\demo-files\\demo.js",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\demo-files\\demo.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\demo.html",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\demo.html"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\fonts\\Nudi 01 e Bold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\fonts\\Nudi 01 e Bold.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\fonts\\Nudi web 01 e Bold.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\fonts\\Nudi web 01 e Bold.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\fonts\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\fonts\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\fonts\\font-awesome.min.js",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\fonts\\font-awesome.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\selection.json",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\selection.json"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\fonts\\icomoon\\style.css",
+      "PackagePath": "staticwebassets\\lib\\fonts\\icomoon\\style.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\3d-hand-making-cashless-payment-from-smartphone.jpg",
+      "PackagePath": "staticwebassets\\lib\\images\\3d-hand-making-cashless-payment-from-smartphone.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\774696blob.png",
+      "PackagePath": "staticwebassets\\lib\\images\\774696blob.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\Home.png",
+      "PackagePath": "staticwebassets\\lib\\images\\Home.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\Home.svg",
+      "PackagePath": "staticwebassets\\lib\\images\\Home.svg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\India_Post_Logo.svg.png",
+      "PackagePath": "staticwebassets\\lib\\images\\India_Post_Logo.svg.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\adhar",
+      "PackagePath": "staticwebassets\\lib\\images"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\application.html",
+      "PackagePath": "staticwebassets\\lib\\images\\application.html"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\lib\\images\\bg.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\hero_1.jpg",
+      "PackagePath": "staticwebassets\\lib\\images\\hero_1.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\hero_3.jpg",
+      "PackagePath": "staticwebassets\\lib\\images\\hero_3.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\images.png",
+      "PackagePath": "staticwebassets\\lib\\images\\images.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\logo_v2.jpeg",
+      "PackagePath": "staticwebassets\\lib\\images\\logo_v2.jpeg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\pngwing.com.png",
+      "PackagePath": "staticwebassets\\lib\\images\\pngwing.com.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\sign.png",
+      "PackagePath": "staticwebassets\\lib\\images\\sign.png"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\the-top-10-most-popular-online-payment-solutions-5e9978d564973-760x400.webp",
+      "PackagePath": "staticwebassets\\lib\\images\\the-top-10-most-popular-online-payment-solutions-5e9978d564973-760x400.webp"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\images\\vigneshwar-rajkumar-O9pmqUq1uOU-unsplash.jpg",
+      "PackagePath": "staticwebassets\\lib\\images\\vigneshwar-rajkumar-O9pmqUq1uOU-unsplash.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery\\dist\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\jquery\\jquery.sticky.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\jquery.sticky.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\js\\ClientScripts\\AgeCalculator.js",
+      "PackagePath": "staticwebassets\\lib\\js\\ClientScripts\\AgeCalculator.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\js\\ClientScripts\\NewAppRestrictions.js",
+      "PackagePath": "staticwebassets\\lib\\js\\ClientScripts\\NewAppRestrictions.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\js\\ClientScripts\\NewAppValidation.js",
+      "PackagePath": "staticwebassets\\lib\\js\\ClientScripts\\NewAppValidation.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\js\\ClientScripts\\clientscripts.js",
+      "PackagePath": "staticwebassets\\lib\\js\\ClientScripts\\clientscripts.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\js\\ClientScripts\\modalpreview.js",
+      "PackagePath": "staticwebassets\\lib\\js\\ClientScripts\\modalpreview.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\js\\jquery.sticky.js",
+      "PackagePath": "staticwebassets\\lib\\js\\jquery.sticky.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\js\\main.js",
+      "PackagePath": "staticwebassets\\lib\\js\\main.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\js\\site.js",
+      "PackagePath": "staticwebassets\\lib\\js\\site.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\DatePicker\\css\\bootstrap-datepicker.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\DatePicker\\css\\bootstrap-datepicker.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\DatePicker\\datepicker.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\DatePicker\\datepicker.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\DatePicker\\datepicker.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\DatePicker\\datepicker.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\DatePicker\\js\\bootstrap-datepicker.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\DatePicker\\js\\bootstrap-datepicker.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FlatPicker\\flatpicker.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\FlatPicker\\flatpicker.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FlatPicker\\flatpicker.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\FlatPicker\\flatpicker.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FontAwesome\\css\\all.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\FontAwesome\\css\\all.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FontAwesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\FontAwesome\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FontAwesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\lib\\FontAwesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FontAwesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\lib\\FontAwesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FontAwesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\lib\\lib\\FontAwesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FontAwesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\lib\\lib\\FontAwesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FontAwesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\lib\\lib\\FontAwesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FontAwesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\lib\\lib\\FontAwesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FontAwesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\lib\\lib\\FontAwesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\FontAwesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\lib\\lib\\FontAwesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\bootstrap_4.3.1.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\bootstrap_4.3.1.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\css\\bootstrap_4.3.1.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\css\\bootstrap_4.3.1.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\bootstrap\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\bootstrap\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery\\dist\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery\\dist\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\jquery\\jquery.sticky.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\jquery\\jquery.sticky.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\notify\\css\\notyf.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\notify\\css\\notyf.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\notify\\js\\notify.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\notify\\js\\notify.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\notify\\js\\notyf.min.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\notify\\js\\notyf.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\sweetalert\\css\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\lib\\lib\\sweetalert\\css\\sweetalert2.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\lib\\sweetalert\\js\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\lib\\lib\\sweetalert\\js\\sweetalert2.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\notify\\css\\notyf.min.css",
+      "PackagePath": "staticwebassets\\lib\\notify\\css\\notyf.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\notify\\js\\notify.js",
+      "PackagePath": "staticwebassets\\lib\\notify\\js\\notify.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\notify\\js\\notyf.min.js",
+      "PackagePath": "staticwebassets\\lib\\notify\\js\\notyf.min.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\sweetalert\\css\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\css\\sweetalert2.min.css"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\lib\\sweetalert\\js\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert\\js\\sweetalert2.js"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\idcard\\26Jul2024\\0ad2525d-c42d-4442-9797-8c07978a54c9.jpg",
+      "PackagePath": "staticwebassets\\uploads\\idcard\\26Jul2024\\0ad2525d-c42d-4442-9797-8c07978a54c9.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\idcard\\26Jul2024\\0e7eca02-efb7-4286-beb2-2156cb1efb85.jpg",
+      "PackagePath": "staticwebassets\\uploads\\idcard\\26Jul2024\\0e7eca02-efb7-4286-beb2-2156cb1efb85.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\idcard\\26Jul2024\\114595d0-58ce-416f-9449-4ac56bdc3c20.jpg",
+      "PackagePath": "staticwebassets\\uploads\\idcard\\26Jul2024\\114595d0-58ce-416f-9449-4ac56bdc3c20.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\idcard\\26Jul2024\\48a071bc-07b3-4566-90cd-d5d7630b17ac.jpg",
+      "PackagePath": "staticwebassets\\uploads\\idcard\\26Jul2024\\48a071bc-07b3-4566-90cd-d5d7630b17ac.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\idcard\\26Jul2024\\7aec1c70-8659-4347-bd9d-f4866651841c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\idcard\\26Jul2024\\7aec1c70-8659-4347-bd9d-f4866651841c.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\idcard\\26Jul2024\\8a17b84a-412c-4f05-8a4c-7f2e00e1478c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\idcard\\26Jul2024\\8a17b84a-412c-4f05-8a4c-7f2e00e1478c.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\idcard\\26Jul2024\\9b1feaa9-59ee-4a11-8612-a60d52a64f3e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\idcard\\26Jul2024\\9b1feaa9-59ee-4a11-8612-a60d52a64f3e.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\idcard\\26Jul2024\\ac34d7b8-230a-4801-9ea9-a3e2b75e76ee.jpg",
+      "PackagePath": "staticwebassets\\uploads\\idcard\\26Jul2024\\ac34d7b8-230a-4801-9ea9-a3e2b75e76ee.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\idcard\\26Jul2024\\b47295e1-d456-4ff0-b9a4-d2b38adedd8f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\idcard\\26Jul2024\\b47295e1-d456-4ff0-b9a4-d2b38adedd8f.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\idcard\\26Jul2024\\b9a9bd63-6466-4326-9b23-54a2855f0d5f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\idcard\\26Jul2024\\b9a9bd63-6466-4326-9b23-54a2855f0d5f.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\idcard\\26Jul2024\\e3c55229-14a9-4132-ad53-fda8b783a448.jpg",
+      "PackagePath": "staticwebassets\\uploads\\idcard\\26Jul2024\\e3c55229-14a9-4132-ad53-fda8b783a448.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\photo\\26Jul2024\\12e9d458-58d8-4f12-91c1-a7e91cfcdcf1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photo\\26Jul2024\\12e9d458-58d8-4f12-91c1-a7e91cfcdcf1.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\photo\\26Jul2024\\24456f80-888f-4df2-9e08-1224308e501f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photo\\26Jul2024\\24456f80-888f-4df2-9e08-1224308e501f.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\photo\\26Jul2024\\3cfb4e84-d0f4-4e91-82b8-7111ed0bd3c0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photo\\26Jul2024\\3cfb4e84-d0f4-4e91-82b8-7111ed0bd3c0.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\photo\\26Jul2024\\486d03ce-d979-4a0f-8a3e-cd3566717c2f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photo\\26Jul2024\\486d03ce-d979-4a0f-8a3e-cd3566717c2f.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\photo\\26Jul2024\\51810e15-a682-48b5-b849-013138efd618.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photo\\26Jul2024\\51810e15-a682-48b5-b849-013138efd618.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\photo\\26Jul2024\\a279d101-f1e9-4613-b099-17506c6e4263.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photo\\26Jul2024\\a279d101-f1e9-4613-b099-17506c6e4263.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\photo\\26Jul2024\\af95bfec-84b3-448b-9e92-8b6a3100fa54.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photo\\26Jul2024\\af95bfec-84b3-448b-9e92-8b6a3100fa54.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\photo\\26Jul2024\\c50db516-1d89-42f1-9c87-74b982550399.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photo\\26Jul2024\\c50db516-1d89-42f1-9c87-74b982550399.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\photo\\26Jul2024\\d717768b-5868-436d-81d7-cd3849b4f2b0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photo\\26Jul2024\\d717768b-5868-436d-81d7-cd3849b4f2b0.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\photo\\26Jul2024\\de5da3a8-4803-4bb9-9120-5ad28bb1d8fb.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photo\\26Jul2024\\de5da3a8-4803-4bb9-9120-5ad28bb1d8fb.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\photo\\26Jul2024\\f617356f-02bb-4b9a-bd4c-d4f579948e63.jpg",
+      "PackagePath": "staticwebassets\\uploads\\photo\\26Jul2024\\f617356f-02bb-4b9a-bd4c-d4f579948e63.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\thumb\\26Jul2024\\138d8ac1-6c2e-402b-b26a-21917e5a9a7e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thumb\\26Jul2024\\138d8ac1-6c2e-402b-b26a-21917e5a9a7e.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\thumb\\26Jul2024\\18c62cfc-fa5d-4c57-9700-30e8cac948c8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thumb\\26Jul2024\\18c62cfc-fa5d-4c57-9700-30e8cac948c8.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\thumb\\26Jul2024\\1c7bbcba-17ac-4312-8526-aea1c8667eef.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thumb\\26Jul2024\\1c7bbcba-17ac-4312-8526-aea1c8667eef.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\thumb\\26Jul2024\\208908b5-b84c-44d0-a2af-3877f89cead0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thumb\\26Jul2024\\208908b5-b84c-44d0-a2af-3877f89cead0.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\thumb\\26Jul2024\\26063c09-293b-4aff-a1d6-7766be5fdf67.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thumb\\26Jul2024\\26063c09-293b-4aff-a1d6-7766be5fdf67.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\thumb\\26Jul2024\\4ce51db2-7178-483c-a495-65957e3895ee.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thumb\\26Jul2024\\4ce51db2-7178-483c-a495-65957e3895ee.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\thumb\\26Jul2024\\59b47dd3-d28c-44ec-9a47-28fe94c17015.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thumb\\26Jul2024\\59b47dd3-d28c-44ec-9a47-28fe94c17015.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\thumb\\26Jul2024\\c84af9a2-8a0d-46e9-bb3c-00098faf2302.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thumb\\26Jul2024\\c84af9a2-8a0d-46e9-bb3c-00098faf2302.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\thumb\\26Jul2024\\d7afea18-4f1b-486e-bc5f-e784926881dc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thumb\\26Jul2024\\d7afea18-4f1b-486e-bc5f-e784926881dc.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\thumb\\26Jul2024\\dbc2c803-04a1-4a87-bc09-825346274a66.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thumb\\26Jul2024\\dbc2c803-04a1-4a87-bc09-825346274a66.jpg"
+    },
+    {
+      "Id": "D:\\lagu-project\\ssss\\SWB240605\\wwwroot\\uploads\\thumb\\26Jul2024\\e0b05515-f3d0-4a9a-8a4a-330e899152c3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thumb\\26Jul2024\\e0b05515-f3d0-4a9a-8a4a-330e899152c3.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SWB240605.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.SWB240605.props",
+      "PackagePath": "build\\SWB240605.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.SWB240605.props",
+      "PackagePath": "buildMultiTargeting\\SWB240605.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.SWB240605.props",
+      "PackagePath": "buildTransitive\\SWB240605.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

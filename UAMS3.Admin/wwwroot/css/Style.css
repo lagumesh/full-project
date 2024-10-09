@@ -1,0 +1,1729 @@
+﻿/***** | UNIVERSITY ADMIN | *****/
+
+/***** | FONTS | *****/
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+/***** | BOOTSTRAP ICONS |*****/
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+/***** | ROOT | *****/
+
+:root {
+    scroll-behavior: smooth;
+    --body: #f4f4f5;
+    --primary: #051b40;
+    --secondary: #eabf09;
+    --dark: #000000;
+    --white: #ffffff;
+    --red: #ff0800;
+    --grey: #f0f0f0;
+    --green: #007542;
+    --light-dark: #aeabab;
+    --light-bg: #e1e1e1;
+    --light-white: #fafafa;
+    --light-blue: #eef4fd;
+    --hover-red: #e50700;
+    --hover-blue: #364866;
+    --hover-green: #21a26a;
+    --edit-icon-bg: #e8f0ff;
+    --view-icon: #e8ffee;
+    --table-head: #0044b4;
+    --table-row: #f8f8f9;
+    --footer: #e1e1e1;
+}
+
+/***** | SCROLL | *****/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--dark);
+    background-image: -webkit-linear-gradient(top, var(--primary) 0%, var(--primary) 50%, var(--primary) 51%, var(--primary) 100%);
+}
+
+hr {
+    color: var(--light-dark) !important;
+}
+
+/***** | MAIN SCREEN | *****/
+
+#main {
+    margin-top: 60px;
+    transition: all 0.3s;
+    overflow-x: hidden;
+}
+
+/***** | BODY | *****/
+
+body {
+    font-family: "Nunito", sans-serif !important;
+}
+
+/***** | LINK | *****/
+
+a {
+    text-decoration: none !important;
+    color: var(--white);
+}
+
+    a:hover {
+        text-decoration: none !important;
+    }
+
+/***** | LIST | *****/
+
+ul li {
+    list-style: none;
+}
+
+/***** | HEADINGS | *****/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nunito", sans-serif !important;
+}
+
+h1 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+}
+
+h2 {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+}
+
+h3 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+}
+
+h4 {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+h5 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+h6 {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+
+/***** | PLACEHOLDER | *****/
+
+::placeholder {
+    font-size: 13px;
+    color: var(--light-dark) !important;
+}
+
+/* Default color for select and selected option */
+select, option {
+    color: var(--light-dark) !important;
+}
+
+    /* When select is active, style the option text color */
+    select:focus option {
+        color: var(--dark) !important;
+    }
+
+
+/***** | RADIO BUTTON | *****/
+.radio-btn {
+    height: 15px !important;
+    width: 15px !important;
+    min-width: 0px !important;
+}
+
+/*****| BREAD CRUMBS |*****/
+
+#breadcrumb li {
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#breadcrumb .active {
+    font-family: "Nunito", sans-serif;
+    color: var(--light-dark) !important;
+}
+
+.breadcrumb i {
+    margin-right: 5px;
+}
+
+.breadcrumb a {
+    color: var(--dark);
+    transition: 0.3s;
+}
+
+    .breadcrumb a:hover {
+        color: var(--primary);
+    }
+
+#breadcrumb p {
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/***** | ACCORDIAN |*****/
+
+.accordion .accordion-button {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+    border-radius: 5px 5px 0px 0px;
+}
+
+    .accordion .accordion-button:focus {
+        box-shadow: none;
+    }
+
+.accordion-button::after {
+    background-color: var(--white) !important;
+}
+
+/***** | CARD TITLE | *****/
+
+.card-title {
+    background-color: var(--table-head);
+    color: var(--white) !important;
+    border-radius: 10px 10px 0 0;
+}
+
+/***** | CARD | *****/
+
+.card {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 0px;
+}
+
+.add-country .card {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/***** | FORM |*****/
+
+/***** | Form Control | *****/
+
+.form-control {
+    border-radius: 3px;
+    outline: none;
+}
+
+    .form-control:focus {
+        border: 1px solid var(--dark);
+        box-shadow: none;
+    }
+
+/***** | Form Label | *****/
+
+.form-label {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/***** | PAGINATION |*****/
+
+.pagination span {
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 10px;
+    margin: 20px 5px;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    border-radius: 3px;
+}
+
+/*****| DELETE-ADD CARD |*****/
+
+.delete-add-search .card {
+    background-color: var(--light-blue);
+    border: 1px solid var(--light-bg);
+}
+
+/*****| ICONS |*****/
+
+.delete-btn i,
+.add-btn i,
+.back-btn i,
+.save-btn i {
+    font-size: 14px;
+    margin: 0px 5px 0 0;
+}
+
+
+.bi-pen {
+    font-size: 15px;
+    background-color: var(--edit-icon-bg);
+    padding: 1px 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.bi-eye {
+    font-size: 15px;
+    background-color: var(--view-icon);
+    padding: 1px 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.icon {
+    display: flex;
+    gap: 5px;
+}
+
+/***** | STATUS DROPDOWN | *****/
+
+.status-dropdown {
+    height: fit-content;
+    width: fit-content;
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/***** | BUTTONS | *****/
+
+/***** | Signin Button |*****/
+
+.signin-btn {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+    .signin-btn:hover {
+        background-color: var(--primary);
+        color: var(--white);
+    }
+
+/***** | Delete Button |*****/
+
+.delete-btn {
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+    .delete-btn:hover {
+        background-color: var(--hover-red);
+    }
+
+/***** | Add Button |*****/
+
+.add-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.add-btn:hover {
+   background-color: var(--hover-blue);
+}
+
+/***** | Import Button |*****/
+
+.import-btn {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+    .import-btn:hover {
+        background-color: var(--hover-green);
+    }
+
+/***** | Clear Button |*****/
+
+.clear-btn {
+    background-color: var(--light-dark);
+    color: var(--dark);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+    .clear-btn:hover {
+        background-color: var(--light-dark);
+    }
+
+/***** | Back Button |*****/
+
+.back-btn {
+    background-color: var(--light-bg);
+    color: var(--dark);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/***** | Save Button |*****/
+
+.save-btn {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+/***** | Download Button |*****/
+
+.download-btn {
+    background-color: var(--light-blue) !important;
+    color: var(--dark);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 3px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+/***** | Pay Button |*****/
+
+.pay-btn {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 3px 28px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+/***** | Filter Button |*****/
+
+.filter-btn {
+    background-color: var(--secondary);
+    color: var(--dark);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+/***** | Preview & Edit & Submit Button |*****/
+
+.preview-btn,
+.edit-btn,
+.submit-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 6px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    margin: 20px 0;
+}
+
+/***** | Completed Button |*****/
+
+.complete-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 4px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/***** | Next Buttons | *****/
+
+.svu-next-btn {
+    background-color: var(--primary);
+    color: var(--white) !important;
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 7px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+/***** | Apply Button |*****/
+
+.apply-btn {
+    background-color: var(--apply-btn);
+    color: var(--pay-btn);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 4px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/***** | Payment Button |*****/
+
+.payment-btn {
+    background-color: var(--pay-btn);
+    color: var(--white);
+    border: none;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 7px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+/***** | Payment Page Button |*****/
+
+.payment-page-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 4px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.total-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 4px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.close-btn {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 4px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/***** | DATA TABLE |*****/
+
+.popup-table th {
+    background-color: var(--table-head) !important;
+    color: var(--white) !important;
+    font-size: 15px;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    text-align: justify;
+    padding: 8px 20px !important;
+}
+
+.popup-table td {
+    font-size: 14px;
+    font-weight: 700 !important;
+    text-align: justify;
+    padding: 8px 20px !important;
+}
+
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--light-dark);
+}
+
+    .table tbody {
+        vertical-align: middle;
+    }
+
+    .table tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    tr {
+        border-style: none !important;
+    }
+
+table.dataTable > tbody > tr > td.select-checkbox:before,
+table.dataTable > tbody > tr > th.select-checkbox:before {
+    content: "";
+    margin-top: -6px;
+    margin-left: -6px;
+    border: 2px solid var(--dark) !important;
+    border-radius: 3px;
+    height: 13px;
+    width: 13px;
+}
+
+table.dataTable > tbody > tr.selected > td.select-checkbox:after,
+table.dataTable > tbody > tr.selected > th.select-checkbox:after {
+    content: "✔";
+    font-size: 14px;
+    margin-top: -12px;
+    margin-left: -4px;
+    text-align: center;
+}
+
+table.dataTable thead > tr > th.sorting_asc:before,
+table.dataTable thead > tr > th.sorting_desc:after,
+table.dataTable thead > tr > td.sorting_asc:before,
+table.dataTable thead > tr > td.sorting_desc:after {
+    opacity: 1;
+}
+
+table.dataTable thead > tr > th.sorting:before,
+table.dataTable thead > tr > th.sorting:after,
+table.dataTable thead > tr > th.sorting_asc:before,
+table.dataTable thead > tr > th.sorting_asc:after,
+table.dataTable thead > tr > th.sorting_desc:before,
+table.dataTable thead > tr > th.sorting_desc:after,
+table.dataTable thead > tr > th.sorting_asc_disabled:before,
+table.dataTable thead > tr > th.sorting_asc_disabled:after,
+table.dataTable thead > tr > th.sorting_desc_disabled:before,
+table.dataTable thead > tr > th.sorting_desc_disabled:after,
+table.dataTable thead > tr > td.sorting:before,
+table.dataTable thead > tr > td.sorting:after,
+table.dataTable thead > tr > td.sorting_asc:before,
+table.dataTable thead > tr > td.sorting_asc:after,
+table.dataTable thead > tr > td.sorting_desc:before,
+table.dataTable thead > tr > td.sorting_desc:after,
+table.dataTable thead > tr > td.sorting_asc_disabled:before,
+table.dataTable thead > tr > td.sorting_asc_disabled:after,
+table.dataTable thead > tr > td.sorting_desc_disabled:before,
+table.dataTable thead > tr > td.sorting_desc_disabled:after {
+    position: absolute;
+    display: block;
+    left: 5px;
+    line-height: 9px;
+    font-size: 0.8em;
+}
+
+table.dataTable.table-striped > tbody > tr.odd > * {
+    box-shadow: inset 0 0 0 9999px var(--white);
+}
+
+table.dataTable.table-striped > tbody > tr.even > * {
+    box-shadow: inset 0 0 0 9999px var(--table-row);
+}
+
+table.dataTable.table-striped > tbody > tr.odd.selected > * {
+    box-shadow: inset 0 0 0 9999px var(--light-blue);
+    color: var(--dark);
+}
+
+table.dataTable.table-striped > tbody > tr.even.selected > * {
+    box-shadow: inset 0 0 0 9999px var(--light-blue);
+    color: var(--dark);
+}
+
+table.dataTable.table-hover > tbody > tr:hover > * {
+    box-shadow: inset 0 0 0 9999px var(--light-blue);
+}
+
+.table th {
+    background-color: var(--table-head) !important;
+    color: var(--white) !important;
+    font-size: 13px;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    text-align: justify;
+    padding: 8px 20px !important;
+}
+
+.table td {
+    font-size: 14px;
+    text-align: justify;
+    /* padding: 8px 20px !important; */
+}
+
+#excelTable td:nth-child(1),
+#excelTable th:nth-child(1),
+#example td:nth-child(1),
+#example th:nth-child(1) {
+    width: 10px !important;
+}
+
+.dataTables_length {
+    margin-bottom: 10px;
+}
+
+/***** | Data Table Pagination |*****/
+
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+    /* margin-top: 10px; */
+}
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        padding: 0px 5px;
+        margin: 0 2px;
+        cursor: pointer;
+        border-radius: 3px;
+        border: 1px solid var(--light-dark);
+        background-color: var(--grey);
+    }
+
+        .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+            padding: 0px 5px;
+            background-color: var(--primary);
+            color: var(--white) !important;
+        }
+
+/***** | Data Table Content Filter |*****/
+
+div.dataTables_wrapper div.dataTables_length select {
+    width: auto;
+    display: inline-block;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    padding: 2px !important;
+}
+
+/***** | Data Table Search |*****/
+
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid var(--dark);
+    height: 30px;
+}
+
+    .dataTables_wrapper .dataTables_filter input:focus {
+        box-shadow: none !important;
+        outline: none;
+    }
+
+/***** | NAVTAB |  *****/
+
+.nav-tabs {
+    background-color: var(--table-head) !important;
+    border-radius: 10px 10px 0 0;
+    padding: 6px 18px !important;
+}
+
+    .nav-tabs button {
+        height: fit-content;
+        width: fit-content;
+        padding: 2px 8px;
+        background-color: var(--table-head);
+        color: var(--white);
+        border-radius: 3px !important;
+        font-size: 13px;
+        font-weight: 700;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+    }
+
+        .nav-tabs button:hover {
+            border: none;
+            outline: none;
+            background-color: var(--table-head);
+            color: var(--white);
+        }
+
+    .nav-tabs .nav-link {
+        border: none !important;
+    }
+
+        .nav-tabs .nav-link.active {
+            background-color: var(--white);
+            color: var(--dark);
+        }
+  
+
+/***** | TEXTAREA |*****/
+
+textarea {
+    border: 1px solid var(--light-bg);
+    border-radius: 5px;
+    min-width: 390px;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+    textarea:focus {
+        border: 1px solid var(--light-dark);
+        outline: none;
+    }
+
+/***** | SIGNIN |*****/
+
+/***** | Signin Left Section | *****/
+
+.signin .signin-left-section {
+    height: 100vh;
+    background-image: url(/Assets/Images/Signin-Bg-Banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    left: 0;
+    min-width: 50%;
+    height: 600px;
+}
+
+    .signin .signin-left-section h3 {
+        text-align: center;
+        font-size: 32px !important;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .signin .signin-left-section h1 {
+        text-align: center;
+        font-size: 36px !important;
+        font-weight: 800;
+    }
+
+    .signin .signin-left-section img {
+        height: 500px;
+    }
+
+/***** | Signin Right Section | *****/
+
+.signin .signin-right-section {
+    height: 100vh;
+    background-color: var(--primary);
+    right: 0;
+    min-width: 50%;
+}
+
+    .signin .signin-right-section .card {
+        background-color: var(--white);
+        width: 400px;
+        height: 350px;
+        border-radius: 8px !important;
+    }
+
+@media (max-width: 600px) {
+    .signin .signin-right-section .card {
+        min-width: 350px;
+    }
+}
+
+.signin img {
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+}
+
+/***** | Signin Form | *****/
+
+.signin form .form-control {
+    height: 32px;
+    border: 1px solid var(--light-bg);
+    border-radius: 3px;
+}
+
+    .signin form .form-control:focus {
+        border: 1px solid var(--primary);
+        box-shadow: none;
+    }
+
+.signin form .form-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/***** | HEADER |*****/
+
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    height: 60px;
+    background-color: var(--primary);
+}
+
+.version p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: var(--secondary);
+}
+
+/***** | Header Logo | *****/
+
+ #header .brand-logo img {
+        height: 35px;
+        object-fit: cover;
+        /*vertical-align: baseline;*/
+  }
+
+    #header .university-logo img {
+        height: 40px;
+        object-fit: cover;
+    }
+
+    #header .university-logo .verticle-line {
+        border-left: 1px solid var(--white);
+        height: 30px;
+    }
+
+    /***** | Header Profile | *****/
+
+    #header .profile img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    #header .profile p :nth-child(1) {
+        color: var(--secondary);
+        font-size: 11px;
+    }
+
+    #header .profile p :nth-last-child(1) {
+        color: var(--white);
+        font-size: 13px;
+    }
+
+    #header .profile .down-arrow {
+        color: var(--secondary);
+        font-size: 12px;
+    }
+
+    #header .profile .dropdown-menu {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+        #header .profile .dropdown-menu .dropdown-item:hover {
+            background-color: var(--secondary);
+        }
+
+        #header .profile .dropdown-menu .dropdown-item li {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+            #header .profile .dropdown-menu .dropdown-item li span {
+                margin-left: 5px;
+            }
+
+        #header .profile .dropdown-menu .dropdown-item:nth-child(3) li {
+            color: var(--red);
+        }
+
+        #header .profile .dropdown-menu hr {
+            margin: 0px;
+            color: var(--light-blue);
+        }
+
+#menu-toggle {
+    font-size: 24px;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+}
+
+/****| SIDE BAR |****/
+
+/* Initially hide the sidebar and shift the main content */
+#sidebar {
+    right: 240px;
+    /* Adjust the value to your desired hidden width */
+    transition: all 0.3s;
+}
+
+#main {
+    margin-left: 240px;
+    /* Adjust the value to your desired main content position */
+    transition: all 0.3s;
+}
+
+/* Show the sidebar and adjust the main content when the 'active' class is added */
+#sidebar.active {
+    left: -180px;
+}
+
+#main.active {
+    margin-left: 60px;
+    /* Match the width of the sidebar */
+}
+
+/* Styles for when the sidebar is active */
+#sidebar.active .nav-item .nav-link i {
+    font-size: 24px; /* Adjust the font size of the icons as desired */
+}
+
+#sidebar.active .nav-item .nav-link .bi:not(:first-child) {
+    display: none; /* Hide all bi icons except the first one */
+}
+
+#sidebar.active .nav-item .nav-link {
+    float: right;
+}
+
+#sidebar.active .nav-item .collapse {
+    display: none;
+}
+
+#sidebar.active .nav-item .nav-link h6 {
+    display: none; /* Hide the text */
+}
+
+#sidebar.active .sidebar {
+    width: 60px;
+}
+
+#sidebar.active ul {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    z-index: 996;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    transition: transform 0.3s ease;
+    background-color: var(--primary);
+}
+
+@media (min-width: 1200px) {
+    #main {
+        margin-left: 240px;
+    }
+}
+
+.sidebar h6 {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+.sidebar .nav-item .nav-link {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 8px 10px 8px 10px;
+    margin: 0px 10px 20px 0px;
+}
+
+.sidebar .nav-content .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    padding: 0 0 0 0 !important;
+    margin: 0 0 20px 0px !important;
+}
+
+.sidebar .nav-item i {
+    font-size: 20px;
+    /*margin-right: 15px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .nav-item :nth-child(2) i {
+    font-size: 16px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .nav-item .nav-link:hover {
+    background-color: var(--secondary);
+}
+
+.sidebar .nav-item .nav-link.active {
+    background-color: var(--secondary);
+}
+
+.sidebar .nav-content .nav-link.active {
+    background-color: var(--primary) !important;
+    color: var(--secondary) !important
+}
+
+.sidebar .nav-content li .nav-link:hover {
+    background-color: var(--primary) !important;
+}
+
+.sidebar .nav-content li .nav-link:hover {
+    color: var(--secondary) !important
+}
+
+.sidebar .nav-link .bi-caret-down {
+    margin-right: 0 !important;
+    transition: transform 0.2s ease-in-out;
+   /* margin-left:auto !important;*/
+}
+
+.sidebar .nav-link:not(.collapsed) .bi-caret-down {
+    transform: rotate(180deg);
+}
+
+#menu-toggle-icon.bi-x-circle {
+    display: none;
+}
+
+    #menu-toggle-icon.bi-x-circle.active {
+        display: block;
+    }
+
+#menu-toggle-icon.bi-list.active {
+    display:  none;
+}
+
+/***** | DASHBOARD |*****/
+
+/***** | DASHBOARD TABLE |*****/
+
+.dashboard .table th {
+    background-color: var(--white) !important;
+    color: var(--dark) !important;
+    padding: 5px 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.dashboard .table td {
+    background-color: var(--white) !important;
+    padding: 12px 15px;
+    font-size: 14px;
+    color: var(--dark) !important;
+    text-align: justify;
+}
+
+/***** | Widgets | *****/
+
+.app-info-card img {
+    font-size: 20px;
+    background: var(--white);
+    color: var(--third);
+    width: 55px;
+    height: 55px;
+    line-height: 0;
+}
+
+.app-info-card {
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.app-info-card-title {
+    font-size: 18px !important;
+    font-weight: 600;
+    margin: 15px 0px 15px 0px;
+    padding: 0;
+}
+
+.app-info-card .count {
+    font-size: 24px !important;
+    font-weight: 700;
+}
+
+/***** | Charts | *****/
+
+.chart {
+    width: 100%;
+    max-height: 280px;
+}
+
+@media (min-width: 768px) {
+    .chart {
+        width: 100%;
+        min-height: 280px;
+    }
+}
+
+.labels p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/***** | ADD PAGES SECTION | *****/
+
+#add-pages ul li span {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    width: 150px;
+    margin-right: 25px;
+}
+
+#add-pages ul li {
+    margin-bottom: 12px;
+    /* text-align: justify; */
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 8px;
+}
+
+    #add-pages ul li :after {
+        content: ":";
+        position: absolute;
+        right: 0;
+    }
+
+#add-pages select {
+    border: 1px solid #ccc;
+    background-color: var(--dropdown-bg);
+    border-radius: 5px;
+    height: 32px;
+    width: 390px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    font-size: 14px !important;
+}
+
+    /* #add-pages li:nth-child(1) select {
+	width: fit-content !important;
+} */
+
+    #add-pages select:focus {
+        border: 1px solid var(--light-dark);
+        outline: none;
+    }
+
+#add-pages input {
+    border: 1px solid #ccc;
+    background-color: var(--dropdown-bg);
+    border-radius: 5px;
+    height: 32px;
+    width: 390px;
+    text-align: left;
+    display: flex;
+    align-items: center;    ;
+    justify-content: space-between;
+    padding-left: 10px;
+    font-size: 14px !important;
+}
+
+    #add-pages input:focus {
+        border: 1px solid var(--light-dark);
+        outline: none;
+    }
+
+#myFile {
+    padding: 2px 0px;
+}
+
+/***** | FOOTER |*****/
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 5px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+    #footer p {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+        color: var(--white);
+    }
+
+        #footer p + p {
+            margin-left: 20px;
+        }
+
+.center-content {
+    text-align: center;
+}
+
+#datePlaceholder {
+    position: fixed;
+    left: 230px; /* Adjust as needed */
+}
+
+
+/*****| REGISTRATION FORM |*****/
+
+.registration .registration-details-title,
+.admission-application-details-title .card {
+    border-top: 3px solid var(--primary);
+}
+
+.registration .card-title {
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px 15px;
+    border-radius: 3px;
+    /*margin-bottom: 15px;*/
+}
+
+.registration .form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--light-dark);
+    border-radius: 0;
+    outline: none;
+    width: 350px;
+    padding: 0;
+}
+
+.registration .select {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--light-dark);
+    border-radius: 0;
+    outline: none;
+    /* width: 350px; */
+    padding: 0;
+    background-color: var(--white) !important;
+    height: 30px !important;
+}
+
+.registration input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--light-dark);
+    border-radius: 3;
+    outline: none;
+    width: 350px;
+    padding: 0;
+    background-color: var(--white) !important;
+    height: 32px !important;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
+@media (max-width: 600px) {
+    .registration .form-control {
+        width: 300px;
+    }
+}
+
+.registration .form-control:focus {
+    box-shadow: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--primary);
+}
+
+.registration select:focus {
+    box-shadow: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--primary);
+}
+
+.registration .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: var(--dark);
+}
+
+.registration .dropdown button {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--light-dark);
+    border-radius: 0;
+    outline: none;
+    width: 400px;
+    padding: 0;
+    background-color: var(--white);
+}
+
+    .registration .dropdown button:hover {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid var(--light-dark);
+        border-radius: 0;
+        outline: none;
+        width: 400px;
+        padding: 0;
+        background-color: var(--white);
+    }
+
+@media (max-width: 600px) {
+    .registration .dropdown button {
+        width: 300px;
+    }
+}
+
+.registration .dropdown button:focus {
+    box-shadow: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--primary);
+}
+
+.registration .upload-details .box {
+    width: 250px;
+    height: 170px;
+    border: 1px solid var(--light-dark);
+    margin-bottom: 20px;
+}
+
+.registration .upload-details .box-topic {
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.registration .upload-details .box img {
+    height: 150px;
+    width: 220px;
+    object-fit: contain;
+}
+
+/*****| REGISTRATION PREVIEW FORM |*****/
+
+/*.registration-preview-form input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--light-dark);
+    border-radius: 0;
+    outline: none;
+    width: 350px;
+    padding: 0;
+    background-color: var(--dropdown-bg) !important;
+    height: 35px !important;
+}
+
+.registration-preview-form .registration-details-title,
+.admission-application-details-title .card {
+    border-top: 3px solid var(--primary);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.registration-preview-form .card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.registration-preview-form .card-title {
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px 15px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.registration-preview-form .form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--light-dark);
+    border-radius: 0;
+    outline: none;
+    width: 320px;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .registration-preview-form .form-control {
+        width: 300px;
+    }
+}
+
+.registration-preview-form .form-control:focus {
+    box-shadow: none;
+}
+
+.registration-preview-form .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--dark);
+}
+
+.registration-preview-form .upload-details .box {
+    width: 250px;
+    height: 170px;
+    border: 1px solid var(--light-dark);
+    margin-bottom: 20px;
+}
+
+.registration-preview-form .upload-details .box-topic {
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.registration-preview-form .upload-details .box img {
+    height: 150px;
+    width: 220px;
+    object-fit: contain;
+}
+*/
+/*****| PAYMENT PAGE |*****/
+
+/*.payment-page input {
+    max-width: 300px;
+    height: 35px;
+    border: 1px solid var(--light-dark);
+}
+
+.payment-page .expire-box {
+    max-width: 95px;
+}
+
+.payment-page .form-check-input {
+    color: var(--dark);
+    border: 2px solid;
+    height: 16px;
+}
+
+.payment-page .atm-card {
+    height: 30px;
+    width: 40px;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+.payment-page .modal-content {
+    min-width: 650px;
+}
+
+@media (max-width: 600px) {
+    .payment-page .modal-content {
+        min-width: 350px;
+    }
+}
+
+.payment-page .card {
+    margin: 0;
+}
+
+.fees-details ul li span {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    width: 120px;
+    margin-right: 80px;
+    text-align: justify;
+}
+
+.fees-details ul li {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.fees-details hr {
+    margin: 10px 0px 10px 0px;
+}
+
+.fees-details ul li :after {
+    content: ":";
+    position: absolute;
+    right: 0;
+}*/
+
+/*****| PAYMENT SLIP |*****/
+
+/*.payment-success {
+    height: 80px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.payment-slip-summary ul li span {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    width: 120px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.payment-slip-summary ul li {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+    .payment-slip-summary ul li :after {
+        content: ":";
+        position: absolute;
+        right: 0;
+    }
+
+.payment-slip-summary hr {
+    margin: 0 0px 15px 0px;
+}
+
+.payment-slip .card {
+    max-width: 350px;
+    max-height: 310px;
+    background-color: var(--coordinator-bg);
+}*/
+
+/***** | NOTIFICATIONS |*****/
+
+/*.notice .date-badge {
+    background-color: var(--primary);
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.notice .alert-badge {
+    width: 60px;
+    height: 23px;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 6px;
+}
+*/
+/***** | HELP |*****/
+
+/*.help .accordion-button {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 0 !important;
+}*/
+
+
+#excelTable {
+    border: 1px solid;
+    overflow: auto;
+        border-radius: 5px;
+}
+
+#excelTable tbody td {
+    text-align: center;
+}
+
+table.dataTable.table-striped > tbody > tr.odd.selected > * {
+     box-shadow: none !important; 
+     box-shadow: nonw !important; 
+}

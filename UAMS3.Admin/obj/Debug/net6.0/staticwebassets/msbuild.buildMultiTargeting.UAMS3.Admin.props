@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\UAMS3.Admin.props" />
+</Project>

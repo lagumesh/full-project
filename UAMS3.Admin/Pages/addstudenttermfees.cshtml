@@ -1,0 +1,84 @@
+﻿@page
+@model UAMS3.Admin.Pages.addstudenttermfeesModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Student Term Fees</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Student Term Fees</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add Student Term fee Section -->
+	<section id="add-pages" class="add-country mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<p class="card-title px-3 py-1">Student Term Fees Details</p>
+						<div class="card-body px-3 py-2">
+							<ul class="px-0">
+								<li>
+									<span>Admission No</span>
+									<select class="select">
+										<option defaultValue>Select Admission No</option>
+										<option>87654389</option>
+										<option>56678779</option>
+									</select>
+								</li>
+								<li>
+									<span>Term Index</span>
+									<select class="select">
+										<option defaultValue>Select Term Index</option>
+										<option>Term Index 01</option>
+										<option>Term Index 02</option>
+									</select>
+								</li>
+								<li>
+									<span>Batch</span>
+									<select class="select">
+										<option defaultValue>Select Batch</option>
+										<option>2023-2027</option>
+										<option>2024-2028</option>
+									</select>
+								</li>
+								<li>
+									<span>Fee Amount</span>
+									<select class="select">
+										<option defaultValue>Select Fees Amount</option>
+										<option>50000</option>
+										<option>70000</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+				<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- End Add Student Term fee Section -->

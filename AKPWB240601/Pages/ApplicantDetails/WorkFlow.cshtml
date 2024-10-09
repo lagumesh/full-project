@@ -1,0 +1,282 @@
+﻿@page
+@model AKPWB240601.Pages.ApplicantDetails.WorkFlowModel
+@{
+    Layout = "_Post";
+}
+
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0"><img class="header-below-logo" src="~/images/logo.png"> KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+        <p class="mb-0" id="home-p">Police Constable (Civil) (Men & Women) & (Transgender Men & Women) & Inservice & Backlog</p>
+    </div>
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <a href="/ApplicantDetails/RegistrationTotalApplicantDetails" class="text-decoration-none text-dark mt-2">
+                                    <span class="material-symbols-outlined me-1">arrow_back</span>
+                                </a>
+                                <h5 class="page-title mb-0">Work Flow</h5>
+                            </div>
+
+
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Post
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Applicant details
+                                </li>
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Work flow
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="card-container">
+        <ul class="nav-tabs">
+            <li class="tab-item active" data-tab="tab-content-1">Application</li>
+            <li class="tab-item" data-tab="tab-content-2">Written Exam</li>
+            <li class="tab-item" data-tab="tab-content-3">Scanning</li>
+            <li class="tab-item" data-tab="tab-content-4">ETPST Exam</li>
+            <li class="tab-item" data-tab="tab-content-5">Medical Exam</li>
+        </ul>
+
+        <div id="tab-content-1" class="tab-content active">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <input type="checkbox" id="status10">
+                    <label for="status10" class=" d-flex align-items-center">
+                        Application open date<span class="workflow-label">(24 Aug 2024 & 12:06 pm)</span><span class="material-symbols-outlined workflow-label">
+                            edit
+                        </span>
+                    </label>
+                
+                    <div class="status-lin"></div>
+                </div>
+                <div class="timeline-item">
+                    <input type="checkbox" id="status20">
+                    <label for="status20" class="d-flex align-items-center">
+                        Application closed date<span class="workflow-label">(26 Aug 2024 & 12:06 pm)</span><span class="material-symbols-outlined workflow-label">
+                            edit
+                        </span>
+                    </label>
+                    <div class="status-lin"></div>
+                </div>
+                <div class="timeline-item">
+                    <input type="checkbox" id="status30">
+                    <label for="status30">Payment status reviewed</label>
+                    <div class="status-lin"></div>
+                </div>
+                <div class="timeline-item">
+                    <input type="checkbox" id="status40">
+                    <label for="status40">Sent SMS for payment status</label>
+                    <div class="status-lin"></div>
+                </div>
+                <div class="timeline-item">
+                    <input type="checkbox" id="status50">
+                    <label for="status50">Any payment objections?</label>
+                    <div class="status-lin"></div>
+                </div>
+                   <div class="timeline-item">
+                    <input type="checkbox" id="status60">
+                    <label for="status60">Sent SMS for payment objection candidates</label>
+                    <div class="status-lin"></div>
+                </div>
+                <div class="timeline-item">
+                    <input type="checkbox" id="status70">
+                    <label for="status70">Payment status closed</label>
+                    <div class="status-lin"></div>
+                </div>
+                <div class="timeline-item">
+                    <input type="checkbox" id="status80">
+                    <label for="status80">Finalized eligible candidate for written examination</label>
+                    <div class="status-lin"></div>
+                </div>
+                <div class="timeline-item">
+                    <input type="checkbox" id="status90">
+                    <label for="status90">Eligible candidate list sent to KSP</label>
+
+                </div>
+            </div>
+            <div class="mt-3 mb-5 d-flex">
+                <a href="#" class="text-decoration-none">
+                    <button class="btn btn-secondary rounded-5 text-center d-flex align-items-center text-decoration-none"
+                            style="width:fit-content">
+                        Cancel
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="btn btn-success rounded-5 text-center ms-2"
+                            style="width:fit-content;">
+                        Save
+                    </button>
+            </div>
+        </div>
+
+
+        <div id="tab-content-2" class="tab-content">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <input type="checkbox" id="status1">
+                    <label for="status1" class="status-label dropdown-toggle">Design Approved by KSP</label>
+                    <div class="drop-down-status">
+
+                        <div class="timeline-item">
+                        <div class="status-container-dropdown">
+                            <div class="status-row2">
+                                <input type="checkbox" id="p-closed" class="status-checkbox2">
+                                <label for="p-closed" >
+                                    <span class="status-circle2">
+                                        <svg class="checkmark" viewBox="0 0 24 24">
+                                            <path d="M1 12l5 5L23 6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="status-title">Call Letter</span>
+                                </label>
+                                    <div class="status-lin"></div>
+                            </div>
+                           
+                            <div class="status-row2">
+                                <input type="checkbox" id="p-eligible" class="status-checkbox2">
+                                <label for="p-eligible">
+                                    <span class="status-circle2">
+                                        <svg class="checkmark" viewBox="0 0 24 24">
+                                            <path d="M1 12l5 5L23 6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="status-title">Nominal Roll</span>
+                                </label>
+                                    <div class="status-lin"></div>
+                            </div>
+                                <div class="status-row2">
+                                    <input type="checkbox" id="omr" class="status-checkbox2">
+                                    <label for="omr">
+                                        <span class="status-circle2">
+                                            <svg class="checkmark" viewBox="0 0 24 24">
+                                                <path d="M1 12l5 5L23 6" stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="status-title">OMR Sheets</span>
+                                    </label>
+                                </div>
+                        </div>
+                          
+                        </div>
+
+                    </div>
+                    <div class="status-lin"></div>
+                </div>
+                <div class="timeline-item">
+                    <input type="checkbox" id="status2">
+                    <label for="status2">Application closed date(26 Aug 2024 & 12:06 pm)</label>
+                    <div class="status-lin"></div>
+                </div>
+                <div class="timeline-item">
+                    <input type="checkbox" id="status3">
+                    <label for="status3">Payment status reviewed</label>
+                    <div class="status-lin"></div>
+                </div>
+                <div class="timeline-item">
+                    <input type="checkbox" id="status4">
+                    <label for="status4">Sent SMS for payment status</label>
+                </div>
+            </div>
+            <div class="mt-3 mb-5 d-flex">
+                <a href="#" class="text-decoration-none">
+                    <button class="btn btn-secondary rounded-5 text-center d-flex align-items-center text-decoration-none"
+                            style="width:fit-content">
+                        Cancel
+                    </button>
+                </a>
+                <a href="#">
+                    <button class="btn btn-success rounded-5 text-center ms-2"
+                            style="width:fit-content;">
+                        Save
+                    </button>
+            </div>
+        </div>
+        <div id="tab-content-3" class="tab-content">
+            <!-- Scanning Content -->
+        </div>
+        <div id="tab-content-4" class="tab-content">
+            <!-- ETPST Exam Content -->
+        </div>
+        <div id="tab-content-5" class="tab-content">
+            <!-- Medical Exam Content -->
+        </div>
+    </div>
+
+
+
+
+
+
+</section>
+<script>
+    document.querySelectorAll('.tab-item').forEach(function (tab) {
+        tab.addEventListener('click', function () {
+            var tab_id = this.getAttribute('data-tab');
+
+            document.querySelectorAll('.tab-item').forEach(function (tab) {
+                tab.classList.remove('active');
+            });
+
+            document.querySelectorAll('.tab-content').forEach(function (content) {
+                content.classList.remove('active');
+            });
+
+            this.classList.add('active');
+            document.getElementById(tab_id).classList.add('active');
+        });
+    });
+    //drop down
+    document.querySelector('.dropdown-toggle').addEventListener('click', function () {
+        const dropdownRow = this.closest('.status-row').nextElementSibling;
+        const isVisible = dropdownRow.style.display === 'block';
+
+        // Toggle dropdown visibility
+        dropdownRow.style.display = isVisible ? 'none' : 'block';
+
+        // Change the icon based on the state
+        this.textContent = isVisible ? 'expand_more' : 'expand_less';
+    });
+
+      //drop down
+    document.querySelector('.dropdown-toggle').addEventListener('click', function () {
+        const dropdownRow = this.closest('.status-row').nextElementSibling;
+        const isVisible = dropdownRow.style.display === 'block';
+
+        // Toggle dropdown visibility
+        dropdownRow.style.display = isVisible ? 'none' : 'block';
+
+        // Change the icon based on the state
+        this.textContent = isVisible ? 'expand_more' : 'expand_less';
+    });
+
+    document.getElementById('status1').addEventListener('change', function () {
+        var dropdown = document.querySelector('.drop-down-status');
+        if (this.checked) {
+            dropdown.classList.add('show');
+        } else {
+            dropdown.classList.remove('show');
+        }
+    });
+
+
+
+</script>

@@ -1,0 +1,95 @@
+﻿@page
+@model UAMS3.Admin.Pages.studenttermfeesModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Student Term Fees</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Student Term Fees</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Student Term Fee Section -->
+	<section class="student-term-fees mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<!-- Start Add Delete Section -->
+					<section class="delete-add-search mb-3">
+						<div class="card">
+							<div class="card-body py-2">
+								<div class="d-flex justify-content-between align-items-center">
+									<div>
+										<button class="delete-btn"><span><i class="bi bi-trash3"></i></span>Delete</button>
+										<select class="select me-2 status-dropdown" aria-label="Default select example">
+											<option defaultValue>Status</option>
+											<option>Enabled</option>
+											<option>Disabled</option>
+										</select>
+									</div>
+									<a href="/addstudenttermfees">
+										<button class="add-btn"><span><i class="bi bi-plus-lg"></i></span>Add</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- End  Add Delete Section -->
+
+					<!-- Start Student Term Fee Table Section -->
+					<div class="table-responsive">
+						<table id="example" class="table table-striped table-hover" style="width: 100%">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Admission No</th>
+									<th>Term Index</th>
+									<th>Batch</th>
+									<th>Fees Amount</th>
+									<th>Status</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td></td>
+									<td>5879765</td>
+									<td>Term Index 01</td>
+									<td>2023-2026</td>
+									<td>₹ 500000</td>
+									<td>Enabled</td>
+									<td class="icon">
+										<i class="bi bi-pen"></i>
+										<i class="bi bi-eye"></i>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- End Student Term Fee Table Section -->
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- End Student Term Fee Section -->

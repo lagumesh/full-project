@@ -1,0 +1,236 @@
+﻿@page
+@model UAMS3.Admin.Pages.addexaminationsModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Examination</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Examination</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add Examination Section -->
+	<section id="add-pages" class="add-country mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<div class="card-body p-0">
+							<div class="nav nav-tabs mb-3">
+								<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#master">Master</button>
+								<button class="nav-link" data-bs-toggle="tab" data-bs-target="#appnosetting">Application No Setting</button>
+								<button class="nav-link" data-bs-toggle="tab" data-bs-target="#feetransnosetting">Fee Transaction No Setting</button>
+								<button class="nav-link" data-bs-toggle="tab" data-bs-target="#feereceiptnosetting">Fee Receipt No Setting</button>
+								<button class="nav-link" data-bs-toggle="tab" data-bs-target="#reportsetting">Report Setting</button>
+							</div>
+							<div class="tab-content">
+								<!-- Start Master Tab Section -->
+								<div class="tab-pane fade show active px-3" id="master">
+									<ul class="px-0">
+										<li>
+											<span>Code</span>
+											<input type="text" placeholder="Code" />
+										</li>
+										<li>
+											<span>Title</span>
+											<input type="text" placeholder="Title" />
+										</li>
+										<li>
+											<span>Display Title</span>
+											<input type="text" placeholder="Display Title" />
+										</li>
+										<li>
+											<span>Status</span>
+											<select class="select">
+												<option defaultValue>Select Status</option>
+												<option>Completed</option>
+												<option>Pending</option>
+											</select>
+										</li>
+										<li>
+											<span>Academic Year</span>
+											<select class="select">
+												<option defaultValue>Select Academic Year</option>
+												<option>2022-2026</option>
+												<option>2022-2026</option>
+											</select>
+										</li>
+									</ul>
+								</div>
+								<!-- End Master Tab Section -->
+								<!-- Start Application No Tab Section -->
+								<div class="tab-pane fade px-3" id="appnosetting">
+									<ul class="px-0">
+										<li>
+											<span>Starting Number</span>
+											<input type="text" placeholder="Starting No" />
+										</li>
+										<li>
+											<span>Current Number</span>
+											<input type="text" placeholder="Current No" />
+										</li>
+										<li>
+											<span>Prefix</span>
+											<input type="text" placeholder="Prefix" />
+										</li>
+										<li>
+											<span>Suffix</span>
+											<input type="text" placeholder="Suffix" />
+										</li>
+									</ul>
+								</div>
+								<!-- End Application No Tab Section -->
+								<!-- Start Programme Tab Section -->
+								<div class="tab-pane fade px-3" id="feetransnosetting">
+									<ul class="px-0">
+										<li>
+											<span>Starting Number</span>
+											<input type="text" placeholder="Starting No" />
+										</li>
+										<li>
+											<span>Current Number</span>
+											<input type="text" placeholder="Current No" />
+										</li>
+										<li>
+											<span>Prefix</span>
+											<input type="text" placeholder="Prefix" />
+										</li>
+										<li>
+											<span>Suffix</span>
+											<input type="text" placeholder="Suffix" />
+										</li>
+									</ul>
+								</div>
+								<!-- End Programme Tab Section -->
+								<!-- Start Eligibility Tab Section -->
+								<div class="tab-pane fade px-3" id="feereceiptnosetting">
+									<ul class="px-0">
+										<li>
+											<span>Starting Number</span>
+											<input type="text" placeholder="Starting No" />
+										</li>
+										<li>
+											<span>Current Number</span>
+											<input type="text" placeholder="Current No" />
+										</li>
+										<li>
+											<span>Prefix</span>
+											<input type="text" placeholder="Prefix" />
+										</li>
+										<li>
+											<span>Suffix</span>
+											<input type="text" placeholder="Suffix" />
+										</li>
+									</ul>
+								</div>
+								<!-- End Eligibility Tab Section -->
+								<!-- Start Fee Detail Tab Section -->
+								<div class="tab-pane fade px-3" id="reportsetting">
+									<ul class="px-0">
+										<li>
+											<span>Hall Ticket Report Title</span>
+											<input type="text" placeholder="Hall Ticket Report Title" />
+										</li>
+										<li>
+											<span>Absentee Report Title</span>
+											<input type="text" placeholder="Absentee Report Title" />
+										</li>
+										<li>
+											<span>Nominal Roll Title</span>
+											<input type="text" placeholder="Nominal Roll Title" />
+										</li>
+										<li>
+											<span>Signature Statement Title</span>
+											<input type="text" placeholder="Signature Statement Title" />
+										</li>
+										<li>
+											<span>Examination Application Title</span>
+											<input type="text" placeholder="Signature Statement Title" />
+										</li>
+									</ul>
+								</div>
+								<!-- End Fee Detail Tab Section -->
+
+								<div class="tab-pane fade px-3" id="subjects">
+									<ul class="px-0">
+										<li>
+											<span>Term Index</span>
+											<select class="select">
+												<option defaultValue>Select Term Index</option>
+												<option>Term Index 01</option>
+												<option>Term Index 02</option>
+											</select>
+										</li>
+										<li>
+											<span>Position Index</span>
+											<select class="select">
+												<option defaultValue>Select Position Index</option>
+												<option>Position Index 01</option>
+												<option>Position Index 02</option>
+											</select>
+										</li>
+										<li>
+											<span>Order Index</span>
+											<select class="select">
+												<option defaultValue>Select Order Index</option>
+												<option>Order Index 01</option>
+												<option>Order Index 02</option>
+											</select>
+										</li>
+										<li>
+											<span>Subjects</span>
+											<select class="select">
+												<option defaultValue>Select the Subject</option>
+												<option>Chemistry</option>
+												<option>Physics</option>
+											</select>
+										</li>
+										<li>
+											<span>Paper Type</span>
+											<select class="select">
+												<option defaultValue>Select Paper Type</option>
+												<option>Paper Type 01</option>
+												<option>Paper Type 02</option>
+											</select>
+										</li>
+										<li>
+											<span>Is Elective Subject</span>
+											<input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+											<label class="mx-2" for="flexRadioDefault1">Yes</label>
+											<input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+											<label class="ms-2" for="flexRadioDefault2">No</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+				<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- End Add Examination Section -->

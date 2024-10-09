@@ -1,0 +1,43 @@
+[
+    {
+      "id": "1",
+      "image": "women-printed-kurta.png",
+      "title": "Women Printed Kurta",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia",
+      "rate": 1500,
+      "originalPrice": 2499,
+      "discount": "40% Off",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "image": "shoe.png",
+      "title": "HRX by Hrithik Roshan",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia",
+      "rate": 2499,
+      "originalPrice": 4999,
+      "discount": "50% Off",
+      "rating": 4
+    },
+    {
+      "id": "3",
+      "image": "black.png",
+      "title": "Black Dress",
+      "description": "Solid Black Dress for Women, Sexy Chain Shorts Ladi...",
+      "rate": 1500,
+      "originalPrice": 2499,
+      "discount": "40% Off",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "image": "women-printed-kurta.png",
+      "title": "Women Printed Kurta",
+      "description": "Neque porro quisquam est qui dolorem ipsum quia",
+      "rate": 1500,
+      "originalPrice": 2499,
+      "discount": "40% Off",
+      "rating": 5
+    }
+  ]
+  

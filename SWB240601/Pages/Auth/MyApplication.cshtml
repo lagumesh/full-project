@@ -1,0 +1,520 @@
+﻿@page
+@model SWB240601.Pages.Auth.MyApplicationsModel
+@{
+    Layout = "_MyApplication";
+}
+<main id="main">
+    <!-- <section id="featured-services" class="featured-services"> -->
+    <!-- <section id="featured-services" class="featured-services"> -->
+    <div class="container mt-3 mb-2">
+        <div class="row align-items-center">
+            <h5 class="text-white payment-heading-bg">MY APPLICATION</h5>
+        </div>
+
+        <!-- <div class="container"> -->
+
+        <div class="row border border-radius rounded-3 border-white mt-2"
+             style="background-color: #fff;">
+            <div class="col-md-12 p-3">
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-6">
+                        <div class="card p-3">
+                            <div class="row">
+                                <!-- Applicant Number -->
+                                <div class="row justify-content-around mt-2 ">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1">Applicant Number</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@* @Model.ApplicantDetails.ApplicationNo *@</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Applying As -->
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1"> Applying As</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@* @Model.ApplicantDetails.AppliedUnitCode *@</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Additional fields -->
+                                <div class="row justify-content-around mt-2">
+                                    <!-- Applicant Number -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1">   Date of Birth </p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@* @Model.ApplicantDetails.DateOfBirth *@</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Applying As -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1"> Gender</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@*  @Model.ApplicantDetails.Gender *@</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Aadhar Number -->
+                                <div class="row justify-content-around mt-2">
+                                    <!-- Applicant Number -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1"> Aadhar Number</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@* @Model.ApplicantDetails.AadharNo *@</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Applying As -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1"> Category</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@*  @Model.ApplicantDetails.Category *@</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-around mt-2">
+                                    <!-- Applicant Number -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1"> Mobile Number</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@* @Model.ApplicantDetails.MobileNo *@</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Applying As -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1"> E-mail</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@* @Model.ApplicantDetails.EmailId *@</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-around mt-2">
+                                    <!-- Applicant Number -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1"> Unit</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@*  @Model.ApplicantDetails.AppliedUnitCode *@</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Applying As -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1"> Reservation</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@* @Model.ApplicantDetails.Reservations *@</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-center">
+                                        <img @* src="@Url.Content("Uploads" + Model.ApplicantDetails.Photo)" *@ class="img-fluid" alt="Candidate Photo">
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-center mt-3">
+                                        <img @* src="@Url.Content("Uploads" + Model.ApplicantDetails.Signatue)" *@ class="img-fluid" alt="Photo & Signature">
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-center mt-3">
+                                        <p class="payment-img-heading">Photo & Signature</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-center">
+                                        <img @* src="@Url.Content("Uploads" + Model.ApplicantDetails.IdentityCard)" *@ class="img-fluid" alt="Aadhar Photo">
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-center mt-3">
+                                        <img @* src="@Url.Content("Uploads" + Model.ApplicantDetails.Thumb)" *@ class="img-fluid" alt="Thumbprint">
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-center mt-3">
+                                        <p class="payment-img-heading">Aadhar & Thumb</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2 mb-2" data-aos="fade-right">
+
+        <div class="row align-items-center">
+            <h5 class="text-white payment-heading-bg">Payment Status</h5>
+        </div>
+    </div>
+    <div class="container border border-radius rounded-3 border-white mt-2" style="background-color: #fff;">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-10">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-6">
+                                1. Candidate Name
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-border text-dark fs-7 p-2">
+                                    Name of the person
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-10">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-6">
+                                2. Transaction Number
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-border text-dark fs-7 p-2">
+                                    861234567890
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-10">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-6">
+                                3. Payment Mode
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-border text-dark fs-7 p-2">
+                                    Credit Card
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-10">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-6">
+                                4. Transaction ID
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-border text-dark fs-7 p-2">
+                                    SBI@125bbjsah00215
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-10">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-6">
+                                5. Fees Amount
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-border text-dark fs-7 p-2">
+                                    ₹ 400
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around mt-2 mb-2">
+                    <div class="col-md-10">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-6">
+                                6. Message
+                            </div>
+                            <div class="col-6">
+                                <div class="custom-border text-Success fs-7 p-2">
+                                    Your Payment Was Success
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Payment Failed Message and Image -->
+            <div class="col-md-5 mt-5">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-end">
+                        <img src="~/assets/img/success.gif" class="img-fluid" style="margin-left: 97px;">
+                    </div>
+                    <div class="col-md-12">
+                        <h4 class="text-success fs-3">
+                            Payment Success
+                        </h4>
+                        <span class="text-success">
+                            * Please note that the payment may take up to 24 hours to be reflected.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+    </div>
+
+    <!------Remarks---->
+
+    <div class="container mt-2 mb-2" data-aos="fade-right">
+
+        <div class="row align-items-center mb-0">
+            <h5 class="text-white payment-heading-bg ">Remarks</h5>
+        </div>
+    </div>
+    <div class="container border border-radius rounded-3 border-white mt-2 bg-white">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-12">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-3">
+                                1. Endurance and Physical standard test
+                            </div>
+                            <div class="col-9">
+                                <div class="custom-border8 text-dark fs-7 p-2">
+                                    <span>
+                                        <img src="~/assets/img/Mask group (1).png"> You are qualified for
+                                        the Endurance and physical standard test.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-12">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-3">
+                                2. Written Examination
+                            </div>
+                            <div class="col-9">
+                                <div class="custom-border8 text-dark fs-7 p-2">
+
+                                    Waiting for the endurance & physical standard test results
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around mt-2 mb-3">
+                    <div class="col-md-12">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-3">
+                                3. Medical Examination
+                            </div>
+                            <div class="col-9">
+                                <div class="custom-border8 text-danger fs-7 p-2">
+                                    Yet to be announced
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <div class="container mt-2 mb-2">
+        <div class="row align-items-center">
+            <h5 class="text-white payment-heading-bg">Endurance And Physical Test</h5>
+        </div>
+    </div>
+    <div class="container border border-radius rounded-3 border-white mt-2 bg-white">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-12">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-3">
+                                1. ET/PST Ground District
+                            </div>
+                            <div class="col-9">
+                                <div class="custom-border8 text-dark fs-7 p-2">
+                                    Bengaluru City
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-12">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-3">
+                                2. ET/PST Sl. No.
+                            </div>
+                            <div class="col-9">
+                                <div class="custom-border8 text-dark fs-7 p-2">
+                                    7023
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-12">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-3">
+                                3. Application No.
+                            </div>
+                            <div class="col-9">
+                                <div class="custom-border8 text-dark fs-7 p-2">
+                                    7900483
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-12">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-3">
+                                4. Scheduled Date
+                            </div>
+                            <div class="col-9">
+                                <div class="custom-border8 text-dark fs-7 p-2">
+
+                                    13-Apr-2022
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-12">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-3">
+                                5. ET/PST Ground Name & Address
+                            </div>
+                            <div class="col-9">
+                                <div class="custom-border8 text-dark fs-7 p-2">
+
+                                    CAR South Parade Ground, Hosur Main Road, Adugodi, Bengaluru - 560030
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-around mt-2 ">
+                    <div class="col-md-12">
+                        <div class="row align-items-center justify-content-between mt-2">
+                            <div class="col-3">
+                                6. Message
+                            </div>
+                            <div class="col-9">
+                                <div class="custom-border8 text-Success fs-7 p-2">
+                                    Congrats You are Qualified for Endurance & Physical Standard Test
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mb-3 mt-2">
+                    <button class="d-flex justify-content-center align-items-center bg-success text-center text-white border rounded-3"
+                            style="width: 201px;height: 38px;">
+                        Download Call
+                        Letter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@section Scripts
+{
+    <script type="text/javascript">
+
+        function DownloadApplicationPDF(applicantNo) {
+
+            var fileName = 'Application_' + applicantNo + '.pdf';
+            //alert('hi');
+            //var urlPath = '?handler=getApplicationPath&applicantId=' + applicantNo + '';
+            //alert(urlPath);
+
+            $.ajax({
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'JSON',
+                url: '?handler=getApplicationPath&applicantId=' + applicantNo + '',
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader("XSRF-TOKEN",
+                        $('input:hidden[name="__RequestVerificationToken"]').val());
+                },
+                success:
+                    function (response) {
+                        console.log(response);
+                        var link = document.createElement('a');
+                        link.href = response.responseText;
+                        link.download = fileName;
+                        link.click();
+                        notyf.success('file ' + fileName + ' Downloaded');
+                    },
+                error:
+                    function (response) {
+                        console.log(response);
+                        alert('error: ' + response);
+                    }
+            });
+
+        }
+    </script>
+}

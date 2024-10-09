@@ -1,0 +1,130 @@
+﻿@page
+@model AKPWB240601.Pages.WrittenExam.ViewPackingPlanModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0" id="home-p">Recruitment of Stenographer and Data Entry Assistant for Scheduled Caste & Scheduled Tribes - 02 Post</p>
+        <p class="mb-0"><img class="header-below-logo" src="~/images/LOGO.png"> KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+    </div>
+    <!-- Start Breadcumb -->
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <a href="/WrittenExam/PackingPlan" class="text-decoration-none text-dark mt-2">
+                                    <span class="material-symbols-outlined me-2">arrow_back</span>
+                                </a>
+                                <h5 class="page-title mb-0">View details</h5>
+                            </div>
+
+
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Post
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Written exams
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Packing plan
+                                </li>
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>View Details
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- End Breadcumb -->
+    <div class="Preview-container p-3">
+        <div class="previews">
+            <h5 class="p-2">Packing plan details</h5>
+        </div>
+        <div class="preview-content">
+            <div class="preview">
+                <table>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Unit name<span>:</span></td>
+                        <td class="addpost-td border-box">
+                            <select class="add-post-input1 form-select">
+                                <option value="" disabled selected>Select the Unit name</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">College name<span>:</span></td>
+                        <td class="addpost-td border-box">
+                            <select class="add-post-input1 form-select">
+                                <option value="" disabled selected>Select the College name</option>
+                                <option value="option1">Option 1</option>
+                                <option value="option2">Option 2</option>
+                                <option value="option3">Option 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Capacity<span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter the Capacity" class="add-post-input1"></td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Allotted candidates <span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter the Allotted candidates " class="add-post-input1"></td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Roll no. & OMR start no.<span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter the Roll no. & OMR start no." class="add-post-input1"></td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Roll no. & OMR end no.<span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter the Roll no. & OMR end no." class="add-post-input1"></td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Allotted count<span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter the Allotted count" class="add-post-input1"></td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Extra OMR count<span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter the Extra OMR count" class="add-post-input1"></td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Extra OMR start no.<span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter the Extra OMR start no." class="add-post-input1"></td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Extra OMR end no.<span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter the Extra OMR end no." class="add-post-input1"></td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Total Count<span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter the Total Count." class="add-post-input1"></td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Total no of packets<span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter the Total no of packets." class="add-post-input1"></td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

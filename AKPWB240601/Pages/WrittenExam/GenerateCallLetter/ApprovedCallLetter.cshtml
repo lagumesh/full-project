@@ -1,0 +1,199 @@
+﻿@page
+@model AKPWB240601.Pages.WrittenExam.GenerateCallLetter.ApprovedCallLetterModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0" id="home-p">Recruitment of Stenographer and Data Entry Assistant for Scheduled Caste & Scheduled Tribes - 02 Post</p>
+        <p class="mb-0"><img class="header-below-logo" src="~/images/logo.png" />KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+    </div>
+    <!-- Start Breadcumb -->
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <a href="/WrittenExam/GenerateCallLetter/GenerateCallLetter" class="text-decoration-none text-dark mt-2">
+                                    <span class="material-symbols-outlined me-2">arrow_back</span>
+                                </a>
+                                <h5 class="page-title mb-0">Approved design</h5>
+                            </div>
+
+
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Post
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Written exams
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Nominal roll
+                                </li>
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Approved design
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Breadcumb -->
+        <div class="container-fluid m-0">
+            <div class="custom-toolbar">
+                <div class="items-per-page">
+                    <select class="form-select" id="itemsPerPage">
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                    </select>
+                    <span>Entries per page</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center gap-1">
+
+
+
+                    <!-- Work Flow Button -->
+                    <!-- Import Button -->
+                    <a class="btn add-btn" href="#" data-bs-toggle="modal" data-bs-target="#uploadModal">
+                        Import nominal roll design
+                        <i class="fa-solid fa-plus ms-1"></i>
+                    </a>
+                    <!-- Modal Structure -->
+                    <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content import-nominal">
+                                <div class="modal-header">
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="file-upload-container mt-2">
+                                        <p class="file-upload-text">Choose a file or drag & drop it here</p>
+                                        <p class="file-upload-info">JPEG, PNG, PDF, and MP4 formats, up to 50MB</p>
+                                        <label for="file-upload" class="file-upload-label">
+                                            <input type="file" id="file-upload" class="add-post-input4" />
+                                            <span>Browse file</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="table-container events-table">
+                <table class="table table-responsive rounded-3 custom-table w-100 shadow-sm mt-2" id="exampleTable">
+                    <thead>
+                        <tr>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content p-1">
+                                    <input type="checkbox" class="form-check-input me-2 header-checkbox" data-table="keyDates">
+                                    <span>Sl.No</span>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>File name</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="FileName" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="FileName" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Uploaded date</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="UploadedDate" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="UploadedDate" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Uploaded time</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="UploadedTime" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="UploadedTime" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Action</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr data-FileName="Written exam" data-UploadedDate="20 Aug 2024" data-UploadedTime="11.30 am">
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>01</span>
+                                </div>
+                            </td>
+                            <td>Written exam call letter design 01</td>
+                            <td>20 Aug 2024</td>
+                            <td>11.30 am</td>
+
+
+
+                            <td class="p-0 d-flex align-items-center">
+
+                                <a href="/WrittenExam/Nominal/ViewNominal" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1 deleting-icon" onclick="deleteRow(this)">delete</span>
+                            </td>
+
+
+
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-2 mb-5">
+                <div id="entriesInfo" class="entries-info">
+                </div>
+                <!-- Pagination -->
+                <div class="pagination-container">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-end" id="pagination">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Modal Structure -->
+
+        </div>
+
+    </section>
+
+</section>
+

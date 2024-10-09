@@ -1,0 +1,497 @@
+﻿@page
+@model UAMS3.Admin.Pages.addbatchesModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+    <section id="breadcrumb">
+        <div class="container-fluid my-2">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <div>
+                            <p class="page-title mb-0">Batch</p>
+                        </div>
+                        <ol class="breadcrumb mb-0">
+                            <i class="bi bi-house-door-fill"></i>
+                            <li class="breadcrumb-item">
+                                Dashboard <span><i class="bi bi-chevron-right"></i></span>
+                            </li>
+                            <li class="active">Batch</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Breadcumb -->
+    <!-- Start Add Batches Section -->
+    <section id="add-pages" class="add-country mb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <div class="nav nav-tabs mb-3">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#master">Master</button>
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#admission">Admission</button>
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#examination">Examination</button>
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#batch-termfee">Term Fees</button>
+                            </div>
+
+                            <!-- Start Master Tab Section -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active px-3" id="master">
+                                    <ul class="px-0">
+                                        <li>
+                                            <span>Code</span>
+                                            <input type="text" placeholder="Code" />
+                                        </li>
+                                        <li>
+                                            <span>Title</span>
+                                            <input type="text" placeholder="Title" />
+                                        </li>
+                                        <li>
+                                            <span>Display Title</span>
+                                            <input type="text" placeholder="Display Title" />
+                                        </li>
+
+                                        <li>
+                                            <span>Status</span>
+                                            <select class="select">
+                                                <option defaultValue>Select Status</option>
+                                                <option>Complete</option>
+                                                <option>Pending</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <span>Academic Year</span>
+                                            <select class="select">
+                                                <option defaultValue>Select Academic Year</option>
+                                                <option>2023-26</option>
+                                                <option>2024-27</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Master Tab Section -->
+                            <!-- Start Admission Tab Section -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="admission">
+                                    <div class="nav nav-tabs mb-3">
+                                        <div class="nav-item">
+                                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#general">General</button>
+                                        </div>
+                                        <div class="nav-item">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#course">Course</button>
+                                        </div>
+                                                                            
+                                        <div class="nav-item">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#feetransno_admission">Fee Transaction No.</button>
+                                        </div>
+                                        <div class="nav-item">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#feereceiptno_admission">Fee Receipt No.</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content ms-3">
+                                        <div class="tab-pane fade" id="general">
+                                            <ul class="px-0">
+                                                <li>
+                                                    <span>Code</span>
+                                                    <input type="text" placeholder="Code" />
+                                                </li>
+                                                <li>
+                                                    <span>Title</span>
+                                                    <input type="text" placeholder="Title" />
+                                                </li>
+                                                <li>
+                                                    <span>Admission No</span>
+                                                    <input type="text" placeholder="Admission No" />
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade show active" id="course">
+                                            <ul class="px-0">
+                                                <li>
+                                                    <span>Department</span>
+                                                    <select class="select" id="department">
+                                                        <option value="" disabled selected>Select Department</option>
+                                                        <option value="Eng">Engineering</option>
+                                                        <option value="Arts">Arts & Science</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <span>Programme</span>
+                                                    <select class="select" id="programme">
+                                                        <option value="" disabled selected>Select the Programme</option>
+                                                        <option value="Mechanical">Mechanical</option>
+                                                        <option value="B.com">B.Com</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <span>Status</span>
+                                                    <select class="select me-3" id="status">
+                                                        <option value="" disabled selected>Select the Status</option>
+                                                        <option value="Completed">Completed</option>
+                                                        <option value="Pending">Pending</option>
+                                                    </select>
+                                                </li>
+                                                <div class="d-flex flex-wrap gap-3">
+                                                    <button class="add-btn" id="addButton">Add</button>
+                                                    <button class="clear-btn" id="cancelButton">Clear</button>
+                                                </div>
+                                                <div>
+                                                    <table class="popup-table my-3 table-bordered border-primary w-100" id="selectedOptionsTable">
+                                                        <thead>
+                                                            <tr id="tableHeaders">
+                                                                <th>Department</th>
+                                                                <th>Programme</th>
+                                                                <th>Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="tableBody">
+                                                            <!-- Table body content will be added dynamically here -->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="feetransno_admission">
+                                            <ul class="px-0">
+                                                <li>
+                                                    <span>Starting Number</span>
+                                                    <input type="text" placeholder="Starting Number" />
+                                                </li>
+                                                <li>
+                                                    <span>Current Number</span>
+                                                    <input type="text" placeholder="Current Number" />
+                                                </li>
+                                                <li>
+                                                    <span>Prefix</span>
+                                                    <input type="text" placeholder="Prefix" />
+                                                </li>
+                                                <li>
+                                                    <span>Suffix</span>
+                                                    <input type="text" placeholder="Suffix" />
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="feereceiptno_admission">
+                                            <ul class="px-0">
+                                                <li>
+                                                    <span>Code</span>
+                                                    <input type="text" placeholder="Code" />
+                                                </li>
+                                                <li>
+                                                    <span>Title</span>
+                                                    <input type="text" placeholder="Title" />
+                                                </li>
+                                                <li>
+                                                    <span>Display Title</span>
+                                                    <input type="text" placeholder="Display Title" />
+                                                </li>
+                                                <li>
+                                                    <span>Academic Year</span>
+                                                    <select class="select">
+                                                        <option defaultValue>Select the AcademicYear</option>
+                                                        <option>2023-2026</option>
+                                                        <option>2022-2025</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <span>Status</span>
+                                                    <select class="select">
+                                                        <option defaultValue>Select the Status</option>
+                                                        <option>Completed</option>
+                                                        <option>Pending</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Admission Tab Section -->
+                            <!-- Start Examination Tab Section -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade" id="examination">
+                                    <div class="nav nav-tabs mb-3">
+                                        <div class="nav-item">
+                                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#general1">General</button>
+                                        </div>
+                                        <div class="nav-item">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#feetransno_admission1">Fee Transaction No.</button>
+                                        </div>
+                                        <div class="nav-item">
+                                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#feereceiptno_admission1">Fee Receipt No.</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content ms-3">
+                                        <div class="tab-pane fade show active" id="general1">
+                                            <ul class="px-0">
+                                                <li>
+                                                    <span>Programme</span>
+                                                    <select class="select" id="programme1">
+                                                        <option value="" disabled selected>Select the Programme</option>
+                                                        <option value="Mechanical">Mechanical</option>
+                                                        <option value="B.Com">B.Com</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <span>Term Index</span>
+                                                    <select class="select" id="selecttermindex1">
+                                                        <option value="" disabled selected>Select Term Index</option>
+                                                        <option value="Term Index 01">Term Index 01</option>
+                                                        <option value="Term Index 02">Term Index 02</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <span>Status</span>
+                                                    <select class="select" id="status1">
+                                                        <option value="" disabled selected>Select the Status</option>
+                                                        <option value="Completed">Completed</option>
+                                                        <option value="Pending">Pending</option>
+                                                    </select>
+                                                </li>
+                                                <div class="d-flex flex-wrap gap-3">
+                                                    <button class="add-btn" id="addButton1">Add</button>
+                                                    <button class="clear-btn" id="cancelButton1">Clear</button>
+                                                </div>
+                                                <div>
+                                                    <table class="popup-table my-3 table-bordered border-primary w-100" id="selectedOptionsTable1">
+                                                        <thead>
+                                                            <tr id="tableHeaders1">
+                                                                <th>Programme</th>
+                                                                <th>Term Index</th>
+                                                                <th>Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id="tableBody1">
+                                                            <!-- Table body content will be added dynamically here -->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="feetransno_admission1">
+                                            <ul class="px-0">
+                                                <li>
+                                                    <span>Starting Number</span>
+                                                    <input type="text" placeholder="Starting Number" />
+                                                </li>
+                                                <li>
+                                                    <span>Current Number</span>
+                                                    <input type="text" placeholder="Current Number" />
+                                                </li>
+                                                <li>
+                                                    <span>Prefix</span>
+                                                    <input type="text" placeholder="Prefix" />
+                                                </li>
+                                                <li>
+                                                    <span>Suffix</span>
+                                                    <input type="text" placeholder="Suffix" />
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane fade" id="feereceiptno_admission1">
+                                            <ul class="px-0">
+                                                <li>
+                                                    <span>Code</span>
+                                                    <input type="text" placeholder="Code" />
+                                                </li>
+                                                <li>
+                                                    <span>Title</span>
+                                                    <input type="text" placeholder="Title" />
+                                                </li>
+                                                <li>
+                                                    <span>Display Title</span>
+                                                    <input type="text" placeholder="Display Title" />
+                                                </li>
+                                                <li>
+                                                    <span>Academic Year</span>
+                                                    <select class="select">
+                                                        <option defaultValue>Select the AcademicYear</option>
+                                                        <option>2023-2026</option>
+                                                        <option>2022-2025</option>
+                                                    </select>
+                                                </li>
+                                                <li>
+                                                    <span>Status</span>
+                                                    <select class="select">
+                                                        <option defaultValue>Select the Status</option>
+                                                        <option>Completed</option>
+                                                        <option>Pending</option>
+                                                    </select>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Examination Tab Section -->
+                            <!-- Start term fee Section -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade show  px-3" id="batch-termfee">
+                                    <ul class="px-0">
+                                        <li>
+                                            <span>Batch</span>
+                                            <select class="select">
+                                                <option defaultValue>Select Batch</option>
+                                                <option>Batch 01</option>
+                                                <option>Batch 02</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <span>Programme Code</span>
+                                            <select class="select">
+                                                <option defaultValue>Select Programme Code</option>
+                                                <option>C000001</option>
+                                                <option>M000002</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <span>Term Index</span>
+                                            <select class="select">
+                                                <option defaultValue>Select Term Index</option>
+                                                <option>Term Index 01</option>
+                                                <option>Term Index 02</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <span>Fees Group Code</span>
+                                            <select class="select">
+                                                <option defaultValue>Select Fees Group Code</option>
+                                                <option>12345</option>
+                                                <option>12345</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <span>Fees Type</span>
+                                            <select class="select">
+                                                <option defaultValue>Select Fees Type</option>
+                                                <option>Online</option>
+                                                <option>Offline</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <span>Start Date</span>
+                                            <input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+                                        </li>
+                                        <li>
+                                            <span>End Date</span>
+                                            <input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+                                        </li>
+                                        <li>
+                                            <span>Status</span>
+                                            <select class="select">
+                                                <option defaultValue>Select Status</option>
+                                                <option>Process</option>
+                                                <option>Pending</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End term fee Section -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+                <button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+            </div>
+        </div>
+    </section>
+</section>
+<!-- End Add Batches Section -->
+
+
+<script>
+    document.getElementById("addButton").addEventListener("click", function () {
+        var department = document.getElementById("department").value;
+        var programme = document.getElementById("programme").value;
+        var status = document.getElementById("status").value;
+
+        if (department && programme && status) {
+            var tableBody = document.getElementById("tableBody");
+
+            var newRow = document.createElement("tr");
+            var departmentCell = document.createElement("td");
+            var programmeCell = document.createElement("td");
+            var statusCell = document.createElement("td");
+
+            departmentCell.textContent = department;
+            programmeCell.textContent = programme;
+            statusCell.textContent = status;
+
+            newRow.appendChild(departmentCell);
+            newRow.appendChild(programmeCell);
+            newRow.appendChild(statusCell);
+
+            tableBody.appendChild(newRow);
+
+            // Clear select options
+            document.getElementById("department").selectedIndex = 0;
+            document.getElementById("programme").selectedIndex = 0;
+            document.getElementById("status").selectedIndex = 0;
+        } else {
+            alert("Please select all options");
+        }
+    });
+
+    document.getElementById("cancelButton").addEventListener("click", function () {
+        var tableBody = document.getElementById("tableBody");
+        tableBody.innerHTML = "";
+    });
+
+    // EXAMINATION GENERAL TAB TABLE
+
+    function setupForm(buttonId, clearButtonId, departmentId, programmeId, statusId, tableBodyId, tableHeadersId) {
+        document.getElementById(buttonId).addEventListener("click", function () {
+            var department = document.getElementById(departmentId).value;
+            var programme = document.getElementById(programmeId).value;
+            var status = document.getElementById(statusId).value;
+
+            if (department && programme && status) {
+                var tableBody = document.getElementById(tableBodyId);
+
+                var newRow = document.createElement("tr");
+                var departmentCell = document.createElement("td");
+                var programmeCell = document.createElement("td");
+                var statusCell = document.createElement("td");
+
+                departmentCell.textContent = department;
+                programmeCell.textContent = programme;
+                statusCell.textContent = status;
+
+                newRow.appendChild(departmentCell);
+                newRow.appendChild(programmeCell);
+                newRow.appendChild(statusCell);
+
+                tableBody.appendChild(newRow);
+
+                // Clear select options
+                document.getElementById(departmentId).selectedIndex = 0;
+                document.getElementById(programmeId).selectedIndex = 0;
+                document.getElementById(statusId).selectedIndex = 0;
+            } else {
+                alert("Please select all options");
+            }
+        });
+
+        document.getElementById(clearButtonId).addEventListener("click", function () {
+            var tableBody = document.getElementById(tableBodyId);
+            tableBody.innerHTML = "";
+        });
+    }
+
+    // Setup for the second set of dropdowns/buttons
+    setupForm("addButton1", "cancelButton1", "programme1", "selecttermindex1", "status1", "tableBody1", "tableHeaders1");
+
+</script>

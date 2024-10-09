@@ -1,0 +1,84 @@
+﻿@page
+@model UAMS3.Admin.Pages.addexaminationtimetablesModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Examination Time Table</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Examination Time Table</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add Exam Time Table Section -->
+	<section id="add-pages" class="add-country mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<p class="card-title px-3 py-1">Examination Time Table Details</p>
+						<div class="card-body px-3 py-2">
+							<ul class="px-0">
+								<li>
+									<span>Examination</span>
+									<select class="select">
+										<option defaultValue>Select Examination</option>
+										<option>Examination 01</option>
+										<option>Examination 02</option>
+									</select>
+								</li>
+								<li>
+									<span>Examination Date</span>
+									<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+								</li>
+								<li>
+									<span>Time</span>
+									<input type="text" placeholder="Time" />
+								</li>
+								<li>
+									<span>Session</span>
+									<select class="select">
+										<option defaultValue>Select Session</option>
+										<option>Forenoon</option>
+										<option>Afternoon</option>
+									</select>
+								</li>
+								<li>
+									<span>Subject</span>
+									<select class="select">
+										<option defaultValue>Select Subject</option>
+										<option>Chemistry</option>
+										<option>Physics</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+				<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- End Add Exam Time Table Section -->

@@ -1,0 +1,9 @@
+[
+  { "id": "1", "src": "homeimg-1", "label": "Beauty" },
+  { "id": "2", "src": "homeimg-2", "label": "Fashion" },
+  { "id": "3", "src": "homeimg-3", "label": "Kids" },
+  { "id": "4", "src": "homeimg-4", "label": "Mens" },
+  { "id": "5", "src": "homeimg-5", "label": "Womens" },
+  { "id": "6", "src": "homeimg-6", "label": "Gifts" },
+  
+]

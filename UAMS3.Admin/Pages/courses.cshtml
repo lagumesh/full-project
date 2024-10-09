@@ -1,0 +1,99 @@
+﻿@page
+@model UAMS3.Admin.Pages.coursesModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Course</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Course</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Courses Section -->
+	<section class="course mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<!-- Start Add Delete Section -->
+					<section class="delete-add-search mb-3">
+						<div class="card">
+							<div class="card-body py-2">
+								<div class="d-flex justify-content-between align-items-center">
+									<div>
+										<button class="delete-btn"><span><i class="bi bi-trash3"></i></span>Delete</button>
+										<select class="select me-2 status-dropdown" aria-label="Default select example">
+											<option defaultValue>Status</option>
+											<option>Enabled</option>
+											<option>Disabled</option>
+										</select>
+									</div>
+									<a href="/addcourses">
+										<button class="add-btn"><span><i class="bi bi-plus-lg"></i></span>Add</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- End Add Delete Section -->
+
+					<!-- Start Courses Table Section -->
+					<div class="table-responsive">
+						<table id="example" class="table table-striped table-hover" style="width: 100%">
+							<thead>
+								<tr>
+									<th></th>
+									<th>Code</th>
+									<th>Title</th>
+									<th>Display Title</th>
+									<th>Batch</th>
+									<th>Department</th>
+									<th>Degree</th>
+									<th>Status</th>
+									<th>Actions</th>
+								</tr>
+							</thead>
+
+							<tbody>
+								<tr>
+									<td></td>
+									<td>98765</td>
+									<td>Title of the Title 01</td>
+									<td>Display Title 01</td>
+									<td>2022-2024</td>
+									<td>(B.E) Mechanical</td>
+									<td>UG</td>
+									<td>Enabled</td>
+									<td class="icon">
+										<i class="bi bi-pen"></i>
+										<i class="bi bi-eye"></i>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- End Courses Table Section -->
+				</div>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- End Courses Section -->

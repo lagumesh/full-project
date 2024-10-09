@@ -1,0 +1,1464 @@
+﻿@page
+@model AKPWB240601.Pages.RegisterFormModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0"><img class="header-below-logo" src="~/images/logo.png"> KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+        <p class="mb-0" id="home-p">Police Constable (Civil) (Men & Women) & (Transgender Men & Women) & Inservice & Backlog</p>
+    </div>
+<section id="main" class="main">
+    <section id="breadcrumb">
+        <div class="container-fluid my-1">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <a href="/ApplicantDetails/RegistrationTotalApplicantDetails" class="text-decoration-none text-dark mt-2">
+                                <span class="material-symbols-outlined me-2">arrow_back</span>
+                            </a>
+                            <h5 class="page-title mb-0">Add details</h5>
+                        </div>
+
+
+                        <ul class="breadcrumb mb-0">
+                            <li class="breadcrumb-item">
+                                <a href="/Posts" class="text-decoration-none">
+                                    Post
+                                </a>
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">
+                                    chevron_right
+                                </span>Applicant details
+                            </li>
+                            <li class="active">
+                                <span class="material-symbols-outlined">
+                                    chevron_right
+                                </span>Add Details
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <div class="container application-formheading">
+        <div class="text-center">
+            <h4>Police Constable (Civil) (Men & Women) & (Transgender Men & Women) & Inservice & Backlog</h4>
+            <h5 class="kannada-font"><span class="av-font-kn">¥ÉÇ°Ã¸ï PÁ£ÉìÖÃ§¯ï (¹«¯ï) (¥ÀÅgÀÄμÀgÀÄ ªÀÄvÀÄÛ ªÀÄ»¼ÉAiÀÄgÀÄ) & (mÁæ£ÉìÓAqÀgï ¥ÀÅgÀÄμÀgÀÄ ªÀÄvÀÄÛ ªÀÄ»¼ÉAiÀÄgÀÄ) ªÀÄvÀÄÛ ¸ÉÃªÉ ªÀÄvÀÄÛ ¨ÁåPÁèUï
+        </div>
+    </div>
+ 
+    <section id="new-application">
+    <div class="container newapplicationv2">
+        <form style="margin-top: 2em;" id="applicationForm" enctype="multipart/form-data" autocomplete="off" class="col-lg-12 col-md-12" method="post">
+            <p class="text-danger text-right fw-bold">* Fill all the details / ಎಲ್ಲಾ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ</p>
+            <div class="border rounded shadow p-3 mb-3 bg-white">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label for="candidate-type"> Applying Post <i class="invalid">*</i>/ <span class="av-font-kn">¤ÃªÀÅ Cfð ¸À°è¸ÀÄwÛgÀÄªÀÅzÀÄ :</span><br /><span class="text-warning">*Applicants applying for both Stenographer and Data Entry Assistant posts are required to submit separate application for each of the post.</span></label>
+                            <select class="form-select mt-2">
+                                <option value="" selected disabled>Select the Post</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------------------- Personal Details -------------------------->
+            <div class="inputchanges">
+                <fieldset class="mb-3">
+                    <h4 class="card-title">Personal Details / ವೈಯಕ್ತಿಕ ವಿವರಗಳು</h4>
+                    <div class="border rounded p-3 bg-white">
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="name" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3" style="align-self: self-start;">1.</div>
+                                        <div>
+                                            Applicant Full Name : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">C¨sÀåyðAiÀÄ ¥ÀÆtð ºÉ¸ÀgÀÄ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text"
+                                       class="form-control" />
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="fname" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3" style="align-self: self-start;">2.</div>
+                                        <div>
+                                            Father's Name : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">vÀAzÉAiÀÄ ºÉ¸ÀgÀÄ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text"
+                                    class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3" style="align-self: self-start;">3.</div>
+                                        <div>
+                                            Mother's Name : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">vÁ¬ÄAiÀÄ ºÉ¸ÀgÀÄ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text"
+                                       class="form-control">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3" style="align-self: self-start;">4.</div>
+                                        <div>
+                                            Email ID : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">EªÉÄÃ¯ï Lr :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="email" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">                          
+                           <div class="col-sm-6 mb-2">
+                                <label class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3" style="align-self: self-start;">5.</div>
+                                        <div>
+                                            Mobile Number : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">ªÉÆ¨ÉÊ¯ï ¸ÀASÉå :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input class="form-control" type="number">
+                                <p class="mb-0 ms-3 text-warning fw-bold">* All informations will be sent to this Mobile Number</p>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3" style="align-self: self-start;">6.</div>
+                                        <div>
+                                            Aadhar Number : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">DzsÁgï ¸ÀASÉå :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3" style="align-self: self-start;">7.</div>
+                                        <div>
+                                            Date of Birth :<i class="invalid">*</i><br>
+                                            <span class="av-font-kn">ºÀÄnÖzÀ ¢£ÁAPÀ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="date" class="form-control">
+
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3" style="align-self: self-start;">7a.</div>
+                                        <div>
+                                            Age of Applicant as on 04th July 2024 :<i class="invalid">*</i><br>
+                                            <span class="av-font-kn">
+                                                04£ÉÃ dÆ£ï 2024 gÀAvÉ C¨sÀåyðAiÀÄ
+                                                ªÀAiÀÄ¸ÀÄì :
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" name="ageofason" id="ageof40" class="form-control" readonly>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row gender">
+                            <div class="col-sm-6">
+                                <label class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-3" style="align-self: self-start;">8.</div>
+                                        <div>
+                                            Gender : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">°AUÀ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <select class="form-select">
+                                    <option value="" selected disabled>Select your Gender</option>
+                                </select>
+                                <label for="Applicant.Reservation.GenderCode" class="error" style="display:none;"></label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <!-------------------- Address Details --------------------------->
+                <fieldset class="mb-3">
+                    <h4 class="card-title">Postal Address Details / ವಿಳಾಸದ ವಿವರಗಳು</h4>
+                    <div class="border rounded p-3 bg-white">
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="door" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">9a.</div>
+                                        <div>
+                                            Door No : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">ªÀÄ£É ¸ÀASÉå :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input class="form-control" type="text">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="street" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">9b.</div>
+                                        <div>
+                                            Street : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">gÀ¸ÉÛ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="area" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">9c.</div>
+                                        <div>
+                                            Nearby Landmark :<i class="invalid">*</i><br>
+                                            <span class="av-font-kn">ºÀwÛgÀzÀ ¯ÁåAqïªÀiÁPïð :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="taluk" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">9d.</div>
+                                        <div>
+                                            Taluk : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">vÁ®ÆPÀÄ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="city" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">9e.</div>
+                                        <div>
+                                            City : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">£ÀUÀgÀ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="state" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">9f.</div>
+                                        <div>
+                                            State : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">gÁdå :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <select class="form-select">
+                                    <option value="" selected default>Select State</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="district" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">9g.</div>
+                                        <div>
+                                            District : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">f¯Éè :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <select class="form-select">
+                                    <option value="">Select District</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6" id="otherDistrict" style="display: none;">
+                                <label for="otherdistrict" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">9g(i).</div>
+                                        <div>
+                                            If selected other district mention the Specific District : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">
+                                                EvÀgÀ f¯Éè DAiÉÄÌ ªÀiÁqÀ¯ÁVzÀÝgÉ EvÀgÀ
+                                                f¯ÉèAiÀÄ£ÀÄß G¯ÉèÃT¹ :
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                                <!-- <span class="invalid" id="nativeDistrictError"></span> -->
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="pincode" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">9h.</div>
+                                        <div>
+                                            Pincode : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">¦£ÉÆÌÃqï :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control" id="pincodeInput">
+                                <span class="invalid" id="pincodeError"></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="nativeDistrict" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">10.</div>
+                                        <div>
+                                            Native District : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">ªÀÄÆ® f¯Éè :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                                <!-- <span class="invalid" id="nativeDistrictError"></span> -->
+                            </div>
+                        </div>
+                        <div class="form-group row mt-3">
+                            <label class="col-sm-6 col-form-label">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">11.</div>
+                                    <div>
+                                        Postal Address and Permanent Address are Same? <i class="invalid">*</i><br>
+                                        <span class="   av-font-kn">±Á±ÀévÀ «¼Á¸À ªÀÄvÀÄÛ CAZÉ «¼Á¸À MAzÉÃ?</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="col-sm-6 pt-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio"
+                                           value="True">
+                                    <label class="form-check-label" for="addressSameyes">Yes / ಹೌದು</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio"
+                                           value="False">
+                                    <label class="form-check-label" for="addressSameno">No / ಇಲ್ಲ</label>
+                                </div>
+                                <label for="Applicant.ContactAddress.IsPermanentAddressSame" class="error" style="display:none;"></label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <!-- Permanent Address details -->
+                <fieldset class="mb-3" id="permanentAddressDiv" style="display: none;">
+                    <h4 class="card-title">Permanent Address Details / ವಿಳಾಸದ ವಿವರಗಳು</h4>
+                    <div class="border rounded p-3 bg-white">
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="perdoor" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">11a.</div>
+                                        <div>
+                                            Door No : <i class="invalid">*</i> <br>
+                                            <span class="av-font-kn">ªÀÄ£É ¸ÀASÉå :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                                <!-- <span class="invalid" id="doorno"></span> -->
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="perstreet" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">11b.</div>
+                                        <div>
+                                            Street : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">gÀ¸ÉÛ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                                <!-- <span class="invalid" id="streetError"></span> -->
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label for="pertaluk" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">11c.</div>
+                                        <div>
+                                            Taluk : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">vÁ®ÆPÀÄ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                                <!-- <span class="invalid" id="talukError"></span> -->
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="percity" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">11d.</div>
+                                        <div>
+                                            City : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">£ÀUÀgÀ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                                <!-- <span class="invalid" id="cityError"></span> -->
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label class="col-form-label" for="perstate">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">11e.</div>
+                                        <div>
+                                            State : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">gÁdå :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <select class="form-select">
+                                    <option value="">Select State</option>
+                                </select>
+                            </div>
+                              <div class="col-sm-6">
+                                <label for="perdistrictper" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">11f.</div>
+                                        <div>
+                                            District : <i class="invalid">*</i> <br>
+                                            <span class="av-font-kn">f¯Éè :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <select class="form-select">
+                                    <option value="">Select a District</option>
+                                    <option value="OTR">Other District</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                          
+                            <div class="col-sm-6" id="permanentAddressotherdist" style="display: none;">
+                                <label class="col-form-label" for="otherdistper">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">11f(i).</div>
+                                        <div>
+                                            If selected other district mention the Specific District :<i class="invalid">*</i><br>
+                                            <span class="av-font-kn">
+                                                EvÀgÀ f¯Éè DAiÉÄÌ ªÀiÁqÀ¯ÁVzÀÝgÉ EvÀgÀ
+                                                f¯ÉèAiÀÄ£ÀÄß G¯ÉèÃT¹ :
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                             
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <label class="col-form-label" for="perpincode">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">11g.</div>
+                                        <div>
+                                            Pincode : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">¦£ÉÆÌÃqï :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control" >
+                             
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="col-form-label" for="perlandmark">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">11h.</div>
+                                        <div>
+                                            Nearby Landmark : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">ºÀwÛgÀzÀ ¯ÁåAqïªÀiÁPïð :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                             
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Reservation Details -->
+                <fieldset class="mb-3">
+                    <h4 class="card-title">Reservation Details / ಮೀಸಲಾತಿ ವಿವರಗಳು</h4>
+                    <div class="border rounded p-3 bg-white">
+                        <!-- 4 questions with dropdown options -->
+                        <div class="form-group row mb-0">
+                            <label class="col-form-label col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">12.</div>
+                                    <div>
+                                        Category : <i class="invalid">*</i><br>
+                                        <span class="av-font-kn">¥ÀæªÀUÀð :</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="col-sm-6">
+                                <select class="form-select">
+                                    <option value="" selected disabled>Select Category</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-3" id="subcastedate">
+                            <div class="col-sm-6">
+                                <label class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">12a.</div>
+                                        <div>
+                                            Sub Caste : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">G¥À eÁw :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">12b.</div>
+                                        <div>
+                                            Date of Issue of Subcaste certificate : <i class="invalid">*</i><br>
+                                            <span class="av-font-kn">
+                                                G¥À eÁw ¥ÀæªÀiÁt¥ÀvÀæzÀ «vÀgÀuÉAiÀÄ ¢£ÁAPÀ :
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="date" class="form-control form-select">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-form-label col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">13.</div>
+                                    <div>
+                                        Are you a Government Employee?<i class="invalid">*</i><br>
+                                        <span class="av-font-kn">¤ÃªÀÅ ¸ÀPÁðj £ËPÀgÀgÉÃ?</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="col-sm-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio"
+                                           value="True">
+                                    <label class="form-check-label" for="govt-yes">Yes / ಹೌದು</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio"
+                                           value="False" >
+                                    <label class="form-check-label" for="govt-no">No / ಇಲ್ಲ</label>
+                                </div>
+                                <label for="Applicant.Reservation.AreYouAGovermentEmployee" class="error" style="display:none;"></label>
+                            </div>
+                            <div class="col-sm-6" id="govtdate">
+                                <label for="dojoi" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">13a.</div>
+                                        <div>
+                                            Date of Joining?<i class="invalid">*</i><br>
+                                            <span class="av-font-kn">
+                                                ¤ÃªÀÅ AiÀiÁªÁUÀ ¸ÀPÁðj ¸ÉÃªÉUÉ
+                                                ¸ÉÃjgÀÄwÛÃj?
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="date" class="form-control form-select">
+                            </div>
+                            <div class="col-sm-6" id="govtdept">
+                                <label for="subcaste" class="col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">13b.</div>
+                                        <div>
+                                            Government Department :<i class="invalid">*</i><br>
+                                            <span class="av-font-kn">¸ÀPÁðj E¯ÁSÉ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div id="govtrendered">
+                            <div class="form-group row">
+                                <label for="govtServiceyears" class="col-form-label col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">13c.</div>
+                                        <div>
+                                            How many years of Service have you rendered?<i class="invalid">*</i><br>
+                                            <span class="av-font-kn">¤ÃªÀÅ JμÀÄÖ ªÀμÀðUÀ¼À ¸ÉÃªÉ ¤Ãr¢ÝÃj?</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="col-sm-6">
+                                    <div class="form-row row pt-2 inputchanges2">
+                                        <div class="col-4">
+                                            <label class="form-check-label" for="exyearsOfService">
+                                                Years /
+                                                <span class="av-font-kn">ªÀμÀðUÀ¼ÀÄ</span>
+                                            </label>
+                                            <select class="form-select" style="width: 90% !important;">
+                                                <option value="" selected disabled>Select Year</option>
+                                                @for (int year = 1; year <= 50; year++)
+                                                {
+                                                    <option value="@year">@year</option>
+                                                }
+                                            </select>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <label class="form-check-label" for="exMonthsOfService">
+                                                Months /
+                                                <span class="av-font-kn">wAUÀ¼ÀÄUÀ¼ÀÄ</span>
+                                            </label>
+                                            <select class="form-select" style="width: 90% !important;">
+                                               <option value="" selected disabled>Select Month</option>
+                                                @for (int month = 1; month <= 11; month++)
+                                                {
+                                                    <option value="@month">@month</option>
+                                                }
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <label class="form-check-label" for="exdaysOfService">
+                                                Days / <span class="av-font-kn">¢£ÀUÀ¼ÀÄ</span>
+                                            </label>
+                                            <select  class="form-select" style="width: 90% !important;">
+                                                <option value="" selected disabled>Select Days</option>
+                                                @for (int days = 1; days <= 30; days++)
+                                                {
+                                                    <option value="@days">@days</option>
+                                                }
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <label class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">13d.</div>
+                                            <div>
+                                                Designation in Govt. Department?<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">¸ÀPÁðj E¯ÁSÉAiÀÄ°è ºÀÄzÉÝ?</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control" >
+                                </div>
+                            </div>
+
+                        </div>
+                            <div class="form-group row" id="havedeptenq">
+                                <label class="col-md-6 col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">13e.</div>
+                                        <div>
+                                            Have you been involved in any Dept. Enquiry?<i class="invalid">*</i><br>
+                                            <span class="av-font-kn">
+                                                AiÀiÁªÀÅzÁzÀgÀÆ E¯ÁSÁ «ZÁgÀuÉAiÀÄ°è
+                                                zÉÆÃ¶AiÀiÁV¢ÝÃgÁ?
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio"
+                                               value="True" >
+                                        <label class="form-check-label" for="departmentalenquiryyes">
+                                            Yes /
+                                            ಹೌದು
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio"
+                                               value="False">
+                                        <label class="form-check-label" for="departmentalenquiryno">
+                                            No /
+                                            ಇಲ್ಲ
+                                        </label>
+                                    </div>
+                                    <label for="Applicant.CriminalActivity.HasDepartmentEnquiry" class="error" style="display:none;"></label>
+                                </div>
+
+                            </div>
+                            <div class="form-group row" id="deptenq">
+                                <label class="col-sm-6 col-form-label">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">13e(i).</div>
+                                        <div>
+                                            If Yes, mention the details :<i class="invalid">*</i><br>
+                                            <span class="av-font-kn">ºËzÀÄ JAzÀgÉ «ªÀgÀUÀ¼À£ÀÄß G¯ÉèÃT¹ :</span>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <div class="col-sm-6">
+                                    <textarea class="form-control"
+                                              rows="4"></textarea>
+                                    <span class="char-counter" id="charCounter2">500 characters left</span>
+                                    <!-- <span class="invalid" id="criminalcases"></span> -->
+                                </div>
+
+                            </div>
+
+                        <div class="form-group row">
+                            <label class="col-md-6 col-form-label">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">14.</div>
+                                    <div>
+                                        Have you been involved in any Criminal Cases?<i class="invalid">*</i><br>
+                                        <span class="av-font-kn">
+                                            AiÀiÁªÀÅzÁzÀgÀÆ C¥ÀgÁzsÀ ¥ÀæPÀgÀtzÀ°è
+                                            ¨sÁVAiÀiÁV¢ÝÃgÁ?
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="col-md-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio"
+                                           value="True" >
+                                    <label class="form-check-label" for="criminalcases-yes">Yes / ಹೌದು</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio"
+                                           value="False" >
+                                    <label class="form-check-label" for="criminalcases-no">No / ಇಲ್ಲ</label>
+                                </div>
+                                <label for="Applicant.CriminalActivity.IsInvolvedInCriminalActivity" class="error" style="display:none;"></label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row" id="criminalcases1">
+                            <label class="col-sm-6 col-form-label">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">14a.</div>
+                                    <div>
+                                        If Yes, mention the details :<i class="invalid">*</i><br>
+                                        <span class="av-font-kn">ºËzÀÄ JAzÀgÉ «ªÀgÀUÀ¼À£ÀÄß G¯ÉèÃT¹ :</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="col-sm-6">
+                                <textarea class="form-control"
+                                          rows="4"></textarea>
+                                <span class="char-counter" id="charCounter">350 characters left</span>
+                                <!-- <span class="invalid" id="criminalcases"></span> -->
+                            </div>
+                        </div>
+
+
+                        
+
+                        <div class="form-group row">
+                            <label class="col-form-label col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">15.</div>
+                                    <div>
+                                        Have you been convicted in a Criminal Case?<i class="invalid">*</i><br>
+                                        <span class="av-font-kn">
+                                            ¤ÃªÀÅ C¥ÀgÁzsÀ ªÉÆPÀzÀÝªÉÄAiÀÄ°è ²PÉëUÉ
+                                            M¼À¥ÀnÖgÀÄ«gÁ?
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="col-md-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio"
+                                           value="True" >
+                                    <label class="form-check-label" for="criminalcasesconvicted-yes">
+                                        Yes /
+                                        ಹೌದು
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" value="False" >
+                                    <label class="form-check-label" for="criminalcasesconvicted-no">
+                                        No /
+                                        ಇಲ್ಲ
+                                    </label>
+                                </div>
+                                <label for="Applicant.CriminalActivity.IsConvictedInCriminalCase" class="error" style="display:none;"></label>
+                            </div>
+                        </div>
+
+                        <div class="form-group row" id="criminalcases2">
+                            <label for="convictedDetails" class="col-sm-6 col-form-label">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">15a.</div>
+                                    <div>
+                                        If Yes, mention the details :<i class="invalid">*</i><br>
+                                        <span class="av-font-kn">ºËzÀÄ JAzÀgÉ «ªÀgÀUÀ¼À£ÀÄß G¯ÉèÃT¹ :</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="col-sm-6">
+                                <textarea class="form-control"
+                                          rows="4"></textarea>
+                                <span class="char-counter" id="charCounter3">350 characters left</span>
+                                <!-- <span class="invalid" id="criminalcases"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Education Details -->
+                <fieldset class="mb-3">
+                    <h4 class="card-title">Educational Qualification Details / <span class="av-font-kn">ಶೈಕ್ಷಣಿಕ ಅರ್ಹತೆಯ ವಿವರಗಳು</span></h4>
+                    <div class="border rounded p-3 bg-white">
+                        <h5 class="card-title-2">SSLC Details / ಪ್ರೌಢಶಾಲೆಯ ವಿವರಗಳು</h5>
+                        <div class="form-group row mt-3">
+                            <label for="sslcPassed" class="col-sm-6 col-form-label">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">16.</div>
+                                    <div>
+                                        Passed in SSLC / Equivalent?
+                                        <i class="invalid">*</i><br>
+                                        <span class="av-font-kn">J¸ïJ¸ïJ¯ï¹ ¥ÀjÃPÉë ¥Á¸ï DV¢ÝÃgÁ?</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="col-md-6 pt-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio"
+                                           value="True">
+                                    <label class="form-check-label" for="passedsslcyes">Yes / ಹೌದು</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio"
+                                           value="False">
+                                    <label class="form-check-label" for="passedsslcno">No / ಇಲ್ಲ</label>
+                                </div>
+                                <label for="Applicant.EducationalQualification.IsSSLCHolder" class="error" style="display:none;"></label>
+                            </div>
+                        </div>
+
+                        <div id="sslchide">
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <label for="sslcboard" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">16a.</div>
+                                            <div>
+                                                SSLC Board :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">
+                                                    J¸ïJ¸ïJ¯ï¹ GwÛÃtðgÁzÀ ¨ÉÆÃqïð
+                                                    ºÉ¸ÀgÀÄ :
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <select class="form-select">
+                                        <option value="" selected disabled>Select SSLC Board</option>
+                                        <option value="OR" >Other Board</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6" id="sslcotherboard">
+                                    <label for="othersslcboard" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">16a(i).</div>
+                                            <div>
+                                                If Selected other board, Enter the Board Name :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">
+                                                    EvÀgÀ ¨ÉÆÃqïð C£ÀÄß DAiÉÄÌ ªÀiÁrzÀgÉ,
+                                                    ¨ÉÆÃqïð ºÉ¸ÀgÀ£ÀÄß £ÀªÀÄÆ¢¹ :
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <label for="kanEducation" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">16b.</div>
+                                            <div>
+                                                In SSLC, have you studied Kannada Language as?<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">
+                                                    J¸ïJ¸ïJ¯ï¹ ¥ÀjÃPÉëAiÀÄ°è PÀ£ÀßqÀªÀ£ÀÄß
+                                                    C¨sÀå¹¹¢ÝÃgÁ?
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <select  style="height:38px; border-radius:5px;" >
+                                        <option value="" selected disabled>Select Language</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">16c.</div>
+                                            <div>
+                                                Year of Passing SSLC:<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">
+                                                    J¸ïJ¸ïJ¯ï¹ ¥ÀjÃPÉëAiÀÄ° GwÛÃtðgÁzÀ
+                                                    ªÀμÀð:
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <select  style="height:38px; border-radius:5px;">
+                                        <option value="" selected disabled>Select Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">16d.</div>
+                                        <div>
+                                            Marks or Grade?<i class="invalid">*</i><br>
+                                            <span class="av-font-kn"> CAPÀUÀ¼ÀÄ CxÀªÁ UÉæÃqï?</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="col-form-label col-sm-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio"
+                                               value="M" >
+                                        <label class="form-check-label" for="sslcmarksyes1">
+                                            Marks /
+                                            ಅಂಕಗಳು
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio"
+                                               value="G" >
+                                        <label class="form-check-label" for="sslcmarksno1">
+                                            Grade /
+                                            ಗ್ರೇಡ್
+                                        </label>
+                                    </div>
+                                    <label for="Applicant.EducationalQualification.SSLCQualification.MarkType" class="error" style="display:none;"></label>
+                                </div>
+                            </div>
+
+                            <div class="form-group row" id="sslcgrade">
+                                <div class="col-sm-6">
+                                    <label class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">16d(i).</div>
+                                            <div>
+                                           Maximum marks in SSLC :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">J¸ïJ¸ïJ¯ï ¹AiÀÄ°è UÀjμÀ× CAPÀUÀ¼ÀÄ :</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <label class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">16d(ii).</div>
+                                            <div>
+                                              Marks Obtained in SSLC :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">
+                                                    J¸ïJ¸ïJ¯ï ¹AiÀÄ°è ¥ÀqÉzÀ
+                                                    CAPÀUÀ¼ÀÄ :
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group row" id="sslcgradeobtained">
+                                <div class="col-sm-6 ">
+                                    <label class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">16d(i).</div>
+                                            <div>
+                                                Grade Obtained in SSLC :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">J¸ï J¸ï J¯ï ¹AiÀÄ°è ¥ÀqÉzÀ UÉæÃqï :</span>
+                                            </div>
+                                        </div>
+                                    </label>
+
+                                    <input type="text" class="form-control">
+                                    <!-- <span class="invalid" id="marksobtained"></span> -->
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <label class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">16e.</div>
+                                            <div>
+                                                Percentage/CGPA in SSLC :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">J¸ï J¸ï J¯ï ¹AiÀÄ°è ±ÉÃ./¹f¦J :</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control"
+                                           readonly >
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                               
+                                <div class="col-sm-6">
+                                    <label for="sslcregistrationNumber" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">16f.</div>
+                                            <div>
+                                                SSLC Registration Number :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">J¸ïJ¸ïJ¯ï¹ £ÉÆÃAzÀtÂ ¸ÀASÉå :</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control"  oninput="preventContinuousZeros(this)">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PUC Qualification -->
+
+                        <div class="mt-3">
+
+                            <h5 class="card-title-2">Qualifying Exam PUC / Equivalent Details / ಅರ್ಹತಾ ಪರೀಕ್ಷೆ ಪಿಯುಸಿ / ತತ್ಸಮಾನ ವಿವರಗಳು</h5>
+
+                            <div class="form-group row mt-3">
+                                <label for="niospucexam" class="col-form-label col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">17.</div>
+                                        <div>
+                                            Do you possess PUC Qualification / Equivalent?<i class="invalid">*</i><br>
+                                            <span class="av-font-kn">
+                                                <span style="font-family: 'Courier New', Courier, monospace;">NIOS/PUC</span>
+                                                ¨ÉÆÃqïð ¥ÀjÃPÉëAiÀÄ°è GwÛÃtðgÁV¢ÝÃgÁ?
+                                            </span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio"
+                                               value="True" >
+                                        <label class="form-check-label" for="passedpucyes">Yes / ಹೌದು</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio"
+                                               value="False" >
+                                        <label class="form-check-label" for="passedpucno">No / ಇಲ್ಲ</label>
+                                    </div>
+                                    <label for="Applicant.EducationalQualification.IsPUCHolder" class="error" style="display:none;"></label>
+                                </div>
+                            </div>
+                            <div class="form-group row" id="yoppuc">
+
+                                <div class="col-sm-6">
+                                    <label for="pucboard" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">17a.</div>
+                                            <div>
+                                                PUC Board :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">¦AiÀÄÄ¹ GwÛÃtðgÁzÀ ¨ÉÆÃqïð ºÉ¸ÀgÀÄ :</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <select class="form-select"  >
+                                        <option value="">Select PUC Board</option>
+                                        <option value="OR">Other Board</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-sm-6" id="pucotherboard">
+                                    <label for="otherspucboard" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">17a(i).</div>
+                                            <div>
+                                                If Selected other board, Enter the Board Name :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">
+                                                    EvÀgÀ ¨ÉÆÃqïð C£ÀÄß DAiÉÄÌ ªÀiÁrzÀgÉ,
+                                                    ¨ÉÆÃqïð ºÉ¸ÀgÀ£ÀÄß £ÀªÀÄÆ¢¹ :
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <label for="pucyearofpassing" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">17b.</div>
+                                            <div>
+                                                Year of Passing PUC :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">¦AiÀÄÄ¹ GwÛÃtðgÁzÀ ªÀμÀð :</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <select class="form-select" >
+                                        <option value="">Select Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row" id="puceducation">
+                                <label for="" class="col-form-label col-sm-6">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-2" style="align-self: self-start;">17c.</div>
+                                        <div>
+                                            Marks or Grade?<i class="invalid">*</i><br>
+                                            <span class="av-font-kn">CAPÀUÀ¼ÀÄ CxÀªÁ UÉæÃqï?</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <div class="col-form-label col-md-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio"
+                                               value="M" >
+                                        <label class="form-check-label" for="marksyespuc">
+                                            Marks /
+                                            ಅಂಕಗಳು
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio"
+                                               value="G">
+                                        <label class="form-check-label" for="marksnopuc">Grade / ಗ್ರೇಡ್</label>
+                                    </div>
+                                    <label for="Applicant.EducationalQualification.PUCQualification.MarkType" class="error" style="display:none;"></label>
+                                </div>
+                            </div>
+                            <div class="form-group row" id="markspuc">
+                                <div class="col-sm-6">
+                                    <label for="maxMarks" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">17c(i).</div>
+                                            <div>
+                                                Maximum marks in PUC :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">¦AiÀÄÄ¹AiÀÄ°è UÀjμÀ× CAPÀUÀ¼ÀÄ :</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <label for="marksObtained" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">17c(ii).</div>
+                                            <div>
+                                              Marks Obtained in PUC :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">¦AiÀÄÄ¹AiÀÄ°è UÀ½¹zÀ CAPÀUÀ¼ÀÄ :</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control manualpucpercentage">
+                                </div>
+                            </div>
+                            <div class="form-group row" id="gradeobtained">
+                                <div class="col-sm-6 ">
+                                    <label for="gradeObtained" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">17c(i).</div>
+                                            <div>
+                                               Grade Obtained in PUC :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">¦AiÀÄÄ¹AiÀÄ°è ¥ÀqÉzÀ UÉæÃqï :</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control"  />
+                                </div>
+                            </div>
+                            <div class="form-group row" id="pucPercentage">
+                                <div class="col-sm-6">
+                                    <label for="percentageCGPA" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">17d.</div>
+                                            <div>
+                                                Percentage / CGPA in PUC :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">¦AiÀÄÄ¹AiÀÄ°è ±ÉÃ./ ¹f¦J :</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control" readonly >
+                                </div>
+
+                               
+
+                                <div class="col-sm-6">
+                                    <label for="pucregistrationNumber" class="col-form-label">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2" style="align-self: self-start;">17e.</div>
+                                            <div>
+                                                PUC Registration Number :<i class="invalid">*</i><br>
+                                                <span class="av-font-kn">¦AiÀÄÄ¹ £ÉÆÃAzÀtÂ ¸ÀASÉå :</span>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Degree -->
+
+                        <div class="mt-2">
+
+                            <h5 class="card-title-2">Degree Details / ಪದವಿ ವಿವರಗಳು</h5>
+
+                            <div class="form-group row mt-3">
+                            <label for="degreeHolder" class="col-form-label col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">18.</div>
+                                    <div>
+                                        Are you a degree holder?<i class="invalid">*</i><br>
+                                        <span class="av-font-kn">¥ÀzÀ« ºÉÆA¢gÀÄ«gÁ ?</span>
+                                    </div>
+                                </div>
+                            </label>
+                            <div class="col-md-6">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio"
+                                           value="True">
+                                    <label class="form-check-label" for="degpassedyes">Yes / ಹೌದು</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio"
+                                           value="False" >
+                                    <label class="form-check-label" for="degpassedno">No / ಇಲ್ಲ</label>
+                                </div>
+                                <label for="Applicant.EducationalQualification.IsDegreeHolder" class="error" style="display:none;"></label>
+                            </div>
+                        </div>
+                        </div>
+
+
+                        <!-- Qualification -->
+
+                        
+
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h3 class="card-title">Documents Upload / ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ</h3>
+                      <div class="border rounded p-3 bg-white">
+
+                        <div class="form-group row">
+                            <label class="col-form-label col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">20.</div>
+                                    <div>
+                                        Select the Uploading Identity Card :<i class="invalid">*</i><br>
+                                        <span class="av-font-kn">
+                                            C¥ï¯ÉÆÃqï ªÀiÁqÀÄªÀ UÀÄgÀÄw£À aÃnAiÀÄ£ÀÄß
+                                            DAiÉÄÌªÀiÁr :
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="col-sm-6">
+                                <select class="form-select">
+                                    <option value="" selected disabled>Select Document</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-form-label col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">21.</div>
+                                    <div>
+                                        Identity Card No :<i class="invalid">*</i><br>
+                                        <span class="av-font-kn">UÀÄgÀÄw£À aÃn ¸ÀASÉå :</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control">
+                                <!-- <span class="invalid" id="idValid"></span> -->
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-form-label col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">22.</div>
+                                    <div>
+                                        Identification Mark-01 :<i class="invalid">*</i><br>
+                                        <span class="av-font-kn">zÉÃºÀzÀ ªÉÄÃ°£À UÀÄgÀÄvÀÄ-01 :</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group row mb-3">
+                            <label class="col-form-label col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-2" style="align-self: self-start;">23.</div>
+                                    <div>
+                                        Identification Mark-02 :<i class="invalid">*</i><br>
+                                        <span class="av-font-kn">zÉÃºÀzÀ ªÉÄÃ°£À UÀÄgÀÄvÀÄ-02 :</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control">
+
+                            </div>
+                        </div>
+
+
+                     @*    <div class="row d-flex justify-content-center"> *@
+                            <div class="container">
+                                <div class="row d-flex justify-content-around">
+                                    @* Applicant Phot & Sign *@
+                                    <div class="col-md-4 mb-3">
+                                        <div class="uploadfile">
+                                            <div class="center border">
+                                                <div class="title">
+                                                <h1 class="fw-bold">Applicant Photo & Signature <i class="invalid">*</i> <br /> <span class="av-font-kn">CfðzÁgÀgÀ ¥sÉÇÃmÉÆÃ ªÀÄvÀÄÛ ¸À»</span> <p class="mb-0 fw-bold text-warning" style="font-size:13px !important">(Maximum/Minimum Upload Size 400KB/10KB - JPEG, JPG, PNG)</p> </h1>
+                                                </div>                        
+                                             <div class="dropzone">
+                                                    <img src="" class="upload-icon" id="imgPhoto">
+                                                    <input type="file" class="upload-input"  accept="image/jpeg, image/png">
+                                                </div>
+                                                <button type="button" class="btn btn-primary" name="uploadbutton" id="photoUpload">
+                                                    Photo & Signature
+                                                </button>
+                                          
+                                                <label for="Applicant_Photo" class="error" style="display:none;"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   @* Applicant Phot & Sign *@
+
+                                    <!-- Thumb Impression -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="uploadfile">
+                                            <div class="center border">
+                                                <div class="title">
+                                                    <h1 class="fw-bold">
+                                                    Applicant Left Thumb Impression <i class="invalid">*</i> <br /> <span class="av-font-kn">
+                                                            CfðzÁgÀgÀ JqÀ ºÉ¨ÉâgÀ½£À UÀÄgÀÄvÀÄ
+                                                        </span>
+                                                    <p class="mb-0 fw-bold text-warning" style="font-size:13px !important">(Maximum/Minimum Upload Size 150KB/10KB - JPEG, JPG, PNG)</p>
+                                                    </h1>
+                                                </div>
+                                                <div class="dropzone">
+                                                    <img src="" class="upload-icon" id="imgThumb">
+                                                    <input type="file" class="upload-input"  accept="image/jpeg, image/png">
+                                                </div>
+                                                <button type="button" class="btn btn-primary" name="uploadbutton" id="thumbUpload">
+                                                    Left Thumb
+                                                    Impression
+                                                </button>
+                                                <label for="Applicant_Thumb" class="error" style="display:none;"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- ID Card -->
+                                    <div class="col-md-4 mb-3">
+                                        <div class="uploadfile">
+                                            <div class="center border">
+                                                <div class="title">
+                                                <h1 class="fw-bold">Applicant ID Card <i class="invalid">*</i> <br /> <span class="av-font-kn">CfðzÁgÀ£À UÀÄgÀÄw£À aÃn</span><p class="mb-0 fw-bold text-warning" style="font-size:13px !important">(Maximum/Minimum Upload Size 400KB/10KB - JPEG, JPG, PNG)</p> </h1>
+                                                </div>
+                                                <div class="dropzone" >
+                                                    <img src="" class="upload-icon" id="imgIdentityCard">
+                                                    <input type="file" class="upload-input" accept="image/jpeg, image/png">
+                                                </div>
+                                                <button type="button" class="btn btn-primary" name="uploadbutton" id="IdUpload">
+                                                    Applicant ID Card
+                                                </button>
+                                                <label for="Applicant_IdentityCard" class="error" style="display:none;"></label>
+                                            </div>
+                                        </div>
+                                    </div>                          
+                                </div>
+                            </div>
+                @*         </div> *@
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <div class="d-flex justify-content-center mt-4 mb-5">
+                <div class="text-center mx-5">
+                    <button class="thm-btn cm-btn btn-preview mb-3" type="button" id="preview-btn" onclick="showPreview()"><i class="far fa-eye"></i> Preview </button>
+                </div>
+            </div>
+
+
+            
+        </form>
+    </div>
+</section>
+   
+
+</section>

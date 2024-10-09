@@ -1,0 +1,241 @@
+﻿@page
+@model AKPWB240601.Pages.WrittenExam.CenterAllotments.CenterAllotmentsModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0" id="home-p">Recruitment of Stenographer and Data Entry Assistant for Scheduled Caste & Scheduled Tribes - 02 Post</p>
+        <p class="mb-0"><img class="header-below-logo" src="~/images/logo.png" />KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+    </div>
+    <!-- Start Breadcumb -->
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div>
+                                <h5 class="page-title mb-0">Centre allotments</h5>
+                            </div>
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Post
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Written exam
+                                </li>
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Centre allotments
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Breadcumb -->
+        <div class="container-fluid m-0">
+            <div class="custom-toolbar">
+                <div class="items-per-page">
+                    <select class="form-select" id="itemsPerPage">
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                    </select>
+                    <span>Entries per page</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center gap-1">
+                    <form class="search-container">
+                        <div class="search-wrapper position-relative">
+                            <input type="text" id="search-bar" placeholder="Search..." class="form-control">
+                            <span class="material-symbols-outlined search-icon">
+                                search
+                            </span>
+                            <span class="material-symbols-outlined close-icon">
+                                close
+                            </span>
+                        </div>
+
+
+
+                    </form>
+
+
+                    <!-- Export Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn export-btn dropdown-toggle" id="exportButton" data-bs-toggle="dropdown">
+                            Export
+                        </button>
+                        <ul class="dropdown-menu export-dropdown m-0 p-0" aria-labelledby="exportButton">
+                            <li>
+                                <a class="dropdown-item" href="#" id="exportExcel">
+                                    <span>Excel</span>
+                                    <i class="bi bi-download ms-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" id="exportPDF">
+                                    <span>Pdf</span>
+                                    <i class="bi bi-download ms-3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Add Button -->
+                    <a class="btn add-btn" href="/WrittenExam/CenterAllotments/AddCenterAllotments">
+                        Add
+                        <i class="fa-solid fa-plus ms-1"></i>
+                    </a>
+                </div>
+
+
+
+            </div>
+
+            <div class="table-container events-table">
+                <table class="table table-responsive rounded-3 custom-table w-100 shadow-sm mt-2" id="exampleTable">
+                    <thead>
+                        <tr>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content p-1">
+                                    <input type="checkbox" class="form-check-input me-2 header-checkbox" data-table="keyDates">
+                                    <span>Sl.No</span>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>District code</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="DistrictCode" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="DistrictCode" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Center code</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="CenterCode" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="CenterCode" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Center name</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="CenterName" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="CenterName" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Capacity</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="Capacity" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="Capacity" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Allotted</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="Allotted" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="Allotted" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Action</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr data-DistrictCode="012345678" data-CenterCode="123456780" data-CenterName="KCET" data-Capacity="1578" data-Allotted="1342">
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>01</span>
+                                </div>
+                            </td>
+                            <td>012345678</td>
+                            <td>123456780.</td>
+                            <td>KCET (For Karnataka Residing Candidates).</td>
+                            <td>1578</td>
+                            <td>1342</td>
+
+
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/WrittenExam/CenterAllotments/EditCenterAllotments" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/WrittenExam/CenterAllotments/ViewCenterAllotments" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1 deleting-icon" onclick="deleteRow(this)">delete</span>
+                            </td>
+
+                        </tr>
+
+                        <tr data-DistrictCode="012345679" data-CenterCode="123456781" data-CenterName="SCET" data-Capacity="1579" data-Allotted="1343">
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>02</span>
+                                </div>
+                            </td>
+                            <td>012345679</td>
+                            <td>123456781.</td>
+                            <td>SCET (For Karnataka Residing Candidates).</td>
+                            <td>1579</td>
+                            <td>1343</td>
+
+
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/WrittenExam/CenterAllotments/EditCenterAllotments" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/WrittenExam/CenterAllotments/ViewCenterAllotments" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1 deleting-icon" onclick="confirmDelete(this)">delete</span>
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-2 mb-5">
+                <div id="entriesInfo" class="entries-info">
+                </div>
+                <!-- Pagination -->
+                <div class="pagination-container">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-end" id="pagination">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+    </section>
+
+</section>

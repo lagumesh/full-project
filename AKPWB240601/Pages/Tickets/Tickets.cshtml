@@ -1,0 +1,437 @@
+﻿@page
+@model AKPWB240601.Pages.Tickets.TicketsModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0" id="home-p">Recruitment of Stenographer and Data Entry Assistant for Scheduled Caste & Scheduled Tribes - 02 Post</p>
+        <p class="mb-0"><img class="header-below-logo" src="~/images/logo.png" />KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+    </div>
+    <!-- Start Breadcumb -->
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div>
+                                <h5 class="page-title mb-0">Tickets</h5>
+                            </div>
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Post
+                                    </a>
+                                </li>
+                               
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Tickets
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Breadcumb -->
+        <div class="container-fluid d-flex justify-content-end m-0">
+            <!-- Add Button -->
+            <a class="btn add-btn" href="/Tickets/CreateNewTicket">
+                Create new ticket
+                <i class="fa-solid fa-plus ms-1"></i>
+            </a>
+        </div>
+
+        <div class="container-fluid p-3 mb-5">
+            <div class="card ticket-card">
+                <!-- Sidebar -->
+                <div class="ticket-sidebar">
+                    <h5 class="sidebar-ticket-heading mb-0">My tickets</h5>
+                    <div class="ticket-item-container">
+                        <div class="ticket-item" data-id="08">
+                            <div class="d-flex justify-content-between align-items-center">
+                               
+                                <h6 class="ticket-heading mb-0"> <input type="checkbox" class="ticket-checkbox">Ticket - ID #08</h6>
+                                <span class="ticket-span">Sep 05</span>
+                            </div>
+
+                            <div class="tickets-meritlist">Merit list should generate</div>
+                            <span class="ticket-status">Pending</span>
+                        </div>
+
+
+                        <div class="ticket-item" data-id="07">
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <h6 class="ticket-heading mb-0"> <input type="checkbox" class="ticket-checkbox">Ticket - ID #07</h6>
+                                <span class="ticket-span">Sep 05</span>
+                            </div>
+                            <div class="tickets-meritlist"> Merit list should generate</div>
+                            <span class="ticket-status">Pending</span>
+                        </div>
+                        <div class="ticket-item" data-id="06">
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <h6 class="ticket-heading mb-0"> <input type="checkbox" class="ticket-checkbox">Ticket - ID #06</h6>
+                                <span class="ticket-span">Sep 05</span>
+                            </div>
+                            <div class="tickets-meritlist">Merit list should generate</div>
+                            <span class="ticket-status">Pending</span>
+                        </div>
+                        <div class="ticket-item" data-id="05">
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <h6 class="ticket-heading mb-0"> <input type="checkbox" class="ticket-checkbox">Ticket - ID #05</h6>
+                                <span class="ticket-span">Sep 05</span>
+                            </div>
+                            <div class="tickets-meritlist">Merit list should generate</div>
+                            <span class="ticket-status completed">Completed</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <!-- Ticket Details -->
+                <div class="ticket-details">
+                    <div id="ticket-08" class="ticket-detail-content">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="mb-0">Merit list should generate</h4>
+                            <button class="dropdown btn Status-btn dropdown-toggle" id="exportButton" data-bs-toggle="dropdown">
+                                Status
+                                <ul class="dropdown-menu export-dropdown m-0 p-0" aria-labelledby="exportButton">
+                                    <li>
+                                        <a class="dropdown-item">
+                                            <span>option 1</span> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item">
+                                            <span>option 2</span> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </button>
+                        </div>
+                       
+                        <p class="ticketdetails-p mb-0">Ticket-ID: #08 <span>|</span> <span> Created: 05/09/2024</span></p>
+                        <hr />
+                        <div class="icon-container mb-1">
+                            <span class="material-symbols-outlined">
+                                arrow_back
+                            </span>
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                            <span class="material-symbols-outlined">
+                                reply
+                            </span>
+                            <span class="material-symbols-outlined">
+                                reply_all
+                            </span>
+                        </div>
+
+
+
+                        <div class="message">
+                            <div class="message-header">
+                                <span><img src="/images/profile-img.png" class="ticket-img" />Abhishek</span>
+                                <span>Sep 09, 2024</span>
+                            </div>
+                            <p class="ticket-img-p">To Name name@gmail.com</p>
+                            <p class="ms-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+
+
+                        <div class="message mt-3">
+                            <div class="message-header">
+                                <span><img src="/images/profile-img.png" class="ticket-img" />Abhishek</span>
+                                <span>Sep 09, 2024</span>
+                            </div>
+                            <p class="ticket-img-p">To Name name@gmail.com</p>
+                            <p class="ms-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <div class="card message-header-card ms-5">
+                                    <p class="mb-0">Screen shot.png</p>
+                                    <p class="mb-0">16 sep 2024, 10.30 am</p>
+                                </div>
+                                <div class="card message-header-card">
+                                    <p class="mb-0">Screen shot.png</p>
+                                    <p class="mb-0">16 sep 2024, 10.30 am</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ticket-07" class="ticket-detail-content" style="display: none;">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="mb-0">Merit list should generate</h4>
+                            <button class="dropdown btn Status-btn dropdown-toggle" id="exportButton" data-bs-toggle="dropdown">
+                                Status
+                                <ul class="dropdown-menu export-dropdown m-0 p-0" aria-labelledby="exportButton">
+                                    <li>
+                                        <a class="dropdown-item">
+                                            <span>option 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item">
+                                            <span>option 2</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </button>
+                        </div>
+
+                        <p class="ticketdetails-p mb-0">Ticket-ID: #07 <span>|</span> <span> Created: 04/09/2024</span></p>
+                        <hr />
+                        <div class="icon-container mb-1">
+                            <span class="material-symbols-outlined">
+                                arrow_back
+                            </span>
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                            <span class="material-symbols-outlined">
+                                reply
+                            </span>
+                            <span class="material-symbols-outlined">
+                                reply_all
+                            </span>
+                        </div>
+
+
+
+                        <div class="message">
+                            <div class="message-header">
+                                <span><img src="/images/profile-img.png" class="ticket-img" />Lagumesh</span>
+                                <span>Sep 09, 2024</span>
+                            </div>
+                            <p class="ticket-img-p">To Name name@gmail.com</p>
+                            <p class="ms-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+
+
+                        <div class="message mt-3">
+                            <div class="message-header">
+                                <span><img src="/images/profile-img.png" class="ticket-img" />Lagumesh</span>
+                                <span>Sep 09, 2024</span>
+                            </div>
+                            <p class="ticket-img-p">To Name name@gmail.com</p>
+                            <p class="ms-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <div class="card message-header-card ms-5">
+                                    <p class="mb-0">Screen shot.png</p>
+                                    <p class="mb-0">16 sep 2024, 10.30 am</p>
+                                </div>
+                                <div class="card message-header-card">
+                                    <p class="mb-0">Screen shot.png</p>
+                                    <p class="mb-0">16 sep 2024, 10.30 am</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="ticket-06" class="ticket-detail-content" style="display: none;">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="mb-0">Merit list should generate</h4>
+                            <button class="dropdown btn Status-btn dropdown-toggle" id="exportButton" data-bs-toggle="dropdown">
+                                Status
+                                <ul class="dropdown-menu export-dropdown m-0 p-0" aria-labelledby="exportButton">
+                                    <li>
+                                        <a class="dropdown-item">
+                                            <span>option 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item">
+                                            <span>option 2</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </button>
+                        </div>
+
+                        <p class="ticketdetails-p mb-0">Ticket-ID: #06 <span>|</span> <span> Created: 04/09/2024</span></p>
+                        <hr />
+                        <div class="icon-container mb-1">
+                            <span class="material-symbols-outlined">
+                                arrow_back
+                            </span>
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                            <span class="material-symbols-outlined">
+                                reply
+                            </span>
+                            <span class="material-symbols-outlined">
+                                reply_all
+                            </span>
+                        </div>
+
+
+
+                        <div class="message">
+                            <div class="message-header">
+                                <span><img src="/images/profile-img.png" class="ticket-img" />Maruthi</span>
+                                <span>Sep 09, 2024</span>
+                            </div>
+                            <p class="ticket-img-p">To Name name@gmail.com</p>
+                            <p class="ms-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+
+
+                        <div class="message mt-3">
+                            <div class="message-header">
+                                <span><img src="/images/profile-img.png" class="ticket-img" />Maruthi</span>
+                                <span>Sep 09, 2024</span>
+                            </div>
+                            <p class="ticket-img-p">To Name name@gmail.com</p>
+                            <p class="ms-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <div class="card message-header-card ms-5">
+                                    <p class="mb-0">Screen shot.png</p>
+                                    <p class="mb-0">16 sep 2024, 10.30 am</p>
+                                </div>
+                                <div class="card message-header-card">
+                                    <p class="mb-0">Screen shot.png</p>
+                                    <p class="mb-0">16 sep 2024, 10.30 am</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="ticket-05" class="ticket-detail-content" style="display: none;">
+                        <div class="d-flex justify-content-between">
+                            <h4 class="mb-0">Merit list should generate</h4>
+                            <button class="dropdown btn Status-btn dropdown-toggle" id="exportButton" data-bs-toggle="dropdown">
+                                Status
+                                <ul class="dropdown-menu export-dropdown m-0 p-0" aria-labelledby="exportButton">
+                                    <li>
+                                        <a class="dropdown-item">
+                                            <span>option 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item">
+                                            <span>option 2</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </button>
+                        </div>
+
+                        <p class="ticketdetails-p mb-0">Ticket-ID: #06 <span>|</span> <span> Created: 04/09/2024</span></p>
+                        <hr />
+                        <div class="icon-container mb-1">
+                            <span class="material-symbols-outlined">
+                                arrow_back
+                            </span>
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                            <span class="material-symbols-outlined">
+                                reply
+                            </span>
+                            <span class="material-symbols-outlined">
+                                reply_all
+                            </span>
+                        </div>
+
+
+
+                        <div class="message">
+                            <div class="message-header">
+                                <span><img src="/images/profile-img.png" class="ticket-img" />Sangameshwar</span>
+                                <span>Sep 09, 2024</span>
+                            </div>
+                            <p class="ticket-img-p">To Name name@gmail.com</p>
+                            <p class="ms-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+
+
+                        <div class="message mt-3">
+                            <div class="message-header">
+                                <span><img src="/images/profile-img.png" class="ticket-img" />Sangameshwar</span>
+                                <span>Sep 09, 2024</span>
+                            </div>
+                            <p class="ticket-img-p">To Name name@gmail.com</p>
+                            <p class="ms-5">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <div class="card message-header-card ms-5">
+                                    <p class="mb-0">Screen shot.png</p>
+                                    <p class="mb-0">16 sep 2024, 10.30 am</p>
+                                </div>
+                                <div class="card message-header-card">
+                                    <p class="mb-0">Screen shot.png</p>
+                                    <p class="mb-0">16 sep 2024, 10.30 am</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const ticketItems = document.querySelectorAll('.ticket-item');
+        const ticketDetails = document.querySelectorAll('.ticket-detail-content');
+
+        ticketItems.forEach(item => {
+            item.addEventListener('click', function () {
+                const ticketId = this.getAttribute('data-id');
+
+                // Hide all ticket details
+                ticketDetails.forEach(detail => {
+                    detail.style.display = 'none';
+                });
+
+                // Remove 'active' class from all ticket items
+                ticketItems.forEach(ticketItem => {
+                    ticketItem.classList.remove('active');
+                });
+
+                // Add 'active' class to the clicked ticket item
+                this.classList.add('active');
+
+                // Show the clicked ticket details
+                const detailToShow = document.getElementById('ticket-' + ticketId);
+                if (detailToShow) {
+                    detailToShow.style.display = 'block';
+                }
+            });
+        });
+    });
+
+
+</script>

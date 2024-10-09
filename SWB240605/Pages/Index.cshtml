@@ -1,0 +1,198 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <section id="news-events">
+    <div class="container">
+        <div class="row">
+            <div id="section-title" class="d-flex align-items-center">
+                <img id="icons" src="~/assets/img/News_Icon.png" alt="News_Icon" />
+                <h5 class="mb-0">RECENT NEWS & EVENTS</h5>
+            </div>
+            <div class="card">
+                <div class="card-body p-3 d-flex justify-content-start align-items-center">
+                    <div class="me-4">
+                        <p class="mb-0">01</p>
+                    </div>
+                    <div class="ms-3 me-5 text-center">
+                        <img id="icons" class="mb-2" src="~/assets/img/Calender_Icon.png" alt="Calender_Icon" />
+                        <p class="mb-0">19-JUN-24</p>
+                    </div>
+                    <div>
+                        <h5>Date of Commencement of Online Application</h5>
+                        <h5 class="fw-bold av-font-kn">D£ï¯ÉÊ£ï Cfð ¸À°è¸À®Ä ¥ÁægÀA¨sÀªÁUÀÄªÀ ¢£ÁAPÀ.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> *@
+
+<!-- Start Age Creteria Section -->
+<section id="age-creteria">
+    <div class="container">
+        <div class="row">
+            <div id="section-title" class="d-flex align-items-center">
+                <img id="icons" src="~/assets/img/Age_Creteria_Icon.png" alt="" />
+                <h5 class="mb-0">AGE CRITERIA</h5>
+            </div>
+
+            <div class="table-responsive p-0">
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Category</th>
+                            <th colspan="2">Minimum Age</th>
+                            <th colspan="2">Maximum Age</th>
+                            <th rowspan="2">Overage</th>
+                            <th rowspan="2">Underage</th>
+                        </tr>
+                        <tr>
+                            <th>Age</th>
+                            <th>Date</th>
+                            <th>Age</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>SC, ST</td>
+                            <td>18</td>
+                            <td>
+                                04-07-2006<br />
+                                Before
+                            </td>
+                            <td>40</td>
+                            <td>
+                                04-07-1984<br />
+                                After
+                            </td>
+                            <td>
+                                03-07-1984 <br />
+                                and Before
+                            </td>
+                            <td>
+                                05-07-2006 <br />
+                                and After
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7">BORN BETWEEN 04-07-1984 AND 04-07-2006 (BOTH DAYS INCLUSIVE)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5"><span class="kannada-font">ªÀAiÉÆÃ«ÄwAiÀÄ£ÀÄß ¥ÀjUÀtÂ¸ÀÄªÀ ¢£ÁAPÀ </span> / AGE CONSIDERATION DATE</td>
+                            <td colspan="2">
+                                <button class="btn age-btn" data-bs-toggle="modal" data-bs-target="#ageModal">
+                                    Know your age as on 04-07-2024
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Age Creteria Section -->
+<!-- Start Key Dates Section -->
+<section id="news-events">
+    <div class="container">
+        <div class="row">
+            <div id="section-title" class="d-flex align-items-center">
+                <img id="icons" src="~/assets/img/KeyDates_Calender_Icon.png" alt="News_Icon" />
+                <h5 class="mb-0">KEY DATES</h5>
+            </div>
+            <div class="table-responsive p-0">
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <th>
+                                SL.NO <br />
+                                <span class="kannada-font">PÀæªÀÄ ¸ÀASÉå</span>
+                            </th>
+                            <th>
+                                DESCRIPTION <br />
+                                <span class="kannada-font">«ªÀgÀ</span>
+                            </th>
+                            <th>
+                                DATES <br />
+                                <span class="kannada-font">¢£ÁAPÀ</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>
+                                Date of Commencement of Online Application <br />
+                                <span class="kannada-font">D£ï¯ÉÊ£ï Cfð ¸À°è¸À®Ä ¥ÁægÀA¨sÀªÁUÀÄªÀ ¢£ÁAPÀ</span>
+                            </td>
+                            <td>19-06-2024</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>
+                                Last Date of Online Application Generation <br />
+                                <span class="kannada-font">D£ï¯ÉÊ£ï Cfð ¸À°è¸À®Ä PÉÆ£ÉAiÀÄ ¢£ÁAPÀ</span>
+                            </td>
+                            <td>04-07-2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Key Dates Section -->
+<!-- Modal -->
+<div class="modal fade" id="ageModal" tabindex="-1" role="dialog" aria-labelledby="ageModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ageModalLabel">Select Your Date of Birth</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="text" class="form-control dtp" id="dob" placeholder="Select Date">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn calculate-age">Calculate Age</button>
+                <p id="age-display"></p>
+            </div>
+            <div id="ageResult" class="text-center fw-bold pb-3"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Start Notes Section -->
+<section id="notes">
+    <div class="container">
+        <div class="row">
+            <div id="section-title" class="d-flex align-items-center">
+                <img id="icons" src="~/assets/img/Notes_Icon.png" alt="News_Icon" />
+                <h5 class="mb-0">NOTES</h5>
+            </div>
+            <ul>
+                <li class="d-flex">
+                    <img class="tick-icon" src="~/assets/img/Tick_Mark.png" alt="" />
+                    <p>
+                        If Applicants Submit more than one Application for the Same Post, Only One Application (Finally Submitted) will be Considered.<br />
+                        <span class="kannada-font">
+                            C¨sÀåyðAiÀÄÄ MAzÀQÌAvÀ ºÉZÀÄÑ CfðAiÀÄ£ÀÄß MAzÉÃ ºÀÄzÉÝUÉ ¸À°è¹zÀÝ°è , MAzÉÃ CfðAiÀÄ£ÀÄß(CAwªÀÄªÁV ¸À°è¹zÀ) ªÀiÁvÀæ
+                            ¥ÀjUÀtÂ¸À¯ÁUÀÄªÀÅzÀÄ.
+                        </span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- End Notes Section -->

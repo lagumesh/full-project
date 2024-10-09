@@ -1,0 +1,370 @@
+﻿@page
+@model UAMS3.Admin.Pages.addadmissionregistrationsModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Admission Registration</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Admission Registration</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add Admission Reg Section -->
+@* 	 <section id="add-pages" class="add-country mb-5">
+	 	<div class="container-fluid">
+	 		<div class="row">
+	 			<div class="col-12">
+	 				<div class="card">
+	 					<p class="card-title px-3 py-1">Admission Registration Details</p>
+	 					<div class="card-body px-3 py-2">
+	 						<ul class="px-0">
+	 							<li>
+	 								<span>Registration Number</span>
+	 								<input type="text" placeholder="Enter Registration No" />
+	 							</li>
+	 							<li>
+	 								<span>Full Name</span>
+	 								<input type="text" placeholder="Enter Full Name" />
+	 							</li>
+	 							<li>
+	 								<span>Mobile Number</span>
+	 								<input type="number" placeholder="Enter Mobile No" />
+	 							</li>
+	 							<li>
+	 								<span>Email ID</span>
+	 								<input type="email" placeholder="Enter Email ID" />
+	 							</li>
+
+	 							<li>
+	 								<span>Applied Post</span>
+	 								<select class="select">
+	 									<option defaultValue>Select Applied Post</option>
+	 									<option>B.E</option>
+	 									<option>MBA</option>
+	 								</select>
+	 							</li>
+	 							<li>
+	 								<span>Payment Status</span>
+	 								<select class="select">
+	 									<option defaultValue>Select Status</option>
+	 									<option>Process</option>
+	 									<option>Pending</option>
+	 								</select>
+	 							</li>
+	 						</ul>
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</div>
+	 		<div class="d-flex justify-content-between align-items-center">
+	 			<button class="back-btn">Back</button>
+	 			<button class="save-btn">Save</button>
+	 		</div>
+	 	</div>
+	 </section> *@
+
+
+	<!-- Registration Preview Form -->
+	<section id="add-pages" class="add-country mb-5">
+	<div class="container-fluid registration">
+		<div class="row">
+			<div class="col-12">
+				<div class="pop-up-card">
+					@* <div class="modal fade"
+						 id="staticBackdrop"
+						 data-bs-backdrop="static"
+						 data-bs-keyboard="false"
+						 tabindex="-1"
+						 aria-labelledby="staticBackdropLabel"
+						 aria-hidden="true"> *@
+					@* 	<div class="modal-dialog centered modal-xl">
+							<div class="modal-content"> *@
+							@* 	<div class="modal-header">
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div> *@
+								@* <div class="modal-body"> *@
+									<!-- Registration Details -->
+									<div class="registration-details mb-3">
+										<div class="card text-start rounded-1">
+											<p class="card-title">Registration Details</p>
+											<div class="card-body">
+												<div class="d-flex flex-wrap justify-content-between align-items-center">
+													<div class="mb-2">
+														<label class="form-label">1. Registration Number</label>
+														<input disabled type="number" class="form-control" id="RegNo" placeholder="12345678" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label">2. Full Name</label>
+														<input disabled type="text" class="form-control" id="FullName" placeholder="Dharan" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label">3. Mobile number</label>
+														<input disabled type="number" class="form-control" id="MobileNo" placeholder="9999999999" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label">4. Email Id</label>
+														<input disabled type="email" class="form-control" id="EmailId" placeholder="emailid@email.com" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- College Details -->
+									<div class="college-details mb-3">
+										<div class="card text-start rounded-1">
+											<p class="card-title">College Details</p>
+											<div class="card-body">
+												<div class="d-flex flex-wrap justify-content-between align-items-center">
+													<div class="mb-2">
+														<label class="form-label"> 5. College <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="College" placeholder="SRM" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 6. Course <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="Course" placeholder="B.E" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 7. Department <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="Dept" placeholder="Mechanical" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Personal Details -->
+									<div class="personal-details mb-3">
+										<div class="card text-start rounded-1">
+											<p class="card-title">Personal Details</p>
+											<div class="card-body">
+												<div class="d-flex flex-wrap justify-content-between align-items-center">
+													<div class="mb-2">
+														<label class="form-label"> 8. Father's Name<span class="text-danger"> *</span> </label>
+														<input disabled type="text" class="form-control" id="FatherName" placeholder="ArulmozhiVarman" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 9. Mother's Name <span class="text-danger"> *</span> </label>
+														<input disabled type="text" class="form-control" id="MotherName" placeholder="Trisha" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 10. Date of Birth <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="DOB" placeholder="07-02-1992" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 11. Gender <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="Gender" placeholder="Male" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 12. Aadhar No <span class="text-danger">*</span> </label>
+														<input disabled type="number" class="form-control" id="AadharNo" placeholder="0000 0000 0000" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 13. Marital Status <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="Marrital" placeholder="Single" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 14. Medium <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="Medium" placeholder="Tamil" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Address Details -->
+									<div class="address-details mb-3">
+										<div class="card text-start rounded-1">
+											<p class="card-title">Address Details</p>
+											<div class="card-body">
+												<div class="d-flex flex-wrap justify-content-between align-items-center">
+													<div class="mb-2">
+														<label class="form-label"> 15. Door No <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="DoorNo" placeholder="888" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 16. Street <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="Street" placeholder="10th Street" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 17. Land Mark <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="LandMark" placeholder="XXX" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 18. Taluk <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="Taluk" placeholder="Banglore" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 19. City <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="City" placeholder="Banglore" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 20. State <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="State" placeholder="Tamilnadu" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 21. District <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="District" placeholder="Banglore" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 21(A). Other District <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="OtherDist" placeholder="Banglore" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 22. Pincode <span class="text-danger">*</span> </label>
+														<input disabled type="number" class="form-control" id="Pincode" placeholder="666 666" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Educational Details -->
+									<div class="educational-details mb-3">
+										<div class="card text-start rounded-1">
+											<p class="card-title">Educational Details</p>
+											<div class="card-body">
+												<div class="d-flex flex-wrap justify-content-between align-items-center">
+													<div class="mb-2">
+														<label class="form-label"> 23. Qualify Exam<span class="text-danger"> *</span> </label>
+														<input disabled type="text" class="form-control" id="QualifyExam" placeholder="GATE" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 24. Board Name <span class="text-danger"> *</span> </label>
+														<input disabled type="text" class="form-control" id="BoardName" placeholder="State Board" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 25. Month & Year Of Passing <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="YearPass" placeholder="Mar-2022" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 26. Register No <span class="text-danger">*</span> </label>
+														<input disabled type="number" class="form-control" id="RegNo" placeholder="12345678" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 27. Group Subject <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="GroupSub" placeholder="B.E" />
+													</div>
+
+													<div class="mb-2">
+														<label class="form-label"> 28. Obtained Marks <span class="text-danger">*</span> </label>
+														<input disabled type="number" class="form-control" id="ObtainedMarks" placeholder="400" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 29. Maximum Marks <span class="text-danger">*</span> </label>
+														<input disabled type="number" class="form-control" id="MaxMarks" placeholder="500" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 30. Marks in Percentage <span class="text-danger">*</span> </label>
+														<input disabled type="number" class="form-control" id="Percentage" placeholder="99" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Reservation Details -->
+									<div class="reservation-details mb-3">
+										<div class="card text-start rounded-1">
+											<p class="card-title">Reservation Details</p>
+											<div class="card-body">
+												<div class="d-flex flex-wrap justify-content-between align-items-center">
+													<div class="mb-2">
+														<label class="form-label"> 31. Caste Category<span class="text-danger"> *</span> </label>
+														<input disabled type="text" class="form-control" id="Caste" placeholder="General" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 32. Is Physically Disabled <span class="text-danger"> *</span> </label>
+														<input disabled type="text" class="form-control" id="Physical" placeholder="No" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 33. Religion <span class="text-danger">*</span> </label>
+
+														<input disabled type="text" class="form-control" id="Religion" placeholder="Hindu" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 33(A). If Others <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="OtherReligion" placeholder="Buddha" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 34. Residential Status <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="ResStat" placeholder="Own" />
+													</div>
+													<div class="mb-2">
+														<label class="form-label"> 35. Second Language <span class="text-danger">*</span> </label>
+														<input disabled type="text" class="form-control" id="Language" placeholder="Tamil" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Upload Details  -->
+									<div class="upload-details mb-3">
+										<p class="card-title">Upload Details</p>
+										<div class="card text-start rounded-1">
+											<div class="card-body">
+												<div class="d-flex flex-wrap justify-content-center align-items-center column-gap-5">
+													<div>
+														<div class="card box d-flex justify-content-center align-items-center">
+															<img src="/assets/Images/Avatar.svg" alt="Candidate" />
+														</div>
+														<div class="box-topic w-100 p-1">Candidate Photo</div>
+													</div>
+													<div>
+														<div class="card box d-flex justify-content-center align-items-center">
+															<img src="/assets/Images/Sign.png" alt="Signature" />
+														</div>
+														<div class="box-topic w-100 p-1">Signature</div>
+													</div>
+													<div>
+														<div class="card box d-flex justify-content-center align-items-center">
+															<img src="/assets/Images/certificate.webp" alt="Certificate" />
+														</div>
+														<div class="box-topic w-100 p-1">Certificate</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								@* </div> *@
+
+						<div class="d-flex justify-content-between align-items-center">
+							<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+							<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+						</div>
+
+					@* 	<div class="d-flex justify-content-between mx-3">
+									<a href="/registrationform">
+										<div class="signin-btn me-4 mb-3" data-bs-dismiss="modal" aria-label="Close">Back</div>
+									</a>
+									<a href="/registrationdetails">
+										<div class="signin-btn mb-3" data-bs-dismiss="modal" aria-label="Close">SUBMIT</div>
+									</a>
+								</div> *@
+						@* 	</div>
+						</div> *@
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Add Admission Reg Section -->
+</section>
+</section>
+
+
+

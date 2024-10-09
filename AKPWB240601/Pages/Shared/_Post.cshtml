@@ -1,0 +1,492 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>KSP ADMIN</title>
+    <link rel="icon" type="image/x-icon" href="~/images/LOGO.png">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/lib/font-awsome/css/all.min.css" rel="stylesheet" />
+    <link href="~/lib/flatpicker/flatpicker.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="~/lib/timepicker/css/jquery.timepicker.min.css" rel="stylesheet" />
+    <link href="~/lib/sweetalert/css/sweetalert2.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- header -->
+    <header class="header d-flex align-items-center justify-content-between">
+        <div class="header-left">
+            <div class=header-version>
+                <h6 class="header-text mb-0 mt-2">e Application</h6>
+                <p class="text-warning mb-0">Version: 1.01</p>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="gap:200px;" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Dashboard</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="/HomePage/HomePageContent">Homepage</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="/ApplicantDetails/RegistrationTotalApplicantDetails">Applicant details</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="navbarDropdown1" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Written exam
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item custom-dropdown-item" href="/WrittenExam/PackingPlan">Packing Plan</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/WrittenExam/DistrictManagement/DistrictManagement">District Management</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/WrittenExam/CenterManagement/CenterManagement">Center Management</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/WrittenExam/UnitAllotments/UnitAllotments">Unit Allotments</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/WrittenExam/CenterAllotments/CenterAllotments">Center Allotments</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/WrittenExam/BioMetric/BioMetric">BioMetrics</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/WrittenExam/Nominal/Nominal">Nominal</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/WrittenExam/GenerateCallLetter/GenerateCallLetter">Generate Call Letter</a></li>
+                          
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="navbarDropdown1" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            ETPST Exam
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item custom-dropdown-item" href="/ETPST/DistrictManagement/DistrictManagement">District Management</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/ETPST/GroundManagement/GroundManagement">Ground Management</a></li> 
+                            <li><a class="dropdown-item custom-dropdown-item" href="/ETPST/UnitAllotments/UnitAllotments">Unit Allotments</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/ETPST/BioMetric/BioMetric">BioMetric Details</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/ETPST/NominalRoll/Nominal">Nominal Roll</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/ETPST/GenerateCallLetter/GenerateCallLetter">GenerateCallLetter</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/ETPST/MeritList/MeritList">Merit List</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="navbarDropdown1" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Medical exam
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item custom-dropdown-item" href="#">Districts</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="#">Exam centers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="navbarDropdown2" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Scanning
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <li><a class="dropdown-item custom-dropdown-item" href="/ScanningDetails">Scanning details</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="#">OMR Scanning</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-nav-link" href="#" id="navbarDropdown4" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Masters
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown-menu hori-drop" aria-labelledby="navbarDropdown4">
+                            <li><a class="dropdown-item custom-dropdown-item hori-item" href="/ApplyingTypes">Applying Types</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/ExservicemanEducation">Exserviceman Education Qualification</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/IdentityCards">Identity cards Types</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/Unit">Post Units</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/UserDetail">User Details</a></li>
+
+                            <li><a class="dropdown-item custom-dropdown-item" href="/Category">Categories</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/ArmyForce">Army Force</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/KalayanKaranatakaDistricts">Kalayan Karanataka Districts</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/QualificationBoard">Qualification Board</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/UserRoles">User Roles</a></li>
+
+
+                            <li><a class="dropdown-item custom-dropdown-item" href="/MasterDistricts">District</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/ExservicemanChild">Exserviceman Child relation</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/KannadaPaperTypes">Kannada Paper Types</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/RequirementActivities">Requirement Activities</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/Payment">Payments</a></li>
+
+                            <li><a class="dropdown-item custom-dropdown-item" href="/Document">Document type</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/Gender">Gender</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/JobPosting">Posts</a></li>
+                            <li><a class="dropdown-item custom-dropdown-item" href="/UnionStates">Union States</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="#">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="/JobPosting">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-nav-link" href="/Tickets/Tickets">Tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="d-flex align-items-center pe-2">
+            <h5 class="text-white header-right-line">|</h5>
+            <a href="#" class="me-3 text-white"><i class="fas fa-bell"></i></a>
+            <a href="#" id="toggleFullScreen" class="me-3 text-white"><i class="fa-solid fa-expand"></i></a>
+            <a href="#" class="me-3 text-white"><i class="fas fa-cog"></i></a>
+            <nav class="profile-nav">
+                <div class="profile">
+                    <div class="img-box">
+                        <img src="https://i.postimg.cc/BvNYhMHS/user-img.jpg" alt="user image">
+                    </div>
+                    <div class="user">
+                        <h6 class="mb-0">
+                            Lagumesh   <span class="material-symbols-outlined">
+                                arrow_drop_down
+                            </span>
+                        </h6>
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul class="p-0 mb-0">
+                        <li><a href="#" class="p-2"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+                        <li><a href="#" class="p-2"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a></li>
+                        <li><a href="#" class="p-2"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+                        <li><a href="#" class="p-2"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
+                        <li><a href="#" class="p-2"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    @RenderBody()
+    <footer class="bg-dark text-white mt-3 fixed-bottom">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-around p-2">
+                <div class="col-md-4">
+                    <span id="ip-address">IP Address: 27.4.200.215</span>
+                    
+                </div>
+             
+                <div class="col-md-4">
+                    <span id="date-time" class="ms-3"></span>
+                </div>
+                <div class="col-md-4 text-end">
+                    <span id="powered-by">Copyright © 2023. Powered by E-Application</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="~/lib/font-awsome/js/all.min.js"></script>
+    <script src="~/lib/jquery/dist/js/jquery-3.6.0.min.js"></script>
+    <script src="~/lib/pdf/excel/xlsx.full.min.js"></script>
+    <script src="~/lib/pdf/pdfscript/jspdf.umd.min.js"></script>
+    <script src="~/lib/pdf/table/jspdf.plugin.autotable.min.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/lib/flatpicker/flatpicker.min.js"></script>
+    <script src="~/lib/timepicker/js/jquery.timepicker.min.js"></script>
+    <script src="~/lib/sweetalert/js/sweetalert2.all.min.js"></script>
+    <script>
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.style.display = tab.id === tabName ? 'block' : 'none';
+            });
+
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => {
+                button.classList.toggle('active', button.getAttribute('onclick').includes(tabName));
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            flatpickr(".add-post-input", {
+                dateFormat: "d-m-y"
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggleInputs = document.querySelectorAll('.toggle-input');
+
+            toggleInputs.forEach(function (input) {
+                input.addEventListener('change', function () {
+                    var textSpan = input.nextElementSibling.nextElementSibling;
+                    if (input.checked) {
+                        textSpan.textContent = 'On';
+                    } else {
+                        textSpan.textContent = 'Off';
+                    }
+                });
+            });
+        });
+    </script> 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggleInputs = document.querySelectorAll('.toggle-input');
+
+            toggleInputs.forEach(function (input) {
+                input.addEventListener('change', function () {
+                    var textSpan = input.nextElementSibling.nextElementSibling;
+                    if (input.checked) {
+                        textSpan.textContent = 'On';
+                    } else {
+                        textSpan.textContent = 'Off';
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all toggle switches and their corresponding status elements
+            var toggleSwitches = document.querySelectorAll('.add-post-toggle');
+            var toggleStatuses = document.querySelectorAll('.toggleStatus');
+
+            // Function to update the status text based on the toggle switch state
+            toggleSwitches.forEach(function (toggleSwitch, index) {
+                toggleSwitch.addEventListener('change', function () {
+                    if (toggleSwitch.checked) {
+                        toggleStatuses[index].textContent = 'On';
+                    } else {
+                        toggleStatuses[index].textContent = 'Off';
+                    }
+                });
+            });
+        });
+
+
+    </script>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.custom-nav-link');
+    const dropdownItems = document.querySelectorAll('.custom-dropdown-item');
+
+    // Function to add 'active' class to the matching link
+    const setActiveLink = (link) => {
+        link.classList.add('active');
+        const parentDropdown = link.closest('.nav-item.dropdown');
+        if (parentDropdown) {
+            const dropdownToggle = parentDropdown.querySelector('.nav-link.dropdown-toggle');
+            if (dropdownToggle) {
+                dropdownToggle.classList.add('active');
+            }
+        }
+    };
+
+    // Set active class for main nav links
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            setActiveLink(link);
+        }
+    });
+
+    // Set active class for dropdown items
+    dropdownItems.forEach(item => {
+        if (item.getAttribute('href') === currentPath) {
+            setActiveLink(item);
+        }
+    });
+});
+
+//export
+        $(document).ready(function () {
+            $('#exportButton').on('click', function () {
+                $(this).toggleClass('open');
+            });
+        });
+
+</script>
+
+<script>
+            $(document).ready(function () {
+                $('.timepicker').timepicker({
+                    timeFormat: 'H:i:s',
+                    interval: 1,
+                    dynamic: false,
+                    dropdown: true,
+                    scrollbar: true,
+                    change: function (time) {
+                        var hours = time.getHours();
+                        var minutes = time.getMinutes();
+                        var seconds = time.getSeconds();
+                        var formattedTime = hours + 'hrs ' + minutes + 'mins ' + seconds + 'secs';
+                        $('#timepicker').val(formattedTime);
+                    }
+                });
+            });
+
+</script>
+    <script>
+        //checkboxes for home page
+        document.addEventListener('DOMContentLoaded', function () {
+            const headerCheckboxes = document.querySelectorAll('.header-checkbox');
+
+            headerCheckboxes.forEach(headerCheckbox => {
+                headerCheckbox.addEventListener('change', function () {
+                    // Find the closest table
+                    const table = this.closest('table');
+                    const tbodyCheckboxes = table.querySelectorAll('.tbody-checkbox');
+
+                    const isChecked = this.checked;
+                    tbodyCheckboxes.forEach(checkbox => {
+                        checkbox.checked = isChecked;
+                    });
+                });
+            });
+        });
+
+    </script>
+    <script>
+        function confirmDelete(element) {
+            Swal.fire({
+                title: '<div style="text-align: left;">Confirm Delete!</div>',
+                html: '<div style="text-align: left;">You won\'t be able to revert this!</div>',
+                width: '400px',
+                showCancelButton: true,
+                confirmButtonColor: 'red',
+                cancelButtonColor: '#A1A1A1',
+                confirmButtonText: 'Yes, delete it!',
+                cancelButtonText: 'Cancel',
+                reverseButtons: true,
+                customClass: {
+                    actions: 'swal2-actions-right',  // Custom class for button alignment
+                    confirmButton: 'swal2-button',   // Custom class for the confirm button
+                    cancelButton: 'swal2-button'     // Custom class for the cancel button
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // If confirmed, delete the row
+                    const row = element.closest('tr');
+                    row.remove();
+
+                    // Optional: Show a success message after deletion
+                    Swal.fire({
+                        title: 'Deleted!',
+                        text: 'The row has been deleted.',
+                        icon: 'success',
+                        width: '300px',
+                        timer: 1500,
+                        showConfirmButton: false
+                    });
+                }
+            });
+        }
+
+
+    </script>
+    <script>
+        document.querySelectorAll('.sort-asc, .sort-desc').forEach(function (element) {
+            element.addEventListener('click', function () {
+                const column = this.getAttribute('data-column');
+                const order = this.getAttribute('data-order');
+                const tableBody = document.getElementById('tableBody');
+                const rows = Array.from(tableBody.querySelectorAll('tr'));
+
+                rows.sort(function (a, b) {
+                    let aValue = a.getAttribute(`data-${column}`).trim();
+                    let bValue = b.getAttribute(`data-${column}`).trim();
+
+                    // Convert to lower case if it's a string
+                    aValue = isNaN(aValue) ? aValue.toLowerCase() : aValue;
+                    bValue = isNaN(bValue) ? bValue.toLowerCase() : bValue;
+
+                    // Handle numbers and dates correctly
+                    if (!isNaN(aValue) && !isNaN(bValue)) {
+                        aValue = parseFloat(aValue);
+                        bValue = parseFloat(bValue);
+                    } else if (Date.parse(aValue) && Date.parse(bValue)) {
+                        aValue = new Date(aValue);
+                        bValue = new Date(bValue);
+                    }
+
+                    if (order === 'asc') {
+                        return aValue > bValue ? 1 : aValue < bValue ? -1 : 0;
+                    } else {
+                        return aValue < bValue ? 1 : aValue > bValue ? -1 : 0;
+                    }
+                });
+
+                tableBody.innerHTML = '';
+                rows.forEach(row => tableBody.appendChild(row));
+            });
+        });
+    </script>
+
+    <!----nominal scrip---->
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all preview buttons
+            const previewButtons = document.querySelectorAll('button[data-bs-target="#imageModal"]');
+            const modal = document.getElementById('imageModal');
+            const modalContent = modal.querySelector('.modal-content');
+
+            previewButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    // Get the image URL from a data attribute or any other source
+                    const imageUrl = '~/images/nominal.png';
+
+                    // Set the image source in the modal
+                    document.getElementById('modalImage').src = imageUrl;
+                });
+            });
+
+            // Event listener to close the modal when clicking outside of the modal content
+            document.addEventListener('click', function (event) {
+                if (modal && !modalContent.contains(event.target)) {
+                    const modalInstance = bootstrap.Modal.getInstance(modal);
+                    if (modalInstance) {
+                        modalInstance.hide();
+                    }
+                }
+            });
+        });
+
+    </script>
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function () {
+            const table = document.getElementById('exampleTable');
+            let csvContent = "data:text/csv;charset=utf-8,";
+
+            // Extract table headers
+            const headers = Array.from(table.querySelectorAll('thead th')).map(th => th.textContent.trim());
+            csvContent += headers.join(",") + "\n";
+
+            // Extract table rows
+            const rows = table.querySelectorAll('tbody tr');
+            rows.forEach(row => {
+                const cells = Array.from(row.querySelectorAll('td')).map(td => td.textContent.trim());
+                csvContent += cells.join(",") + "\n";
+            });
+
+            // Create a downloadable link
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement('a');
+            link.setAttribute('href', encodedUri);
+            link.setAttribute('download', 'table_data.csv');
+            document.body.appendChild(link);
+
+            // Trigger the download
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
+
+</body>
+
+</html>

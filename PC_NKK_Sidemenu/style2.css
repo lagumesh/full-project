@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;900&family=Noto+Sans+Kannada:wght@300&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: 'Nudi';
+    src: url('/assets/fonts/icomoon/fonts/Nudi\ web\ 01\ e\ Bold.ttf') format('truetype');
+    /* Replace '/path/to/nudi-font.ttf' with the actual path or URL */
+}
+
+@font-face {
+    font-family: 'Nudi.2';
+    src: url('/assets/fonts/icomoon/fonts/Nudi\ 01\ e\ Bold.ttf') format('truetype');
+    /* Replace '/path/to/nudi-font.ttf' with the actual path or URL */
+}
+
+.av-font-kn {
+    /* font-family: "Nudi" !important; */
+    font-family: "Nudi.2" !important;
+    /* font-size: large; */
+    /* font-family: noti; */
+    font-weight: 600;
+}
+
+.navbar-nav li a {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* text-decoration-line: underline; */
+}
+
+.navbar-nav li a:hover {
+    color: #9E00C6;
+    font-family: Jost;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: #9E00C6;
+    text-decoration-line: underline;
+    font-size: 25px;
+    /* background-color: aliceblue;
+    border-radius: 5px;
+    padding-left: 20px; */
+}
+
+/* .logo img {
+    width: 50px;
+} */
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 258px;
+    height: 232px;
+    flex-shrink: 0;
+    /* Adjust this value as needed to make the logo bigger */
+}
+
+.navbar-nav {
+    text-align: center;
+    /* margin-left: 46px; */
+    margin-top: 69px;
+}
+
+.navbar-nav .nav-item {
+    display: inline-block;
+    margin-right: 10px;
+    /* Adjust the margin between links as needed */
+}
+
+.navbar-toggler {
+    margin-right: 10px;
+    /* Adjust the margin between the navbar-toggler and the navbar-brand as needed */
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/images/Home_Banner.png);
+    /* background-image: url(/images/Home.svg); */
+}
+
+.banner-topic {
+    margin-left: 5rem;
+    margin-top: 5rem;
+    /* line-height: 2rem; */
+}
+
+.banner-topic h4 {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: 150%; */
+    /* 54px */
+    text-transform: uppercase;
+}
+
+.banner-text h5 {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: normal; */
+}
+
+@media (max-width: 576px) {
+    .container2 {
+        display: flex !important;
+        /* justify-content: center; */
+        align-items: center !important;
+        /* height: 80vh; */
+        /* left: 160px; */
+        position: relative !important;
+        /* top: 86px !important; */
+        left: auto;
+        top: auto;
+        margin-bottom: 22px;
+    }
+
+    .banner-topic {
+        font-size: 16px;
+        max-width: 400px;
+        padding: 0 !important;
+        margin-left: 0 !important;
+        width: 90%;
+    }
+
+    .banner {
+        height: 60vh;
+        /* Updated height to 55vh */
+        width: 100%;
+        background-size: cover;
+        background-position: center top;
+        /* Move the background image to the top */
+        background-image: url(/images/Home_Banner.png);
+        /* position: fixed; */
+    }
+
+    .banner-topic h4 {
+        color: #FFF;
+        font-family: Jost;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .banner h5,
+    .banner h3 {
+        font-size: 16px !important;
+        margin-top: 15px !important;
+    }
+
+    .banner-btn {
+        margin-top: 1rem;
+    }
+
+    .banner .banner-text {
+        margin-top: -4rem !important;
+    }
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Jost;
+}
+
+
+.widget-post thead th {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+
+.widget-post tbody {
+    color: #000;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+
+.widget-post tbody tr {
+    height: 98px;
+}
+
+.widget-post tbody td {
+    vertical-align: middle;
+}
+
+/* Mobile-responsive styles */
+@media (max-width: 768px) {
+
+    /* Adjust row height for smaller screens */
+    .widget-post tbody tr {
+        height: auto;
+        /* or set a smaller height */
+    }
+
+    /* Center-align contents in table cells on smaller screens */
+    .widget-post tbody td {
+        text-align: center;
+    }
+}
+
+.widget-post2 thead th {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.widget-post2 tbody {
+    color: #000;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+
+.widget-post2 tbody tr {
+    height: 98px;
+}
+
+.widget-post2 thead th {
+    vertical-align: middle;
+}
+
+.widget-post2 tbody td {
+    vertical-align: middle;
+}
+
+/* Mobile-responsive styles */
+
+
+.helpline {
+    color: #FFF;
+    text-align: justify;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    /* line-height: 100%; */
+    /* 16px */
+}
+
+.Page-Title-Nav a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.Page-Title-Nav a:hover {
+    color: #717ff5;
+    text-decoration: none;
+}
+
+.welcomefont li {
+    list-style: disc;
+    font-family: Jost;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.NewApplicationForm label {
+    color: #000;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.NewApplicationForm .col-sm-6 {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1200px) {
+
+    .myapplicationdetails .card-header,
+    .paymentPage .card-header,
+    .NewApplicationForm .card-header {
+        position: relative;
+        background: linear-gradient(45deg, #3B004A 0%, #3B004A 70%, transparent 70%);
+        width: 650px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .myapplicationdetails.header-text,
+    .paymentPage .header-text,
+    .NewApplicationForm .header-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 20px;
+    }
+
+    .myapplicationdetails .card-content,
+    .paymentPage .card-content,
+    .NewApplicationForm .card-content {
+        background-color: #F5F5F5;
+        padding: 20px;
+    }
+}
+
+.inputchanges2 input[type="text"] {
+    /* margin-left: 10px !important; */
+    width: 100px !important;
+}
+
+/* Media query for PC */
+@media (min-width: 768px) {
+
+    .inputchanges input[type="text"],
+    .inputchanges input[type="number"],
+    .inputchanges input[type="date"],
+    .inputchanges input[type="email"],
+    .inputchanges select {
+        width: 475px !important;
+        margin-left: 25px !important;
+    }
+
+    .inputchanges2 input[type="text"] {
+        width: 100px !important;
+    }
+}
+
+.uploadfile .center {
+    height: 260px;
+    border-radius: 3px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.uploadfile .title {
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #999;
+    text-align: center;
+}
+
+.uploadfile h1 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #666;
+}
+
+.uploadfile .dropzone {
+    width: 100px;
+    height: 80px;
+    border: 1px dashed #999;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.uploadfile .upload-icon {
+    margin: 5px 2px 2px 2px;
+    max-width: 90px;
+    max-height: 70px;
+}
+
+.uploadfile .upload-input {
+    position: relative;
+    top: -62px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.uploadfile .btn {
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px 7px;
+    color: #fff;
+    border-radius: 3px;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.uploadfile .btn:hover {
+    background: rgba(6, 2, 251, 0.922);
+}
+
+.new-application-form .modal-dialog {
+    max-width: 70% !important;
+}
+
+.box-photo {
+    height: 150px;
+    width: 150px;
+    border: #ad9292 1px solid;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.box-photo-download {
+    height: 200px;
+    width: 200px;
+    border: #ad9292 1px solid;
+    /* margin-bottom: 10px; */
+    border-radius: 5px;
+    margin: auto;
+}
+
+.box-photo-download img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-sign {
+    height: 80px;
+    width: 200px;
+    border: #ad9292 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.paymentPage {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    /* font-weight: 500; */
+    line-height: normal;
+}
+
+myapplicationdetails

@@ -1,0 +1,39 @@
+[
+    {
+      "id": "1",
+      "image": "watch",
+      "title": "Smart Watch",
+      "rate": "2,999",
+      "originalPrice": "5,999",
+      "discount": "50% Off" ,
+      "rating": 5    
+    },
+    {
+      "id": "2",
+      "image": "white-shoe",
+      "title": "Labbin White Sneakers for men and women",
+      "rate": "1,499",
+      "originalPrice": "2,999",
+      "discount": "50% Off",
+      "rating": 5
+    },
+    {
+      "id": "3",
+      "image": "handbag",
+      "title": "Mammon Women's Handbag",
+      "rate": "750,",
+      "originalPrice": "1999",
+      "discount": "50% Off",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "image": "sandals",
+      "title": "Do Bhai Women Wedges Sandal (Butterfly)",      
+      "rate": "₹750",
+      "originalPrice": "1499",
+      "discount": "20% Off",
+      "rating": 5
+    }
+  ]
+  

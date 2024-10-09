@@ -1,0 +1,136 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/assets/css/main.css" rel="stylesheet" />
+    <link href="~/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <!-- Start Top Bar Section -->
+    <section id="top-section" class="d-flex justify-content-center align-items-center">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col d-flex flex-wrap justify-content-between align-items-center mb-3 row-gap-3">
+                        <img class="logo" src="~/assets/img/Top_Section_Logo.png" alt="Ksp_Logo" />
+                        <div class="contact-details d-flex">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="~/assets/img/Phone_Icon.png" alt="Phone_Icon" />
+                                <div>
+                                    <p class="mb-1">Toll Free Number</p>
+                                    <h6 class="mb-0">080 2294 3346 / 3039</h6>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="~/assets/img/Clock_Icon.png" alt="Clock_Icon" />
+                                <div>
+                                    <p class="mb-1">Timing For Toll Free Number (Govt. Working Days Only)</p>
+                                    <h6 class="mb-0">10.30 am - 05.30 pm</h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Top Bar Section -->
+    <!-- Start Navbar & Banner Section -->
+    <section">
+        <!-- Start Navbar Section -->
+        <section>
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid d-flex justify-content-end">
+                    <button class="navbar-toggler shadow-none px-1 py-0"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ms-2 mb-0" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-lg-center">
+                            <li>
+                                <button class="my-app-btn" onclick="closeWindow()"><a class="nav-link" href="/Index">Close</a></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- End Navbar Section -->
+    @RenderBody()
+
+        <!-- Start Footer Section -->
+        <section id="footer">
+            <div class="container">
+                <div class="top-section d-flex justify-content-between align-items-center">
+                    <ul>
+                        <li>
+                            <img src="~/assets/img/Footer_Ksp_Logo.png" alt="KSP_Logo" />
+                        </li>
+                        <li class="general-information">
+                            <h3>General Information</h3>
+                            <a>
+                                Please note that this page also provides links to the websites / web pages of Govt. Ministries / Departments / Organisations. The content
+                                of these websites is owned by the respective organisations, and they may be contacted for any further information or suggestion.
+                            </a>
+                        </li>
+
+                        <li class="quick-links">
+                            <h3>Quick Links</h3>
+                            <a href="/Home.html">Karnataka State Police</a>
+                            <a href="About.html">Seva Sindhu</a>
+                            <a href="/Careers.html">Digi Locker</a>
+                            <a href="/Contact.html">FAQ</a>
+                        </li>
+
+                        <li class="contact">
+                            <h3>Contact Us</h3>
+                            <span class="d-flex align-items-center mb-3">
+                                <img src="~/assets/img/Footer_Phone_Icon.png" alt="Phone_Icon" />
+                                <span>
+                                    <a>Helpline Number</a>
+                                    <a class="fs-6 fw-bold">080 2294 3346 / 3039</a>
+                                </span>
+                            </span>
+                            <span class="d-flex align-items-center">
+                                <img src="~/assets/img/Footer_Clock_Icon.png" alt="Clock_Icon" />
+                                <span>
+                                    <a>Support Centre Timing</a>
+                                    <a class="fs-6 fw-bold">10:30 am - 05:30 pm</a>
+                                    <a class="fs-6">(Govt. Working Days Only)</a>
+                                </span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-section d-flex flex-wrap justify-content-around">
+                <div class="container d-flex justify-content-between">
+                    <a>© 2024 Karnataka State Police. All Rights Reserved.</a>
+                    <a>IP Address: @Model.ClientIPAddress</a>
+                </div>
+            </div>
+        </section>
+        <!-- End Footer Section -->
+        <script src="~/lib/jquery/jquery-3.3.1.min.js"></script>
+        <script src="~/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+      
+ 
+
+
+</body>
+</html>

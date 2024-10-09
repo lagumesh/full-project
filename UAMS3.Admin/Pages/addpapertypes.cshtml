@@ -1,0 +1,68 @@
+﻿@page
+@model UAMS3.Admin.Pages.addpapertypesModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Paper Type</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Paper Type</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add Paper Type Section -->
+	<section id="add-pages" class="add-country mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<p class="card-title px-3 py-1">Paper Type Details</p>
+						<div class="card-body px-3 py-2">
+							<ul class="px-0">
+								<li>
+									<span>Code</span>
+									<input type="text" placeholder="Code" />
+								</li>
+								<li>
+									<span>Title</span>
+									<input type="text" placeholder="Title" />
+								</li>
+								<li>
+									<span>University</span>
+									<select class="select">
+										<option defaultValue>Select University</option>
+										<option>University 01</option>
+										<option>University 02</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+				<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- End Add Paper Type Section -->

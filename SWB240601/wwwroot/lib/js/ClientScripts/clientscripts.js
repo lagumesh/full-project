@@ -1,0 +1,1510 @@
+window.onload = function () {
+    window.scrollTo(0, 0);
+};
+
+function closeWindow() {
+    window.close();
+    navLinks.forEach(function (link) {
+        link.classList.remove('active');
+    });
+
+}
+
+window.addEventListener('beforeunload', function () {
+    // Get all the nav links
+    var navLinks = document.querySelectorAll('.site-navigation .main-menu .nav-link');
+
+    // Remove the active class from each nav link
+    navLinks.forEach(function (link) {
+        link.classList.remove('active');
+    });
+});
+
+// *********** Remove Selected OPtion ************ //
+
+
+// *************************** NAV Disabler *************************** //
+
+$(document).ready(function () {
+    $('.site-navbar .site-navigation .site-menu>li>a').click(function () {
+        // Remove the 'active' class from all navigation items
+        $('.site-navbar .site-navigation .site-menu>li>a').removeClass('active');
+        // Add the 'active' class to the clicked navigation item
+        $(this).addClass('active');
+    });
+});
+
+
+
+
+
+// *************** Age calculator in Home Page ***************************** //
+
+$(document).ready(function () {
+    // Initialize Flatpickr datepicker
+    flatpickr("#Applicant_DateOfBirth", {
+        dateFormat: "d/m/Y",
+        minDate: "01/12/1950",
+        maxDate: "01/12/2023",
+        onClose: function (selectedDates, dateStr, instance) {
+            calculateAge(dateStr);
+        }
+    });
+
+    flatpickr("#Applicant_Reservation_CategoryCertificateIssuedDate", {
+        dateFormat: "d/m/Y",
+        minDate: "01/12/2018",
+        maxDate: "01/12/2023",
+        disableMobile: true
+    });
+
+    flatpickr("#Applicant_Reservation_RuralCertificateIssuedDate", {
+        dateFormat: "d/m/Y",
+        minDate: "01/12/2018",
+        maxDate: "01/12/2023",
+        disableMobile: true
+    });
+
+    flatpickr("#Applicant_Reservation_ExService_DateOfJoining", {
+        dateFormat: "d/m/Y",
+        minDate: "01/12/2018",
+        maxDate: "01/12/2023",
+        disableMobile: true
+    });
+
+    flatpickr("#Applicant_Reservation_ExService_NoCIssuedDate", {
+        dateFormat: "d/m/Y",
+        minDate: "01/12/2018",
+        maxDate: "01/12/2023",
+        disableMobile: true
+    });
+
+    flatpickr("#Applicant_Reservation_ExService_DischargeDate", {
+        dateFormat: "d/m/Y",
+        minDate: "01/12/2018",
+        maxDate: "01/12/2023",
+        disableMobile: true
+    });
+
+    flatpickr("#Applicant_Reservation_PDPCertificateIssuedDate", {
+        dateFormat: "d/m/Y",
+        minDate: "01/12/2018",
+        maxDate: "01/12/2023",
+        disableMobile: true
+    });
+
+    flatpickr("#Applicant_Reservation_KannadaMediumCertificateIssuedDate", {
+        dateFormat: "d/m/Y",
+        minDate: "01/12/2018",
+        maxDate: "01/12/2023",
+        disableMobile: true
+    });
+
+    flatpickr("#Applicant_Reservation_TransgenderCertificateIssuedDate", {
+        dateFormat: "d/m/Y",
+        minDate: "01/12/2018",
+        maxDate: "01/12/2023",
+        disableMobile: true
+    });
+
+    flatpickr("#Applicant_Reservation_GovermentServiceDetail_JoiningDate", {
+        dateFormat: "d/m/Y",
+        minDate: "01/12/2018",
+        maxDate: "01/12/2023",
+        disableMobile: true
+    });
+
+    flatpickr("#Applicant_Reservation_GovermentServiceDetail_NoCIssuedDate", {
+        dateFormat: "d/m/Y",
+        minDate: "01/12/2018",
+        maxDate: "01/12/2023",
+        disableMobile: true
+    });
+
+    // Function to calculate age based on date of birth
+    function calculateAge(dob) {
+        // Convert the formatted date string back to the original "d/m/Y" format
+        var selectedDate = dob.split(' ');
+        var day = selectedDate[0];
+        var month = selectedDate[1];
+        var year = selectedDate[2];
+
+        var monthNum = new Date(Date.parse(month + " 1, 2000")).getMonth() + 1;
+
+        var dobString = day + '/' + monthNum + '/' + year;
+
+        var parts = dobString.split('/');
+        var dobDate = new Date(parts[2], parts[1] - 1, parts[0]);
+        var today = new Date();
+        var age = today.getFullYear() - dobDate.getFullYear();
+        var monthDiff = today.getMonth() - dobDate.getMonth();
+        var dayDiff = today.getDate() - dobDate.getDate();
+
+        if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+            age--;
+        }
+
+        var month = (monthDiff < 0) ? monthDiff + 12 : monthDiff;
+        var day = (dayDiff < 0) ? dayDiff + 30 : dayDiff;
+
+        var ageString = age + ' years, ' + month + ' months and ' + day + ' days old.';
+        $('#ageof40').val(ageString);
+    }
+});
+
+
+
+// ************************************ Instruction page *******************************************//
+
+
+$(document).ready(function () {
+
+    $('#nextBtn').hide();
+
+    $('#agreeCheckbox').change(function () {
+
+        $('#divSubmit').hide();
+
+        if ($('#agreeCheckbox').is(":checked")) {
+            $('#nextBtn').show();
+        } else {
+            $('#nextBtn').hide();
+        }
+
+    })
+
+})
+
+
+
+// ********************************************** Secure window for new application from instruction page ********************************//
+
+
+
+$(document).ready(function () {
+
+    function showalert() {
+        Swal.fire({
+            title: 'Good job!',
+            text: 'You clicked the button!',
+            icon: 'success'
+        }).then(function () {
+            // Wait for 2 seconds before opening the new window
+            setTimeout(function () {
+                window.open('Applicationform.html', 'KSPCPC454', 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',scrollbars=yes');
+            }); // 2 seconds delay
+        });
+    }
+
+
+    // pop after agreed in instruction page
+
+    $('#nextBtn').click(function () {
+        // Check if the "Agree" checkbox is checked
+        if ($('#agreeCheckbox').is(':checked')) {
+            window.open('NewApplication', 'KSPCPC454', 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',scrollbars=yes');
+            // Call the showalert() function
+            // showalert();
+        } else {
+            Swal.fire({
+                title: 'Please agree',
+                text: 'Please agree to the terms and conditions.',
+                icon: 'warning'
+            });
+        }
+    });
+
+    $('.login-btn').click(function () {
+        window.open('https://localhost:44366/auth/login', 'KSPCPC454', 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',scrollbars=yes');
+    });
+
+    $('.login-btn').click(function () {
+        window.open('https://localhost:44366/auth/login', 'KSPCPC454', 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',scrollbars=yes');
+    });
+
+});
+
+$(document).ready(function () {
+    $('.newapplication').on('click', function (e) {
+        e.preventDefault();
+        window.open('Application/Instructions', 'KSPCPC454', 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',scrollbars=yes');
+    });
+    $('.applicationlogin').on('click', function (e) {
+        e.preventDefault();
+        window.open('Login/login', 'KSPCPC454', 'width=' + screen.availWidth + ',height=' + screen.availHeight + ',scrollbars=yes');
+    });
+});
+
+
+// ******************************* Forgot Password Field validation ********************************//
+
+$(document).ready(function () {
+    var ahdar = $("#aadharNumber");
+    var ahdarMsg = $("#aadharValid");
+
+    function validAhdar() {
+        if (/^\d{12}$/.test(ahdar.val()) && ahdar.val().length === 12) {
+            ahdarMsg.html("");
+        } else {
+            ahdarMsg.html("* Input not valid");
+        }
+    }
+
+    ahdar.on("input", validAhdar);
+});
+
+
+$(document).ready(function () {
+    $("#dateOfBirth").datepicker();
+});
+
+
+// ********************************* Login form ************************************//
+
+function showalert() {
+    Swal.fire({
+        title: 'Good job!',
+        text: 'You clicked the button!',
+        icon: 'success'
+    });
+}
+
+$(document).ready(function () {
+    let notyf = new Notyf({
+        position: {
+            x: 'right',
+            y: 'top'
+        },
+        // Your configuration options here
+    });
+
+    $('#login-submit').click(function () {
+        // Get the input values
+        let username = $('#ApplicantLoginModel_ApplicationNo').val();
+        let password = $('#ApplicantLoginModel_DateOfBirth').val();
+
+        // Perform form validation
+        if (username.length !== 7 || isNaN(username)) {
+            // Display error notification for invalid username
+            notyf.error('Invalid username. Please enter a 7-digit number');
+            return;
+        }
+
+        // Validate password as a date in "dd-mm-yyyy" format
+        let pattern = /^\d{2}-\d{2}-\d{4}$/;
+        if (!pattern.test(password)) {
+            // Display error notification for invalid date password format
+            notyf.error('Invalid password format. Please enter a valid date in the dd-mm-yyyy format');
+            return;
+        }
+
+        // Extract the day, month, and year from the password
+        let parts = password.split('-');
+        let day = parseInt(parts[0]);
+        let month = parseInt(parts[1]) - 1; // Months are zero-based (0-11)
+        let year = parseInt(parts[2]);
+
+        // Create a new date object using the parsed values
+        let parsedDate = new Date(year, month, day);
+
+        if (isNaN(parsedDate.getTime())) {
+            // Display error notification for invalid date password
+            notyf.error('Invalid password. Please enter a valid date');
+            return;
+        }
+        
+        // Check if the conditions are met
+        if (username.length === 7 && !isNaN(username) && isDesiredDate(parsedDate)) {
+            // Display success notification
+            showalert();
+            notyf.success('Login successful');
+            // Redirect to the desired page
+            setTimeout(function () {
+                window.location.href = '/Auth/MyApplication';
+            }, 1000);
+        } else {
+            // Display error notification for wrong credentials
+            notyf.error('Wrong credentials');
+        }
+    });
+});
+
+function isDesiredDate(date) {
+    // Perform your desired date validation here
+    // Example: Only allow dates after a specific year (e.g., 2000)
+    return date.getFullYear() > 1950;
+}
+
+
+
+
+// ****************************************** newapplication ****************************************** //
+
+//$(document).ready(function () {
+//    $('#Applicant_ContactAddress_UnionStateCode').change(function () {
+//        if ($(this).val() !== 'KA') {
+//            $('#Applicant_ContactAddress_DistrictCode').val('OTR').prop('disabled', true);
+//            $("#otherDistrict").show();
+//            $("#modalotherDistrict").show();
+//        } else {
+//            $('#Applicant_ContactAddress_DistrictCode').val('').prop('disabled', false);
+//            $("#otherDistrict").hide();
+//            $("#Applicant_ContactAddress_OtherDistrictName").val('');
+//            $("#modalotherDistrict").hide();
+//        }
+//    });
+//});
+
+$("#Applicant_ContactAddress_UnionStateCode").change(function () {
+    $('#Applicant_PermanentAddress_DistrictName__Others').val('');
+    $('#divPermAddrOtherDistrict').hide();
+
+    var selectedStateCode = $("#Applicant_ContactAddress_UnionStateCode option:selected").val();
+    var url = '?handler=Districts&unionStateCode=' + selectedStateCode;
+
+    console.log("Selected value: " + selectedStateCode);
+    console.log("Request URL: " + url);
+
+    $.ajax({
+        type: 'POST',
+        url: url,
+        dataType: 'JSON',
+        success: function (data) {
+            console.log('Success! Received data:', data);
+            // Display the received data (replace this with your actual logic)
+            alert("Received data: " + JSON.stringify(data));
+        },
+        error: function (xhr, status, error) {
+            console.log("Error:", error);
+            alert("Error: " + error);
+        }
+    });
+});
+
+
+
+
+
+$(document).ready(function () {
+    // Hide the "Other" div initially
+    $("#otherDistrict").hide();
+    $("#modalotherDistrict").hide();
+
+
+    // Show or hide the "Other" div based on district selection
+    $("#Applicant_ContactAddress_DistrictCode").change(function () {
+        if ($(this).val() === "OTR") {
+            $("#otherDistrict").show();
+            $("#modalotherDistrict").show();
+
+        } else {
+            $("#otherDistrict").hide();
+            $("#modalotherDistrict").hide();
+            // Clear the input field in the "Other" div
+            $("#otherDistrict input[type='text']").val("");
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('#Applicant_PermanentAddress_UnionStateCode').change(function () {
+        if ($(this).val() !== 'KA') {
+            $('#Applicant_PermanentAddress_DistrictCode').val('OTR').prop('disabled', true);
+            $("#permanentAddressotherdist").show();
+        } else {
+            $('#Applicant_PermanentAddress_DistrictCode').val('').prop('disabled', false);
+            $("#permanentAddressotherdist").hide();
+        }
+    });
+});
+$(document).ready(function () {
+    // Hide the "Other" div initially
+    $("#permanentAddressotherdist").hide();
+
+    // Show or hide the "Other" div based on district selection
+    $("#Applicant_PermanentAddress_DistrictCode").change(function () {
+        if ($(this).val() === "OTR") {
+            $("#permanentAddressotherdist").show();
+        } else {
+            $("#permanentAddressotherdist").hide();
+            $("#permanentAddressotherdist input[type='text']").val("");
+        }
+    });
+});
+
+//   permanent address
+
+$(document).ready(function () {
+    // Toggle visibility of the "permanentAddressDiv" based on radio button selection
+    $("input[name='Applicant.ContactAddress.IsPermanentAddressSame']").change(function () {
+        if ($(this).val() === "No") {
+            $("#permanentAddressDiv").show();
+            $("#ModalpermanentAddressDiv").show();
+
+        } else {
+            $("#permanentAddressDiv").hide();
+            $("#ModalpermanentAddressDiv").hide();
+            // Clear all the input fields in the "permanentAddressDiv"
+            $("#permanentAddressDiv input[type='text']").val("");
+            $("#permanentAddressDiv textarea").val("");
+            $("#permanentAddressDiv select").val("");
+        }
+    });
+});
+
+
+
+$(document).ready(function () {
+    // Initially hide the subcastedate div
+    $('#subcastedate').hide();
+    $('#Modalsubcastedate').hide();
+
+    // Event handler for the category select element
+    $('#Applicant_Reservation_CategoryCode').change(function () {
+        var selectedCategory = $(this).val();
+
+        // Check if the selected category is not "General"
+        if (selectedCategory !== 'GM') {
+            // Show the subcastedate div
+            $('#subcastedate').show();
+            $('#Modalsubcastedate').show();
+        } else {
+            // Hide the subcastedate div
+            $('#subcastedate').hide();
+            $('#Modalsubcastedate').hide();
+            // Clear the input fields in the subcaste and doisubcaste divs
+            $('#Applicant_Reservation_SubCaste').val("");
+            $('#Applicant_Reservation_CategoryCertificateIssuedDate').val("");
+        }
+    });
+});
+
+
+
+
+$(document).ready(function () {
+    // Initially hide the div elements
+    $('#exServicemendate').hide();
+    $('#exServicemenService').hide();
+    $('#exServicemendischarge').hide();
+    $('#exServicemenrendered').hide();
+    $('#exServicemenServing').hide();
+    $('#ModalexServicemenServing').hide();
+    $('#ModalexServicemendate').hide();
+    $('#ModalexServicemenService').hide();
+    $('#ModalexServicemenrendered').hide();
+
+    // Event handler for the exServicemen radio buttons
+    $('input[name="Applicant.Reservation.IsClaimingExServicemenReservation"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the desired div elements
+            $('#exServicemendate').show();
+            $('#exServicemenService').show();
+            // $('#exServicemendischarge').show();
+            $('#exServicemenrendered').show();
+            $('#exServicemenServing').show();
+
+            $('#ModalexServicemenServing').show();
+            $('#ModalexServicemendate').show();
+            $('#ModalexServicemenService').show();
+            $('#ModalexServicemenrendered').show();
+        } else {
+            // Hide the div elements
+            $('#exServicemendate').hide();
+            $('#exServicemenService').hide();
+            $('#exServicemendischarge').hide();
+            $('#exServicemenrendered').hide();
+            $('#exServicemenServing').hide();
+
+            // Clear the input fields in the div elements
+            $('#exServicemendate input[type="date"]').val("");
+            $('#exServicemenService select').val("");
+            $('#exServicemendischarge input[type="date"]').val("");
+            $('#exServicemenrendered input[type="text"]').val("");
+
+
+            $('#ModalexServicemenServing').hide();
+            $('#ModalexServicemendate').hide();
+            $('#ModalexServicemenService').hide();
+            $('#ModalexServicemenrendered').hide();
+        }
+    });
+
+    $('input[name="Applicant.Reservation.ExService.ExServiceForceCode"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "yes" is selected
+        if (selectedValue === 'no') {
+            // Show the desired div elements
+            // $('#exServicemendate').show();
+            // $('#exServicemenService').show();
+            $('#exServicemendischarge').show();
+            // $('#exServicemenrendered').show();
+            // $('#exServicemenServing').show();
+        } else {
+            // Hide the div elements
+            // $('#exServicemendate').hide();
+            // $('#exServicemenService').hide();
+            $('#exServicemendischarge').hide();
+            // $('#exServicemenrendered').hide();
+            // $('#exServicemenServing').hide();
+
+            // Clear the input fields in the div elements
+            // $('#exServicemendate input[type="date"]').val("");
+            // $('#exServicemenService select').val("");
+            $('#exServicemendischarge input[type="date"]').val("");
+            // $('#exServicemenrendered input[type="text"]').val("");
+        }
+    });
+});
+
+
+
+$(document).ready(function () {
+    // Initially hide the div elements
+    $('#dateOfNOCarm').hide();
+    $('#dateOfDischargearm').hide();
+    $('#ServiceRenderedarm').hide();
+    $('#yearsOfServicearm').hide();
+    $('#armid').hide();
+    $('#armid2').hide();
+
+    // Event handler for the armServicemen radio buttons
+    $('input[name="presentlyServing"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the desired div elements
+            $('#dateOfNOCarm').show();
+            $('#dateOfDischargearm').show();
+            $('#ServiceRenderedarm').show();
+            $('#yearsOfServicearm').show();
+            $('#armid').show();
+            $('#armid2').show();
+        } else {
+            // Hide the div elements
+            $('#dateOfNOCarm').hide();
+            $('#dateOfDischargearm').hide();
+            $('#ServiceRenderedarm').hide();
+            $('#yearsOfServicearm').hide();
+            $('#armid').hide();
+            $('#armid2').hide();
+
+            // Clear the input fields in the div elements
+            $('#dateOfNOCarm input[type="date"]').val("");
+            $('#dateOfDischargearm input[type="date"]').val("");
+            $('#ServiceRenderedarm select').val("");
+            $('#yearsOfServicearm input[type="text"]').val("");
+            $('#armid input[type="text"]').val("");
+            $('#armid2 input[type="text"]').val("");
+        }
+    });
+});
+
+$(document).ready(function () {
+    $('#physicallyChallengeddate').hide();
+    $('input[name="physicallyChallenged"]').change(function () {
+        if ($(this).val() === 'yes') {
+            $('#physicallyChallengeddate').show();
+            // $('#physicallyChallengeddate input').prop('required', true);
+        } else {
+            $('#physicallyChallengeddate').hide();
+            $('#physicallyChallengeddate input[type="date"]').val("")
+        }
+    });
+});
+
+
+
+
+$(document).ready(function () {
+    // Initially hide the date of issue field
+    $('#pdpdate').hide();
+
+    $('#kanmed').hide();
+
+    $('#rural').hide();
+
+    $('#kalyani').hide();
+    $('#Modalkalyani').hide();
+
+    $('#govtdate').hide();
+    $('#govtdept').hide();
+    $('#govtrendered').hide();
+
+    $('#inServicewing').hide();
+    $('#inServicerendered').hide();
+    $('#inServicedate').hide();
+
+    $('#criminalcases1').hide();
+
+    $('#deptenq').hide();
+
+    $('#criminalcases2').hide();
+
+    $('#modelrural').hide();
+    $('#modelpdpdate').hide();
+    $('#modelkanmed').hide();
+    $('#modelcriminalcases1').hide();
+    $('#modeldeptenq').hide();
+    $('#modelcriminalcases2').hide();
+
+    $('#modelgovtdate').hide();
+    $('#modelgovtdept').hide();
+    $('#modelgovtrendered').hide();
+    $('#modeldateofnoc').hide();
+    $('#modeldesigovtdept').hide();
+
+
+    // Event handler for the pdpreservation radio buttons
+    $('input[name="Applicant.Reservation.IsClaimingPDPReservation"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the date of issue field
+            $('#pdpdate').show();
+            $('#modelpdpdate').show();
+            
+        } else {
+            // Hide the date of issue field
+            $('#pdpdate').hide();
+            $('#modelpdpdate').hide();
+            $('#pdpdate input[type="date"]').val('');
+        }
+    });
+
+    $('input[name="Applicant.Reservation.IsClaimingKannadaMediumReservation"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the date of issue field
+            $('#kanmed').show();
+            $('#modelkanmed').show();
+        } else {
+            // Hide the date of issue field
+            $('#kanmed').hide();
+            $('#modelkanmed').hide();
+            $('#kanmed input[type="date"]').val('');
+        }
+    });
+
+    $('input[name="Applicant.Reservation.IsClaimingRuralReservation"]').change(function () {
+        var selectedValue = $(this).val();
+
+        if (selectedValue === 'yes') {
+            $('#rural').show();
+            $('#modelrural').show();
+        } else {
+            $('#rural').hide();
+            $('#modelrural').hide();
+            $('#rural input[type="date"]').val(''); // Clear the date input value when hiding
+        }
+    });
+
+
+    $('input[name="Applicant.Reservation.IsClaimingKalyanaKarnatakaReservation"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the date of issue field
+            $('#kalyani').show();
+            $('#Modalkalyani').show();
+        } else {
+            // Hide the date of issue field
+            $('#kalyani').hide();
+            $('#Modalkalyani').hide();
+            $('#kalyani select').val("");
+        }
+    });
+
+    $('input[name="Applicant.Reservation.AreYouAGovermentEmployee"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the date of issue field
+            $('#govtdate').show();
+            $('#modelgovtdate').show();
+            $('#govtdept').show();
+            $('#modelgovtdept').show();
+            $('#govtrendered').show();
+            $('#modelgovtrendered').show();
+            $('#modeldateofnoc').show();
+            $('#modeldesigovtdept').show();
+        } else {
+            // Hide the date of issue field
+            $('#govtdate').hide();
+            $('#modelgovtdate').hide();
+            $('#govtdept').hide();
+            $('#modelgovtdept').hide();
+            $('#govtrendered').hide();
+            $('#modelgovtrendered').hide();
+            $('#modeldateofnoc').hide();
+            $('#modeldesigovtdept').hide();
+            $('#govtdate input[type="date"], #govtdept input,#govtrendered input ').val('');
+
+        }
+    });
+
+    $('input[name="inServicecandidate"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the date of issue field
+            $('#inServicewing').show();
+            $('#inServicerendered').show();
+            $('#inServicedate').show();
+        } else {
+            // Hide the date of issue field
+            $('#inServicewing').hide();
+            $('#inServicerendered').hide();
+            $('#inServicedate').hide();
+            // Clear the values of the input fields within inServicewing, inServicerendered, and inServicedate
+            $('#inServicewing select').val('');
+            $('#inServicerendered input').val('');
+            $('#inServicejoiningdate').val('');
+        }
+    });
+
+
+    $('input[name="Applicant.CriminalActivity.IsInvolvedInCriminalActivity"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the date of issue field
+            $('#criminalcases1').show();
+            $('#modelcriminalcases1').show();
+
+        } else {
+            // Hide the date of issue field
+            $('#criminalcases1').hide();
+            $('#modelcriminalcases1').hide();
+            $('#criminalcases1 textarea').val('');
+
+        }
+    });
+
+    $('input[name="Applicant.CriminalActivity.HasDepartmentEnquiry"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the date of issue field
+            $('#deptenq').show();
+            $('#modeldeptenq').show();
+
+        } else {
+            // Hide the date of issue field
+            $('#deptenq').hide();
+            $('#modeldeptenq').hide();
+            $('#deptenq textarea').val('');
+        }
+    });
+
+    $('input[name="Applicant.CriminalActivity.IsConvictedInCriminalCase"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the date of issue field
+            $('#criminalcases2').show();
+            $('#modelcriminalcases2').show();
+
+        } else {
+            // Hide the date of issue field
+            $('#criminalcases2').hide();
+            $('#modelcriminalcases2').hide();
+            $('#criminalcases2 textarea').val('');
+        }
+    });
+});
+
+
+$(document).ready(function () {
+    // Event handler for the passedsslc radio buttons
+    $('input[name="Applicant.EducationalQualification.SSLCQualification.QualificationBoard.IsApplicableForSSLC"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "No" is selected
+        if (selectedValue === 'no') {
+            // Show SweetAlert notification
+            Swal.fire({
+                title: "Not Eligible",
+                text: "You are not eligible for this post.",
+                icon: "error",
+                confirmButtonColor: "#3085d6",
+                confirmButtonText: "OK"
+            });
+            $('#preview-btn').addClass('disabled'); // Add the 'disabled' class
+            //$('.newapplicationv2').css({
+            //    'background-color': 'red',
+            //    'color': 'white'
+            //});
+        } else {
+            $('#preview-btn').removeClass('disabled'); // Remove the 'disabled' class
+            //$('.newapplicationv2').css({
+            //    'background-color': 'white',
+            //    'color': 'black'
+            //});
+        }
+    });
+});
+
+$(document).ready(function () {
+
+    // ID Card Preview
+
+     $('#Applicant_Uploads_IdentityCardPath').change(IDImagePreview); 
+        function IDImagePreview() {
+        //console.log('File input changed');
+            if (this.files.length > 0) {
+                // Get the source (URL) of the selected file and display it in an image element.
+                let src = URL.createObjectURL(this.files[0]);
+                //console.log('Image source:', src);
+                $('#imgIdentityCard').attr('src', src).show();
+                $('#modalIDCardPreview').attr('src', src).show();
+            }
+        }
+
+        $('#IdUpload').click(function () {
+            // Trigger the same logic as when the file input changes
+            $('#Applicant_Uploads_IdentityCardPath').click();
+        });
+
+
+    // Signature Preview
+
+    $('#Applicant_Uploads_SignaturePath').change(SignImagePreview);
+
+    function SignImagePreview() {
+        //console.log('File input changed');
+        if (this.files.length > 0) {
+            // Get the source (URL) of the selected file and display it in an image element.
+            let src = URL.createObjectURL(this.files[0]);
+            //console.log('Image source:', src);
+            $('#imgSignature').attr('src', src).show();
+            $('#modalSignaturePreview').attr('src', src).show();
+        }
+    }
+
+    $('#signUpload').click(function () {
+        // Trigger the same logic as when the file input changes
+        $('#Applicant_Uploads_SignaturePath').click();
+    });
+
+
+    //Thumb Image Preview
+
+    $('#Applicant_Uploads_ThumbImagePath').change(ThumbImagePreview);
+
+    function ThumbImagePreview() {
+        //console.log('File input changed');
+        if (this.files.length > 0) {
+            // Get the source (URL) of the selected file and display it in an image element.
+            let src = URL.createObjectURL(this.files[0]);
+            //console.log('Image source:', src);
+            $('#imgThumb').attr('src', src).show();
+            $('#modalThumbPreview').attr('src', src).show();
+        }
+    }
+
+    $('#thumbUpload').click(function () {
+        // Trigger the same logic as when the file input changes
+        $('#Applicant_Uploads_ThumbImagePath').click();
+    });
+
+    // Photo Image Preview
+    $('#Applicant_Uploads_PhotoPath').change(PhotoImagePreview);
+
+    function PhotoImagePreview() {
+        //console.log('File input changed');
+        if (this.files.length > 0) {
+            // Get the source (URL) of the selected file and display it in an image element.
+            let src = URL.createObjectURL(this.files[0]);
+            //console.log('Image source:', src);
+            $('#imgPhoto').attr('src', src).show();
+            $('#modalIDPhotoPreview').attr('src', src).show();
+        }
+    }
+
+    $('#photoUpload').click(function () {
+        // Trigger the same logic as when the file input changes
+        $('#Applicant_Uploads_PhotoPath').click();
+    });
+});
+
+
+
+
+
+$(document).ready(function () {
+    $('#yoppuc, #markspuc, #gradeobtained, #pucPercentage, #puceducation, #manualpercentage').hide();
+
+    // Event handler for the passed radio buttons
+    $('input[name="Applicant.EducationalQualification.PUCQualification.QualificationBoard.IsApplicableForPUC"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the fields
+            $('#yoppuc, #pucPercentage, #puceducation').show();
+        } else {
+            // Hide the fields
+            $('#yoppuc, #markspuc, #gradeobtained, #pucPercentage, #puceducation').hide();
+            $('#yoppuc input[type="text"], #yoppuc select, #markspuc input[type="text"], #markspuc input[type="radio"], #gradeobtained input[type="text"], #pucPercentage input[type="text"]').val('');
+            $('#puceducation #marksyespuc').prop('checked', false);
+            $('#puceducation #marksnopuc').prop('checked', false);
+        }
+    });
+
+    // Event handler for the marks radio buttons
+    $('input[name="Applicant.EducationalQualification.PUCQualification.Score"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Marks" is selected
+        if (selectedValue === 'yes') {
+            // Show the "Max Marks" and "Marks Obtained" fields
+            $('#markspuc').show();
+            // Hide the "Grade Obtained" field
+            $('#gradeobtained').hide();
+            $('#manualpercentage').hide();
+            $('#autopercentage').show();
+            $('#gradeobtained input[type="text"]').val('');
+            $('#manualpercentage input[type="text"]').val('');
+        } else if (selectedValue === 'no') {
+            // Show the "Grade Obtained" field
+            $('#gradeobtained').show();
+            $('#autopercentage').hide();
+            $('#manualpercentage').show();
+            $('#autopercentage input[type="text"]').val('');
+            // Hide the "Max Marks" and "Marks Obtained" fields
+            $('#markspuc').hide();
+            $('#markspuc input[type="text"]').val('');
+        }
+    });
+});
+
+
+
+
+
+$(document).ready(function () {
+
+    $('#bridgecource').hide();
+    // Event handler for the ksoubridgecourse radio buttons
+    $('input[name="Applicant.EducationalQualification.PUCQualification.IsBridgeCourseFromKSOU"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the div with id "bridgecource"
+            $('#bridgecource').show();
+        } else {
+            // Hide the entire div including the question and inputs
+            $('#bridgecource').hide();
+            $('#bridgecource input').val('');
+            // $('#bridgecourcehead').hide();
+        }
+    });
+});
+
+// Function to calculate percentage
+function calculatePercentage() {
+    const maxMarks = parseFloat($('#Applicant_EducationalQualification_PUCQualification_Score_Maximum').val());
+    const marksObtained = parseFloat($('#Applicant_EducationalQualification_PUCQualification_Score_Obtained').val());
+
+    if (maxMarks && marksObtained) {
+        const percentage = (marksObtained / maxMarks) * 100;
+        $('#Applicant_EducationalQualification_PUCQualification_ScorePercentage').val(percentage.toFixed(2));
+    }
+}
+
+// Attach the event listener to the inputs
+$('#Applicant_EducationalQualification_PUCQualification_Score_Maximum, #Applicant_EducationalQualification_PUCQualification_Score_Obtained').on('input', calculatePercentage);
+
+// Function to calculate Degree percentage
+function calculateDegreePercentage() {
+    const maxMarksDegree = parseFloat($('#Applicant_EducationalQualification_DegreeQualification_Score_Maximum').val());
+    const marksObtainedDegree = parseFloat($('#Applicant_EducationalQualification_DegreeQualification_Score_Obtained').val());
+
+    if (maxMarksDegree && marksObtainedDegree) {
+        const percentageDegree = (marksObtainedDegree / maxMarksDegree) * 100;
+        $('#Applicant_EducationalQualification_DegreeQualification_Score_Obtained').val(percentageDegree.toFixed(2));
+    }
+}
+
+// Attach the event listener to the inputs
+$('#Applicant_EducationalQualification_DegreeQualification_Score_Maximum, #Applicant_EducationalQualification_DegreeQualification_Score_Obtained').on('input', calculateDegreePercentage);
+
+
+
+$(document).ready(function () {
+
+
+    $('#deducation, #dmarks, #dgrade, #dgradeobtained, #degpercentage, #degmanualpercentage').hide();
+
+    // Event handler for the passed radio buttons
+    $('input[name="Applicant.EducationalQualification.IsDegreeHolder"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Yes" is selected
+        if (selectedValue === 'yes') {
+            // Show the fields
+            $('#deducation, #dmarks, #degpercentage').show();
+        } else {
+            // Hide the fields
+            $('#deducation, #dmarks, #dgrade, #dgradeobtained, #degpercentage').hide();
+            $('#deducation input[type="text"], #deducation select, #dmarks, #dgrade input[type="text"], #dgradeobtained input[type="text"], #degpercentage input[type="text"]').val('');
+            $('#dmarks #degmarksyes1').prop('checked', false);
+            $('#dmarks #degmarksno1').prop('checked', false);
+        }
+    });
+
+    // Event handler for the marks radio buttons
+    $('input[name="Applicant.EducationalQualification.DegreeQualification.Score"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Marks" is selected
+        if (selectedValue === 'yes') {
+            // Show the "Max Marks" and "Marks Obtained" fields
+            $('#dgrade').show();
+            $('#degautopercentage').show();
+            $('#degmanualpercentage').hide();
+            $('#degmanualpercentage input[type="text"]').val('');
+            // Hide the "Grade Obtained" field
+            $('#dgradeobtained').hide();
+            $('#dgradeobtained input[type="text"]').val('');
+        } else if (selectedValue === 'no') {
+            // Show the "Grade Obtained" field
+            $('#dgradeobtained').show();
+            $('#degmanualpercentage').show();
+            $('#degautopercentage').hide();
+            $('#degautopercentage input[type="text"]').val('');
+            // Hide the "Max Marks" and "Marks Obtained" fields
+            $('#dgrade').hide();
+            $('#dgrade input[type="text"]').val('');
+        }
+    });
+});
+
+// Attach the event listener to the inputs
+$('#maxMarks, #marksObtained').on('input', calculatePercentage);
+
+// Function to calculate Degree percentage
+function calculateDegreePercentage() {
+    const maxMarksDegree = parseFloat($('#Applicant_EducationalQualification_DegreeQualification_Score_Maximum').val());
+    const marksObtainedDegree = parseFloat($('#Applicant_EducationalQualification_DegreeQualification_Score_Obtained').val());
+
+    if (maxMarksDegree && marksObtainedDegree) {
+        const percentageDegree = (marksObtainedDegree / maxMarksDegree) * 100;
+        $('#Applicant_EducationalQualification_DegreeQualification_ScorePercentage').val(percentageDegree.toFixed(2));
+    }
+}
+
+// Attach the event listener to the inputs
+$('#degmarks, #degmarksobtained').on('input', calculateDegreePercentage);
+
+
+
+
+$(document).ready(function () {
+
+
+    $('#sslcgrade, #sslcgradeobtained, #sslcautopercentage, #sslcmanualpercentage').hide();
+
+    // Event handler for the marks radio buttons
+    $('input[name="Applicant.EducationalQualification.SSLCQualification.Score"]').change(function () {
+        var selectedValue = $(this).val();
+
+        // Check if "Marks" is selected
+        if (selectedValue === 'yes') {
+            // Show the "Max Marks" and "Marks Obtained" fields
+            $('#sslcgrade').show();
+            $('#sslcpercentage').show();
+            $('#sslcmanualpercentage').hide();
+            $('#sslcmanualpercentage input[type="text"]').val('');
+            $('#sslcautopercentage').show();
+            // Hide the "Grade Obtained" field
+            $('#sslcgradeobtained').hide();
+            $('#sslcgradeobtained input[type="text"]').val('');
+        } else if (selectedValue === 'no') {
+            // Show the "Grade Obtained" field
+            $('#sslcgradeobtained').show();
+            $('#sslcmanualpercentage').show();
+            $('#sslcautopercentage').hide();
+            // $('#sslcpercentage').hide();
+            // $('#degautopercentage input[type="text"]').val('');
+            // Hide the "Max Marks" and "Marks Obtained" fields
+            $('#sslcgrade').hide();
+            $('#sslcgrade input[type="text"]').val('');
+            $('#sslcautopercentage input[type="text"]').val('');
+        }
+    });
+});
+
+// Function to calculate SSLC percentage
+function calculateSSLCPercentage() {
+    const maxMarksSSLC = parseFloat($('#Applicant_EducationalQualification_SSLCQualification_Score_Maximum').val());
+    const marksObtainedSSLC = parseFloat($('#Applicant_EducationalQualification_SSLCQualification_Score_Obtained').val());
+
+    if (maxMarksSSLC && marksObtainedSSLC) {
+        const percentageSSLC = (marksObtainedSSLC / maxMarksSSLC) * 100;
+        $('#Applicant_EducationalQualification_SSLCQualification_ScoredPercentage').val(percentageSSLC.toFixed(2));
+    }
+}
+
+// Attach the event listener to the inputs
+$('#Applicant_EducationalQualification_SSLCQualification_Score_Maximum, #Applicant_EducationalQualification_SSLCQualification_Score_Obtained').on('input', calculateSSLCPercentage);
+
+
+
+$(document).ready(function () {
+    // Hide the second group initially
+    $(".group-2").hide();
+    $(".group-2b").hide();
+
+    // Event handler for radio button change
+    $("input[name='Applicant.Reservation.ExServiceRelation']").change(function () {
+        if ($(this).val() === "yes") {
+            $(".group-2").show();
+            $(".group-2b").show();
+        } else {
+            $(".group-2").hide();
+            $(".group-2b").hide();
+            $('.group-2e').hide();
+            // Clear the values of the input fields within group-2
+            // $(".group-2 input[type='text']").val("");
+            $(".group-2 input[type='radio']").prop("checked", false);
+            $('.group-2e select').val("");
+        }
+    });
+});
+
+
+$(document).ready(function () {
+    $('input[name="Applicant.Reservation.ExServiceRelation.IsDiedInService"]').change(function () {
+        if ($(this).val() === 'yes') {
+            $('input[name="Applicant.Reservation.ExServiceRelation.IsDisabledInService"][value="no"]').prop('checked', true).prop('disabled', true);
+            $('input[name="Applicant.Reservation.ExServiceRelation.IsDisabledInService"][value="yes"]').prop('checked', false).prop('disabled', true);
+        } else {
+            $('input[name="Applicant.Reservation.ExServiceRelation.IsDisabledInService"]').prop('disabled', false);
+            $('input[name="Applicant.Reservation.ExServiceRelation.IsDisabledInService"][value="yes"]').prop('checked', true).prop('disabled', true);
+            $('input[name="Applicant.Reservation.ExServiceRelation.IsDisabledInService"][value="no"]').prop('checked', false).prop('disabled', true);
+        }
+    });
+
+    $('input[name="Applicant.Reservation.ExServiceRelation.IsDisabledInService"]').change(function () {
+        if ($(this).val() === 'yes') {
+            $('input[name="Applicant.Reservation.ExServiceRelation.IsDiedInService"][value="no"]').prop('checked', true).prop('disabled', true);
+            $('input[name="Applicant.Reservation.ExServiceRelation.IsDiedInService"][value="yes"]').prop('checked', false).prop('disabled', true);
+        } else {
+            $('input[name="Applicant.Reservation.ExServiceRelation.IsDiedInService"]').prop('disabled', false);
+            $('input[name="Applicant.Reservation.ExServiceRelation.IsDiedInService"][value="yes"]').prop('checked', true).prop('disabled', true);
+            $('input[name="Applicant.Reservation.ExServiceRelation.IsDiedInService"][value="no"]').prop('checked', false).prop('disabled', true);
+        }
+    });
+});
+
+
+$(document).ready(function () {
+    $('input[name="Applicant.Reservation.IsClaimingTransgenderReservation"]').on('change', function () {
+        var selectedValue = $(this).val();
+        if (selectedValue === 'yes') {
+            $('#transdate').show();
+        } else {
+            $('#transdate').hide();
+            $('#transdate input[type="date"]').val('');
+        }
+    });
+});
+
+
+
+
+$(document).ready(function () {
+    $('input[name="Applicant.Reservation.IsClaimingExServicemenReservation"][value="yes"]').prop('checked', false).prop('disabled', true);
+    $('input[name="Applicant.Reservation.IsClaimingExServicemenReservation"][value="no"]').prop('checked', true).prop('disabled', true);
+    $('#Applicant_ApplyingTypeCode').change(function () {
+        // Reset the disabled and checked properties for all options
+        $('#inService-no, #inService-yes, input[name="Applicant.Reservation.IsClaimingExServicemenReservation"][value="no"], input[name="Applicant.Reservation.IsClaimingExServicemenReservation"][value="yes"]').prop('disabled', false).prop('checked', false);
+        $('input[name="Applicant.Reservation.ExServiceRelation"][value="no"], input[name="Applicant.Reservation.ExServiceRelation"][value="yes"]').prop('disabled', false).prop('checked', false);
+        $('input[name="Applicant.Reservation.IsClaimingExServicemenReservation"][value="yes"]').prop('checked', false).prop('disabled', true);
+        $('input[name="Applicant.Reservation.IsClaimingExServicemenReservation"][value="no"]').prop('checked', true).prop('disabled', true);
+
+        if ($(this).val() === 'DIR') {
+            $('#inService-section').show();
+            $('#exservice-section').show();
+            $('#exServicemendate').hide();
+            $('#exServicemenService').hide();
+            $('#exServicemendischarge').hide();
+            $('#exServicemenrendered').hide();
+            $('#exServicemenServing').hide();
+            $('#inService-no').prop('checked', true).prop('disabled', true);
+            $('input[name="Applicant.Reservation.IsClaimingExServicemenReservation"][value="no"]').prop('checked', true).prop('disabled', true);
+            $('#inService-yes').prop('checked', false).prop('disabled', true);
+            $('input[name="Applicant.Reservation.IsClaimingExServicemenReservation"][value="yes"]').prop('checked', false).prop('disabled', true);
+            $('#inServicewing').hide();
+            $('#inServicerendered').hide();
+            $('#inServicedate').hide();
+
+            $('#ModalexServicemenServing').hide();
+            $('#ModalexServicemendate').hide();
+            $('#ModalexServicemenService').hide();
+            $('#ModalexServicemenrendered').hide();
+        }
+        // else if ($(this).val() === 'InServiceCandidate') {
+        //     $('#inService-section').show();
+        //     $('#exservice-section').show();
+        //     $('#exServicemendate').hide();
+        //     $('#exServicemenService').hide();
+        //     $('#exServicemendischarge').hide();
+        //     $('#exServicemenrendered').hide();
+        //     $('#exServicemenServing').hide();
+        //     $('#exservice-no').prop('checked', true).prop('disabled', true);
+        //     $('#exservice-yes').prop('checked', false).prop('disabled', true);
+        // }
+        else if ($(this).val() === 'EXS') {
+            $('#inService-section').show();
+            $('#exservice-section').show();
+            //$('#exservice-yes').prop('checked', true).prop('disabled', true);
+            //$('#exservice-no').prop('checked', false).prop('disabled', true);
+            $('#exServicemenServing').show();
+            $('#exServicemendate').show();
+            $('#exServicemenService').show();
+            $('#exServicemenrendered').show();
+            $('#inService-no').prop('checked', true).prop('disabled', true);
+            $('#inService-yes').prop('checked', false).prop('disabled', true);
+            $('input[name="Applicant.Reservation.IsClaimingExServicemenReservation"][value="yes"]').prop('checked', true).prop('disabled', true);
+            $('input[name="Applicant.Reservation.IsClaimingExServicemenReservation"][value="no"]').prop('checked', false).prop('disabled', true);
+
+            $('input[name="Applicant.Reservation.ExServiceRelation"][value="no"]').prop('checked', true).prop('disabled', true);
+            $('input[name="Applicant.Reservation.ExServiceRelation"][value="yes"]').prop('checked', false).prop('disabled', true);
+            $('#inServicewing').hide();
+            $('#inServicerendered').hide();
+            $('#inServicedate').hide();
+
+            $('#ModalexServicemenServing').show();
+            $('#ModalexServicemendate').show();
+            $('#ModalexServicemenService').show();
+            $('#ModalexServicemenrendered').show();
+
+
+
+        } else {
+            $('#inService-section').hide();
+            $('#exservice-section').hide();
+        }
+    });
+});
+
+
+$(document).ready(function () {
+    $('#Applicant_Reservation_GenderCode').on('change', function () {
+        var selectedValue = $(this).val();
+        if (selectedValue === 'M') {
+            $('input[name="Applicant.Reservation.IsClaimingTransgenderReservation"][value="yes"]').prop('checked', false).prop('disabled', true);
+            $('input[name="Applicant.Reservation.IsClaimingTransgenderReservation"][value="no"]').prop('checked', true).prop('disabled', true);
+            $('#transdate').hide();
+            $('#transdate input[type="date"]').val('');
+        } else {
+            $('input[name="Applicant.Reservation.IsClaimingTransgenderReservation"][value="yes"]').prop('checked', false).prop('disabled', false);
+            $('input[name="Applicant.Reservation.IsClaimingTransgenderReservation"][value="no"]').prop('checked', false).prop('disabled', false);
+        }
+    });
+});
+
+// ************************** Text Area Character couner ******************************** //
+
+$(document).ready(function () {
+    var maxCharacters = 350;
+    var minCharacters = 2;
+
+    $('#charCounter').text(maxCharacters + ' characters left');
+    $('#charCounter2').text(maxCharacters + ' characters left');
+    $('#charCounter3').text(maxCharacters + ' characters left');
+
+    $('#Applicant_CriminalActivity_CaseDetail').on('input', function () {
+        var remainingCharacters = maxCharacters - $(this).val().length;
+        $('#charCounter').text(remainingCharacters + ' characters left');
+
+        //if (remainingCharacters < minCharacters) {
+        //    $('#charCounter').addClass('text-danger'); // Optional: Change text color when approaching the minimum limit
+        //} else {
+        //    $('#charCounter').removeClass('text-danger');
+        //}
+    });
+    $('#Applicant_CriminalActivity_DepartmentEnquiryDetail').on('input', function () {
+        var remainingCharacters = maxCharacters - $(this).val().length;
+        $('#charCounter2').text(remainingCharacters + ' characters left');
+
+        //if (remainingCharacters < minCharacters) {
+        //    $('#charCounter2').addClass('text-danger'); // Optional: Change text color when approaching the minimum limit
+        //} else {
+        //    $('#charCounter2').removeClass('text-danger');
+        //}
+    });
+    $('#Applicant_CriminalActivity_ConvictionDetail').on('input', function () {
+        var remainingCharacters = maxCharacters - $(this).val().length;
+        $('#charCounter3').text(remainingCharacters + ' characters left');
+
+        //if (remainingCharacters < minCharacters) {
+        //    $('#charCounter3').addClass('text-danger'); // Optional: Change text color when approaching the minimum limit
+        //} else {
+        //    $('#charCounter3').removeClass('text-danger');
+        //}
+    });
+});
+
+
+
+$(document).ready(function () {
+    if ($(window).width() >= 768) {
+        $('.form-group .col-sm-6').each(function () {
+            var serialNumber = $(this).find('.mr-2').text().trim().replace('.', '');
+            var isTwoDigitSerial = /^\d{2}$/.test(serialNumber) || /^\d{2}[a-zA-Z]$/.test(serialNumber);
+            var isTwoDigitAlphaSerial = /^\d{2}[a-zA-Z]$/.test(serialNumber);
+
+            if (isTwoDigitSerial) {
+                $(this).find('input, select, input[type="date"], #applicationForm label.error').css('margin-left', '+=5px');
+                $(this).find('input, select, input[type="date"], #applicationForm label.error').css('width', '-=5px');
+                $(this).find('#applicationForm label.error').css('width', '-=25px');
+
+                if (isTwoDigitAlphaSerial) {
+                    // Fix: Added a comma after 'input[type="date"]'
+                    $(this).find('input, select, input[type="date"]').css('margin-left', '+=10px');
+                    $(this).find('input, select, input[type="date"]').css('width', '-=10px');
+                    $(this).find('#applicationForm label.error').css('width', '-=25px');
+                }
+            }
+        });
+    }
+});
+
+$(document).ready(function () {
+    $('#applicationForm').validate({
+        errorPlacement: function (error, element) {
+            // Check if the element is a radio input
+            if (element.is(':radio')) {
+                // Place the error after the radio group (form-group)
+                error.insertAfter(element.closest('.form-group'));
+            } else {
+                // For other elements, use default placement
+                error.insertAfter(element);
+            }
+        }
+    });
+});
+
+
+
+
+// ************************* SSLC Other Borad ***************************** //
+
+
+$(document).ready(function () {
+    $('#sslcotherboard').hide();
+    $('#sslcotherboardModal').hide();
+    $('#Applicant_EducationalQualification_SSLCQualification_QualificationBoardCode').change(function () {
+        // Reset the disabled and checked properties for all options
+
+        if ($(this).val() === 'OR') {
+            $('#sslcotherboard').show();
+            $('#sslcotherboardModal').show();
+        }
+        else {
+            $('#sslcotherboard').hide();
+            $('#sslcotherboardModal').hide();
+        }
+    }); 
+});$(document).ready(function () {
+    $('#pucotherboard').hide();
+    $('#Modalpucotherboard').hide();
+    $('#Applicant_EducationalQualification_PUCQualification_QualificationBoardCode').change(function () {
+        // Reset the disabled and checked properties for all options
+
+        if ($(this).val() === 'OR') {
+            $('#pucotherboard').show();
+            $('#Modalpucotherboard').show();
+        }
+        else {
+            $('#pucotherboard').hide();
+            $('#Modalpucotherboard').hide();
+        }
+    }); 
+});
+
+
+
+// $(document).ready(function () {
+//     $('#weightField').hide();
+//     $('#heightField').hide();
+//     $('input[name="gender"]').change(function () {
+//         var selectedGender = $('input[name="gender"]:checked').val();
+//         if (selectedGender === "male") {
+//             $('#heightField').show();
+//             $('#weightField').hide();
+//             $('#weightField input').val('');
+//         } else if (selectedGender === "female") {
+//             $('#weightField').show();
+//             $('#heightField').hide();
+//             $('#heightField input').val('');
+//         }
+//     });
+// });
+
+
+//  ************************************** Cookie Banner *************************************** //
+
+/* Javascript to show and hide cookie banner using localstorage */
+/* Shows the Cookie banner */
+function showCookieBanner() {
+    let cookieBanner = document.getElementById("cb-cookie-banner");
+    cookieBanner.style.display = "block";
+}
+
+/* Hides the Cookie banner and saves the value to localstorage */
+function hideCookieBanner() {
+    localStorage.setItem("cb_isCookieAccepted", "yes");
+    let cookieBanner = document.getElementById("cb-cookie-banner");
+    cookieBanner.style.display = "none";
+}
+
+/* Checks the localstorage and shows Cookie banner based on it. */
+function initializeCookieBanner() {
+    let isCookieAccepted = localStorage.getItem("cb_isCookieAccepted");
+    if (isCookieAccepted === null) {
+        localStorage.setItem("cb_isCookieAccepted", "no");
+        showCookieBanner();
+    }
+    if (isCookieAccepted === "no") {
+        showCookieBanner();
+    }
+}
+
+// Assigning values to window object
+window.onload = initializeCookieBanner();
+window.cb_hideCookieBanner = hideCookieBanner;
+
+
+// ************************* Adhar No Format ************************** //
+
+function formatAadharNumber(input) {
+    // Remove any non-digit characters
+    const rawValue = input.value.replace(/\D/g, '');
+
+    // Add spaces every 4 digits
+    const formattedValue = rawValue.replace(/(\d{4})(?=\d)/g, '$1 - ');
+
+    // Update the input value with the formatted Aadhar number
+    input.value = formattedValue;
+}
+

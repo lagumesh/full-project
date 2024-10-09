@@ -1,0 +1,599 @@
+﻿@page
+@model AKPWB240601.Pages.WrittenExam.GenerateCallLetter.GenerateCallLetterModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0" id="home-p">Recruitment of Stenographer and Data Entry Assistant for Scheduled Caste & Scheduled Tribes - 02 Post</p>
+        <p class="mb-0"><img class="header-below-logo" src="~/images/logo.png" />KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+    </div>
+    <!-- Start Breadcumb -->
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div>
+                                <h5 class="page-title mb-0">Generate call letter</h5>
+                            </div>
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Post
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Written exam
+                                </li>
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Generate call letter
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Breadcumb -->
+        <div class="container-fluid m-0">
+            <div class="custom-toolbar">
+                <div class="items-per-page">
+                    <select class="form-select" id="itemsPerPage">
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                    </select>
+                    <span>Entries per page</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center gap-1">
+                    <!-- Add Filter Dropdown without Icon -->
+                    <!-- Add Filter Button -->
+                    <a class="btn add-btn" href="#" data-bs-toggle="modal" data-bs-target="#filterModal">
+                        Add filter
+                        <span class="material-symbols-outlined">tune</span>
+                    </a>
+
+                    <!-- Modal Structure -->
+                    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row p-5">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="code" class="form-label">Serial No</label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <input type="text" class="modal-input" id="code" placeholder="Serial No">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="applicantName" class="form-label">College Name</label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <input type="text" class="modal-input" id="applicantName" placeholder="Enter the College name">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row p-2">
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="code" class="form-label">Application No</label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <input type="text" class="modal-input" id="code" placeholder="Enter your Application No">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="applicantName" class="form-label">Candiadate Name</label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <input type="text" class="modal-input" id="applicantName" placeholder="Enter the Candidate Name">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row p-2">
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="code" class="form-label">Date of birth</label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <div class="input-wrapper">
+                                                                <input type="text" class="modal-input add-post-input" id="code" placeholder="dd/mm/yyyy">
+                                                                <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="applicantName" class="form-label">Roll No</label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <input type="text" class="modal-input" id="applicantName" placeholder="Enter the Roll No">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row p-2">
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="code" class="form-label">Exam Date & Time</label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <div class="input-wrapper">
+                                                                <input type="text" class="modal-input add-post-input" id="code" placeholder="dd/mm/yyyy">
+                                                                <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="applicantName" class="form-label">Exam Venue</label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <input type="text" class="modal-input" id="applicantName" placeholder="Enter the Exam venue">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row p-2">
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="code" class="form-label">Unit</label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <select class="modal-input form-select">
+                                                                <option value="" disabled selected>Select the  unit</option>
+                                                                <option value="option1">Option 1</option>
+                                                                <option value="option2">Option 2</option>
+                                                                <option value="option3">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="code" class="form-label">Applying Type </label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <select class="modal-input form-select">
+                                                                <option value="" disabled selected>Select the  applying type </option>
+                                                                <option value="option1">Option 1</option>
+                                                                <option value="option2">Option 2</option>
+                                                                <option value="option3">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row p-2">
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="code" class="form-label">Gender</label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <select class="modal-input form-select">
+                                                                <option value="" disabled selected>Select the  gender</option>
+                                                                <option value="option1">Option 1</option>
+                                                                <option value="option2">Option 2</option>
+                                                                <option value="option3">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="code" class="form-label">Category </label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <select class="modal-input form-select">
+                                                                <option value="" disabled selected>Select the  category</option>
+                                                                <option value="option1">Option 1</option>
+                                                                <option value="option2">Option 2</option>
+                                                                <option value="option3">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row p-2">
+                                                <div class="col-md-6">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-3">
+                                                            <label for="code" class="form-label">Reservation</label>
+                                                        </div>
+                                                        <div class="col-md-1">:</div>
+                                                        <div class="col-md-8">
+                                                            <select class="modal-input form-select">
+                                                                <option value="" disabled selected>Select the  Reservation</option>
+                                                                <option value="option1">Option 1</option>
+                                                                <option value="option2">Option 2</option>
+                                                                <option value="option3">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-pill" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success rounded-pill">filter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Work Flow Button -->
+                    <a class="btn add-btn" href="/WrittenExam/GenerateCallLetter/GenrateNominal">
+                        Generate nominal roll
+
+                    </a>
+
+                    <!-- Import Button -->
+                    <a class="btn add-btn" href="/WrittenExam/GenerateCallLetter/ApprovedCallLetter">
+                        Approved call letter design
+                        <i class="fa-solid fa-plus ms-1"></i>
+                    </a>
+
+                    <!-- Export Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn export-btn dropdown-toggle" id="exportButton" data-bs-toggle="dropdown">
+                            Export
+                        </button>
+                        <ul class="dropdown-menu export-dropdown m-0 p-0" aria-labelledby="exportButton">
+                            <li>
+                                <a class="dropdown-item" href="#" id="exportExcel">
+                                    <span>Excel</span>
+                                    <i class="bi bi-download ms-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" id="exportPDF">
+                                    <span>Pdf</span>
+                                    <i class="bi bi-download ms-3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Add Button -->
+                    <a class="btn add-btn" href="/WrittenExam/Nominal/AddNominal">
+                        Add
+                        <i class="fa-solid fa-plus ms-1"></i>
+                    </a>
+                </div>
+
+
+
+            </div>
+
+            <div class="table-container events-table">
+                <table class="table table-responsive rounded-3 custom-table w-100 shadow-sm mt-2" id="exampleTable">
+                    <thead>
+                        <tr>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content p-1">
+                                    <input type="checkbox" class="form-check-input me-2 header-checkbox" data-table="keyDates">
+                                    <span>Sl.No</span>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Unit name</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="UnitName" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="UnitName" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>College name</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="CollegeName" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="CollegeName" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Sl no.</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="SlNo" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="SlNo" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Application no.
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="ApplicationNo" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="ApplicationNo" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Applying type
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column=" ApplyingType" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="ApplyingType" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Candidate name
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column=" CandidateName" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="CandidateName" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Date of birth
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="DOB" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="DOB" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Gender
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="Gender" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="Gender" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Category
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="Category" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="Category" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                      Reservation
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="Reservation" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="Reservation" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Roll no
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="RollNo" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="RollNo" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                       Exam date & time
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="ExamDate" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="ExamDate" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Exam Venue
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="ExamVenue" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="ExamVenue" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Candidate Address
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="CandidateAddress" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="CandidateAddress" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                       Mobile No
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="MobileNo" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="MobileNo" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                       
+
+
+                           
+                           
+                         
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Photos
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column=" Photos" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column=" Photos" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Signature
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column=" Signature" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="Signature" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Action</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr data-UnitName="Mandya" data-CollegeName="7thdayschool" data-SlNo="1519" data-ApplicationNo="123456780" data-ApplyingType="Direct candidate" data-CandidateName="Chanabasa Doddamani" data-DOB="dd/mm/yyyy" data-Gender="Male" data-Category="2A" data-Reservation="KAN-RUR" data-RollNo="123456780" data-ExamDate="23-Aug-2024" data-ExamVenue="MandyaUni" data-CandidateAddress="mandyaUniversity" data-MobileNo="9361129250" data-Photos="520" data-Signature="5100020">
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>01</span>
+                                </div>
+                            </td>
+                            <td>Mandya</td>
+                            <td>7th day school, Spencer road, Frazer town, Bengaluru.</td>
+                            <td>1519</td>
+                            <td>123456780</td>
+                            <td>
+                                Direct candidate
+                            </td>
+                            <td>Chanabasa Doddamani</td>
+                            <td>dd/mm/yyyy</td>
+                            <td>Male</td>
+                            <td>2A</td>
+                            <td>KAN-RUR</td>
+                            <td>123456780</td>                       
+                          
+                        
+                            <td>23-Aug-2024&10:30a.m</td>
+                            <td>Mandya University, M.C Road, Mandya</td>
+                            <td>Mandya University, M.C Road, Mandya</td>
+                            <td>9361129250</td>
+                            <td>
+                                <img src="~/images/lagu.jpg" class="biometric-img" />
+                            </td>
+                            <td>
+                                <img src="~/images/sign.png" class="biometric-img" />
+                            </td>
+
+                            <td class="p-0 d-flex align-items-center">
+                              
+                                <a href="/WrittenExam/GenerateCallLetter/ViewCallLetter" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1 deleting-icon" onclick="deleteRow(this)">delete</span>
+                            </td>
+
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-2 mb-5">
+                <div id="entriesInfo" class="entries-info">
+                </div>
+                <!-- Pagination -->
+                <div class="pagination-container">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-end" id="pagination">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+    </section>
+
+</section>

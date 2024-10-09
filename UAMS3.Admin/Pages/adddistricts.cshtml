@@ -1,0 +1,68 @@
+﻿@page
+@model UAMS3.Admin.Pages.adddistrictsModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">District</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">District</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add Districts Section -->
+	<section id="add-pages" class="add-country mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<p class="card-title px-3 py-1">District Details</p>
+						<div class="card-body px-3 py-2">
+							<ul class="px-0">
+								<li>
+									<span>Code</span>
+									<input type="text" placeholder="Code" />
+								</li>
+								<li>
+									<span>Display Title</span>
+									<input type="text" placeholder="Display Title" />
+								</li>
+								<li>
+									<span>Union States</span>
+									<select class="select">
+										<option defaultValue>Select States</option>
+										<option>Tamilnadu</option>
+										<option>Karnataka</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+				<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- End Add Districts Section -->

@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\jquery-validation\dist\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\fonts\.DS_Store" />
+    <None Include="wwwroot\lib\fonts\.DS_Store" />
+  </ItemGroup>
+
+</Project>

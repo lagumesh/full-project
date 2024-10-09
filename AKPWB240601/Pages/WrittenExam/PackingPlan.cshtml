@@ -1,0 +1,343 @@
+﻿@page
+@model AKPWB240601.Pages.WrittenExam.PackingPlanModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0" id="home-p">Recruitment of Stenographer and Data Entry Assistant for Scheduled Caste & Scheduled Tribes - 02 Post</p>
+        <p class="mb-0"><img class="header-below-logo" src="~/images/logo.png" />KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+    </div>
+    <!-- Start Breadcumb -->
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div>
+                                <h5 class="page-title mb-0">Packing plan</h5>
+                            </div>
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Post
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Written exam
+                                </li>
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Packing plan
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Breadcumb -->
+        <div class="container-fluid m-0">
+            <div class="custom-toolbar">
+                <div class="items-per-page">
+                    <select class="form-select" id="itemsPerPage">
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                    </select>
+                    <span>Entries per page</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center gap-1">
+                    <form class="search-container">
+                        <div class="search-wrapper position-relative">
+                            <input type="text" id="search-bar" placeholder="Search..." class="form-control">
+                            <span class="material-symbols-outlined search-icon">
+                                search
+                            </span>
+                            <span class="material-symbols-outlined close-icon">
+                                close
+                            </span>
+                        </div>
+
+
+
+                    </form>
+                    <!-- Import Button -->
+                    <a class="btn import-btn" href="#">
+                        Import
+                        <i class="fa-solid fa-plus ms-1"></i>
+                    </a>
+
+                    <!-- Export Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn export-btn dropdown-toggle" id="exportButton" data-bs-toggle="dropdown">
+                            Export
+                        </button>
+                        <ul class="dropdown-menu export-dropdown m-0 p-0" aria-labelledby="exportButton">
+                            <li>
+                                <a class="dropdown-item" href="#" id="exportExcel">
+                                    <span>Excel</span>
+                                    <i class="bi bi-download ms-2"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" id="exportPDF">
+                                    <span>Pdf</span>
+                                    <i class="bi bi-download ms-3"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Add Button -->
+                    <a class="btn add-btn" href="/WrittenExam/AddpackingPlan">
+                        Add
+                        <i class="fa-solid fa-plus ms-1"></i>
+                    </a>
+                </div>
+
+
+
+            </div>
+
+            <div class="table-container events-table">
+                <table class="table table-responsive rounded-3 custom-table w-100 shadow-sm mt-2" id="exampleTable">
+                    <thead>
+                        <tr>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content p-1">
+                                    <input type="checkbox" class="form-check-input me-2 header-checkbox" data-table="keyDates">
+                                    <span>Sl.No</span>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Unit name</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="UnitName" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="UnitName" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>College name</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="CollegeName" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="CollegeName" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Capacity</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="Capacity" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="Capacity" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Allotted  candidates
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column=" AllottedCandidates" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="AllottedCandidates" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Roll no. &
+                                        OMR start no.
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="RollStart" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="RollStart" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Roll no. &
+                                        OMR end no.
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="RollEnd" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="RollEnd" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Allotted
+                                        count
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="AllottedCount" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="AllottedCount" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Extra OMR
+                                        count
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="OmrCount" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="OmrCount" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Extra OMR
+                                        start no.
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="OmrStart" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="OmrStart" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th> 
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Extra OMR
+                                        end no.
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="OmrEnd" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="OmrEnd" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>  
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Total
+                                        count
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column=" TotalCount" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="TotalCount" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>
+                                        Total no of packets
+                                    </span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column=" TotalPackets" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="TotalPackets" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content">
+                                    <span>Action</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr data-UnitName="BengaluruCity" data-CollegeName="7thdayschool" data-Capacity="500" data-AllottedCandidates="500" data-RollStart="5000001" data-RollEnd="5000500" data-AllottedCount="500" data-OmrCount="500" data-OmrStart="20" data-TotalCount="520" data-OmrEnd="5100020" data-TotalPackets="26">
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>01</span>
+                                </div>
+                            </td>
+                            <td>Bengaluru City</td>
+                            <td>7th day school, Spencer road, Frazer town, Bengaluru.</td>
+                            <td>500</td>
+                            <td>500</td>
+                            <td>5000001</td>
+                            <td>5000500</td>
+                            <td>500</td>
+                            <td>20</td>
+                            <td>5100001</td>
+                            <td>5100020</td>
+                            <td>520</td>
+                            <td>26</td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/WrittenExam/EditPackingPlan" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/WrittenExam/ViewPackingPlan" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1 deleting-icon" onclick="deleteRow(this)">delete</span>
+                            </td>
+                         
+                        </tr>
+                        <tr data-UnitName="BengaluruCity" data-CollegeName="IndianPublicSchool" data-Capacity="400" data-AllottedCandidates="200" data-RollStart="5000009" data-RollEnd="5000500" data-AllottedCount="500" data-OmrCount="500" data-OmrStart="20" data-TotalCount="520" data-OmrEnd="5100020" data-TotalPackets="26">
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>02</span>
+                                </div>
+                            </td>
+                            <td>Bengaluru City</td>
+                            <td>Indian public school, Near J B Nagara bus stand, Bengaluru - 560075.</td>
+                            <td>400</td>
+                            <td>200</td>
+                            <td>5000009</td>
+                            <td>5000500</td>
+                            <td>500</td>
+                            <td>20</td>
+                            <td>5100001</td>
+                            <td>5100020</td>
+                            <td>520</td>
+                            <td>26</td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/WrittenExam/EditPackingPlan" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/WrittenExam/ViewPackingPlan" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1 deleting-icon" onclick="deleteRow(this)">delete</span>
+                            </td>
+
+                        </tr>
+
+                      
+                    </tbody>
+                </table>
+             
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-2 mb-5">
+                <div id="entriesInfo" class="entries-info">
+                </div>
+                <!-- Pagination -->
+                <div class="pagination-container">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-end" id="pagination">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+    </section>
+
+</section>

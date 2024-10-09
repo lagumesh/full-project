@@ -1,0 +1,150 @@
+﻿@page
+@model UAMS3.Admin.Pages.addadmissionsModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Admission</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Admission</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add Admissions Section -->
+	<section id="add-pages" class="add-country mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<div class="card-body p-0">
+							<div class="nav nav-tabs mb-3">
+								<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#master">Master</button>
+								<button class="nav-link" data-bs-toggle="tab" data-bs-target="#appno">Application No</button>
+								<button class="nav-link" data-bs-toggle="tab" data-bs-target="#program">Programme</button>
+							</div>
+							<div class="tab-content">
+								<!-- Start Master Tab Section -->
+								<div class="tab-pane fade show active px-3" id="master">
+									<ul class="px-0">
+										<li>
+											<span>Code</span>
+											<input type="text" placeholder="Code" />
+										</li>
+										<li>
+											<span>Title</span>
+											<input type="text" placeholder="Title" />
+										</li>
+										<li>
+											<span>Academic Year</span>
+											<select class="select">
+												<option defaultValue>Select Academic Year</option>
+												<option>2023-26</option>
+												<option>2024-27</option>
+											</select>
+										</li>
+									</ul>
+								</div>
+								<!-- End Master Tab Section -->
+								<!-- Start Application No Tab Section -->
+								<div class="tab-pane fade px-3" id="appno">
+									<ul class="px-0">
+										<li>
+											<span>Starting Number</span>
+											<input type="text" placeholder="Starting Number" />
+										</li>
+										<li>
+											<span>Current Number</span>
+											<input type="text" placeholder="Current Number" />
+										</li>
+										<li>
+											<span>Prefix</span>
+											<input type="text" placeholder="Prefix" />
+										</li>
+										<li>
+											<span>Suffix</span>
+											<input type="text" placeholder="Suffix" />
+										</li>
+									</ul>
+								</div>
+								<!-- End Application No Tab Section -->
+								<!-- Start Programme Tab Section -->
+								<div class="tab-pane fade px-3" id="program">
+									<ul class="px-0">
+										<li>
+											<span>Programme</span>
+											<select class="select">
+												<option defaultValue>Select the Programme</option>
+												<option>B.E</option>
+												<option>B.Tech</option>
+											</select>
+										</li>
+										<li>
+											<span>Fee Group</span>
+											<select class="select">
+												<option defaultValue>Select the Fee Group</option>
+												<option>Group 01</option>
+												<option>Group 02</option>
+											</select>
+										</li>
+										<li>
+											<span>Fee Type</span>
+											<select class="select">
+												<option defaultValue>Select the Fee Type</option>
+												<option>Type 01</option>
+												<option>Type 02</option>
+											</select>
+										</li>
+										<li>
+											<span>Fee Amount</span>
+											<input type="text" placeholder="Enter Fee Amount" />
+										</li>
+										<li>
+											<span>Start Date</span>
+											<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+										</li>
+										<li>
+											<span>End Date</span>
+											<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+										</li>
+										<li>
+											<span>Status</span>
+											<select class="select">
+												<option defaultValue>Select the Status</option>
+												<option>Completed</option>
+												<option>Pending</option>
+											</select>
+										</li>
+									</ul>
+								</div>
+								<!-- End Programme Tab Section -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+				<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- End Add Admissions Section -->

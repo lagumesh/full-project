@@ -1,0 +1,259 @@
+﻿@page
+@model UAMS3.Admin.Pages.addexaminationprogrammesModel
+@{
+    Layout = "_Layout";
+}
+<style>
+	/* Default styles for the Add button */
+/* 	.add-btn {
+		background-color: blue; 
+		color: white;
+		border: none;
+		padding: 10px 20px;
+		cursor: pointer;
+		border-radius: 5px;
+	} */
+
+		/* Styles for the disabled Add button */
+		.add-btn:disabled {
+			background-color: lightgrey; /* Red color when disabled */
+			cursor: not-allowed;
+		}
+</style>
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Examination Programme</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Examination Programme</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add Exam Program Section -->
+	<section id="add-pages" class="add-country mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<div class="card-body p-0">
+							<div class="nav nav-tabs mb-3">
+								<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#master">Master</button>
+								<button class="nav-link" data-bs-toggle="tab" data-bs-target="#applicationsetting">Application Setting</button>
+								<button class="nav-link" data-bs-toggle="tab" data-bs-target="#fee">Fee</button>
+							</div>
+							<div class="tab-content">
+								<!-- Start Master Tab Section -->
+								<div class="tab-pane fade show active px-3" id="master">
+									<ul class="px-0">
+										<li>
+											<span>Examination</span>
+											<select class="select">
+												<option defaultValue>Select Examination</option>
+												<option>2022-2026</option>
+												<option>2022-2026</option>
+											</select>
+										</li>
+										<li>
+											<span>Programme</span>
+											<select class="select">
+												<option defaultValue>Select Programme</option>
+												<option>Programme 01</option>
+												<option>Programme 01</option>
+											</select>
+										</li>
+										<li>
+											<span>Batch</span>
+											<select class="select">
+												<option defaultValue>Select Batch</option>
+												<option>Batch 01</option>
+												<option>Batch 02</option>
+											</select>
+										</li>
+										<li>
+											<span>Term Index</span>
+											<select class="select">
+												<option defaultValue>Select Term Index</option>
+												<option>Term Index 01</option>
+												<option>Term Index 02</option>
+											</select>
+										</li>
+										<li>
+											<span>Status</span>
+											<select class="select">
+												<option defaultValue>Select Status</option>
+												<option>Completed</option>
+												<option>Pending</option>
+											</select>
+										</li>
+									</ul>
+								</div>
+								<!-- End Master Tab Section -->
+								<!-- Start Application No Tab Section -->
+								<div class="tab-pane fade px-3" id="applicationsetting">
+									<ul class="px-0">
+										<li>
+											<span>Starting Date</span>
+											<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+										</li>
+										<li>
+											<span>End Date</span>
+											<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+										</li>
+									</ul>
+								</div>
+								<!-- End Application No Tab Section -->
+								<!-- Start Programme Tab Section -->
+								<div class="tab-pane fade px-3" id="fee">
+									<ul class="px-0">
+										<li>
+											<span>Fee Type</span>
+											<select class="select" id="feeType">
+												<option defaultValue>Select Fee Type</option>
+												<option>Online</option>
+												<option>Offline</option>
+											</select>
+										</li>
+										<li>
+											<span>Fee Amount</span>
+											<select class="select" id="feeAmount">
+												<option defaultValue>Select Fee Amount</option>
+												<option>500000</option>
+												<option>800000</option>
+											</select>
+										</li>
+										<li>
+											<span>Starting Date</span>
+											<input type="text" id="startDatePicker" placeholder="DD/MM/YYYY" />
+										</li>
+										<li>
+											<span>End Date</span>
+											<input type="text" id="endDatePicker" placeholder="DD/MM/YYYY" />
+										</li>
+									</ul>
+									<div class="d-flex flex-wrap gap-3">
+										<button class="add-btn" id="addButton1" disabled>Add</button>
+										<button class="clear-btn" id="cancelButton1">Clear</button>
+									</div>
+
+									<div class="mt-5">
+										<table class="table table-bordered border-primary w-100 mx-auto">
+											<thead>
+												<tr>
+													<th>Fee Type</th>
+													<th>Fee Amount</th>
+													<th>Starting Date</th>
+													<th>End Date</th>
+												</tr>
+											</thead>
+											<tbody id="feeTableBody">
+												<!-- Table content will be dynamically added using JavaScript -->
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<!-- End Programme Tab Section -->
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+			<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+			<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+			</div>
+	</section>
+</section>
+<!-- End Add Exam Program Section -->
+<!-- Include jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Include datepicker library -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+	$(document).ready(function () {
+		function checkFields() {
+			var feeType = $('#feeType').val();
+			var feeAmount = $('#feeAmount').val();
+			var startDate = $('#startDatePicker').val();
+			var endDate = $('#endDatePicker').val();
+
+			if (feeType !== "" && feeAmount !== "" && startDate !== "" && endDate !== "") {
+				$('#addButton1').prop('disabled', false);
+				$('#addButton1').removeClass('disabled-button');
+			} else {
+				$('#addButton1').prop('disabled', true);
+				$('#addButton1').addClass('disabled-button');
+			}
+		}
+
+		$('#feeType, #feeAmount, #startDatePicker, #endDatePicker').change(function () {
+			checkFields();
+		});
+
+		$('#addButton1').click(function () {
+			var feeType = $('#feeType').val();
+			var feeAmount = $('#feeAmount').val();
+			var startDate = $('#startDatePicker').val();
+			var endDate = $('#endDatePicker').val();
+
+			// Append a new row with fee details to the table body
+			$('#feeTableBody').append('<tr><td>' + feeType + '</td><td>' + feeAmount + '</td><td>' + startDate + '</td><td>' + endDate + '</td></tr>');
+
+			// Clear the form fields after adding to the table
+			$('#feeType').val('');
+			$('#feeAmount').val('');
+			$('#startDatePicker').val('');
+			$('#endDatePicker').val('');
+
+			// Disable the "Add" button after adding a row
+			$('#addButton1').prop('disabled', true);
+			$('#addButton1').addClass('disabled-button');
+		});
+
+		$('#cancelButton1').click(function () {
+			// Clear the form fields when "Clear" button is clicked
+			$('#feeType').val('');
+			$('#feeAmount').val('');
+			$('#startDatePicker').val('');
+			$('#endDatePicker').val('');
+
+			// Disable the "Add" button after clearing the fields
+			$('#addButton1').prop('disabled', true);
+			$('#addButton1').addClass('disabled-button');
+		});
+
+		// Initialize datepicker for starting date
+		flatpickr('#startDatePicker', {
+			dateFormat: 'd/m/Y'
+		});
+
+		// Initialize datepicker for end date
+		flatpickr('#endDatePicker', {
+			dateFormat: 'd/m/Y'
+		});
+
+		// Disable the "Add" button on page load
+		$('#addButton1').prop('disabled', true);
+		$('#addButton1').addClass('disabled-button');
+	});
+</script>

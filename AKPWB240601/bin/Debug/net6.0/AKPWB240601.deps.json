@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AKPWB240601/1.0.0": {
+        "runtime": {
+          "AKPWB240601.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AKPWB240601/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

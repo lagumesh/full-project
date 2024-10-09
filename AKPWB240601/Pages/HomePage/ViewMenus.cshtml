@@ -1,0 +1,102 @@
+﻿@page
+@model AKPWB240601.Pages.HomePage.ViewMenusModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0"><img class="header-below-logo" src="~/images/logo.png" /> KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+        <p class="mb-0" id="home-p">Police Constable (Civil) (Men & Women) & (Transgender Men & Women) & Inservice & Backlog</p>
+    </div>
+    <!-- Start Breadcumb -->
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <a href="/HomePage/HomePageContent" class="text-decoration-none text-dark mt-2">
+                                    <span class="material-symbols-outlined me-2">arrow_back</span>
+                                </a>
+                                <h5 class="page-title mb-0">View details</h5>
+                            </div>
+
+
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Post
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Homepage
+                                </li>
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>View menus
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- End Breadcumb -->
+    <div class="Preview-container p-3">
+        <div class="previews">
+            <h5 class="p-2">Menu details</h5>
+        </div>
+        <div class="preview-content">
+            <div class="preview">
+                <table>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Code<span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter code" class="add-post-input3"></td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">Menu name<span>:</span></td>
+                        <td class="addpost-td border-box"><input type="text" placeholder="Enter menu name" class="add-post-input3"></td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">
+                            Schedule start date & time<span>:</span>
+                        </td>
+                        <td class="addpost-td border-box">
+                            <div class="input-wrapper">
+                                <input type="text" placeholder="dd/yy/mm" class="add-post-input">
+                                <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="text" placeholder="hh/mm/ss" class="add-post-input1 timepicker">
+                                <i class="fa-regular fa-clock clock-icon"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="addpost-th d-flex justify-content-between">
+                            Scheduled end date & time<span>:</span>
+                        </td>
+                        <td class="addpost-td border-box">
+                            <div class="input-wrapper">
+                                <input type="text" placeholder="dd/yy/mm" class="add-post-input">
+                                <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="text" placeholder="hh/mm/ss" class="add-post-input1 timepicker">
+                                <i class="fa-regular fa-clock clock-icon"></i>
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

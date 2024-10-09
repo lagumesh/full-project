@@ -1,0 +1,108 @@
+﻿@page
+@model UAMS3.Admin.Pages.addtermfeesModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Term Fees</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Term Fees</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add Term Fees Section -->
+	<section id="add-pages" class="add-country mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<p class="card-title px-3 py-1">Term Fees Details</p>
+						<div class="card-body px-3 py-2">
+							<ul class="px-0">
+								<li>
+									<span>Batch</span>
+									<select class="select">
+										<option defaultValue>Select Batch</option>
+										<option>Batch 01</option>
+										<option>Batch 02</option>
+									</select>
+								</li>
+								<li>
+									<span>Programme Code</span>
+									<select class="select">
+										<option defaultValue>Select Programme Code</option>
+										<option>Computer Science</option>
+										<option>Mechanical</option>
+									</select>
+								</li>
+								<li>
+									<span>Term Index</span>
+									<select class="select">
+										<option defaultValue>Select Term Index</option>
+										<option>Term Index 01</option>
+										<option>Term Index 02</option>
+									</select>
+								</li>
+								<li>
+									<span>Fees Group Code</span>
+									<select class="select">
+										<option defaultValue>Select Fees Group Code</option>
+										<option>12345</option>
+										<option>12345</option>
+									</select>
+								</li>
+								<li>
+									<span>Fees Type</span>
+									<select class="select">
+										<option defaultValue>Select Fees Type</option>
+										<option>Online</option>
+										<option>Offline</option>
+									</select>
+								</li>
+								<li>
+									<span>Start Date</span>
+									<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+								</li>
+								<li>
+									<span>End Date</span>
+									<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+								</li>
+								<li>
+									<span>Status</span>
+									<select class="select">
+										<option defaultValue>Select Status</option>
+										<option>Process</option>
+										<option>Pending</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+				<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- End Add Term Fees Section -->

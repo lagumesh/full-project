@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Dashboard - KSP-Admin</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/kar_main_logo.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="shortcut icon" href="/images/pngwing.com.png" type="image/x-icon">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style2.css">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+        .container2 {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            height: 80vh;
+            left: 160px;
+            position: relative;
+        }
+
+        .form-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            max-width: 568px;
+            padding: 39px;
+            border-radius: 10px;
+            background: #fff;
+            width: 100%;
+        }
+
+        .form-title {
+            color: #505050;
+            font-size: 24px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            color: #505050;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            line-height: normal;
+            text-align: left;
+        }
+
+        .form-input {
+            display: flex;
+            height: 40px;
+            padding: 10px;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 2px;
+            border: 0.8px solid #505050;
+            background-color: #fff;
+            color: #505050;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            line-height: normal;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .sign-in-btn {
+            display: flex;
+            width: 100%;
+            height: 39px;
+            padding: 8px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 2px;
+            background: #3B004A !important;
+            color: #fff;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .sign-in-btn:hover {
+            background-color: #012c46;
+        }
+
+        .forget-link {
+            color: #01344F;
+            text-align: right;
+            font-size: 12px;
+            font-family: "Poppins", sans-serif;
+            font-style: italic;
+            font-weight: 300;
+            line-height: normal;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex d-lg-none align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+        <div class="row justify-content-between">
+            <div class="top-part">
+                <div class="logo">
+                    <img src="/images/pngwing.com.png" alt="">
+                </div>
+                <ul class="navbar-nav justify-content-start text-start flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Boucher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Application</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-part row justify-content-end align-items-end">
+                <div class="helpline p-0">
+                    <div class="card-body">
+                        <ul class="clsContact list-unstyled">
+                            <li class="pb-3">
+                                <div class="d-flex align-items-start">
+                                    <i class="bi bi-telephone-fill text-white mt-2 me-3 bx-tada-hover"></i>
+                                    <span><a href="#" class="text-white"><span class="text-white">Help-line
+                                                Number</span><br>080
+                                            2294 3346 /
+                                            3039</a></span></span>
+                                </div>
+                            </li>
+                            <li class="pb-3">
+                                <div class="d-flex align-items-start"><i class="bi bi-clock-fill text-white me-3"></i>
+                                    <span><a href="javascript:void(0);" class="text-white"><span
+                                                class="text-white">Support
+                                                Centre
+                                                Timings</span><br> 10:30 am
+                                            - 05:30
+                                            pm</a></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main new-application-form">
+
+        <div class="banner">
+            <div class="container-fluid banner-text d-flex align-items-center my-auto">
+                <div class="container container2">
+                    <div class="form-wrapper">
+                        <h1 class="form-title">Sign in to Your Account</h1>
+                        <div class="form-group">
+                            <label for="applicationNumber" class="form-label">Application number</label>
+                            <input type="text" id="applicationNumber" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="dateOfBirth" class="form-label">Date of Birth</label>
+                            <input type="text" id="dateOfBirth" class="form-input">
+                            <p class="forget-link"><a href="/forgetpassword.html">Forget Application Number?</a></p>
+                        </div>
+                        <button type="button" class="sign-in-btn btn"><a href="/my_application_details.html" style="
+                    color: white;
+                ">Sign In</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <!-- End main -->
+
+    <!-- Start Footer -->
+    <footer id="footer" class="footer d-flex justify-content-around" style="background-color: #3B004A;">
+        <div class="text-white">Date:Tuesday,16-May-2023</div>
+        <div class="copyright text-white">Copyright © 2023 Karnataka State Police Recruitment Wing . All rights reserved
+        </div>
+        <div class="text-white">IP Address: 115.96.68.20</div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Template Main JS File -->
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

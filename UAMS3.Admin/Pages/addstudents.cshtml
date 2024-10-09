@@ -1,0 +1,375 @@
+﻿@page
+@model UAMS3.Admin.Pages.addstudentsModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+		<section id="main" class="main">
+			<section id="breadcrumb">
+				<div class="container-fluid my-2">
+					<div class="row">
+						<div class="col-12">
+							<div class="d-flex flex-wrap justify-content-between">
+								<div>
+									<p class="page-title mb-0">Student</p>
+								</div>
+								<ol class="breadcrumb mb-0">
+									<i class="bi bi-house-door-fill"></i>
+									<li class="breadcrumb-item">
+										Dashboard <span><i class="bi bi-chevron-right"></i></span>
+									</li>
+									<li class="active">Student</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Breadcumb -->
+
+			<!-- Start Add Students Section -->
+			<section id="add-pages" class="add-country mb-5">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-body p-0">
+									<div class="nav nav-tabs mb-3">
+										<button class="nav-link active" data-bs-toggle="tab" data-bs-target="#master">Master</button>
+										<button class="nav-link" data-bs-toggle="tab" data-bs-target="#addresstab">Address Tab</button>
+										<button class="nav-link" data-bs-toggle="tab" data-bs-target="#programmetab">Programme Tab</button>
+										<button class="nav-link" data-bs-toggle="tab" data-bs-target="#appeligibility">Application Eligibility</button>
+										<button class="nav-link" data-bs-toggle="tab" data-bs-target="#termfeeeligibility">Term Fee Eligibility</button>
+										<button class="nav-link" data-bs-toggle="tab" data-bs-target="#ineligibility">In Eligibility</button>
+										<button class="nav-link" data-bs-toggle="tab" data-bs-target="#nationality">Nationality</button>
+										<button class="nav-link" data-bs-toggle="tab" data-bs-target="#reservation">Reservation</button>
+										<button class="nav-link" data-bs-toggle="tab" data-bs-target="#uploads">Uploads</button>
+									</div>
+									<div class="tab-content">
+										<!-- Start Master Tab Section -->
+										<div class="tab-pane fade show active px-3" id="master">
+											<ul class="px-0">
+												<li>
+													<span>Roll Number</span>
+													<input type="text" placeholder="Roll No" />
+												</li>
+												<li>
+													<span>Name</span>
+													<input type="text" placeholder="Name" />
+												</li>
+												<li>
+													<span>Admission Number</span>
+													<input type="text" placeholder="Admission No" />
+												</li>
+												<li>
+													<span>Date of Birth</span>
+													<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+												</li>
+												<li>
+													<span>Mobile Number</span>
+													<input type="number" placeholder="Mobile No" />
+												</li>
+										<li>
+											<span>Gender</span>
+											<select class="select">
+												<option defaultValue>Select Gender</option>
+												<option>Male</option>
+												<option>Female</option>
+											</select>
+										</li>
+												<li>
+													<span>University</span>
+													<select class="select">
+														<option defaultValue>Select University</option>
+														<option>Sri Venkateshwara University</option>
+														<option>Meenakshi Medical College</option>
+													</select>
+												</li>
+											
+												<li>
+													<span>Status</span>
+													<select class="select">
+														<option defaultValue>Select Status</option>
+														<option>Completed</option>
+														<option>Pending</option>
+													</select>
+												</li>
+											</ul>
+										</div>
+										<!-- End Master Tab Section -->
+
+										<!-- Start Application No Tab Section -->
+										<div class="tab-pane fade px-3" id="addresstab">
+											<ul class="px-0">
+												<li>
+													<span>Address</span>
+													<select class="select">
+														<option defaultValue>Select Address Type</option>
+														<option>Permenent</option>
+														<option>Temporary</option>
+													</select>
+												</li>
+										<li>
+											<span>State</span>
+											<select class="select">
+												<option defaultValue>Select State</option>
+												<option>Delhi</option>
+												<option>Goa</option>
+											</select>
+										</li>
+												<li>
+													<span>District</span>
+													<select class="select">
+														<option defaultValue>Select District</option>
+														<option>Mysuru</option>
+														<option>Banglore</option>
+													</select>
+												</li>
+										
+												<li>
+													<span>Other District</span>
+													<input type="text" placeholder="Other District" />
+												</li>
+												<li>
+													<span>Door Number</span>
+													<input type="text" placeholder="Door No" />
+												</li>
+												<li>
+													<span>Street</span>
+													<input type="text" placeholder="Street" />
+												</li>
+												<li>
+													<span>Taluk</span>
+													<input type="text" placeholder="Taluk" />
+												</li>
+												<li>
+													<span>City</span>
+													<input type="text" placeholder="City" />
+												</li>
+												<li>
+													<span>Landmark</span>
+													<input type="text" placeholder="Landmark" />
+												</li>
+												<li>
+													<span>Pin Code</span>
+													<input type="text" placeholder="Pin Code" />
+												</li>
+											</ul>
+										</div>
+										<!-- End Application No Tab Section -->
+
+										<!-- Start Programme Tab Section -->
+										<div class="tab-pane fade px-3" id="programmetab">
+											<ul class="px-0">
+												<li>
+													<span>Batch</span>
+													<select class="select">
+														<option defaultValue>Select Batch</option>
+														<option>2022-2026</option>
+														<option>2023-2027</option>
+													</select>
+												</li>
+												<li>
+													<span>Study Center</span>
+													<select class="select">
+														<option defaultValue>Select Study Center</option>
+														<option>Sri Venkateshwara University</option>
+														<option>Sri Venkateshwara University</option>
+													</select>
+												</li>
+												<li>
+													<span>Course</span>
+													<select class="select">
+														<option defaultValue>Select Course</option>
+														<option>B.E</option>
+														<option>B.Tech</option>
+													</select>
+												</li>
+												<li>
+													<span>Programme</span>
+													<select class="select">
+														<option defaultValue>Select Programme</option>
+														<option>Computer Science</option>
+														<option>Mechnaical</option>
+													</select>
+												</li>
+												<li>
+													<span>Term Index</span>
+													<select class="select">
+														<option defaultValue>Select Term Index</option>
+														<option>Term Index 01</option>
+														<option>Term Index 02</option>
+													</select>
+												</li>
+												<li>
+													<span>Hall Ticket No</span>
+													<input type="text" placeholder="Hall Ticket No" />
+												</li>
+												<li>
+													<span>Study Language</span>
+													<input type="text" placeholder="Study Language" />
+												</li>
+											</ul>
+										</div>
+										<!-- End Programme Tab Section -->
+
+										<!-- Start Eligibility Tab Section -->
+										<div class="tab-pane fade px-3" id="appeligibility">
+											<ul class="px-0">
+												<li>
+													<span>Term Index</span>
+													<select class="select">
+														<option defaultValue>Select Term Index</option>
+														<option>Term Index 01</option>
+														<option>Term Index 02</option>
+													</select>
+												</li>
+												<li>
+													<span>Can Apply for Examination</span>
+													<input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+													<label class="mx-2" for="flexRadioDefault1">Yes</label>
+													<input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+													<label class="ms-2" for="flexRadioDefault2">No</label>
+												</li>
+												<li>
+													<span>Can Download Hall Ticket</span>
+													<input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+													<label class="mx-2" for="flexRadioDefault1">Yes</label>
+													<input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+													<label class="ms-2" for="flexRadioDefault2">No</label>
+												</li>
+											</ul>
+										</div>
+										<!-- End Eligibility Tab Section -->
+
+										<!-- Start Fee Detail Tab Section -->
+										<div class="tab-pane fade px-3" id="termfeeeligibility">
+											<ul class="px-0">
+												<li>
+													<span>Can Apply For Term Fee</span>
+													<input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+													<label class="mx-2" for="flexRadioDefault1">Yes</label>
+													<input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+													<label class="ms-2" for="flexRadioDefault2">No</label>
+												</li>
+											</ul>
+										</div>
+										<!-- End Fee Detail Tab Section -->
+
+										<div class="tab-pane fade px-3" id="ineligibility">
+											<ul class="px-0">
+												<li>
+													<span>Examination</span>
+													<select class="select">
+														<option defaultValue>Select Examination</option>
+														<option>Examination 01</option>
+														<option>Examination 02</option>
+													</select>
+												</li>
+												<li>
+													<span>Malpractice Type</span>
+													<select class="select">
+														<option defaultValue>Select Malpractice</option>
+														<option>Type 01</option>
+														<option>Type 02</option>
+													</select>
+												</li>
+												<li>
+													<span>Starting Date</span>
+													<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+												</li>
+												<li>
+													<span>End Date</span>
+													<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+												</li>
+
+												<li>
+													<span>Remarks</span>
+													<textarea id="floatingTextarea2" placeholder="Remarks" style="height: 100px"></textarea>
+												</li>
+											</ul>
+										</div>
+
+										<div class="tab-pane fade px-3" id="nationality">
+											<ul class="px-0">
+												<li>
+													<span>Nationality</span>
+													<select class="select">
+														<option defaultValue>Select Nationality</option>
+														<option>India</option>
+														<option>Pakistan</option>
+													</select>
+												</li>
+											</ul>
+										</div>
+
+										<div class="tab-pane fade px-3" id="reservation">
+											<ul class="px-0">
+												<li>
+													<span>Marital Status</span>
+													<select class="select">
+														<option defaultValue>Select Marital Status</option>
+														<option>Single</option>
+														<option>Married</option>
+													</select>
+												</li>
+
+												<li>
+													<span>Religion</span>
+													<select class="select">
+														<option defaultValue>Select Religion</option>
+														<option>Hindu</option>
+														<option>Muslim</option>
+													</select>
+												</li>
+
+												<li>
+													<span>Caste Category</span>
+													<select class="select">
+														<option defaultValue>Select Caste Category</option>
+														<option>Category 01</option>
+														<option>Category 02</option>
+													</select>
+												</li>
+
+												<li>
+													<span>Residential Status</span>
+													<select class="select">
+														<option defaultValue>Select Residential Status</option>
+														<option>Own</option>
+														<option>Temporary</option>
+													</select>
+												</li>
+
+												<li>
+													<span>Is Physical Disabled</span>
+													<input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+													<label class="mx-2" for="flexRadioDefault1">Yes</label>
+													<input class="radio-btn" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+													<label class="ms-2" for="flexRadioDefault2">No</label>
+												</li>
+											</ul>
+										</div>
+
+										<div class="tab-pane fade px-3" id="uploads">
+											<ul class="px-0">
+												<li>
+													<span>Nationality</span>
+													<input type="file" id="myFile" name="filename" />
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+				<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+				<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+					</div>
+				</div>
+			</section>
+		</section>
+<!-- End Add Students Section -->

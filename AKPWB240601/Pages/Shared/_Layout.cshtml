@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] KSP ADMIN </title>
+    <link rel="icon" type="image/x-icon" href="~/images/LOGO.png">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" /> 
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+  
+    @RenderBody()
+    <footer class="bg-dark text-white   fixed-bottom">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-around p-1 footer-fonts">
+                <div class="col-md-6">
+                    <span id="ip-address">IP Address: 27.4.200.215</span>
+                    <span class="me-2">|</span>
+
+                    <span id="date-time" class="ms-3"></span>
+                </div>
+                <div class="col-md-3">
+                    <span id="version">Version: 1.01</span>
+                </div>
+                <div class="col-md-3 text-end">
+                    <span id="powered-by">Copyright © 2023. Powered by E-Application</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        document.getElementById('togglePassword').addEventListener('click', function (e) {
+            const passwordInput = document.getElementById('password');
+            const icon = this;
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.textContent = 'visibility';
+            } else {
+                passwordInput.type = 'password';
+                icon.textContent = 'visibility_off';
+            }
+        });
+
+    </script>
+    <script>
+        //footer
+        // Function to update the date and time in the footer
+        function updateDateTime() {
+            var now = new Date();
+            var formattedDateTime = now.toLocaleString("en-US", {
+                hour: "numeric",
+                minute: "numeric",
+                second: "numeric",
+                hour12: true,
+                month: "numeric",
+                day: "numeric",
+                year: "numeric",
+            });
+            document.getElementById("date-time").textContent = "Date & Time: " + formattedDateTime;
+        }
+
+        // Update date and time initially and every second
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+       </script>
+    <script>
+        function startCountdown(duration) {
+            let timer = duration, minutes, seconds;
+            const countdownElement = document.getElementById('countdown');
+            const retryLink = document.getElementById('retry-link');
+
+            const interval = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                countdownElement.textContent = `${minutes}:${seconds}`;
+
+                if (--timer < 0) {
+                    clearInterval(interval);
+                    countdownElement.textContent = 'Send Again';
+                    retryLink.href = "#send-again";
+                    retryLink.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        if (countdownElement.textContent === 'Send Again') {
+                            startCountdown(59);
+                        }
+                    });
+                }
+            }, 1000);
+        }
+
+        // Start the countdown with 58 seconds initially
+        startCountdown(58);
+
+
+        //gif
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            const submitBtn = document.getElementById('submitBtn');
+            const loadingGif = document.getElementById('loadingGif');
+            const tickMark = document.getElementById('tickMark');
+
+            // Show the loading GIF inside the button
+            loadingGif.style.display = 'inline-block';
+
+            // Simulate OTP verification process (e.g., AJAX call to backend)
+            setTimeout(function () {
+                // Hide the loading GIF
+                loadingGif.style.display = 'none';
+
+                // Display OTP Verified Alert
+                alert('OTP Verified Successfully!');
+
+                // Show the tick mark
+                tickMark.style.display = 'inline-block';
+
+                // Change the button text to "Verified"
+                submitBtn.innerHTML = 'Verified';
+                submitBtn.appendChild(tickMark);  // Ensure tick mark stays visible
+                submitBtn.disabled = true;  // Disable the button after verification
+
+                // Redirect to the NewPassword page
+                window.location.href = '/NewPassword';
+            }, 2000); // Simulate a 2-second verification process
+        });
+
+
+    </script>
+    <script>
+        document.getElementById('confirmPassword').addEventListener('input', function () {
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const toggleNewPasswordIcon = document.getElementById('toggleNewPassword');
+            const toggleConfirmPasswordIcon = document.getElementById('toggleConfirmPassword');
+
+            if (newPassword === confirmPassword && newPassword !== "") {
+                // Change the visibility_off icons to tick marks
+                toggleNewPasswordIcon.textContent = 'check';
+                toggleConfirmPasswordIcon.textContent = 'check';
+            } else {
+                // Revert to the visibility_off icons if passwords don't match
+                toggleNewPasswordIcon.textContent = 'visibility_off';
+                toggleConfirmPasswordIcon.textContent = 'visibility_off';
+            }
+        });
+
+        // Optional: Toggle password visibility
+        document.getElementById('toggleNewPassword').addEventListener('click', function () {
+            const passwordField = document.getElementById('newPassword');
+            togglePasswordVisibility(passwordField, this);
+        });
+
+        document.getElementById('toggleConfirmPassword').addEventListener('click', function () {
+            const passwordField = document.getElementById('confirmPassword');
+            togglePasswordVisibility(passwordField, this);
+        });
+
+        function togglePasswordVisibility(passwordField, toggleIcon) {
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleIcon.textContent = 'visibility';
+            } else {
+                passwordField.type = 'password';
+                toggleIcon.textContent = 'visibility_off';
+            }
+        }
+
+        // Add event listener for the submit button
+        document.getElementById('submitButton').addEventListener('click', function (event) {
+            const newPassword = document.getElementById('newPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            // Check if passwords match
+            if (newPassword !== confirmPassword) {
+                event.preventDefault(); // Prevent form submission
+                alert("Passwords do not match!");
+            }
+        });
+
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>KSP ADMIN</title>
+    <link rel="icon" type="image/x-icon" href="~/images/LOGO.png">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/lib/font-awsome/css/all.min.css" rel="stylesheet" />
+    <link href="~/lib/flatpicker/flatpicker.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- header -->
+    <header class="header d-flex justify-content-between align-items-center pe-3">
+         <div class="header-left">
+            <div class=header-version>
+            <h6 class="header-text mb-0 mt-2">e Application</h6>
+            <p class="text-warning mb-0">Version: 1.01</p>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="collapse navbar-collapse justify-content-end gap-5" id="navbarSupportedContent">
+                <div class="d-flex align-items-center">
+                    <h5 class="text-white header-right-line">|</h5>
+                    <a href="#" class="me-3 text-white"><i class="fas fa-bell"></i></a>
+                    <a href="#" id="toggleFullScreen" class="me-3 text-white"><i class="fa-solid fa-expand"></i></a>
+                    <a href="#" class="me-3 text-white"><i class="fas fa-cog"></i></a>
+                    <nav class="profile-nav">
+                        <div class="profile">
+                            <div class="img-box">
+                                <img src="https://i.postimg.cc/BvNYhMHS/user-img.jpg" alt="user image">
+                            </div>
+                            <div class="user">
+                                <h6 class="mb-0">Lagumesh   <span class="material-symbols-outlined">
+                                        arrow_drop_down
+                                    </span></h6>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <ul class="p-0 mb-0">
+                                <li><a href="#" class="p-2"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
+                                <li><a href="#" class="p-2"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a></li>
+                                <li><a href="#" class="p-2"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
+                                <li><a href="#" class="p-2"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
+                                <li><a href="#" class="p-2"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+
+    @RenderBody()
+    <footer class="bg-dark text-white   fixed-bottom">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-around p-1 footer-fonts">
+                <div class="col-md-6">
+                    <span id="ip-address">IP Address: 27.4.200.215</span>
+              
+                    <span id="date-time" class="ms-3"></span>
+                </div>
+                <div class="col-md-3">
+                    <span id="version">Version: 1.01</span>
+                </div>
+                <div class="col-md-3 text-end">
+                    <span id="powered-by">Copyright © 2023. Powered by E-Application</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="~/lib/font-awsome/js/all.min.js"></script>
+    <script src="~/lib/jquery/dist/js/jquery-3.6.0.min.js"></script>
+    <script src="~/lib/pdf/excel/xlsx.full.min.js"></script>
+    <script src="~/lib/pdf/pdfscript/jspdf.umd.min.js"></script>
+    <script src="~/lib/pdf/table/jspdf.plugin.autotable.min.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/lib/flatpicker/flatpicker.min.js"></script>
+
+    <script>
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.style.display = tab.id === tabName ? 'block' : 'none';
+            });
+
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => {
+                button.classList.toggle('active', button.getAttribute('onclick').includes(tabName));
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            flatpickr(".add-post-input", {
+                dateFormat: "d-m-y"
+            });
+        });
+    </script>
+  <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let rowsPerPage = 10;
+            const tableBody = document.getElementById('tableBody');
+            const pagination = document.getElementById('pagination');
+            const entriesInfo = document.getElementById('entriesInfo');
+            const rows = Array.from(tableBody.querySelectorAll('tr'));
+            const totalRows = rows.length;
+            let totalPages = Math.ceil(totalRows / rowsPerPage);
+            let currentPage = 1;
+            let sortDirection = 'asc';
+            let currentSortColumn = '';
+
+            function renderTable(page) {
+                tableBody.innerHTML = '';
+                const start = (page - 1) * rowsPerPage;
+                const end = Math.min(start + rowsPerPage, totalRows);
+                const paginatedRows = rows.slice(start, end);
+
+                paginatedRows.forEach(row => {
+                    tableBody.appendChild(row);
+                });
+
+                entriesInfo.textContent = `Showing ${start + 1} to ${end} of ${totalRows} entries`;
+            }
+
+            function renderPagination() {
+                pagination.innerHTML = '';
+
+                const firstLi = document.createElement('li');
+                firstLi.classList.add('page-item');
+                firstLi.innerHTML = `<a class="page-link" href="#">&laquo;</a>`;
+                firstLi.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    currentPage = 1;
+                    updatePagination();
+                });
+                pagination.appendChild(firstLi);
+
+                const prevLi = document.createElement('li');
+                prevLi.classList.add('page-item');
+                prevLi.innerHTML = `<a class="page-link" href="#" style="font-size: 25px; font-weight: bold;">&lsaquo;</a>`;
+
+                prevLi.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if (currentPage > 1) {
+                        currentPage--;
+                        updatePagination();
+                    }
+                });
+                pagination.appendChild(prevLi);
+
+                for (let i = 1; i <= totalPages; i++) {
+                    const li = document.createElement('li');
+                    li.classList.add('page-item');
+                    if (i === currentPage) {
+                        li.classList.add('active');
+                    }
+                    li.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+                    li.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        currentPage = i;
+                        updatePagination();
+                    });
+                    pagination.appendChild(li);
+                }
+
+                const nextLi = document.createElement('li');
+                nextLi.classList.add('page-item');
+                nextLi.innerHTML = `<a class="page-link" href="#" style="font-size: 25px; font-weight: bold;">&rsaquo;</a>`;
+                nextLi.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        updatePagination();
+                    }
+                });
+                pagination.appendChild(nextLi);
+
+                const lastLi = document.createElement('li');
+                lastLi.classList.add('page-item');
+                lastLi.innerHTML = `<a class="page-link" href="#">&raquo;</a>`;
+                lastLi.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    currentPage = totalPages;
+                    updatePagination();
+                });
+                pagination.appendChild(lastLi);
+            }
+
+            function updatePagination() {
+                renderTable(currentPage);
+                renderPagination();
+            }
+
+            document.getElementById('itemsPerPage').addEventListener('change', function () {
+                rowsPerPage = parseInt(this.value, 10);
+                totalPages = Math.ceil(totalRows / rowsPerPage);
+                currentPage = 1;
+                updatePagination();
+            });
+
+            document.querySelectorAll('th[data-sort]').forEach(header => {
+                header.addEventListener('click', function () {
+                    const column = header.getAttribute('data-sort');
+                    if (currentSortColumn === column) {
+                        sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+                    } else {
+                        currentSortColumn = column;
+                        sortDirection = 'asc';
+                    }
+
+                    sortTable(column, sortDirection);
+                    updatePagination();
+                });
+            });
+
+            function sortTable(column, direction) {
+                const compareFunction = (a, b) => {
+                    const aText = a.querySelector(`[data-column="${column}"]`).textContent.trim();
+                    const bText = b.querySelector(`[data-column="${column}"]`).textContent.trim();
+
+                    if (column === 'slNo' || column === 'notificationNo' || column === 'noOfPost') {
+                        const aNumber = parseFloat(aText.replace(/[^\d.-]/g, ''));
+                        const bNumber = parseFloat(bText.replace(/[^\d.-]/g, ''));
+                        return direction === 'asc' ? aNumber - bNumber : bNumber - aNumber;
+                    } else {
+                        return direction === 'asc' ? aText.localeCompare(bText) : bText.localeCompare(aText);
+                    }
+                };
+
+                rows.sort(compareFunction);
+            }
+
+            updatePagination();
+        });
+  </script>
+    <script>
+        function sortTable(column, order, element) {
+            // Remove active class from all icons
+            document.querySelectorAll('th i').forEach(icon => {
+                icon.classList.remove('active');
+            });
+
+            // Add active class to the clicked icon
+            element.classList.add('active');
+
+            const table = document.getElementById('exampleTable');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.rows);
+
+            rows.sort((a, b) => {
+                const cellA = a.querySelector(`td[data-sort="${column}"]`).innerText;
+                const cellB = b.querySelector(`td[data-sort="${column}"]`).innerText;
+
+                if (order === 'asc') {
+                    return cellA.localeCompare(cellB, undefined, { numeric: true });
+                } else {
+                    return cellB.localeCompare(cellA, undefined, { numeric: true });
+                }
+            });
+
+            // If order is descending, reverse the sorted rows
+            if (order === 'desc') {
+                rows.reverse();
+            }
+
+            // Append sorted rows back to the tbody
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+    <script>
+        //footer
+        // Function to update the date and time in the footer
+        function updateDateTime() {
+            var now = new Date();
+            var formattedDateTime = now.toLocaleString("en-US", {
+                hour: "numeric",
+                minute: "numeric",
+                second: "numeric",
+                hour12: true,
+                month: "numeric",
+                day: "numeric",
+                year: "numeric",
+            });
+            document.getElementById("date-time").textContent = "Date & Time: " + formattedDateTime;
+        }
+
+        // Update date and time initially and every second
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+        //download table
+        document.getElementById("exportExcel").addEventListener("click", function () {
+            exportTableToExcel("exampleTable", "table_data");
+        });
+
+        document.getElementById("exportPDF").addEventListener("click", function () {
+            exportTableToPDF("exampleTable", "table_data");
+        });
+
+        function exportTableToExcel(tableID, filename = "") {
+            let table = document.getElementById(tableID);
+            let wb = XLSX.utils.table_to_book(table, { sheet: "Sheet JS" });
+            let wbout = XLSX.write(wb, { bookType: "xlsx", type: "binary" });
+
+            function s2ab(s) {
+                let buf = new ArrayBuffer(s.length);
+                let view = new Uint8Array(buf);
+                for (let i = 0; i < s.length; i++) view[i] = s.charCodeAt(i) & 0xff;
+                return buf;
+            }
+
+            let blob = new Blob([s2ab(wbout)], { type: "application/octet-stream" });
+            let link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = filename + ".xlsx";
+            link.click();
+        }
+
+        async function exportTableToPDF(tableID, filename = "") {
+            const { jsPDF } = window.jspdf;
+            let doc = new jsPDF();
+            let table = document.getElementById(tableID);
+            let rows = [];
+            let headers = [];
+
+            for (let row of table.rows) {
+                let rowData = [];
+                for (let cell of row.cells) {
+                    rowData.push(cell.innerText);
+                }
+                if (row === table.rows[0]) {
+                    headers = rowData;
+                } else {
+                    rows.push(rowData);
+                }
+            }
+
+            doc.autoTable({
+                head: [headers],
+                body: rows,
+            });
+
+            doc.save(filename + ".pdf");
+        }
+    </script>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('search-bar');
+            const table = document.getElementById('exampleTable');
+            const tableRows = table.querySelectorAll('tbody tr');
+
+            searchInput.addEventListener('input', () => {
+                const query = searchInput.value.toLowerCase();
+
+                tableRows.forEach(row => {
+                    const cells = row.querySelectorAll('td');
+                    let found = false;
+
+                    cells.forEach(cell => {
+                        if (cell.textContent.toLowerCase().includes(query)) {
+                            found = true;
+                        }
+                    });
+
+                    if (found) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggleInputs = document.querySelectorAll('.toggle-input');
+
+            toggleInputs.forEach(function (input) {
+                input.addEventListener('change', function () {
+                    var textSpan = input.nextElementSibling.nextElementSibling;
+                    if (input.checked) {
+                        textSpan.textContent = 'On';
+                    } else {
+                        textSpan.textContent = 'Off';
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        function sortTable() {
+            var table, rows, switching, i, x, y, shouldSwitch;
+            table = document.getElementById("exampleTable");
+            switching = true;
+            while (switching) {
+                switching = false;
+                rows = table.rows;
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("TD")[0];
+                    y = rows[i + 1].getElementsByTagName("TD")[0];
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

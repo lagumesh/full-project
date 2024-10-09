@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "lagu",
+    "slug": "lagu",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/loading.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/loading.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.lagumesh.lagu"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/loading.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ceb21aba-d653-4404-b0f6-a5a542bdb205"
+      }
+    }
+  }
+}

@@ -1,0 +1,367 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = UAMS3.Admin
+build_property.RootNamespace = UAMS3.Admin
+build_property.ProjectDir = D:\desktop-lagu\final_venkatesh_uni\UAMS3.Admin\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\desktop-lagu\final_venkatesh_uni\UAMS3.Admin
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/academicyears.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWNhZGVtaWN5ZWFycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addacademicyears.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkYWNhZGVtaWN5ZWFycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addadmissionregistrations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkYWRtaXNzaW9ucmVnaXN0cmF0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addadmissions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkYWRtaXNzaW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addbatches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkYmF0Y2hlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addbatchstudycenters.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkYmF0Y2hzdHVkeWNlbnRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addcentres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkY2VudHJlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addcountries.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkY291bnRyaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addcoursebranches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkY291cnNlYnJhbmNoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addcourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkY291cnNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/adddegrees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkZGVncmVlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/adddepartments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkZGVwYXJ0bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/adddistricts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkZGlzdHJpY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addexamcentremappings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkZXhhbWNlbnRyZW1hcHBpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addexamcentres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkZXhhbWNlbnRyZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addexaminationcourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkZXhhbWluYXRpb25jb3Vyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addexaminationprogrammes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkZXhhbWluYXRpb25wcm9ncmFtbWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addexaminations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkZXhhbWluYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addexaminationstudycentres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkZXhhbWluYXRpb25zdHVkeWNlbnRyZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addexaminationtimetables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkZXhhbWluYXRpb250aW1ldGFibGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addfeegroups.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkZmVlZ3JvdXBzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addmediums.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkbWVkaXVtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addmenus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkbWVudXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addpapertypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkcGFwZXJ0eXBlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addprogrammes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkcHJvZ3JhbW1lcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addstudentexamcentres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkc3R1ZGVudGV4YW1jZW50cmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addstudents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkc3R1ZGVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addstudenttermfees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkc3R1ZGVudHRlcm1mZWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addstudycentremenus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkc3R1ZHljZW50cmVtZW51cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addstudycentres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkc3R1ZHljZW50cmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addstudycentreusers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkc3R1ZHljZW50cmV1c2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addsubjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkc3ViamVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addtermfees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkdGVybWZlZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addtermindex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkdGVybWluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addunionstates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkdW5pb25zdGF0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/adduniversities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkdW5pdmVyc2l0aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/addusersdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkdXNlcnNkZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/admissionregistrations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaXNzaW9ucmVnaXN0cmF0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/admissions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRtaXNzaW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/batches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYmF0Y2hlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/batchstudycenters.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYmF0Y2hzdHVkeWNlbnRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/centre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2VudHJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/countries.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY291bnRyaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/coursebranch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY291cnNlYnJhbmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/courses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY291cnNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/degree.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGVncmVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/departments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGVwYXJ0bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/district.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGlzdHJpY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/examapplications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZXhhbWFwcGxpY2F0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/examcentre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZXhhbWNlbnRyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/examcourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZXhhbWNvdXJzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/examination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZXhhbWluYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/examinationprogramme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZXhhbWluYXRpb25wcm9ncmFtbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/examinationstudycentre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZXhhbWluYXRpb25zdHVkeWNlbnRyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/examinationtimetable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZXhhbWluYXRpb250aW1ldGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/exammapping.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZXhhbW1hcHBpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/feegroup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZmVlZ3JvdXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/fileuploads.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZmlsZXVwbG9hZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/medium.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWVkaXVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/papertype.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccGFwZXJ0eXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/programmes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvZ3JhbW1lcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/Shared/_Login_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpbl9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/Shared/_Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9SZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/student.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/studentexamcentre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3R1ZGVudGV4YW1jZW50cmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/studenttermfees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3R1ZGVudHRlcm1mZWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/studenttermfeestransactions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3R1ZGVudHRlcm1mZWVzdHJhbnNhY3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/studycentremenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3R1ZHljZW50cmVtZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/studycentres.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3R1ZHljZW50cmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/studycentreusers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3R1ZHljZW50cmV1c2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/subjects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcc3ViamVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/termfees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdGVybWZlZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/termindex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdGVybWluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/unionstates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdW5pb25zdGF0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/universitydetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdW5pdmVyc2l0eWRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/userdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXNlcmRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/usergroups.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXNlcmdyb3Vwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/userroles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdXNlcnJvbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop-lagu/final_venkatesh_uni/UAMS3.Admin/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-kc2n5puply

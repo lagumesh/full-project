@@ -1,0 +1,150 @@
+﻿@page
+@model UAMS3.Admin.Pages.addtermindexModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Term Index</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Term Index</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add Term index Section -->
+	<section id="add-pages" class="add-country mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<div class="card-body p-0">
+							<ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+								<li class="nav-item mb-0" role="presentation">
+									<button class="nav-link active" id="master-tab" data-bs-toggle="tab" data-bs-target="#master" type="button" role="tab" aria-controls="master" aria-selected="true">Master</button>
+								</li>
+								<li class="nav-item mb-0" role="presentation">
+									<button class="nav-link" id="termfeeprogram-tab" data-bs-toggle="tab" data-bs-target="#termfeeprogram" type="button" role="tab" aria-controls="termfeeprogram" aria-selected="false">Term Fee Programme</button>
+								</li>
+								<li class="nav-item mb-0" role="presentation">
+									<button class="nav-link" id="termfeereportsetting-tab" data-bs-toggle="tab" data-bs-target="#termfeereportsetting" type="button" role="tab" aria-controls="termfeereportsetting" aria-selected="false">Term Fee Reporting Setting</button>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<!-- Start Master Tab Section -->
+								<div class="tab-pane fade show active px-3" id="master" role="tabpanel" aria-labelledby="master-tab">
+									<ul class="px-0">
+										<li>
+											<span>Code</span>
+											<input type="text" placeholder="Code" />
+										</li>
+										<li>
+											<span>Title</span>
+											<input type="text" placeholder="Title" />
+										</li>
+										<li>
+											<span>University</span>
+											<select class="select">
+												<option defaultValue>Select University</option>
+												<option>Sri Venkateshwara University</option>
+												<option>Meenakshi Medical College</option>
+											</select>
+										</li>
+										<li>
+											<span>Status</span>
+											<select class="select">
+												<option defaultValue>Select Status</option>
+												<option>Completed</option>
+												<option>Pending</option>
+											</select>
+										</li>
+									</ul>
+								</div>
+								<!-- End Master Tab Section -->
+								<!-- Start Term Fee Programme Tab Section -->
+								<div class="tab-pane fade px-3" id="termfeeprogram" role="tabpanel" aria-labelledby="termfeeprogram-tab">
+									<ul class="px-0">
+										<li>
+											<span>Batch</span>
+											<select class="select">
+												<option defaultValue>Select Batch</option>
+												<option>2022-2026</option>
+												<option>2023-2027</option>
+											</select>
+										</li>
+										<li>
+											<span>Programme</span>
+											<select class="select">
+												<option defaultValue>Select Programme</option>
+												<option>B.E</option>
+												<option>B.Tech</option>
+											</select>
+										</li>
+										<li>
+											<span>Starting Date</span>
+											<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+										</li>
+										<li>
+											<span>End Date</span>
+											<input type="text" id="DatePicker" placeholder="DD/MM/YYYY" />
+										</li>
+										<li>
+											<span>Status</span>
+											<select class="select">
+												<option defaultValue>Select Status</option>
+												<option>Completed</option>
+												<option>Pending</option>
+											</select>
+										</li>
+									</ul>
+								</div>
+								<!-- End Term Fee Programme Tab Section -->
+								<!-- Start Term Fee Reporting Setting Tab Section -->
+								<div class="tab-pane fade px-3" id="termfeereportsetting" role="tabpanel" aria-labelledby="termfeereportsetting-tab">
+									<ul class="px-0">
+										<li>
+											<span>Batch</span>
+											<select class="select">
+												<option defaultValue>Select Batch</option>
+												<option>2022-2026</option>
+												<option>2023-2027</option>
+											</select>
+										</li>
+										<li>
+											<span>Fee Receipt</span>
+											<input type="text" placeholder="Fee Receipt" />
+										</li>
+									</ul>
+								</div>
+								<!-- End Term Fee Reporting Setting Tab Section -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+				<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+			</div>
+		</div>
+	</section>
+	
+
+</section>
+<!-- End Add Term Index Section -->

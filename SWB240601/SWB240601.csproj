@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\Application\alnxn0xb.3j4~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\js\ClientScripts\AgeCalculator.js" />
+    <None Include="wwwroot\assets\js\ClientScripts\clientscripts.js" />
+    <None Include="wwwroot\assets\js\ClientScripts\modalpreview.js" />
+    <None Include="wwwroot\assets\js\ClientScripts\NewAppRestrictions.js" />
+    <None Include="wwwroot\assets\js\ClientScripts\NewAppValidation.js" />
+    <None Include="wwwroot\lib\fonts\.DS_Store" />
+    <None Include="wwwroot\lib\images\.DS_Store" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\idcard\" />
+    <Folder Include="wwwroot\uploads\photo\" />
+    <Folder Include="wwwroot\uploads\sign\" />
+    <Folder Include="wwwroot\uploads\thumb\" />
+  </ItemGroup>
+
+</Project>

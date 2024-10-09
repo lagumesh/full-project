@@ -1,0 +1,59 @@
+﻿    @page
+    @model SWB240605.Pages.LoginModel
+@{
+    Layout = "_LoginLayout";
+}
+
+<section id="nav-banner-section" style="margin-top: -20px;">
+    <section id="banner-section">
+        <div class="container-fluid">
+            <div class="row py-5">
+                <div class="col-lg-7 col-md-7 col-sm-12 banner-notification d-flex align-items-center">
+                    <div class="mx-lg-4 mx-md-4 mx-sm-3 px-lg-5 px-md-4 px-sm-3" style="text-align:justify;">
+                        <p>Notification No : 01 / Rect-6 / 2024-25 </p>
+                        <p><span class="av-font-kn fs-4 fw-bold">C¢ü¸ÀÆZÀ£É ¸ÀASÉå : 01 / £ÉÃªÀÄPÁw-6 / 2024-25</span></p>
+                        <h3 class="mb-3">Recruitment of Stenographer and Data Entry Assistant for Scheduled Caste and Scheduled tribes (Backlog Posts). </h3>
+                        <h3 class="kannada-font mb-4"><span class="av-font-kn">¥Àj²μÀÖ eÁw ªÀÄvÀÄÛ ¥Àj²μÀÖ ¥ÀAUÀqÀUÀ¼À ²ÃWÀæ°¦UÁgÀgÀÄ <span class="fs-4 fw-bolder" style="font-family: sans-serif;">(Stenographer) </span> ªÀÄvÀÄÛ zÀvÁÛA±À £ÀªÀÄÆzÀÄ ¸ÀºÁAiÀÄPÀ <span class="fs-4 fw-bolder" style="font-family: sans-serif;">(Data Entry Assistant)</span> ¨ÁåPï ¯ÁUï ºÀÄzÉÝUÀ¼À £ÉÃªÀÄPÁw.</span></h3>
+                        <div class="mb-3">
+                            <a href="~/Application/Instructions" class="btn apply-btn newapplication me-2 ">Download Notification</a>
+                        </div>
+                   
+                    </div>
+                </div>
+                <div id="login" class="col-lg-5 col-md-5 col-sm-12 p-0 d-flex justify-content-center align-items-center">
+                    <div class="card w-75">
+                        <div class="card-body py-5">
+                            <div class="text-center">
+                                <img src="/assets/img/pngwing.com.png" alt="logo" class="card-img-top mb-3" />
+                                <h4 class="card-title mb-4">Application Login</h4>
+                            </div>
+                            <form method="post" id="login_form" autocomplete="off">
+                                <div class="form">
+                                    <div class="form-group mb-3">
+                                        <label for="username" class="form-label mb-2">Application Number</label>
+                                        <input type="text" class="form-control" placeholder="Enter your username" asp-for="ApplicantModel.ApplicationNo" />
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="dob" class="mb-2">Date of Birth</label>
+                                        <div class="input-with-icon">
+                                            <input type="text" class="form-control" placeholder="Enter your date of birth" asp-for="ApplicantModel.DateOfBirth" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <a href="/Auth/ForgotPassword" class="forgot-password text-primary">
+                                        Forgot Application No?
+                                    </a>
+                                </div>
+                                <div class="d-flex justify-content-center align-content-center my-3">
+                                    <button class="btn login-btn w-50" id="login_submit" type="button">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!-- End Banner Section -->

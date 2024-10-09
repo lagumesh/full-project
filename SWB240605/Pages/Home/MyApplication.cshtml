@@ -1,0 +1,323 @@
+﻿@page
+@model MyApplicationModel
+@{
+    Layout = "_Application";
+}
+<main id="main">
+    <div class="container  mt-3 mb-2">
+        <div class="text-center">
+            <img src="~/assets/img/pngwing.com.png" class="my-2" alt="ksp-logo" />
+            <h4>Recruitment of Stenographer and Data Entry Assistant for Scheduled Caste and Scheduled Tribes (Backlog Posts).</h4>
+            <p class="fw-bold">Notification No: 01 / Rect-6 / 2024-25 </p>
+            <h4 class="kannada-font">
+                ¥Àj²μÀÖ eÁw ªÀÄvÀÄÛ ¥Àj²μÀÖ ¥ÀAUÀqÀUÀ¼À ²ÃWÀæ°¦UÁgÀgÀÄ (Stenographer) ªÀÄvÀÄÛ zÀvÁÛA±À £ÀªÀÄÆzÀÄ ¸ÀºÁAiÀÄPÀ (Data Entry Assistant) ¨ÁåPï ¯ÁUï ºÀÄzÉÝUÀ¼À £ÉÃªÀÄPÁw
+            </h4>
+        </div>
+        <hr />
+        <div id="section-title" class="d-flex align-items-center ">
+            <h5 class="mb-0 ">MY APPLICATION</h5>
+        </div>
+
+        <div class="row border border-radius rounded-3 mt-1 d-flex justify-content-center align-items-center">
+            <div class="col-md-12 p-3">
+                <div class="row justify-content-around mt-2">
+                    <div class="col-md-6">
+                        <div class="card p-3">
+                            <div class="row">
+                                <!-- Applicant Number -->
+                                <div class="row justify-content-around mt-2 ">
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1">Applicant Name</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@Model.ApplicantDetails.ApplicantName</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1">Application Number</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@Model.ApplicantDetails.ApplicationNo</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Applying As -->
+
+                                </div>
+
+                                <!-- Additional fields -->
+                                <div class="row justify-content-around mt-2">
+                                    <!-- Applicant Number -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1">Date of Birth </p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@Model.ApplicantDetails.DateOfBirth</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1"> Applied Post</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@Model.ApplicantDetails.AppliedUnit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Applying As -->
+
+                                </div>
+
+                                <!-- Aadhar Number -->
+                                <div class="row justify-content-around mt-2">
+                                    <!-- Applicant Number -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1">Gender</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@Model.ApplicantDetails.Gender</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1">Aadhar Number</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@Model.ApplicantDetails.AadharNo</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Applying As -->
+
+                                </div>
+
+                                <div class="row justify-content-around mt-2">
+                                    <!-- Applicant Number -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1">Mobile Number</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@Model.ApplicantDetails.MobileNo</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1">Category</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@Model.ApplicantDetails.Category</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Applying As -->
+
+                                </div>
+
+                                <div class="row justify-content-around mt-2">
+                                    <!-- Applicant Number -->
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1"> Unit</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@Model.ApplicantDetails.AppliedUnit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p class="mb-1"> E-mail</p>
+                                            </div>
+                                            <div class="col-12 custom-border">
+                                                <p class="text-dark fs-7 m-0 p-2">@Model.ApplicantDetails.EmailId</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Applying As -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 mb-3 d-flex justify-content-center">
+                                        <img src="SignnatureImge" class="img-fluid" alt="Candidate Photo">
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-center mt-2">
+                                        <p class="payment-img-heading text-center w-75">Applicant Photo & Signature</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-12 mb-3 d-flex justify-content-center mt-3">
+                                        <img src="@Url.Content("Uploads" + Model.ApplicantDetails.Photo)" class="img-fluid" alt="Aadhar Photo">
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-center mt-2">
+                                        <p class="payment-img-heading text-center w-75">Aadhar</p>
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-center mt-5">
+                                        <img src="@Url.Content("Uploads" + Model.ApplicantDetails.Thumb)" class="img-fluid" alt="Thumbprint">
+                                    </div>
+                                    <div class="col-md-12 d-flex justify-content-center mt-2">
+                                        <p class="payment-img-heading text-center w-75">Thumb</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="myapp-btn my-4 text-white fw-bold" onclick="DownloadApplicationPDF(@Model.ApplicantDetails.ApplicationNo)">DOWNLOAD APPLICATION</button>
+        </div>
+
+    </div>
+
+    <!------Remarks---->
+    <div class="container mt-2 mb-2 d-none" data-aos="fade-right">
+        <div id="section-title" class="d-flex align-items-center">
+            <h5 class="mb-0">REMARKS</h5>
+        </div>
+    </div>
+    <div class="container border border-radius rounded-3 mt-2 bg-white d-none">
+        <div class="row p-2 align-items-center">
+            @*    <div class="col-3">
+            1. Endurance and Physical standard test
+            </div> *@
+            <div class="col-9">
+                <div class="custom-border8 text-dark fs-7 p-4 d-flex align-items-center">
+                    <span>
+                        <img src="~/assets/img/Mask group (1).png"> You are qualified for
+                        skill test.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-2 mb-2 d-none">
+        <div id="section-title" class="d-flex align-items-center">
+            <h5 class="mb-0">SKILL TEST</h5>
+        </div>
+    </div>
+    <div class="container border border-radius rounded-3  mt-2 bg-white mb-3 d-none">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row p-2 align-items-center">
+                    <div class="col-3">
+                        1. Roll Number
+                    </div>
+                    <div class="col-9">
+                        <div class="custom-border8 text-dark fs-7 p-4 d-flex align-items-center">
+                            <span>
+                                12345678
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row p-2 align-items-center">
+                    <div class="col-3">
+                        2. Venue
+                    </div>
+                    <div class="col-9">
+                        <div class="custom-border8 text-dark fs-7 p-4 d-flex align-items-center">
+                            <span>
+                                Bengaluru
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row p-2 align-items-center">
+                    <div class="col-3">
+                        3. Date
+                    </div>
+                    <div class="col-9">
+                        <div class="custom-border8 text-dark fs-7 p-4 d-flex align-items-center">
+                            <span>
+                                12/08/1999
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row p-2 align-items-center">
+                    <div class="col-3">
+                        4. time
+                    </div>
+                    <div class="col-9">
+                        <div class="custom-border8 text-dark fs-7 p-4 d-flex align-items-center">
+                            <span>
+                                12:00 PM
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-center align-items-center mb-3 mt-2">
+                    <button class="fw-bold d-flex justify-content-center align-items-center bg-success text-center text-white border rounded-3"
+                            style="width: 201px;height: 38px;">
+                        Download Call Letter
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    function DownloadApplicationPDF(applicantNo) {
+        //alert('ll')
+
+        var fileName = 'Application_' + applicantNo + '.pdf';
+
+        $.ajax({
+            type: 'POST',
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'JSON',
+            url: '?handler=getApplicationPath&applicationNo=' + applicantNo + '',
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader("XSRF-TOKEN",
+                    $('input:hidden[name="__RequestVerificationToken"]').val());
+            },
+            success:
+                function (response) {
+                    var link = document.createElement('a');
+                    link.href = response;
+                    link.download = fileName;
+                    link.click();
+                    notyf.success('file ' + fileName + ' Downloaded');
+                },
+            error:
+                function (response) {
+                    alert('error: ' + response);
+                }
+        });
+    }
+</script>

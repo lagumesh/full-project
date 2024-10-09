@@ -1,0 +1,38 @@
+﻿@page
+@model AKPWB240601.Pages.VerifyOtpModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<section class="login-banner d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-lg-5">
+                <div class="card login-card">
+                    <div class="card-body text-start p-0">
+                        <div class="logo mb-3 d-flex align-items-start justify-content-start">
+                            <img src="./images/LOGO.png" alt="Logo" class="img-fluid login-logo">
+                        </div>
+                        <h2 class="mb-3 logo-h2">Verify OTP</h2>
+                        <form id="loginForm" autocomplete="off">
+                            <div class="form-group text-left mb-2">
+                                <label for="username" class="form-label">A 4 digit OTP sent to your email address!</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your OTP" required autocomplete="off">
+                            </div>
+                            <div class="form-group text-left mb-2 position-relative">
+                                <a href="#" id="retry-link" class="d-block text-end forgot-password mb-0 mt-2 text-decoration-none">
+                                    Didn’t receive the OTP?<span class="text-dark"> Retry in </span> <span id="countdown" class="text-danger">00:58</span>
+                                </a>
+                            </div>
+                            <button type="button" id="submitBtn" class="btn btn-primary w-100 login-button">
+                                Submit
+                                <img id="loadingGif" src="https://i.gifer.com/ZZ5H.gif" alt="Loading..." style="display: none; width: 20px; margin-left: 10px;">
+                                <span id="tickMark" style="display: none; margin-left: 10px;">&#10003;</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

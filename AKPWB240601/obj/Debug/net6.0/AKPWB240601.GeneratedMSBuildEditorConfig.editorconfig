@@ -1,0 +1,739 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AKPWB240601
+build_property.RootNamespace = AKPWB240601
+build_property.ProjectDir = D:\lagu-project\ksp_new_admin\AKPWB240601\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\lagu-project\ksp_new_admin\AKPWB240601
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddApplyingTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQXBwbHlpbmdUeXBlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddArmyForce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQXJteUZvcmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddDocument.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkRG9jdW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddExservicemanChild.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkRXhzZXJ2aWNlbWFuQ2hpbGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddExservicemanEducation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkRXhzZXJ2aWNlbWFuRWR1Y2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddGender.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkR2VuZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddIdentityCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkSWRlbnRpdHlDYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddJobPosting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkSm9iUG9zdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddKalayanKaranatakaDistricts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkS2FsYXlhbkthcmFuYXRha2FEaXN0cmljdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddKannadaPaperTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkS2FubmFkYVBhcGVyVHlwZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddMasterDistricts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkTWFzdGVyRGlzdHJpY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddPostPreview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkUG9zdFByZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddQualificationBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkUXVhbGlmaWNhdGlvbkJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddRequirementActivities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkUmVxdWlyZW1lbnRBY3Rpdml0aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddScanningDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU2Nhbm5pbmdEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddUnionStates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVW5pb25TdGF0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddUnit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVW5pdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddUserDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVXNlckRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/AddUserRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVXNlclJvbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ApplicantDetails/EditRegisterForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYW50RGV0YWlsc1xFZGl0UmVnaXN0ZXJGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ApplicantDetails/PaymentDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYW50RGV0YWlsc1xQYXltZW50RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ApplicantDetails/RegisterForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYW50RGV0YWlsc1xSZWdpc3RlckZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ApplicantDetails/RegistrationTotalApplicantDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYW50RGV0YWlsc1xSZWdpc3RyYXRpb25Ub3RhbEFwcGxpY2FudERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ApplicantDetails/ViewRegisterForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYW50RGV0YWlsc1xWaWV3UmVnaXN0ZXJGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ApplicantDetails/WorkFlow.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYW50RGV0YWlsc1xXb3JrRmxvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ApplyingTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbHlpbmdUeXBlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ArmyForce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJteUZvcmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Document.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9jdW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditApplyingTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEFwcGx5aW5nVHlwZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditArmyForce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEFybXlGb3JjZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditDocument.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdERvY3VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditExservicemanChild.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEV4c2VydmljZW1hbkNoaWxkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditExservicemanEducation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEV4c2VydmljZW1hbkVkdWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditGender.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEdlbmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditIdentityCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdElkZW50aXR5Q2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditJobPosting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEpvYlBvc3RpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditKalayanKaranatakaDistricts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEthbGF5YW5LYXJhbmF0YWthRGlzdHJpY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditKannadaPaperTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEthbm5hZGFQYXBlclR5cGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditMasterDistricts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdE1hc3RlckRpc3RyaWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFBheW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditQualificationBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFF1YWxpZmljYXRpb25Cb2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditRequirementActivities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFJlcXVpcmVtZW50QWN0aXZpdGllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditUnionStates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFVuaW9uU3RhdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditUnit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFVuaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditUserDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFVzZXJEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/EditUserRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFVzZXJSb2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/BioMetric/AddBioMetric.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcQmlvTWV0cmljXEFkZEJpb01ldHJpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/BioMetric/BioMetric.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcQmlvTWV0cmljXEJpb01ldHJpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/BioMetric/EditBioMetric.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcQmlvTWV0cmljXEVkaXRCaW9NZXRyaWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/BioMetric/ViewBioMetric.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcQmlvTWV0cmljXFZpZXdCaW9NZXRyaWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/DistrictManagement/AddDistrictManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcRGlzdHJpY3RNYW5hZ2VtZW50XEFkZERpc3RyaWN0TWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/DistrictManagement/DistrictManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcRGlzdHJpY3RNYW5hZ2VtZW50XERpc3RyaWN0TWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/DistrictManagement/EditDistrictManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcRGlzdHJpY3RNYW5hZ2VtZW50XEVkaXREaXN0cmljdE1hbmFnZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/DistrictManagement/ViewDistrictManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcRGlzdHJpY3RNYW5hZ2VtZW50XFZpZXdEaXN0cmljdE1hbmFnZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/GenerateCallLetter/ApprovedCallLetter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcR2VuZXJhdGVDYWxsTGV0dGVyXEFwcHJvdmVkQ2FsbExldHRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/GenerateCallLetter/GeneratecallLetter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcR2VuZXJhdGVDYWxsTGV0dGVyXEdlbmVyYXRlY2FsbExldHRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/GenerateCallLetter/GenerateNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcR2VuZXJhdGVDYWxsTGV0dGVyXEdlbmVyYXRlTm9taW5hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/GenerateCallLetter/ViewCallLetter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcR2VuZXJhdGVDYWxsTGV0dGVyXFZpZXdDYWxsTGV0dGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/GroundManagement/AddGroundManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcR3JvdW5kTWFuYWdlbWVudFxBZGRHcm91bmRNYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/GroundManagement/EditGroundManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcR3JvdW5kTWFuYWdlbWVudFxFZGl0R3JvdW5kTWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/GroundManagement/GroundManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcR3JvdW5kTWFuYWdlbWVudFxHcm91bmRNYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/GroundManagement/ViewGroundManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcR3JvdW5kTWFuYWdlbWVudFxWaWV3R3JvdW5kTWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/MeritList/AddMeritList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcTWVyaXRMaXN0XEFkZE1lcml0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/MeritList/EditMeritList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcTWVyaXRMaXN0XEVkaXRNZXJpdExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/MeritList/MeritList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcTWVyaXRMaXN0XE1lcml0TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/MeritList/ViewMeritList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcTWVyaXRMaXN0XFZpZXdNZXJpdExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/NominalRoll/AddNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcTm9taW5hbFJvbGxcQWRkTm9taW5hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/NominalRoll/ApprovedNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcTm9taW5hbFJvbGxcQXBwcm92ZWROb21pbmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/NominalRoll/EditNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcTm9taW5hbFJvbGxcRWRpdE5vbWluYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/NominalRoll/GenerateNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcTm9taW5hbFJvbGxcR2VuZXJhdGVOb21pbmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/NominalRoll/Nominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcTm9taW5hbFJvbGxcTm9taW5hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/NominalRoll/ViewNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcTm9taW5hbFJvbGxcVmlld05vbWluYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/UnitAllotments/AddUnitAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcVW5pdEFsbG90bWVudHNcQWRkVW5pdEFsbG90bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/UnitAllotments/EditUnitAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcVW5pdEFsbG90bWVudHNcRWRpdFVuaXRBbGxvdG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/UnitAllotments/UnitAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcVW5pdEFsbG90bWVudHNcVW5pdEFsbG90bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ETPST/UnitAllotments/ViewUnitAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRVRQU1RcVW5pdEFsbG90bWVudHNcVmlld1VuaXRBbGxvdG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ExservicemanChild.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhzZXJ2aWNlbWFuQ2hpbGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ExservicemanEducation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhzZXJ2aWNlbWFuRWR1Y2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9yZ290UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Gender.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/AddAge.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcQWRkQWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/AddEvents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcQWRkRXZlbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/AddFee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcQWRkRmVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/AddKeyDates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcQWRkS2V5RGF0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/AddMenus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcQWRkTWVudXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/AddNotes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcQWRkTm90ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/EditAge.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcRWRpdEFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/EditEvents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcRWRpdEV2ZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/EditFee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcRWRpdEZlZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/EditKeyDates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcRWRpdEtleURhdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/EditMenus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcRWRpdE1lbnVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/EditNotes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcRWRpdE5vdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/HomePageContent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcSG9tZVBhZ2VDb250ZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/ViewAge.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcVmlld0FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/ViewEvents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcVmlld0V2ZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/ViewFee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcVmlld0ZlZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/ViewKeyDates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcVmlld0tleURhdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/ViewMenus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcVmlld01lbnVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/HomePage/ViewNotes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2VcVmlld05vdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/IdentityCards.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWRlbnRpdHlDYXJkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/JobPosting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9iUG9zdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/KalayanKaranatakaDistricts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2FsYXlhbkthcmFuYXRha2FEaXN0cmljdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/KannadaPaperTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2FubmFkYVBhcGVyVHlwZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/MasterDistricts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFzdGVyRGlzdHJpY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/NewPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/QualificationBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVhbGlmaWNhdGlvbkJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/RequirementActivities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVxdWlyZW1lbnRBY3Rpdml0aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ScanningDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2Nhbm5pbmdEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Shared/_Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Ib21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Shared/_Post.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Qb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Tickets/CreateNewTicket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0c1xDcmVhdGVOZXdUaWNrZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Tickets/Tickets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGlja2V0c1xUaWNrZXRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/UnionStates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5pb25TdGF0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Unit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5pdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/UserDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckRldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/UserRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclJvbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/VerifyOtp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVyaWZ5T3RwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewApplyingTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0FwcGx5aW5nVHlwZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewArmyForce.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0FybXlGb3JjZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0NhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewDocument.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0RvY3VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewExservicemanchild.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0V4c2VydmljZW1hbmNoaWxkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewExservicemanEducation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0V4c2VydmljZW1hbkVkdWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewGender.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0dlbmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewIdentityCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0lkZW50aXR5Q2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewJobPosting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0pvYlBvc3RpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewKalayanKaranatakaDistricts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0thbGF5YW5LYXJhbmF0YWthRGlzdHJpY3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewKannadaPaperTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld0thbm5hZGFQYXBlclR5cGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewMasterDistricts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld01hc3RlckRpc3RyaWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1BheW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewQualificationBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1F1YWxpZmljYXRpb25Cb2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewRequirementActivities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1JlcXVpcmVtZW50QWN0aXZpdGllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewUnionStates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1VuaW9uU3RhdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewUnit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1VuaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewUserDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1VzZXJEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/ViewUserRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld1VzZXJSb2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/AddPackingPlan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQWRkUGFja2luZ1BsYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/BioMetric/AddBioMetric.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQmlvTWV0cmljXEFkZEJpb01ldHJpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/BioMetric/BioMetric.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQmlvTWV0cmljXEJpb01ldHJpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/BioMetric/EditBioMetric.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQmlvTWV0cmljXEVkaXRCaW9NZXRyaWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/BioMetric/ViewBioMetric.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQmlvTWV0cmljXFZpZXdCaW9NZXRyaWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/CenterAllotments/AddCenterAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQ2VudGVyQWxsb3RtZW50c1xBZGRDZW50ZXJBbGxvdG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/CenterAllotments/CenterAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQ2VudGVyQWxsb3RtZW50c1xDZW50ZXJBbGxvdG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/CenterAllotments/EditCenterAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQ2VudGVyQWxsb3RtZW50c1xFZGl0Q2VudGVyQWxsb3RtZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/CenterAllotments/ViewCenterAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQ2VudGVyQWxsb3RtZW50c1xWaWV3Q2VudGVyQWxsb3RtZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/CenterManagement/AddCenterManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQ2VudGVyTWFuYWdlbWVudFxBZGRDZW50ZXJNYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/CenterManagement/CenterManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQ2VudGVyTWFuYWdlbWVudFxDZW50ZXJNYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/CenterManagement/EditCenterManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQ2VudGVyTWFuYWdlbWVudFxFZGl0Q2VudGVyTWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/CenterManagement/ViewCenterManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cQ2VudGVyTWFuYWdlbWVudFxWaWV3Q2VudGVyTWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/DistrictManagement/AddDistrictManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cRGlzdHJpY3RNYW5hZ2VtZW50XEFkZERpc3RyaWN0TWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/DistrictManagement/DistrictManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cRGlzdHJpY3RNYW5hZ2VtZW50XERpc3RyaWN0TWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/DistrictManagement/EditDistrictManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cRGlzdHJpY3RNYW5hZ2VtZW50XEVkaXREaXN0cmljdE1hbmFnZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/DistrictManagement/ViewDistrictManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cRGlzdHJpY3RNYW5hZ2VtZW50XFZpZXdEaXN0cmljdE1hbmFnZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/EditPackingPlan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cRWRpdFBhY2tpbmdQbGFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/GenerateCallLetter/ApprovedCallLetter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cR2VuZXJhdGVDYWxsTGV0dGVyXEFwcHJvdmVkQ2FsbExldHRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/GenerateCallLetter/GenerateCallLetter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cR2VuZXJhdGVDYWxsTGV0dGVyXEdlbmVyYXRlQ2FsbExldHRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/GenerateCallLetter/GenrateNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cR2VuZXJhdGVDYWxsTGV0dGVyXEdlbnJhdGVOb21pbmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/GenerateCallLetter/ViewCallLetter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cR2VuZXJhdGVDYWxsTGV0dGVyXFZpZXdDYWxsTGV0dGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/Nominal/AddNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cTm9taW5hbFxBZGROb21pbmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/Nominal/ApprovedNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cTm9taW5hbFxBcHByb3ZlZE5vbWluYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/Nominal/EditNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cTm9taW5hbFxFZGl0Tm9taW5hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/Nominal/GenrateNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cTm9taW5hbFxHZW5yYXRlTm9taW5hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/Nominal/Nominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cTm9taW5hbFxOb21pbmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/Nominal/ViewNominal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cTm9taW5hbFxWaWV3Tm9taW5hbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/PackingPlan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cUGFja2luZ1BsYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/UnitAllotments/AddUnitAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cVW5pdEFsbG90bWVudHNcQWRkVW5pdEFsbG90bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/UnitAllotments/EditUnitAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cVW5pdEFsbG90bWVudHNcRWRpdFVuaXRBbGxvdG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/UnitAllotments/UnitAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cVW5pdEFsbG90bWVudHNcVW5pdEFsbG90bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/UnitAllotments/ViewUnitAllotments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cVW5pdEFsbG90bWVudHNcVmlld1VuaXRBbGxvdG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/WrittenExam/ViewPackingPlan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV3JpdHRlbkV4YW1cVmlld1BhY2tpbmdQbGFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/lagu-project/ksp_new_admin/AKPWB240601/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ucf4kc88ea

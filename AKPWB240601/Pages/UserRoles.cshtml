@@ -1,0 +1,203 @@
+﻿@page
+@model AKPWB240601.Pages.UserRolesModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0"><img class="header-below-logo" src="./images/LOGO.png"> KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+        <p class="mb-0" id="home-p">Police Constable (Civil) (Men & Women) & (Transgender Men & Women) & Inservice & Backlog</p>
+    </div>
+    <!-- Start Breadcumb -->
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div>
+                                <h5 class="page-title mb-0">User roles</h5>
+                            </div>
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Post
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Masters
+                                </li>
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>User roles
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Breadcumb -->
+
+    </section>
+    <div class="container-fluid m-0">
+        <div class="custom-toolbar">
+            <div class="items-per-page">
+                <select class="form-select" id="itemsPerPage">
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                </select>
+                <span>Entries per page</span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-1">
+                <form class="search-container">
+                    <div class="search-wrapper position-relative">
+                        <input type="text" id="search-bar" placeholder="Search..." class="form-control">
+                        <span class="material-symbols-outlined search-icon">
+                            search
+                        </span>
+                        <span class="material-symbols-outlined close-icon">
+                            close
+                        </span>
+                    </div>
+
+
+
+                </form>
+                <button class="dropdown btn export-btn dropdown-toggle" id="exportButton" data-bs-toggle="dropdown">
+                    Export
+                    <ul class="dropdown-menu export-dropdown m-0 p-0" aria-labelledby="exportButton">
+                        <li>
+                            <a class="dropdown-item" href="#" id="exportExcel">
+                                <span>Excel</span> <i class="bi bi-download ms-2"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#" id="exportPDF">
+                                <span>Pdf</span> <i class="bi bi-download ms-3"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </button>
+
+
+                <a class="btn import-btn" href="#">
+                    Import <i class="fa-solid fa-plus ms-1"></i>
+                </a>
+                <a class="btn add-btn" href="/AddUserRoles">
+                    Add <i class="fa-solid fa-plus ms-1"></i>
+                </a>
+            </div>
+        </div>
+        <div class="table-container">
+            <table class="table table-responsive rounded-3 custom-table w-100 shadow-sm mt-2" id="exampleTable">
+                <thead>
+                    <tr>
+                        <th class="custom-header" scope="col">
+                            <div class="header-content p-1">
+                                <input type="checkbox" class="form-check-input me-2 header-checkbox" data-table="keyDates">
+                                <span>Sl.No</span>
+                            </div>
+                        </th>
+                        <th class="custom-header" scope="col">
+                            <div class="header-content">
+                                <span>Staff ID</span>
+                                <div class="sort-icons d-flex align-items-center ms-2">
+                                    <span class="material-symbols-outlined sort-asc" data-column="StaffID" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                    <span class="material-symbols-outlined sort-desc" data-column="StaffID" data-order="desc">arrow_drop_down</span>
+                                </div>
+                            </div>
+                        </th>
+                        <th class="custom-header" scope="col">
+                            <div class="header-content">
+                                <span>Staff name</span>
+                                <div class="sort-icons d-flex align-items-center ms-2">
+                                    <span class="material-symbols-outlined sort-asc" data-column="StaffName" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                    <span class="material-symbols-outlined sort-desc" data-column="StaffName" data-order="desc">arrow_drop_down</span>
+                                </div>
+                            </div>
+                        </th>
+
+                      
+                   
+                        <th class="custom-header" scope="col">
+                            <div class="header-content">
+                                <span>Roles</span>
+                                <div class="sort-icons d-flex align-items-center ms-2">
+                                    <span class="material-symbols-outlined sort-asc" data-column="Roles" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                    <span class="material-symbols-outlined sort-desc" data-column="Roles" data-order="desc">arrow_drop_down</span>
+                                </div>
+                            </div>
+                        </th>
+                        <th class="custom-header" scope="col">
+                            <div class="header-content">
+                                <span>Status</span>
+                                <div class="sort-icons d-flex align-items-center ms-2">
+                                    <span class="material-symbols-outlined sort-asc" data-column="Status" data-order="asc" style="margin-bottom:-8px;">arrow_drop_up</span>
+                                    <span class="material-symbols-outlined sort-desc" data-column="Status" data-order="desc">arrow_drop_down</span>
+                                </div>
+                            </div>
+                        </th>
+
+                        <th class="custom-header" scope="col">
+                            <div class="header-content">
+                                <span>Action</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+
+                    <tr data-StaffID="012345678" data-StaffName="Staff name 01" data-Roles="Admin" data-Status="Active">
+                        <td>
+                            <div class="d-flex align-items-center gap-3">
+                                <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                <span>01</span>
+                            </div>
+                        </td>
+                        <td>012345678</td>
+                        <td>Staff name 01</td>
+                        <td>Admin</td>                        
+                        <td> <a href="#" class="btn user-btn">Active</a></td>
+                       
+
+                        <td class="p-0 d-flex align-items-center">
+                            <a href="/EditUserRoles" class="text-decoration-none text-dark mt-1">
+                                <span class="material-symbols-outlined ms-2">edit</span>
+                            </a>
+                            <a href="/ViewUserRoles" class="text-decoration-none text-dark mt-1 ms-1">
+                                <span class="material-symbols-outlined">visibility</span>
+                            </a>
+                            <span class="material-symbols-outlined ms-1">
+                                picture_as_pdf
+                            </span>
+                            <span class="material-symbols-outlined ms-1 deleting-icon" onclick="confirmDelete(this)">delete</span>
+                        </td>
+                    </tr>
+
+
+
+
+                    <!-- More rows as needed -->
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+                <div id="entriesInfo" class="entries-info">
+                </div>
+                <!-- Pagination -->
+                <div class="pagination-container">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination justify-content-end" id="pagination">
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+</section>

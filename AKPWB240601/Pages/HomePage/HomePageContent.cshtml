@@ -1,0 +1,1077 @@
+﻿@page
+@model HomePageContentModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0"><img class="header-below-logo" src="~/images/logo.png" />KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+        <p class="mb-0" id="home-p">Police Constable (Civil) (Men & Women) & (Transgender Men & Women) & Inservice & Backlog</p>
+    </div>
+    <!-- Start Breadcumb -->
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div>
+                                <h5 class="page-title mb-0">Homepage</h5>
+                            </div>
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Post
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Homepage
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Breadcumb -->
+
+    </section>
+    <section class="container-fluid">
+        <div class="card p-2">
+            <div class=" d-flex justify-content-between align-items-center">
+                <h5 class="page-title mb-0">Menus</h5>
+                <a class="btn add-btn" href="/HomePage/AddMenus">
+                    Add Menus <i class="fa-solid fa-plus ms-1"></i>
+                </a>
+            </div>
+
+            <div class="table-container">
+                <table class="table table-responsive rounded-3 custom-table w-100 shadow-sm mt-2" id="exampleTable">
+                    <thead>
+                        <tr>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Sl.No</span>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Menu name</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="menuName" data-order="asc" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="menuName" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Scheduled start date & time</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="startDate" data-order="asc" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="startDate" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Scheduled end date & time</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="endDate" data-order="asc" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="endDate" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Status</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined sort-asc" data-column="status" data-order="asc" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined sort-desc" data-column="status" data-order="desc">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Action</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr data-menu-name="Home" data-start-date="" data-end-date="" data-status="Off">
+                            <td>01</td>
+                            <td>Home</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditMenus" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewMenus" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr data-menu-name="New Application" data-start-date="15/09/2024" data-end-date="18/09/2024" data-status="On">
+                            <td>02</td>
+                            <td>New Application</td>
+                            <td>15/09/2024 & 10:30 am</td>
+                            <td>18/09/2024 & 10:30 am</td>
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">On</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/EditApplication" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/ViewApplication" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr data-menu-name="Notification" data-start-date="01/10/2024" data-end-date="05/10/2024" data-status="On">
+                            <td>03</td>
+                            <td>Notification</td>
+                            <td>01/10/2024 & 08:00 am</td>
+                            <td>05/10/2024 & 05:00 pm</td>
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">On</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/EditNotification" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/ViewNotification" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr data-menu-name="My Application" data-start-date="" data-end-date="" data-status="Off">
+                            <td>04</td>
+                            <td>My Application</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/EditMyApplication" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/ViewMyApplication" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr data-menu-name="Reports" data-start-date="10/11/2024" data-end-date="12/11/2024" data-status="On">
+                            <td>05</td>
+                            <td>Reports</td>
+                            <td>10/11/2024 & 09:00 am</td>
+                            <td>12/11/2024 & 06:00 pm</td>
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">On</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/EditReports" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/ViewReports" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr data-menu-name="Dashboard" data-start-date="01/12/2024" data-end-date="31/12/2024" data-status="On">
+                            <td>06</td>
+                            <td>Dashboard</td>
+                            <td>01/12/2024 & 07:00 am</td>
+                            <td>31/12/2024 & 11:59 pm</td>
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">On</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/EditDashboard" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/ViewDashboard" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid mt-3">
+        <div class="card p-2">
+            <div class=" d-flex justify-content-between align-items-center">
+                <h5 class="page-title mb-0">News & Events</h5>
+                <a class="btn add-btn" href="/HomePage/AddEvents">
+                    Add Events <i class="fa-solid fa-plus ms-1"></i>
+                </a>
+            </div>
+            <div class="table-container events-table">
+                <table class="table table-responsive rounded-3 custom-table w-100 shadow-sm mt-2" id="exampleTable">
+                    <thead>
+                        <tr>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <input type="checkbox" class="form-check-input me-2 header-checkbox" data-table="newsEvents">
+                                    <span>Sl.No</span>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Date</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Data type</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Event description</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Scheduled start date & time</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Scheduled end date & time</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Status</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="noOfPost">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Action</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="form-check-input tbody-checkbox" style="margin-left:-3px">
+                                    <span>01</span>
+                                </div>
+                            </td>
+                            <td>dd/mm/yyyy</td>
+                            <td>Table type</td>
+                            <td>
+                                CPC1137 Posts - Click here to download Final
+                                Key Answer for Written Examination held on 25.Feb.2024.
+                            </td>
+                            <td>
+                                dd/mm/yyyy & 10.30 am
+                            </td>
+                            <td>
+                                dd/mm/yyyy & 10.30 am
+                            </td>
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditEvents" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewEvents" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="form-check-input tbody-checkbox" style="margin-left:-3px">
+                                    <span>02</span>
+                                </div>
+                            </td>
+                            <td>dd/mm/yyyy</td>
+                            <td>Table type</td>
+                            <td>
+                                CPC1137 Posts - Click here to download Final
+                                Key Answer for Written Examination held on 25.Feb.2024.
+                            </td>
+                            <td>
+                                dd/mm/yyyy & 10.30 am
+                            </td>
+                            <td>
+                                dd/mm/yyyy & 10.30 am
+                            </td>
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditEvents" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewEvents" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="form-check-input tbody-checkbox" style="margin-left:-3px">
+                                    <span>03</span>
+                                </div>
+                            </td>
+                            <td>dd/mm/yyyy</td>
+                            <td>Table type</td>
+                            <td>
+                                CPC1137 Posts - Click here to download Final
+                                Key Answer for Written Examination held on 25.Feb.2024.
+                            </td>
+                            <td>
+                                dd/mm/yyyy & 10.30 am
+                            </td>
+                            <td>
+                                dd/mm/yyyy & 10.30 am
+                            </td>
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditEvents" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewEvents" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+
+                        <!-- Repeat for other rows -->
+                    </tbody>
+
+                </table>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid mt-3">
+        <div class="card p-2">
+            <div class=" d-flex justify-content-between align-items-center">
+                <h5 class="page-title mb-0">Key Dates</h5>
+                <a class="btn add-btn" href="/HomePage/AddKeyDates">
+                    Key dates<i class="fa-solid fa-plus ms-1"></i>
+                </a>
+            </div>
+            <div class="table-container events-table">
+                <table class="table table-responsive rounded-3 custom-table w-100 shadow-sm mt-2" id="exampleTable">
+                    <thead>
+                        <tr>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <input type="checkbox" class="form-check-input me-2 header-checkbox" data-table="keyDates">
+                                    <span>Sl.No</span>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Description</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Date</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Status</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="noOfPost">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Action</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>01</span>
+                                </div>
+                            </td>
+                            <td>Date of commencement of online Application</td>
+
+                            <td>
+                                dd/mm/yyyy
+                            </td>
+
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditKeyDates" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewKeyDates" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>02</span>
+                                </div>
+                            </td>
+                            <td>Date of commencement of online Application</td>
+
+                            <td>
+                                dd/mm/yyyy
+                            </td>
+
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditKeyDates" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewKeyDates" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>03</span>
+                                </div>
+                            </td>
+                            <td>Date of commencement of online Application</td>
+
+                            <td>
+                                dd/mm/yyyy
+                            </td>
+
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditKeyDates" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewKeyDates" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+
+                        <!-- Repeat for other rows -->
+                    </tbody>
+
+                </table>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid mt-3">
+        <div class="card p-2">
+            <div class=" d-flex justify-content-between align-items-center">
+                <h5 class="page-title mb-0">Age Criteria</h5>
+                <a class="btn add-btn" href="/HomePage/AddAge">
+                    Add Age<i class="fa-solid fa-plus ms-1"></i>
+                </a>
+            </div>
+            <div class="table-container events-table">
+                <table class="table table-responsive rounded-3 custom-table w-100 shadow-sm mt-2" id="exampleTable">
+                    <thead>
+                        <tr>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <input type="checkbox" class="form-check-input me-2 header-checkbox" data-table="keyDates">
+                                    <span>Sl.No</span>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Category</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Min age</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Max age</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Over age</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Under age</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Status</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="noOfPost">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Action</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>01</span>
+                                </div>
+                            </td>
+                            <td>GM</td>
+                            <td>19</td>
+                            <td>27</td>
+                            <td>27/11/1995 and before</td>
+
+                            <td>
+                                27/11/2003 and after
+                            </td>
+
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditAge" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewAge" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>02</span>
+                                </div>
+                            </td>
+                            <td>SC,ST,2A,2B,3A,3B</td>
+                            <td>19</td>
+                            <td>27</td>
+                            <td>27/11/1995 and before</td>
+
+                            <td>
+                                27/11/2003 and after
+                            </td>
+
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditAge" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewAge" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>01</span>
+                                </div>
+                            </td>
+                            <td>Forest Tribal</td>
+                            <td>19</td>
+                            <td>27</td>
+                            <td>27/11/1995 and before</td>
+
+                            <td>
+                                27/11/2003 and after
+                            </td>
+
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditAge" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewAge" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+
+                        <!-- Repeat for other rows -->
+                    </tbody>
+
+                </table>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid mt-3">
+        <div class="card p-2">
+            <div class=" d-flex justify-content-between align-items-center">
+                <h5 class="page-title mb-0">Fees</h5>
+                <a class="btn add-btn" href="/HomePage/AddFee">
+                    Add Fee<i class="fa-solid fa-plus ms-1"></i>
+                </a>
+            </div>
+            <div class="table-container events-table">
+                <table class="table table-responsive rounded-3 custom-table w-100 shadow-sm mt-2" id="exampleTable">
+                    <thead>
+                        <tr>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <input type="checkbox" class="form-check-input me-2 header-checkbox" data-table="keyDates">
+                                    <span>Sl.No</span>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Category</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Amount</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Status</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="noOfPost">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Action</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>01</span>
+                                </div>
+                            </td>
+                            <td>GM</td>
+                            <td>500</td>
+
+
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditFee" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewFee" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>02</span>
+                                </div>
+                            </td>
+                            <td>SC,ST,2A,2B,3A,3B</td>
+                            <td>190</td>
+
+
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditFee" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewFee" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>01</span>
+                                </div>
+                            </td>
+                            <td>Forest Tribal</td>
+                            <td>190</td>
+
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditFee" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewFee" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+
+                        <!-- Repeat for other rows -->
+                    </tbody>
+
+                </table>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid mt-3 mb-5">
+        <div class="card p-2">
+            <div class=" d-flex justify-content-between align-items-center">
+                <h5 class="page-title mb-0">Notes</h5>
+                <a class="btn add-btn" href="/HomePage/AddNotes">
+                    Add Notes<i class="fa-solid fa-plus ms-1"></i>
+                </a>
+            </div>
+            <div class="table-container events-table">
+                <table class="table table-responsive rounded-3 custom-table w-100 shadow-sm mt-2" id="exampleTable">
+                    <thead>
+                        <tr>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <input type="checkbox" class="form-check-input me-2 header-checkbox" data-table="keyDates">
+                                    <span>Sl.No</span>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Notes</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+
+
+                            <th class="custom-header" scope="col" data-sort="postingTitle">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Status</span>
+                                    <div class="sort-icons d-flex align-items-center ms-2">
+                                        <span class="material-symbols-outlined" style="margin-bottom:-14px;">arrow_drop_up</span>
+                                        <span class="material-symbols-outlined">arrow_drop_down</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="custom-header" scope="col" data-sort="noOfPost">
+                                <div class="header-content d-flex align-items-center">
+                                    <span>Action</span>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>01</span>
+                                </div>
+                            </td>
+                            <td>
+                                After payment of the Fee to the bank, you will be able to print your application after two days.
+                            </td>
+
+
+
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditNotes" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewNotes" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center gap-3">
+                                    <input type="checkbox" class="tbody-checkbox" style="margin-left:-3px">
+                                    <span>02</span>
+                                </div>
+                            </td>
+                            <td>
+                                The Application will be in both Kannada and English versions. However, the applicant must fill up the details in English Language only.
+                            </td>
+
+
+                            <td class="addpost-td border-box">
+                                <label class="switch">
+                                    <input type="checkbox" class="add-post-toggle">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="toggleStatus">Off</span>
+                            </td>
+                            <td class="p-0 d-flex align-items-center">
+                                <a href="/HomePage/EditNotes" class="text-decoration-none text-dark mt-1">
+                                    <span class="material-symbols-outlined ms-2">edit</span>
+                                </a>
+                                <a href="/HomePage/ViewNotes" class="text-decoration-none text-dark mt-1 ms-1">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </a>
+                                <span class="material-symbols-outlined ms-1" onclick="deleteRow(this)">delete</span>
+                            </td>
+                        </tr>
+
+
+                        <!-- Repeat for other rows -->
+                    </tbody>
+
+                </table>
+
+
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        //alert('k')
+        document.querySelectorAll('.sort-asc, .sort-desc').forEach(function (element) {
+            element.addEventListener('click', function () {
+                const column = this.getAttribute('data-column');
+                const order = this.getAttribute('data-order');
+                const tableBody = document.getElementById('tableBody');
+                const rows = Array.from(tableBody.querySelectorAll('tr'));
+
+                rows.sort(function (a, b) {
+                    let aValue = a.getAttribute(`data-${column}`);
+                    let bValue = b.getAttribute(`data-${column}`);
+
+                    if (column.includes('date')) {
+                        // Assuming date format is dd/mm/yyyy
+                        aValue = aValue.split(' ')[0].split('/').reverse().join('-');
+                        bValue = bValue.split(' ')[0].split('/').reverse().join('-');
+                    }
+
+                    if (order === 'asc') {
+                        return aValue.localeCompare(bValue);
+                    } else {
+                        return bValue.localeCompare(aValue);
+                    }
+                });
+
+                tableBody.innerHTML = '';
+                rows.forEach(row => tableBody.appendChild(row));
+            });
+        });
+    </script>

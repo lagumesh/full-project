@@ -1,0 +1,644 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - University Admin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/Style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/UAMS3.Admin.styles.css" asp-append-version="true" />
+
+    <!-- Font Awe🇸🇴me -->
+    <link href="~/lib/fontaswome/fontaswome.min.css" rel="stylesheet" />
+    <!-- BootStrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous" />
+    <!-- Data Table Css -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.7.0/css/select.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" />
+    <!-- FlatPickr -->
+    <link href="~/lib/flatpicker/flatpickr.min.css" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./Style.css" />
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="header" class="header fixed-top d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-column align-items-center">
+                <a href="/dashboard" class="brand-logo">
+                    <img src="./Assets/Images/UniAdminLogo.png" alt="Brand-Logo" />
+                </a>
+                <div class="version mb-0">
+                    <p>Version 1.01</p>
+                </div>
+            </div>
+            <i id="menu-toggle" class="bi bi-list"></i>
+        </div>
+        <nav class="header-nav">
+            <div class="m-0 d-flex justify-content-center align-items-center">
+
+              
+
+                <div class="university-logo me-2 d-flex justify-content-center align-items-center">
+                    <img src="./Assets/Images/SVUHeaderLogo.png" alt="University-Logo" />
+                    <div class="verticle-line"></div>
+                </div>
+                <!-- Start User Profile -->
+                <div class="me-2 nav-item dropdown profile d-flex justify-content-center align-items-center">
+                    <div class="me-1 d-flex justify-content-center align-items-center">
+                        <img src="./Assets/Images/ProfilePicture.png" alt="ProfilePic" class="me-2 d-md-block" />
+                        <p class="mb-0">
+                            <span>Admin</span>
+                            <br />
+                            <span>Keeneth Lloyd Martin</span>
+                        </p>
+                    </div>
+                    <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                        <i class="bi bi-caret-down-fill down-arrow"></i>
+                    </a>
+                    <ul class="dropdown-menu my-3 p-0 border-0 rounded-1">
+                        <a href="/Index" class="dropdown-item d-flex justify-content-end align-items-center">
+                        <li>
+                            Change Password <span><i class="bi bi-lock"></i></span>
+                        </li>
+                        </a>
+                        <hr />
+                        <a href="/Index" class="dropdown-item d-flex justify-content-end align-items-center">
+                        <li>
+                            Log Out <span><i class="bi bi-box-arrow-right"></i></span>
+                        </li>
+                        </a>
+                        <hr />
+                        <a href="/Index" class="dropdown-item d-flex justify-content-end align-items-center">
+                        <li>
+                            Close <span><i class="bi bi-x-lg"></i></span>
+                        </li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- End User Profile -->
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+    <!-- Start SideBar -->
+    <section class="side-bar">
+        <aside id="sidebar" class="sidebar pt-4 d-flex flex-wrap align-content-between">
+            <ul class="sidebar-nav m-0 p-0" id="sidebar-nav">
+                <li class="nav-item">
+                    <a href="/Dashboard" class="nav-link dashboard-menu" aria-current="page">
+                        <i class="bi bi-grid"></i>
+                        <h6>Dashboard</h6>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link collapsed academics-menu" data-bs-target="#academics-nav" data-bs-toggle="collapse">
+                        <i class="bi bi-journal-text"></i>
+                        <h6>Academics</h6>
+                        <i class="bi bi-caret-down ms-auto"></i>
+                    </a>
+                    <ul id="academics-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="/academicyears" class="nav-link academics-menu1">
+                                <i class="fa-regular fa-calendar-days"></i>
+                                <span class="ms-2">Academics Years</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/batches" class="nav-link academics-menu2">
+                                <i class="fa-solid fa-medal"></i>
+                                <span class="ms-2">Batchs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/batchstudycenters" class="nav-link academics-menu3">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <span class="ms-2">Batch Study Centres</span>
+                            </a>
+                        </li>
+                        <!--  <li>
+                               <a href="/admissions" class="nav-link academics-menu4">
+                                   <i class="fa-regular fa-id-card"></i>
+                                   <span class="ms-2">Admissions</span>
+                               </a>
+                           </li>-->
+                        <li>
+                            <a href="/admissionregistrations" class="nav-link academics-menu5">
+                                <i class="fa-regular fa-address-card"></i>
+                                <span class="ms-2">Admission Reg</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link collapsed" data-bs-target="#exam-nav" data-bs-toggle="collapse">
+                        <i class="bi bi-pencil-square"></i>
+                        <h6>Examinations</h6>
+                        <i class="bi bi-caret-down ms-4"></i>
+                    </a>
+                    <ul id="exam-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="/examapplications" class="nav-link examination-1">
+                                <i class="fa-solid fa-file-signature"></i>
+                                <span class="ms-2">Exam Applications</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/centre" class="nav-link examination-2">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <span class="ms-2">Centres</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/examcentre" class="nav-link examination-3">
+                                <i class="fa-solid fa-school"></i>
+                                <span class="ms-2">Exam Centres</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/exammapping" class="nav-link examination-4">
+                                <i class="fa-solid fa-landmark-flag"></i>
+                                <span class="ms-2">Exam Centre Mappings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/examination" class="nav-link examination-5">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <span class="ms-2">Examinations</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/examcourse" class="nav-link examination-6">
+                                <i class="fa-regular fa-file-word"></i>
+                                <span class="ms-2">Examination Courses</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/examinationprogramme" class="nav-link examination-7">
+                                <i class="fa-regular fa-file-code"></i>
+                                <span class="ms-2">Exam Programmes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/examinationstudycentre" class="nav-link examination-8">
+                                <i class="fa-solid fa-building-user"></i>
+                                <span class="ms-2">Exam Study Centres</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/examinationtimetable" class="nav-link examination-9">
+                                <i class="fa-solid fa-table-list"></i>
+                                <span class="ms-2">Exam Time Tables</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/papertype" class="nav-link examination-10">
+                                <i class="fa-regular fa-paste"></i>
+                                <span class="ms-2">Paper Types</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link collapsed" data-bs-target="#term-nav" data-bs-toggle="collapse">
+                        <i class="bi bi-cash-stack"></i>
+                        <h6>Term Fees</h6>
+                        <i class="bi bi-caret-down ms-auto"></i>
+                    </a>
+                    <ul id="term-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="/feegroup" class="nav-link term1">
+                                <i class="fa-solid fa-money-bills"></i>
+                                <span class="ms-2">Fee Groups</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/termfees" class="nav-link term2">
+                                <i class="fa-solid fa-money-bill-transfer"></i>
+                                <span class="ms-2">Term Fees</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/termindex" class="nav-link term3">
+                                <i class="fa-regular fa-calendar-check"></i>
+                                <span class="ms-2">Term Indexes</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link collapsed" data-bs-target="#colleges-nav" data-bs-toggle="collapse">
+                        <i class="bi bi-mortarboard"></i>
+                        <h6 class="me-2">Colleges</h6>
+                        <i class="bi bi-caret-down ms-auto"></i>
+                    </a>
+                    <ul id="colleges-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="/studycentres" class="nav-link">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <span class="ms-2">Study Centres</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/studycentreusers" class="nav-link">
+                                <i class="fa-solid fa-building-user"></i>
+                                <span class="ms-2">Study Centres Users</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/menu" class="nav-link">
+                                <i class="fa-regular fa-rectangle-list"></i>
+                                <span class="ms-2">Menus</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/studycentremenu" class="nav-link">
+                                <i class="fa-solid fa-building-circle-arrow-right"></i>
+                                <span class="ms-2">Study Centre Menus</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link collapsed" data-bs-target="#student-nav" data-bs-toggle="collapse">
+                        <i class="bi bi-people"></i>
+                        <h6 class="me-2">Students</h6>
+                        <i class="bi bi-caret-down ms-auto"></i>
+                    </a>
+                    <ul id="student-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="/student" class="nav-link">
+                                <i class="fa-solid fa-people-arrows"></i>
+                                <span class="ms-2">Students</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/studentexamcentre" class="nav-link">
+                                <i class="fa-solid fa-building-user"></i>
+                                <span class="ms-2">Student Exam Centres</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/studenttermfees" class="nav-link">
+                                <i class="fa-solid fa-money-bill-trend-up"></i>
+                                <span class="ms-2">Students Term Fees</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/studenttermfeestransactions" class="nav-link">
+                                <i class="fa-solid fa-money-bill-transfer"></i>
+                                <span class="ms-2">Student Term Fees</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link collapsed" data-bs-target="#download-nav" data-bs-toggle="collapse">
+                        <i class="bi bi-download"></i>
+                        <h6 class="me-2">Downloads</h6>
+                        <i class="bi bi-caret-down ms-auto"></i>
+                    </a>
+                    <ul id="download-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-address-book"></i>
+                                <span class="ms-2">Components</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link collapsed" data-bs-target="#settings-nav" data-bs-toggle="collapse">
+                        <i class="bi bi-gear"></i>
+                        <h6 class="me-2">Settings</h6>
+                        <i class="bi bi-caret-down ms-auto"></i>
+                    </a>
+                    <ul id="settings-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-address-book"></i>
+                                <span class="ms-2">Components</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link collapsed" data-bs-target="#universitymaster-nav" data-bs-toggle="collapse">
+                        <i class="bi bi-journal-text"></i>
+                        <h6>Masters</h6>
+                        <i class="bi bi-caret-down ms-auto"></i>
+                    </a>
+                    <ul id="universitymaster-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="/universitydetails" class="nav-link">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <span class="ms-2">University Details</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/departments" class="nav-link">
+                                <i class="fa-solid fa-hotel"></i>
+                                <span class="ms-2">Departments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/programmes" class="nav-link">
+                                <i class="fa-solid fa-laptop-code"></i>
+                                <span class="ms-2">Programmes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/courses" class="nav-link">
+                                <i class="fa-solid fa-spell-check"></i>
+                                <span class="ms-2">Courses</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/subjects" class="nav-link">
+                                <i class="fa-solid fa-book-medical"></i>
+                                <span class="ms-2">Subjects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/questionpapers" class="nav-link">
+                                <i class="fa-solid fa-file-powerpoint"></i>
+                                <span class="ms-2">Question Papers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/degree" class="nav-link">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span class="ms-2">Degrees</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/coursebranch" class="nav-link">
+                                <i class="fa-regular fa-file-zipper"></i>
+                                <span class="ms-2">Course Branches</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/medium" class="nav-link">
+                                <i class="fa-solid fa-language"></i>
+                                <span class="ms-2">Mediums</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/countries" class="nav-link">
+                                <i class="fa-solid fa-earth-americas"></i>
+                                <span class="ms-2">Countries</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/unionstates" class="nav-link">
+                                <i class="fa-solid fa-flag-usa"></i>
+                                <span class="ms-2">Union & States</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/district" class="nav-link">
+                                <i class="fa-solid fa-globe"></i>
+                                <span class="ms-2">Districts</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link collapsed" data-bs-target="#users-nav" data-bs-toggle="collapse">
+                        <i class="bi bi-person-gear"></i>
+                        <h6 class="me-2">Users</h6>
+                        <i class="bi bi-caret-down ms-auto"></i>
+                    </a>
+                    <ul id="users-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+                        <li>
+                            <a href="/userdetails" class="nav-link">
+                                <i class="fa-solid fa-id-card"></i>
+                                <span class="ms-2">User Details</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/userroles" class="nav-link">
+                                <i class="fa-solid fa-user-gear"></i>
+                                <span class="ms-2">User Roles</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/usergroups" class="nav-link">
+                                <i class="fa-solid fa-users"></i>
+                                <span class="ms-2">User Groups</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+    </section>
+    <!-- End SideBar -->
+    @RenderBody()
+
+    <!-- Start Footer -->
+    
+    <section id="footer">
+        <div class="container-fluid p-0 m-0">
+            <div class="row">
+                <div class="col-4 d-flex justify-content-center">
+                    <div>
+                        <p id="datePlaceholder"></p>
+                    </div>
+                </div>
+                <div class="col-4 center-content">
+                    <p>© 2023 Powered by Avia Technologies</p>
+                </div>
+                <div class="col-4 d-flex justify-content-end  version-right">
+                    <p id="ipPlaceholder"></p>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <!-- End Footer -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/Script.js"></script>
+
+    <!-- DataTable Jquery -->
+    <script src="~/lib/jquery/jquery-3.7.0.js"></script>
+    <script src="~/lib/data-table/jquery.datatables.min.js"></script>
+    <script src="~/lib/data-tabels-bootstrap/datatables.select.min.js"></script>
+
+    <!-- Flat Picker -->
+
+    <script src="~/lib/flatpicker/flatpickr.js"></script>
+    <!-- BootStrap -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(function () {
+            $('#sidebar-nav li a').removeClass('active');
+
+            var href = document.location.href;
+            var sections = [
+                { patterns: ['/academicyears', '/batches', '/batchstudycenters', '/admissions', '/admissionregistrations'], action: '.academics-menu' },
+                { patterns: ['/examapplications', '/centre', '/examcentre', '/exammapping', '/examination', '/examcourse', '/examinationprogramme', '/examinationstudycentre', '/examinationtimetable', '/papertype'], action: '.nav-link[data-bs-target="#exam-nav"]' },
+                { patterns: ['/feegroup', '/termfees', '/termindex'], action: '.nav-link[data-bs-target="#term-nav"]' },
+                { patterns: ['/studycentres', '/studycentreusers', '/menu', '/studycentremenu'], action: '.nav-link[data-bs-target="#colleges-nav"]' },
+                { patterns: ['/student', '/studentexamcentre', '/studenttermfees', '/studenttermfeestransactions'], action: '.nav-link[data-bs-target="#student-nav"]' },
+                { patterns: ['/universitydetails', '/departments', '/programmes', '/courses', '/subjects', '/questionpapers', '/degree', '/coursebranch', '/medium', '/countries', '/unionstates', '/district'], action: '.nav-link[data-bs-target="#universitymaster-nav"]' },
+                { patterns: ['/userdetails', '/userroles', '/usergroups'], action: '.nav-link[data-bs-target="#users-nav"]' },
+                { patterns: ['/dopay', '/login', '/myapplication', '/forgotapplication', '/UploadChallans', '/payment', '/payment-status'], action: '.myapp-menu' }
+            ];
+
+            sections.forEach(function (section) {
+                section.patterns.forEach(function (pattern) {
+                    const regex = new RegExp(`${pattern}$`);
+                    if (regex.test(href)) {
+                        console.log(regex.test(href))
+                        console.log(regex)
+                        $(section.action).addClass('active');
+                        $(section.action).siblings('ul').addClass('show').find('.nav-link[href="' + pattern + '"]').addClass('active');
+
+                        return false; // Exit loop if pattern is matched
+                    }
+                });
+            });
+
+            if (href.includes('/Dashboard')) {
+                $('.dashboard-menu').addClass('active');
+            } else if (!$('.nav-link.active').length) {
+                $('.home-menu').addClass('active');
+            }
+        });
+    </script>
+
+    <script>
+        var dataTable = new DataTable("#example", {
+            columnDefs: [
+                {
+                    orderable: false,
+                    className: "select-checkbox",
+                    targets: 0,
+                },
+            ],
+
+            pagingType: "full_numbers",
+
+            select: {
+                selector: "td:first-child",
+                style: "multi",
+            },
+            order: [[1, "asc"]],
+        });
+
+        // Add a checkbox in the header for selecting all rows
+        $("#example thead th:first-child").html('<input type = "checkbox" id = "select-all-checkbox" />');
+
+        // Handle the click event on the "Select All" checkbox
+        $("#select-all-checkbox").on("click", function () {
+            if ($(this).prop("checked")) {
+                dataTable.rows().select();
+            } else {
+                dataTable.rows().deselect();
+            }
+        });
+
+
+        $(document).ready(function () {
+            // Select the menu toggle icon
+            var menuToggle = $("#menu-toggle");
+
+            // Select the sidebar
+            var sidebar = $("#sidebar");
+
+            // Select the main content
+            var main = $("#main");
+
+            // Select the footer
+            var footer = $("#footer");
+
+            // Select the datePlaceholder
+            var datePlaceholder = $("#datePlaceholder");
+
+            // Initial left position of the datePlaceholder
+            var initialLeft = 255;
+
+            // Add a click event to toggle the sidebar and adjust the main content
+            menuToggle.click(function () {
+                toggleSidebar();
+                updateDatePlaceholderPosition();
+            });
+
+            // Function to toggle sidebar and update footer
+            function toggleSidebar() {
+                sidebar.toggleClass("active");
+                main.toggleClass("active");
+                footer.toggleClass("active");
+                toggleIcons(); // Call function to toggle icons visibility
+                menuToggle.toggleClass("bi-list bi-x-circle");
+            }
+
+            // Function to update datePlaceholder position
+            function updateDatePlaceholderPosition() {
+                if (sidebar.hasClass("active")) {
+                    datePlaceholder.css("left", "calc(255px - 250px)"); // Adjust as needed
+                } else {
+                    datePlaceholder.css("left", "255px"); // Adjust as needed
+                }
+            }
+
+            // Function to toggle icons visibility
+            function toggleIcons() {
+                // Select the collapsed menu items
+                var collapsedMenuItems = $(".nav-link.collapsed");
+
+                // Loop through each collapsed menu item
+                collapsedMenuItems.each(function () {
+                    // Select the icon associated with the collapsed menu item
+                    var icon = $(this).find(".bi");
+
+                    // Toggle visibility of the icon based on sidebar visibility
+                    icon.toggleClass("hidden", sidebar.hasClass("active"));
+                });
+            }
+
+            // Add hover event to remove "active" class when sidebar is hovered
+            sidebar.hover(
+                function () {
+                    sidebar.removeClass("active");
+                    main.removeClass("active");
+                    toggleIcons(); // Call function to toggle icons visibility
+                },
+                function () {
+                    // Do nothing when mouse leaves sidebar
+                }
+            );
+        });
+
+
+
+        // FLATPICKR DATE
+
+        flatpickr("#DatePicker", {
+            dateFormat: "d/m/Y", // Set the desired date format
+            enableTime: false, // Set to true if you want to enable time selection
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

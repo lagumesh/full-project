@@ -1,0 +1,231 @@
+﻿@page
+@model AKPWB240601.Pages.ViewJobPostingModel
+@{
+    Layout = "_Post";
+}
+<section class="main-section">
+    <div class="header-below d-flex align-items-center justify-content-between py-2 shadow-sm bg-white ">
+        <p class="mb-0"><img class="header-below-logo" src="./images/LOGO.png"> KSP(Karnataka State Police) Recruitment Cell, Bengaluru, Karnataka.</p>
+        <p class="mb-0" id="home-p">Police Constable (Civil) (Men & Women) & (Transgender Men & Women) & Inservice & Backlog</p>
+    </div>
+    <!-- Start Breadcumb -->
+    <section id="main" class="main">
+        <section id="breadcrumb">
+            <div class="container-fluid my-1">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <a href="/JobPosting" class="text-decoration-none text-dark mt-2">
+                                    <span class="material-symbols-outlined me-2">arrow_back</span>
+                                </a>
+                                <h5 class="page-title mb-0">View details</h5>
+                            </div>
+
+
+                            <ul class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/Posts" class="text-decoration-none">
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Masters
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>Posts
+                                </li>
+                                <li class="active">
+                                    <span class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>View Details
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- End Breadcumb -->
+    <div class="Preview-container p-3">
+       
+            <div class="previews">
+                <h5 class="p-2">Add Postings Details</>
+            </div>
+            <div class="preview-content">
+                <div class="preview">
+                    <table>
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Code <span>:</span></td>
+                            <td class="addpost-td border-box"><input type="text" placeholder="Enter code" class="add-post-input1"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Title <span>:</span></td>
+                            <td class="addpost-td border-box"><input type="text" placeholder="Enter code" class="add-post-input1"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Notification in English  <span>:</span></td>
+                            <td class="addpost-td border-box"><input type="text" placeholder="Enter code" class="add-post-input1"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Notification in Kannada <span>:</span></td>
+                            <td class="addpost-td border-box"><input type="text" placeholder="Enter code" class="add-post-input1"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Display Title in English <span>:</span></td>
+                            <td class="addpost-td border-box"><input type="text" placeholder="Enter code" class="add-post-input1"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Display Title in Kannada <span>:</span></td>
+                            <td class="addpost-td border-box"><input type="text" placeholder="Enter code" class="add-post-input1"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Total Vacancy <span>:</span></td>
+                            <td class="addpost-td border-box"><input type="text" placeholder="Enter code" class="add-post-input1"></td>
+                        </tr>
+                    </table>
+                </div>
+          </div>
+
+
+            <div class="previews mt-2">
+                <h5 class="p-2">Add Activity Details</>
+            </div>
+            <div class="preview-content">
+                <div class="preview">
+                    <table>
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Online Application start date  <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Online Application End date  <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Payment start date   <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Payment End date   <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Written Exam date  <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Scanning Start date  <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Scanning End date  <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Merit list release date  <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">ETPST Date  <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">ETPST Merit list release date <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">Medical Exam date <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="addpost-th d-flex justify-content-between">ETPST Date <span>:</span></td>
+                            <td class="addpost-td border-box">
+                                <div class="input-wrapper">
+                                    <input type="text" placeholder="Select date" class="add-post-input">
+                                    <i class="fa-solid fa-calendar-days calendar-icon"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </div>
+</section>

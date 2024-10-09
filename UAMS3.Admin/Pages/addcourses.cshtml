@@ -1,0 +1,88 @@
+﻿@page
+@model UAMS3.Admin.Pages.addcoursesModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Course</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Course</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add Course Section -->
+	<section id="add-pages" class="add-country mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<p class="card-title px-3 py-1">Course Details</p>
+						<div class="card-body px-3 py-2">
+							<ul class="px-0">
+								<li>
+									<span>Code</span>
+									<input type="text" placeholder="Code" />
+								</li>
+								<li>
+									<span>Title</span>
+									<input type="text" placeholder="Title Name" />
+								</li>
+								<li>
+									<span>Display Title</span>
+									<input type="text" placeholder="Display Title" />
+								</li>
+								<li>
+									<span>Batch</span>
+									<select class="select">
+										<option defaultValue>Select Batch</option>
+										<option>2022-2024</option>
+										<option>2021-2025</option>
+									</select>
+								</li>
+								<li>
+									<span>Department</span>
+									<select class="select">
+										<option defaultValue>Select Department</option>
+										<option>Mech</option>
+										<option>Computer Science</option>
+									</select>
+								</li>
+								<li>
+									<span>Degree</span>
+									<select class="select">
+										<option defaultValue>Select Degree</option>
+										<option>B.E</option>
+										<option>B.Tech</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+				<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- End Add Course Section -->

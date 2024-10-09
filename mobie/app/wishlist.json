@@ -1,0 +1,51 @@
+[
+    {
+      "id": "1",
+      "src": "item1",
+      "heading": "Women Printed Kurta",
+      "description": "Stylish kurta for casual wear.",
+      "rate": "$25",
+      "rating": 4
+    },
+    {
+      "id": "2",
+      "src": "item2",
+      "heading": "Stylish Shoes",
+      "description": "Comfortable and trendy shoes.",
+      "rate": "$50",
+      "rating": 5
+    },
+    {
+      "id": "3",
+      "src": "black",
+      "heading": "Stylish Shoes",
+      "description": "Comfortable and trendy shoes.",
+      "rate": "$50",
+      "rating": 5
+    },
+    {
+      "id": "4",
+      "src": "sandals",
+      "heading": "Stylish Shoes",
+      "description": "Comfortable and trendy shoes.",
+      "rate": "$50",
+      "rating": 5
+    },
+    {
+        "id": "5",
+        "src": "sandals",
+        "heading": "Stylish Shoes",
+        "description": "Comfortable and trendy shoes.",
+        "rate": "$50",
+        "rating": 5
+      },
+      {
+        "id": "6",
+        "src": "sandals",
+        "heading": "Stylish Shoes",
+        "description": "Comfortable and trendy shoes.",
+        "rate": "$50",
+        "rating": 5
+      }
+  ]
+  

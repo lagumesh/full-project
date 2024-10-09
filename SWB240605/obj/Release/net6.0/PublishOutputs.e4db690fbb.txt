@@ -1,0 +1,8 @@
+D:\Desktop\ssss\SWB240605\obj\Release\net6.0\PubTmp\Out\SWB240605.exe
+D:\Desktop\ssss\SWB240605\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\Desktop\ssss\SWB240605\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\Desktop\ssss\SWB240605\obj\Release\net6.0\PubTmp\Out\SWB240605.dll
+D:\Desktop\ssss\SWB240605\obj\Release\net6.0\PubTmp\Out\SWB240605.deps.json
+D:\Desktop\ssss\SWB240605\obj\Release\net6.0\PubTmp\Out\SWB240605.runtimeconfig.json
+D:\Desktop\ssss\SWB240605\obj\Release\net6.0\PubTmp\Out\SWB240605.pdb
+D:\Desktop\ssss\SWB240605\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll

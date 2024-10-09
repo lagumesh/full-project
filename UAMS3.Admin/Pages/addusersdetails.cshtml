@@ -1,0 +1,92 @@
+﻿@page
+@model UAMS3.Admin.Pages.addusersdetailsModel
+@{
+    Layout = "_Layout";
+}
+
+<!-- Start Breadcumb -->
+<section id="main" class="main">
+	<section id="breadcrumb">
+		<div class="container-fluid my-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="d-flex flex-wrap justify-content-between">
+						<div>
+							<p class="page-title mb-0">Users Details</p>
+						</div>
+						<ol class="breadcrumb mb-0">
+							<i class="bi bi-house-door-fill"></i>
+							<li class="breadcrumb-item">
+								Dashboard <span><i class="bi bi-chevron-right"></i></span>
+							</li>
+							<li class="active">Users Details</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Breadcumb -->
+
+	<!-- Start Add User Details Section -->
+	<section id="add-pages" class="add-country mb-5">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<p class="card-title px-3 py-1">Users Details</p>
+						<div class="card-body px-3 py-2">
+							<ul class="px-0">
+								<li>
+									<span>User Name</span>
+									<input type="text" placeholder="User Name" />
+								</li>
+								<li>
+									<span>Password</span>
+									<input type="text" placeholder="Password" />
+								</li>
+								<li>
+									<span>First Name</span>
+									<input type="text" placeholder="First Name" />
+								</li>
+								<li>
+									<span>Employee ID</span>
+									<input type="text" placeholder="Employee ID" />
+								</li>
+								<li>
+									<span>Phone No</span>
+									<input type="text" placeholder="Phone No" />
+								</li>
+								<li>
+									<span>Email ID</span>
+									<input type="text" placeholder="Email ID" />
+								</li>
+								<li>
+									<span>Department</span>
+									<input type="text" placeholder="Department" />
+								</li>
+								<li>
+									<span>Designation</span>
+									<input type="text" placeholder="Designation" />
+								</li>
+								<li>
+									<span>User Group</span>
+									<input type="text" placeholder="User Group" />
+								</li>
+								<li>
+									<span>User Role</span>
+									<input type="text" placeholder="User Role" />
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-between align-items-center">
+				<button class="back-btn"><span><i class="bi bi-arrow-left"></i></span>Back</button>
+				<button class="save-btn"><span><i class="bi bi-floppy"></i></span>Save</button>
+			</div>
+		</div>
+	</section>
+</section>
+<!-- End Add User Details Section -->

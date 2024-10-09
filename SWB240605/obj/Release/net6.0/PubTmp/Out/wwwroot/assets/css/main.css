@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+@font-face {
+    font-family: 'Nudi';
+    src: url('/assets/vendor/fonts/Nudi_web_01_e_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nudi.2';
+    src: url('/assets/vendor/fonts/Nudi_01_e_Bold.ttf') format('truetype');
+}
+
+.av-font-kn {
+    font-family: "Nudi.2" !important;
+    font-weight: 600 !important;
+}
+
+:root {
+    --primary: #122D40;
+    --secondary: #01E281;
+    --menu: #1C3E56;
+    --white: #ffffff;
+    --black: #000000;
+    --light-green: #F0FAF1;
+    --hover: #0ac578;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+.kannada-font {
+    font-family: "Nudi" !important;
+}
+
+#icons {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+#section-title {
+    background-color: var(--primary);
+    color: var(--white);
+    width: fit-content;
+    border-radius: 50px;
+    padding: 5px 15px;
+    margin: 30px 0;
+}
+
+    #section-title h5 {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+/* TOP SECTION */
+
+#top-section {
+    background-color: var(--primary) !important;
+    color: var(--white);
+    height: 120px;
+}
+
+    #top-section .logo {
+        width: 250px;
+        height: 50px;
+        object-fit: contain;
+    }
+
+    #top-section img {
+        width: 50px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    #top-section .contact-details p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    #top-section .contact-details h6 {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+/* NAVBAR */
+
+.navbar ul {
+    background-color: var(--menu);
+    border-radius: 50px;
+    margin-top: -30px;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        margin-top: 0; /* Adjusted margin-top for mobile screens */
+    }
+}
+
+
+    .navbar ul li {
+        border-radius: 50px;
+        padding: 5px 30px;
+    }
+
+        .navbar ul li .nav-link {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+.navbar .my-app-btn {
+    background-color: var(--secondary);
+    color: var(--black) !important;
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+    .navbar .my-app-btn:hover {
+        background-color: var(--hover) !important;
+    }
+
+
+/* BANNER SECTION */
+
+#nav-banner-section {
+    min-height: 500px;
+    background-color: var(--light-green);
+}
+
+#banner-section img {
+    height: 500px;
+    width: 100%;
+    object-fit: fill;
+    margin-top: -20px;
+}
+
+.banner-notification {
+    text-align: justify;
+}
+
+    .banner-notification p:nth-child(1) {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    .banner-notification p:nth-child(4) {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+#nav-banner-section h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#nav-banner-section .kannada-font {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.banner-notification .apply-btn {
+    background-color: var(--secondary) !important;
+    color: var(--black) !important;
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+    .banner-notification .apply-btn:hover {
+        background-color: var(--hover) !important;
+    }
+
+
+/* NEWS AND EVENTS */
+
+#news-events .card {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.1) 0px 1px 2px 0px, rgba(60, 64, 67, 0.08) 0px 2px 6px 2px;
+}
+
+#news-events p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#news-events h6 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* AGE-CRETERIA */
+
+#age-creteria table {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+    #age-creteria table thead th {
+        background-color: var(--menu);
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 600 !important;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
+    #age-creteria table tbody tr td {
+        font-size: 16px;
+        vertical-align: middle;
+    }
+
+    #age-creteria table .age-btn {
+        background-color: var(--secondary);
+        color: var(--black) !important;
+        padding: 6px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+        #age-creteria table .age-btn:hover {
+            background-color: var(--hover) !important;
+        }
+
+.calculate-age, .cm-btn {
+    background-color: var(--secondary) !important;
+    color: var(--black) !important;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+    .calculate-age:hover, .cm-btn:hover {
+        background-color: var(--hover) !important;
+    }
+
+
+/* NOTES */
+
+#notes .tick-icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+#notes .cm-btn {
+    background-color: var(--secondary) !important;
+    color: var(--black) !important;
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+    #notes .cm-btn:hover {
+        background-color: var(--hover) !important;
+    }
+
+/* INSTRUCTION */
+#instruction .tick-icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+#instruction .form-check-input:focus {
+    box-shadow: none !important;
+}
+
+#instruction .proof img{
+    max-width:250px;
+    min-height: 200px !important;
+    object-fit: fill;
+}
+
+/* NEW APPLICATION */
+
+/*****| REGISTRATION FORM |*****/
+
+/***** | CARD | *****/
+
+/* Default width for mobile */
+.inputchanges input[type="text"],
+.inputchanges input[type="number"],
+.inputchanges input[type="date"],
+.inputchanges input[type="email"],
+.inputchanges input[type="number"],
+.inputchanges select {
+    margin-left: 10px !important;
+    width: 100% ;
+}
+
+.inputchanges2 input[type="text"] {
+    /* margin-left: 10px !important; */
+    width: 100px !important;
+}
+
+/* Media query for PC */
+@media (min-width: 768px) {
+    .inputchanges input[type="text"],
+    .inputchanges input[type="number"],
+    .inputchanges input[type="date"],
+    .inputchanges input[type="email"],
+    .inputchanges select {
+        /*width: 475px !important;*/
+        margin-left: 25px !important;
+    }
+
+    .inputchanges2 input[type="text"] {
+        width: 100px !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .inputchanges input[type="text"],
+    .inputchanges input[type="number"],
+    .inputchanges input[type="date"],
+    .inputchanges input[type="email"],
+    .inputchanges select {
+        width: 475px ;
+    }
+}
+
+/*@media (min-width: 768px) {
+    .inputchanges input[type="text"],
+    .inputchanges input[type="number"],
+    .inputchanges input[type="date"],
+    .inputchanges input[type="email"],
+    .inputchanges select {
+        width: 280px ;
+    }
+}*/
+
+
+    .form-group input,
+    .form-select,
+    .form-control {
+        border: #a9a9ae 1px solid !important;
+    }
+
+    .form-horizontal .form-control {
+        box-shadow: none;
+        border-radius: 5px;
+        border-color: #000;
+    }
+
+    #applicationForm label.error {
+        width: 100%;
+        margin-top: .25rem;
+        font-size: .875em;
+        color: #dc3545;
+        display: block;
+        margin-left: 25px;
+    }
+
+    #applicationForm .uploadfile .error {
+        width: 100%;
+        margin-top: .25rem;
+        font-size: .875em;
+        color: #dc3545;
+        display: block;
+        text-align: center;
+    }
+
+    #applicationForm .modal-body p > span {
+        font-weight: bold;
+    }
+
+
+    #new-application .card {
+        width: 100%;
+        border: none !important;
+        box-shadow: rgba(0, 0, 0, 0.9) 0px 1px 2px 0px !important;
+        margin-bottom: 30px;
+    }
+
+    .inputchanges .card-title {
+        background-color: var(--primary);
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 700;
+        padding: 6px 15px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    .inputchanges .card-title-2 {
+        background-color: var(--menu);
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 700;
+        padding: 6px 15px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    /***** | FORM | *****/
+
+    form .form-label {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    form .form-select {
+        border: 1px solid var(--black);
+        border-radius: 5px;
+    }
+
+        form .form-select:focus {
+            border: 1px solid var(--primary);
+            box-shadow: none;
+        }
+
+    form .form-control {
+        border: 1px solid var(--black);
+        border-radius: 5px;
+    }
+
+        form .form-control:focus {
+            border: 1px solid var(--primary);
+            box-shadow: none;
+        }
+
+    #candidate-input .form-group {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    #candidate-input textarea {
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .form-check-input {
+        height: 16px !important;
+        box-shadow: none;
+        border: 2px solid var(--primary) !important;
+        border-radius: 0;
+        box-shadow: none !important;
+    }
+
+    #applicationForm .uploadfile .center {
+        height: 330px;
+        border-radius: 3px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+
+
+#applicationForm .uploadfile .title {
+    width: 100%;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+    #applicationForm .uploadfile h1 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    #applicationForm .uploadfile .dropzone {
+        width: 280px;
+        height: 150px;
+        border: 1px dashed #999;
+        border-radius: 3px;
+        text-align: center;
+        padding: 10px;
+        margin: 20px 0px;
+    }
+
+    #applicationForm .uploadfile .upload-icon {
+        width: 250px !important;
+        max-height: 130px !important;
+    }
+
+
+
+    #applicationForm .uploadfile .upload-input {
+        position: relative;
+        top: -62px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .uploadfile .btn {
+        display: block;
+        height: fit-content;
+        width: fit-content;
+        padding: 3px 10px;
+        color: #fff;
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out;
+        font-size: 14px !important;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .newapplicationv2 .modal-dialog {
+        max-width: 70% !important;
+    }
+
+    @media (max-width: 600px) {
+
+        .registration .form-control,
+        .registration .select {
+            width: 300px;
+        }
+    }
+
+    .registration .select,
+    .registration .option {
+        font-size: 14px;
+    }
+
+    input[type="number"] {
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+    .registration .upload-details .box {
+        width: 250px;
+        height: 170px;
+        border: 1px solid var(--light-dark);
+        margin-bottom: 20px;
+    }
+
+    .registration .upload-details .box-topic {
+        text-align: center;
+        background-color: var(--primary);
+        color: var(--white);
+        border-radius: 3px;
+        margin-bottom: 20px;
+    }
+
+    .registration .upload-details .box img {
+        height: 150px;
+        width: 220px;
+        object-fit: contain;
+    }
+
+
+    /***** | FOOTER |*****/
+
+    #footer {
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding-bottom: 20px;
+        background-color: var(--menu);
+        color: var(--white);
+    }
+
+        #footer .top-section {
+            padding-top: 30px;
+            margin-bottom: 40px;
+        }
+
+            #footer .top-section img {
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
+            }
+
+            #footer .top-section .general-information {
+                text-align: justify;
+            }
+
+            #footer .top-section ul {
+                padding: 0;
+                margin: 0;
+                display: grid;
+                gap: 100px;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+    @media (width > 480px) {
+        #footer .top-section ul {
+            padding-right: 10%;
+        }
+    }
+
+    @media (width > 600px) {
+        #footer .top-section ul {
+            grid-template-columns: repeat(4, 1fr);
+            padding-right: 0;
+        }
+    }
+
+    #footer .top-section ul li a {
+        display: block;
+        color: var(--white);
+    }
+
+    #footer .top-section h3 {
+        color: var(--white);
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    #footer .bottom-section {
+        background-color: var(--menu);
+        padding-top: 10px;
+        border-top: 1px solid rgb(255 255 255 / 50%);
+        font-size: 14px;
+    }
+
+    #footer .contact img {
+        height: 30px;
+        width: 30px;
+        object-fit: contain;
+        color: var(--white);
+        margin-right: 10px;
+    }
+
+    .newapp span {
+        margin-bottom: 1em;
+    }
+
+
+    /*LOGIN*/
+
+    #login img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #login .card {
+        border: none !important;
+        box-shadow: rgba(0, 0, 0, 0.9) 0px 1px 2px 0px !important;
+    }
+
+
+    #login .login-btn {
+        background-color: var(--secondary);
+        color: var(--black) !important;
+        padding: 6px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .input-with-icon {
+        position: relative;
+    }
+
+        .input-with-icon input {
+            width: 100%;
+            padding-right: 2.5rem;
+        }
+
+        .input-with-icon .fa-calendar {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+    /* FORGOT PASSWORD*/
+
+    #forgot .forgot-btn {
+        background-color: var(--secondary);
+        color: var(--black) !important;
+        padding: 6px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    #forgot .card-title {
+        background-color: var(--primary);
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 700;
+        padding: 6px 15px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+
+    /*MY APPLICATION */
+    .custom-border {
+        border: 1px solid #E8f7ed;
+        height: 40px;
+        width: 245px !important;
+        margin-left: 12px;
+        border-radius: 4px;
+        background-color: #E8f7ed;
+        font-family: var(--font-primary);
+    }
+
+    .custom-border8 {
+        border: 1px solid #E8f7ed;
+        height: 40px;
+        width: 95%;
+        margin-left: 12px;
+        border-radius: 4px;
+        background-color: #E8f7ed;
+        font-family: var(--font-primary);
+    }
+
+    .payment-img-heading {
+        background-color: var(--menu) !important;
+        color: var(--white) !important;
+        padding: 5px 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .myapp-btn {
+        background-color: var(--secondary);
+        color: var(--black) !important;
+        padding: 6px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        width: 300px !important;
+    }
+
+    /******* Preview Button ********/
+
+    .disabled {
+        opacity: 0.5;
+        /* Reduce opacity to visually indicate it's disabled */
+        cursor: not-allowed;
+        /* Change cursor to indicate it's not clickable */
+        pointer-events: none;
+        /* Disable pointer events to prevent clicks */
+    }
+
+    .invalid {
+        color: red;
+    }
